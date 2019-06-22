@@ -1,0 +1,16 @@
+#hexo robots.txt
+User-agent: *
+
+Allow: /
+Allow: /archives/
+
+Disallow: /vendors/
+Disallow: /js/
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /vendors/
+Disallow: /fancybox/
+
+Sitemap: http://https://skr-king.github.io/search.xml
+Sitemap: http://https://skr-king.github.io/sitemap.xml
+Sitemap: http://https://skr-king.github.io/baidusitemap.xml
