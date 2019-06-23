@@ -1808,7 +1808,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #fff;
+  background: #969a3d;
 }
 .feed-link,
 .chat {
@@ -2820,4 +2820,15 @@ h6 {
 body {
   color: #444;
   font-size: 16px;
+}
+@media screen and (min-width: 1200px) {
+  body {
+    background-image: url("/images/background1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+  }
+  #footer a {
+    color: #eee;
+  }
 }
