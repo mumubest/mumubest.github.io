@@ -400,7 +400,7 @@
     <link itemprop="mainEntityOfPage" href="https://skr-king.github.io/Skr-king.github.io/C-初学.html/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Author">
+      <meta itemprop="name" content="Auteur">
       <meta itemprop="description" content="This is a simple record of learning bits and pieces, so that each step of learning into an unforgettable memory.">
       <meta itemprop="image" content="/Skr-king.github.io/images/avatar.jpg">
     </span>
@@ -542,16 +542,9 @@
 <p>C++ 是由 Bjarne Stroustrup 于 1979 年在新泽西州美利山贝尔实验室开始设计开发的。C++ 进一步扩充和完善了 C 语言，最初命名为带类的C，后来在 1983 年更名为 C++。</p>
 <p>C++ 是 C 的一个超集，事实上，任何合法的 C 程序都是合法的 C++ 程序。</p>
 <p>好了废话不多说，开始！</p>
-<h2 id="Hello-world"><a href="#Hello-world" class="headerlink" title="Hello world"></a>Hello world</h2><pre><code>#include &lt;iostream&gt;
-using namespace std;//
+<h2 id="Hello-world"><a href="#Hello-world" class="headerlink" title="Hello world"></a>Hello world</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;iostream&gt;</span><br><span class="line">using namespace std;//</span><br><span class="line"> </span><br><span class="line">// main() 是程序开始执行的地方</span><br><span class="line"> </span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">   cout &lt;&lt; &quot;Hello World&quot;; // 输出 Hello World</span><br><span class="line">   return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-// main() 是程序开始执行的地方
-
-int main()
-{
-   cout &lt;&lt; &quot;Hello World&quot;; // 输出 Hello World
-   return 0;
-}</code></pre><p>接下来我们讲解一下上面这段程序：</p>
+<p>接下来我们讲解一下上面这段程序：</p>
 <ul>
 <li>C++ 语言定义了一些头文件，这些头文件包含了程序中必需的或有用的信息。上面这段程序中，包含了头文件 。</li>
 <li>下一行 <strong>using namespace std;</strong> 告诉编译器使用 std 命名空间。命名空间是 C++ 中一个相对新的概念。</li>
@@ -561,29 +554,9 @@ int main()
 <li>下一行 <strong>return 0;</strong> 终止 main( )函数，并向调用进程返回值 0。</li>
 </ul>
 <h4 id="输入、输出"><a href="#输入、输出" class="headerlink" title="输入、输出"></a>输入、输出</h4><p>C++的输出和输入是用“流”(stream)的方式实现的｡有关流对象cin､cout和流运算符的定义等信息是存放在C++的输入输出流库中的,因此如果在程序中使用cin､cout和流运算符,就必须使用预处理命令把头文件stream包含到本文件中:<br><code>#include &lt;iostream&gt;</code><br>尽管cin和cout不是C++本身提供的语句,但是在不致混淆的情况下,为了叙述方便,常常把由cin和流提取运算符“&gt;&gt;”实现输入的语句称为输入语句或cin语句,把由cout和流插入运算符“&lt;&lt;”实现输出的语句称为输出语句或cout语句｡根据C++的语法,凡是能实现某种操作而且最后以分号结束的都是语句｡</p>
-<pre><code>#include&lt;cstdio&gt;
-#include&lt;iostream&gt;
-#include &lt;iomanip&gt; 
-//格式化输出的头文件，注意这里不要加.h
-using namespace std;
-int main()
-{
-    int a,b,c;
-    cin&gt;&gt;a&gt;&gt;b&gt;&gt;c;
-    cout&lt;&lt;a&lt;&lt;setw(2)&lt;&lt;b&lt;&lt;setw(2)&lt;&lt;c&lt;&lt;endl;
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;cstdio&gt;</span><br><span class="line">#include&lt;iostream&gt;</span><br><span class="line">#include &lt;iomanip&gt; </span><br><span class="line">//格式化输出的头文件，注意这里不要加.h</span><br><span class="line">using namespace std;</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	int a,b,c;</span><br><span class="line">	cin&gt;&gt;a&gt;&gt;b&gt;&gt;c;</span><br><span class="line">	cout&lt;&lt;a&lt;&lt;setw(2)&lt;&lt;b&lt;&lt;setw(2)&lt;&lt;c&lt;&lt;endl;</span><br><span class="line">	</span><br><span class="line"></span><br><span class="line"> </span><br><span class="line">    float num1 = 123.456f,num2 = 563.1f,num3 = 1.30f;</span><br><span class="line">    float num4 = 123456.4444f;</span><br><span class="line">     cout &lt;&lt; setprecision(4);</span><br><span class="line">     cout &lt;&lt; &quot;第一个数：&quot; &lt;&lt; num1 &lt;&lt; endl;</span><br><span class="line">     cout &lt;&lt; &quot;第二个数：&quot; &lt;&lt; num2 &lt;&lt; endl;</span><br><span class="line">     cout &lt;&lt; &quot;第三个数：&quot; &lt;&lt; num3 &lt;&lt; endl;</span><br><span class="line">     cout &lt;&lt; &quot;第四个数：&quot; &lt;&lt; num4 &lt;&lt; endl;//endl 英语意思是end of line,即一行输出结束，然后输出下一行。</span><br><span class="line"></span><br><span class="line">	return 0; </span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
 
-
-
-    float num1 = 123.456f,num2 = 563.1f,num3 = 1.30f;
-    float num4 = 123456.4444f;
-     cout &lt;&lt; setprecision(4);
-     cout &lt;&lt; &quot;第一个数：&quot; &lt;&lt; num1 &lt;&lt; endl;
-     cout &lt;&lt; &quot;第二个数：&quot; &lt;&lt; num2 &lt;&lt; endl;
-     cout &lt;&lt; &quot;第三个数：&quot; &lt;&lt; num3 &lt;&lt; endl;
-     cout &lt;&lt; &quot;第四个数：&quot; &lt;&lt; num4 &lt;&lt; endl;//endl 英语意思是end of line,即一行输出结束，然后输出下一行。
-
-    return 0; 
- }</code></pre><p>头文件<code>#include&lt;iomanip&gt;</code>是格式化输出的头文件，注意后面不加 <strong>.h</strong>，</p>
+<p>头文件<code>#include&lt;iomanip&gt;</code>是格式化输出的头文件，注意后面不加 <strong>.h</strong>，</p>
 <h6 id="使用setw-来控制占位宽度。"><a href="#使用setw-来控制占位宽度。" class="headerlink" title="使用setw()来控制占位宽度。"></a>使用setw()来控制占位宽度。</h6><p>注意事项</p>
 <ol>
 <li>setw() 虽然带有括号，但是其实是一个操作符，并不是函数。</li>
@@ -601,22 +574,9 @@ int main()
 <li>setprecision() 不同于setw()，setprecision() 设置之后，在下次设置之前都是有效的。从程序结果中可以看出来。</li>
 <li>如果要输出的位数过多，则用科学计数法表示，10为基数。</li>
 </ol>
-<h6 id="setfioflags-控制定点输出"><a href="#setfioflags-控制定点输出" class="headerlink" title="setfioflags() 控制定点输出"></a>setfioflags() 控制定点输出</h6><pre><code>#include &lt;iostream&gt;
-#include &lt;iomanip&gt;
+<h6 id="setfioflags-控制定点输出"><a href="#setfioflags-控制定点输出" class="headerlink" title="setfioflags() 控制定点输出"></a>setfioflags() 控制定点输出</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;iostream&gt;</span><br><span class="line">#include &lt;iomanip&gt;</span><br><span class="line">  </span><br><span class="line">using namespace std;</span><br><span class="line">  </span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">     float num1 = 13.000f,num2 = 14.568f,num3 = 1.2f;</span><br><span class="line">     cout &lt;&lt; setiosflags(ios::fixed|ios::showpoint);</span><br><span class="line">     cout &lt;&lt; setprecision(4);</span><br><span class="line">     cout &lt;&lt; &quot;第一个数：&quot; &lt;&lt; num1 &lt;&lt; endl;</span><br><span class="line">     cout &lt;&lt; &quot;第三个数：&quot; &lt;&lt; num2 &lt;&lt; endl;</span><br><span class="line">     cout &lt;&lt; &quot;第二个数：&quot; &lt;&lt; num3 &lt;&lt; endl;</span><br><span class="line"> </span><br><span class="line">     return 0;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
 
-using namespace std;
-
-int main()
-{
-     float num1 = 13.000f,num2 = 14.568f,num3 = 1.2f;
-     cout &lt;&lt; setiosflags(ios::fixed|ios::showpoint);
-     cout &lt;&lt; setprecision(4);
-     cout &lt;&lt; &quot;第一个数：&quot; &lt;&lt; num1 &lt;&lt; endl;
-     cout &lt;&lt; &quot;第三个数：&quot; &lt;&lt; num2 &lt;&lt; endl;
-     cout &lt;&lt; &quot;第二个数：&quot; &lt;&lt; num3 &lt;&lt; endl;
-
-     return 0;
- }</code></pre><p>setiosflags() 是通过状态标志来实现对输出的控制的。状态标志功能如下表</p>
+<p>setiosflags() 是通过状态标志来实现对输出的控制的。状态标志功能如下表</p>
 <table>
 <thead>
 <tr>
@@ -686,7 +646,7 @@ int main()
     
       <div>
         <div id="reward-container">
-  <div></div>
+  <div>Your support is the driving force behind my progress.</div>
   <button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
     Donate
   </button>
@@ -698,7 +658,7 @@ int main()
         
       
       <div style="display: inline-block">
-        <img src="/Skr-king.github.io/images/2.png" alt="Author WeChat Pay">
+        <img src="/Skr-king.github.io/images/2.png" alt="Auteur WeChat Pay">
         <p>WeChat Pay</p>
       </div>
     
@@ -707,7 +667,7 @@ int main()
         
       
       <div style="display: inline-block">
-        <img src="/Skr-king.github.io/images/1.jpg" alt="Author Alipay">
+        <img src="/Skr-king.github.io/images/1.jpg" alt="Auteur Alipay">
         <p>Alipay</p>
       </div>
     
@@ -811,9 +771,9 @@ int main()
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image" src="/Skr-king.github.io/images/avatar.jpg" alt="Author">
+              <img class="site-author-image" itemprop="image" src="/Skr-king.github.io/images/avatar.jpg" alt="Auteur">
             
-              <p class="site-author-name" itemprop="name">Author</p>
+              <p class="site-author-name" itemprop="name">Auteur</p>
               <div class="site-description motion-element" itemprop="description">This is a simple record of learning bits and pieces, so that each step of learning into an unforgettable memory.</div>
           </div>
 
@@ -1010,6 +970,18 @@ int main()
       
 
       
+	   
+		<script type="text/javascript" charset="utf-8" src="/js/tagcloud.js"></script>
+		<script type="text/javascript" charset="utf-8" src="/js/tagcanvas.js"></script>
+		<div class="widget-wrap">
+			<h3 class="widget-title">Tag Cloud</h3>
+			<div id="myCanvasContainer" class="widget tagcloud">
+				<canvas width="250" height="250" id="resCanvas" style="width=100%">
+					<ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/Skr-king.github.io/tags/C/">C++</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/Skr-king.github.io/tags/Game/">Game</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/Skr-king.github.io/tags/Learing/">Learing</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/Skr-king.github.io/tags/Makedown语法/">Makedown语法</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/Skr-king.github.io/tags/hexo-github/">hexo+github</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/Skr-king.github.io/tags/life/">life</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/Skr-king.github.io/tags/sharing/">sharing</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/Skr-king.github.io/tags/二分法查找/">二分法查找</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/Skr-king.github.io/tags/文学/">文学</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/Skr-king.github.io/tags/算法/">算法</a><span class="tag-list-count">10</span></li></ul>
+				</canvas>
+			</div>
+		</div>
+	
 
     </div>
   </aside>
@@ -1026,7 +998,7 @@ int main()
   <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">Author</span>
+  <span class="author" itemprop="copyrightHolder">Auteur</span>
 
   
     <span class="post-meta-divider">|</span>
@@ -1034,7 +1006,7 @@ int main()
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="Symbols count total">34k</span>
+    <span title="Symbols count total">32k</span>
   
 
   
@@ -1043,7 +1015,7 @@ int main()
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="Reading time total">31 mins.</span>
+    <span title="Reading time total">29 mins.</span>
   
 </div>
 

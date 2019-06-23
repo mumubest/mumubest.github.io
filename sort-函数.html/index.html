@@ -99,7 +99,7 @@
 
 
   <meta name="description" content="C++中的sort（）函数我在之前的博客中提到，解决排序问题的一个好用的函数就是C++的sort（）函数啦。sort（）函数是C++内置的函数，只需要加入头文件，掌握正确的使用方法，你就可以在排序中驰骋疆场了（自吹自擂）。好啦，下面就请主角登场吧">
-<meta name="keywords" content="算法,C++">
+<meta name="keywords" content="C++,算法">
 <meta property="og:type" content="article">
 <meta property="og:title" content="sort()函数">
 <meta property="og:url" content="https://skr-king.github.io/sort-函数.html/index.html">
@@ -400,7 +400,7 @@
     <link itemprop="mainEntityOfPage" href="https://skr-king.github.io/Skr-king.github.io/sort-函数.html/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Author">
+      <meta itemprop="name" content="Auteur">
       <meta itemprop="description" content="This is a simple record of learning bits and pieces, so that each step of learning into an unforgettable memory.">
       <meta itemprop="image" content="/Skr-king.github.io/images/avatar.jpg">
     </span>
@@ -550,16 +550,16 @@
 
 <h2 id="sort"><a href="#sort" class="headerlink" title="sort()"></a>sort()</h2><h4 id="1-介绍"><a href="#1-介绍" class="headerlink" title="1.介绍"></a>1.介绍</h4><p>c++语言中 STL 库中的sort函数可以用来对数组进行排序。对于c++语言来说由于其自带的sort()函数更容易被编译器编译，其排序速度比基于快速排序的qsort要快上不少，且用法简单。(百度知道)</p>
 <h4 id="2-准备"><a href="#2-准备" class="headerlink" title="2.准备"></a>2.准备</h4><p>sort（）函数的使用需要添加头文件</p>
-<pre><code>#include&lt;algorithm&gt;
-或者万能头文件
-#include&lt;bits/stdc++.h&gt;</code></pre><h4 id="3-使用方法"><a href="#3-使用方法" class="headerlink" title="3.使用方法"></a>3.使用方法</h4><p><strong>sort（star,end,cmp）*</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;algorithm&gt;</span><br><span class="line">或者万能头文件</span><br><span class="line">#include&lt;bits/stdc++.h&gt;</span><br></pre></td></tr></table></figure>
+
+<h4 id="3-使用方法"><a href="#3-使用方法" class="headerlink" title="3.使用方法"></a>3.使用方法</h4><p><strong>sort（star,end,cmp）*</strong></p>
 <p>sort函数有三个参数：</p>
 <p>1.第一个是要排序的数组的起始地址</p>
 <p>2.第二个是结束地址（最后一位的地址的下一地址）</p>
 <p>3.第三个参数是排序的方法。sort函数默认是按从小到大排序。可以修改cmp实现从大到小排序</p>
-<pre><code>sort（begin，end，less&lt;data-type&gt;)——升序
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sort（begin，end，less&lt;data-type&gt;)——升序</span><br><span class="line"></span><br><span class="line">sort（begin，end，greater&lt;data-type&gt;)——降序</span><br></pre></td></tr></table></figure>
 
-sort（begin，end，greater&lt;data-type&gt;)——降序</code></pre><p>以上是比较简单常用的对数组的排序方法，sort（）类函数中还有其他的排序功能。</p>
+<p>以上是比较简单常用的对数组的排序方法，sort（）类函数中还有其他的排序功能。</p>
 <h4 id="4-sort-类函数"><a href="#4-sort-类函数" class="headerlink" title="4.sort()类函数"></a>4.sort()类函数</h4><table>
 <thead>
 <tr>
@@ -610,74 +610,34 @@ sort（begin，end，greater&lt;data-type&gt;)——降序</code></pre><p>以上
 <p>题目描述</p>
 <p>输入两个升序排列的序列，将两个序列合并为一个有序序列并输出。</p>
 <p>输入描述:</p>
-<pre><code>输入包含三行，
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">输入包含三行，</span><br><span class="line"></span><br><span class="line">第一行包含两个正整数n, m（1 ≤ n,m ≤ 100），用空格分隔。n表示第二行第一个升序序列中数字的个数，m表示第三行第二个升序序列中数字的个数。</span><br><span class="line"></span><br><span class="line">第二行包含n个整数（范围1~5000），用空格分隔。</span><br><span class="line"></span><br><span class="line">第三行包含m个整数（范围1~5000），用空格分隔。</span><br></pre></td></tr></table></figure>
 
-第一行包含两个正整数n, m（1 ≤ n,m ≤ 100），用空格分隔。n表示第二行第一个升序序列中数字的个数，m表示第三行第二个升序序列中数字的个数。
-
-第二行包含n个整数（范围1~5000），用空格分隔。
-
-第三行包含m个整数（范围1~5000），用空格分隔。</code></pre><p>输出描述:</p>
+<p>输出描述:</p>
 <p>输出为一行，输出长度为n+m的升序序列，即长度为n的升序序列和长度为m的升序序列中的元素重新进行升序序列排列合并。</p>
 <p><strong>示例1</strong></p>
 <p>输入<br>5 6<br>1 3 7 9 22<br>2 8 10 17 33 44<br>输出<br>1 2 3 7 8 9 10 17 22 33 44</p>
-<pre><code>#include&lt;cstdio&gt;
-#include&lt;iostream&gt;
-#include&lt;algorithm&gt;
-using namespace std;
-int n,m,t;
-int a[100],b[100],c[200];
-int main()
-{
-    cin&gt;&gt;n&gt;&gt;m;
-    t=n;
-    for(int i=0;i&lt;n;i++)
-    {
-        cin&gt;&gt;a[i];
-        c[i]=a[i];
-    }
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;cstdio&gt;</span><br><span class="line">#include&lt;iostream&gt;</span><br><span class="line">#include&lt;algorithm&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">int n,m,t;</span><br><span class="line">int a[100],b[100],c[200];</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    cin&gt;&gt;n&gt;&gt;m;</span><br><span class="line">    t=n;</span><br><span class="line">    for(int i=0;i&lt;n;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        cin&gt;&gt;a[i];</span><br><span class="line">        c[i]=a[i];</span><br><span class="line">    &#125;</span><br><span class="line">   </span><br><span class="line">    for(int i=0;i&lt;m;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        cin&gt;&gt;b[i];</span><br><span class="line">        c[t++]=b[i];</span><br><span class="line">    &#125;</span><br><span class="line">    sort(c,c+m+n);</span><br><span class="line">    for(int i=0;i&lt;m+n;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        cout&lt;&lt;c[i];</span><br><span class="line">        putchar(&apos; &apos;);</span><br><span class="line">    &#125;          </span><br><span class="line">    return 0;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
 
-    for(int i=0;i&lt;m;i++)
-    {
-        cin&gt;&gt;b[i];
-        c[t++]=b[i];
-    }
-    sort(c,c+m+n);
-    for(int i=0;i&lt;m+n;i++)
-    {
-        cout&lt;&lt;c[i];
-        putchar(&#39; &#39;);
-    }          
-    return 0;
- }</code></pre><h6 id="2-最高最低分差"><a href="#2-最高最低分差" class="headerlink" title="2.最高最低分差"></a>2.最高最低分差</h6><p>链接：</p>
+<h6 id="2-最高最低分差"><a href="#2-最高最低分差" class="headerlink" title="2.最高最低分差"></a>2.最高最低分差</h6><p>链接：</p>
 <p><a href="https://ac.nowcoder.com/acm/contest/827/E" target="_blank" rel="noopener">https://ac.nowcoder.com/acm/contest/827/E</a></p>
 <p>来源：牛客网</p>
 <p>题目描述</p>
 <p>输入n个成绩，换行输出n个成绩中最高分数和最低分数的差。</p>
 <p>输入描述:</p>
-<pre><code>两行，第一行为n，表示n个成绩，不会大于10000。
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">两行，第一行为n，表示n个成绩，不会大于10000。</span><br><span class="line"></span><br><span class="line">第二行为n个成绩（整数表示，范围0~100），以空格隔开。</span><br></pre></td></tr></table></figure>
 
-第二行为n个成绩（整数表示，范围0~100），以空格隔开。</code></pre><p>输出描述:</p>
-<pre><code>一行，输出n个成绩中最高分数和最低分数的差。</code></pre><p>示例1</p>
+<p>输出描述:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">一行，输出n个成绩中最高分数和最低分数的差。</span><br></pre></td></tr></table></figure>
+
+<p>示例1</p>
 <p>输入</p>
-<pre><code>10
-98 100 99 97 95 99 98 97 96 100</code></pre><p>输出</p>
-<p>5</p>
-<pre><code>#include&lt;stdio.h&gt;
-#include&lt;algorithm&gt;
-#include&lt;iostream&gt;
-using namespace std;
-int main()
-{
-    int n,a[10000],sum=0;
-    scanf(&quot;%d&quot;,&amp;n);
-    for(int i=0;i&lt;n;i++)
-        scanf(&quot;%d&quot;,&amp;a[i]);
-    sort(a,a+n);
-    sum=a[n-1]-a[0];
-    printf(&quot;%d&quot;,sum);
-    return 0;
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">10</span><br><span class="line">98 100 99 97 95 99 98 97 96 100</span><br></pre></td></tr></table></figure>
 
-}</code></pre><h3 id="休息一下"><a href="#休息一下" class="headerlink" title="休息一下"></a>休息一下</h3><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="https://music.163.com/outchain/player?type=2&amp;id=2788529&amp;auto=0&amp;height=66" style="cursor: url(&quot;/images/sword.ico&quot;), auto !important; width: 663.6px; height: 85.9375px; position: absolute; top: 0px; left: 0px;"></iframe>
+<p>输出</p>
+<p>5</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;stdio.h&gt;</span><br><span class="line">#include&lt;algorithm&gt;</span><br><span class="line">#include&lt;iostream&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    int n,a[10000],sum=0;</span><br><span class="line">    scanf(&quot;%d&quot;,&amp;n);</span><br><span class="line">    for(int i=0;i&lt;n;i++)</span><br><span class="line">        scanf(&quot;%d&quot;,&amp;a[i]);</span><br><span class="line">    sort(a,a+n);</span><br><span class="line">    sum=a[n-1]-a[0];</span><br><span class="line">    printf(&quot;%d&quot;,sum);</span><br><span class="line">    return 0;</span><br><span class="line"> </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="休息一下"><a href="#休息一下" class="headerlink" title="休息一下"></a>休息一下</h3><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="https://music.163.com/outchain/player?type=2&amp;id=2788529&amp;auto=0&amp;height=66" style="cursor: url(&quot;/images/sword.ico&quot;), auto !important; width: 663.6px; height: 85.9375px; position: absolute; top: 0px; left: 0px;"></iframe>
 
 
 
@@ -700,7 +660,7 @@ int main()
     
       <div>
         <div id="reward-container">
-  <div></div>
+  <div>Your support is the driving force behind my progress.</div>
   <button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
     Donate
   </button>
@@ -712,7 +672,7 @@ int main()
         
       
       <div style="display: inline-block">
-        <img src="/Skr-king.github.io/images/2.png" alt="Author WeChat Pay">
+        <img src="/Skr-king.github.io/images/2.png" alt="Auteur WeChat Pay">
         <p>WeChat Pay</p>
       </div>
     
@@ -721,7 +681,7 @@ int main()
         
       
       <div style="display: inline-block">
-        <img src="/Skr-king.github.io/images/1.jpg" alt="Author Alipay">
+        <img src="/Skr-king.github.io/images/1.jpg" alt="Auteur Alipay">
         <p>Alipay</p>
       </div>
     
@@ -742,9 +702,9 @@ int main()
         
         <div class="post-tags">
           
-            <a href="/Skr-king.github.io/tags/算法/" rel="tag"># 算法</a>
-          
             <a href="/Skr-king.github.io/tags/C/" rel="tag"># C++</a>
+          
+            <a href="/Skr-king.github.io/tags/算法/" rel="tag"># 算法</a>
           
         </div>
       
@@ -827,9 +787,9 @@ int main()
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image" src="/Skr-king.github.io/images/avatar.jpg" alt="Author">
+              <img class="site-author-image" itemprop="image" src="/Skr-king.github.io/images/avatar.jpg" alt="Auteur">
             
-              <p class="site-author-name" itemprop="name">Author</p>
+              <p class="site-author-name" itemprop="name">Auteur</p>
               <div class="site-description motion-element" itemprop="description">This is a simple record of learning bits and pieces, so that each step of learning into an unforgettable memory.</div>
           </div>
 
@@ -1026,6 +986,18 @@ int main()
       
 
       
+	   
+		<script type="text/javascript" charset="utf-8" src="/js/tagcloud.js"></script>
+		<script type="text/javascript" charset="utf-8" src="/js/tagcanvas.js"></script>
+		<div class="widget-wrap">
+			<h3 class="widget-title">Tag Cloud</h3>
+			<div id="myCanvasContainer" class="widget tagcloud">
+				<canvas width="250" height="250" id="resCanvas" style="width=100%">
+					<ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/Skr-king.github.io/tags/C/">C++</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/Skr-king.github.io/tags/Game/">Game</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/Skr-king.github.io/tags/Learing/">Learing</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/Skr-king.github.io/tags/Makedown语法/">Makedown语法</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/Skr-king.github.io/tags/hexo-github/">hexo+github</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/Skr-king.github.io/tags/life/">life</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/Skr-king.github.io/tags/sharing/">sharing</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/Skr-king.github.io/tags/二分法查找/">二分法查找</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/Skr-king.github.io/tags/文学/">文学</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/Skr-king.github.io/tags/算法/">算法</a><span class="tag-list-count">10</span></li></ul>
+				</canvas>
+			</div>
+		</div>
+	
 
     </div>
   </aside>
@@ -1042,7 +1014,7 @@ int main()
   <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">Author</span>
+  <span class="author" itemprop="copyrightHolder">Auteur</span>
 
   
     <span class="post-meta-divider">|</span>
@@ -1050,7 +1022,7 @@ int main()
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="Symbols count total">34k</span>
+    <span title="Symbols count total">32k</span>
   
 
   
@@ -1059,7 +1031,7 @@ int main()
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="Reading time total">31 mins.</span>
+    <span title="Reading time total">29 mins.</span>
   
 </div>
 
