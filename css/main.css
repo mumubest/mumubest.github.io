@@ -1888,7 +1888,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ede4d6;
+  background: #0ba8ff;
 }
 .feed-link,
 .chat {
@@ -2607,6 +2607,7 @@ embed {
 }
 @media screen and (min-width: 1200px) {
   body {
+    padding-top: 89%;
     background-image: url("/images/timg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
