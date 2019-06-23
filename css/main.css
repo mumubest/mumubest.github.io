@@ -1888,7 +1888,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #2004b5;
+  background: #c7360e;
 }
 .feed-link,
 .chat {
@@ -2907,7 +2907,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: 50% 50%;
+    background-position: 100% 100%;
   }
   #footer a {
     color: #eee;
