@@ -34,22 +34,6 @@
   </entry>
   
   <entry>
-    <title>Hello World</title>
-    <link href="https://skr-king.github.io/hello-world.html/"/>
-    <id>https://skr-king.github.io/hello-world.html/</id>
-    <published>2019-06-20T14:53:57.480Z</published>
-    <updated>2019-06-21T13:29:02.801Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>Learning makes me happy</title>
     <link href="https://skr-king.github.io/Learning-makes-me-happy.html/"/>
     <id>https://skr-king.github.io/Learning-makes-me-happy.html/</id>
@@ -350,9 +334,9 @@
       <category term="C++,算法" scheme="https://skr-king.github.io/categories/C-%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="算法" scheme="https://skr-king.github.io/tags/%E7%AE%97%E6%B3%95/"/>
-    
       <category term="C++" scheme="https://skr-king.github.io/tags/C/"/>
+    
+      <category term="算法" scheme="https://skr-king.github.io/tags/%E7%AE%97%E6%B3%95/"/>
     
   </entry>
   
@@ -436,6 +420,26 @@
     
     
       <category term="文学" scheme="https://skr-king.github.io/tags/%E6%96%87%E5%AD%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>二分法查找</title>
+    <link href="https://skr-king.github.io/%E4%BA%8C%E5%88%86%E6%B3%95%E6%9F%A5%E6%89%BE.html/"/>
+    <id>https://skr-king.github.io/二分法查找.html/</id>
+    <published>2019-06-20T05:46:37.000Z</published>
+    <updated>2019-06-21T13:31:27.928Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;二分法查找&quot;&gt;&lt;a href=&quot;#二分法查找&quot; class=&quot;headerlink&quot; title=&quot;二分法查找&quot;&gt;&lt;/a&gt;二分法查找&lt;/h3&gt;&lt;p&gt;二分法查找，二分搜所，也称折半搜索，每次查找区间减半，适用于数据量较大，对一个有序的数组中查找某一元素。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="二分法查找" scheme="https://skr-king.github.io/categories/%E4%BA%8C%E5%88%86%E6%B3%95%E6%9F%A5%E6%89%BE/"/>
+    
+    
+      <category term="二分法查找" scheme="https://skr-king.github.io/tags/%E4%BA%8C%E5%88%86%E6%B3%95%E6%9F%A5%E6%89%BE/"/>
     
   </entry>
   
