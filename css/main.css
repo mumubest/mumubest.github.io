@@ -1888,7 +1888,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #a3829c;
+  background: #8ee939;
 }
 .feed-link,
 .chat {
@@ -2918,7 +2918,7 @@ body::before {
   animation: heartAnimate 1.33s ease-in-out infinite;
 }
 .with-love {
-  color: #ff71a8;
+  color: #f00;
 }
 @-moz-keyframes heartAnimate {
   0%, 100% {
