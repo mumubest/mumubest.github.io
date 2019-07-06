@@ -1761,7 +1761,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffa1ff;
+  background: #9e9a9f;
 }
 .feed-link,
 .chat {
@@ -2470,6 +2470,17 @@ embed {
 .links-of-blogroll-inline .links-of-blogroll-item {
   display: inline-block;
 }
+@media screen and (min-width: 1200px) {
+  body {
+    background-image: url("/images/3.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+  }
+  #footer a {
+    color: #eee;
+  }
+}
 .header {
   background: url("https://cdn.yangbingdong.com/img/header/header_background.jpg");
 }
@@ -2563,15 +2574,4 @@ h6 {
 body {
   color: #444;
   font-size: 16px;
-}
-@media screen and (min-width: 1200px) {
-  body {
-    background-image: url("/images/3.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: 50% 50%;
-  }
-  #footer a {
-    color: #eee;
-  }
 }
