@@ -12,20 +12,20 @@
 
 
 
-    <meta name="description" content="Python–operation on Excel====This my mood now====">
+    <meta name="description" content="====This my mood now====">
 <meta name="keywords" content="算法">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python_Operation on Excel">
 <meta property="og:url" content="https://skr-king.github.io/Python-Operation-on-Excel.html/index.html">
 <meta property="og:site_name" content="SKY">
-<meta property="og:description" content="Python–operation on Excel====This my mood now====">
+<meta property="og:description" content="====This my mood now====">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="https://skr-king.github.io/Skr-king.github.io/images/og_image.png">
-<meta property="og:updated_time" content="2019-06-21T13:31:07.372Z">
+<meta property="og:image" content="https://skr-king.github.io/Skr-king.github.io/Skr-king.github.io/gallary/14.jpg">
+<meta property="og:updated_time" content="2019-07-08T02:24:28.221Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python_Operation on Excel">
-<meta name="twitter:description" content="Python–operation on Excel====This my mood now====">
-<meta name="twitter:image" content="https://skr-king.github.io/Skr-king.github.io/images/og_image.png">
+<meta name="twitter:description" content="====This my mood now====">
+<meta name="twitter:image" content="https://skr-king.github.io/Skr-king.github.io/Skr-king.github.io/gallary/14.jpg">
 
 
 
@@ -153,6 +153,12 @@
             <div class="columns">
                 <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
     
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="/Skr-king.github.io/gallary/14.jpg" alt="Python_Operation on Excel">
+        </span>
+    </div>
+    
     <div class="card-content article ">
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
@@ -167,7 +173,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    a minute read (About 203 words)
+                    a minute read (About 198 words)
                 </span>
                 
                 
@@ -185,12 +191,10 @@
             
         </h1>
         <div class="content">
-            <h1 id="Python–operation-on-Excel"><a href="#Python–operation-on-Excel" class="headerlink" title="Python–operation on Excel"></a>Python–operation on Excel</h1><p>====This my mood now====</p>
-<p><img src="/Skr-king.github.io/Python-Operation-on-Excel.html/1.jpg" alt></p>
+            <p>====This my mood now====</p>
 <a id="more"></a>
 
-
-
+<p><img src="/Skr-king.github.io/Python-Operation-on-Excel.html/1.jpg" alt></p>
 <p>I recently solve the problem of Excel ‘ data , it is hard to process Excel data because of huge amount of it.However, there is a better tool to process–Python.I simply write 34 lines to operation on Excel’s data to count th number of the key word.</p>
 <p>Just for recording.</p>
 <h2 id="code"><a href="#code" class="headerlink" title="code"></a>code</h2><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">import xlrd</span><br><span class="line">import xlwt</span><br><span class="line">import re</span><br><span class="line">import numpy as np</span><br><span class="line">import pandas as pd</span><br><span class="line"></span><br><span class="line">#import openpyxl</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">data = xlrd.open_workbook(&apos;C:\\Users\\hp\\Desktop\\数据信息3.xlsx&apos;)</span><br><span class="line"></span><br><span class="line">table = data.sheets()[0]</span><br><span class="line"></span><br><span class="line">ncols = table.col_values(12)</span><br><span class="line">a = len(ncols)</span><br><span class="line">pattern = re.compile(r&apos;\d+&apos;)</span><br><span class="line">d=[]</span><br><span class="line">for i in range(1,a):</span><br><span class="line">    #print(pattern.findall(ncols[i]))</span><br><span class="line">   # print(&quot;\n&quot;)</span><br><span class="line">    b = len(pattern.findall(ncols[i]))</span><br><span class="line">    c=[]</span><br><span class="line">    for j in range(0,b):</span><br><span class="line">        if eval(pattern.findall(ncols[i])[j] )&lt; 10 :</span><br><span class="line">            c.append(pattern.findall(ncols[i])[j])</span><br><span class="line">    #print(c)</span><br><span class="line">    d.append(len(c))</span><br><span class="line">    #print(d)</span><br><span class="line">    f = xlwt.Workbook()               #创建工作簿</span><br><span class="line">sheet1 = f.add_sheet(u&apos;sheet1&apos;,cell_overwrite_ok=True) #创建sheet</span><br><span class="line">for i in range(0,len(d)):</span><br><span class="line">    sheet1.write(i+1,0,d[i])</span><br><span class="line">f.save(&quot;C:\\Users\\hp\\Desktop\\2.xls&quot;)</span><br><span class="line">print(&quot;结束&quot;)</span><br></pre></td></tr></table></figure>
@@ -590,14 +594,14 @@
             
             <a href="/Skr-king.github.io/amazing.html/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/Skr-king.github.io/gallary/1.jpg" alt="amazing">
+                    <img class="thumbnail" src="/Skr-king.github.io/gallary/1.jpg" alt="new blog">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-06-21T14:11:52.000Z">2019-06-21</time></div>
-                    <a href="/Skr-king.github.io/amazing.html/" class="has-link-black-ter is-size-6">amazing</a>
+                    <a href="/Skr-king.github.io/amazing.html/" class="has-link-black-ter is-size-6">new blog</a>
                     <p class="is-size-7 is-uppercase">
                         
                     </p>
@@ -609,7 +613,7 @@
             
             <a href="/Skr-king.github.io/Learning-makes-me-happy.html/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/Skr-king.github.io/images/thumbnail.svg" alt="Learning makes me happy">
+                    <img class="thumbnail" src="/Skr-king.github.io/gallary/6.jpg" alt="Learning makes me happy">
                 </p>
             </a>
             
@@ -628,7 +632,7 @@
             
             <a href="/Skr-king.github.io/CET4.html/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/Skr-king.github.io/images/thumbnail.svg" alt="CET4">
+                    <img class="thumbnail" src="/Skr-king.github.io/gallary/11.jpg" alt="CET4">
                 </p>
             </a>
             
@@ -647,7 +651,7 @@
             
             <a href="/Skr-king.github.io/俄罗斯方块.html/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/Skr-king.github.io/images/thumbnail.svg" alt="俄罗斯方块">
+                    <img class="thumbnail" src="/Skr-king.github.io/gallary/7.jpg" alt="俄罗斯方块">
                 </p>
             </a>
             
@@ -666,7 +670,7 @@
             
             <a href="/Skr-king.github.io/大数取模.html/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/Skr-king.github.io/images/thumbnail.svg" alt="大数取模">
+                    <img class="thumbnail" src="/Skr-king.github.io/gallary/12.png" alt="大数取模">
                 </p>
             </a>
             
@@ -814,14 +818,14 @@
             
             <a href="/Skr-king.github.io/amazing.html/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/Skr-king.github.io/gallary/1.jpg" alt="amazing">
+                    <img class="thumbnail" src="/Skr-king.github.io/gallary/1.jpg" alt="new blog">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-06-21T14:11:52.000Z">2019-06-21</time></div>
-                    <a href="/Skr-king.github.io/amazing.html/" class="has-link-black-ter is-size-6">amazing</a>
+                    <a href="/Skr-king.github.io/amazing.html/" class="has-link-black-ter is-size-6">new blog</a>
                     <p class="is-size-7 is-uppercase">
                         
                     </p>
@@ -833,7 +837,7 @@
             
             <a href="/Skr-king.github.io/Learning-makes-me-happy.html/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/Skr-king.github.io/images/thumbnail.svg" alt="Learning makes me happy">
+                    <img class="thumbnail" src="/Skr-king.github.io/gallary/6.jpg" alt="Learning makes me happy">
                 </p>
             </a>
             
@@ -852,7 +856,7 @@
             
             <a href="/Skr-king.github.io/CET4.html/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/Skr-king.github.io/images/thumbnail.svg" alt="CET4">
+                    <img class="thumbnail" src="/Skr-king.github.io/gallary/11.jpg" alt="CET4">
                 </p>
             </a>
             
@@ -871,7 +875,7 @@
             
             <a href="/Skr-king.github.io/俄罗斯方块.html/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/Skr-king.github.io/images/thumbnail.svg" alt="俄罗斯方块">
+                    <img class="thumbnail" src="/Skr-king.github.io/gallary/7.jpg" alt="俄罗斯方块">
                 </p>
             </a>
             
@@ -890,7 +894,7 @@
             
             <a href="/Skr-king.github.io/大数取模.html/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/Skr-king.github.io/images/thumbnail.svg" alt="大数取模">
+                    <img class="thumbnail" src="/Skr-king.github.io/gallary/12.png" alt="大数取模">
                 </p>
             </a>
             
