@@ -6,7 +6,7 @@
   <link href="/Skr-king.github.io/atom.xml" rel="self"/>
   
   <link href="https://skr-king.github.io/"/>
-  <updated>2019-07-08T02:11:39.180Z</updated>
+  <updated>2019-07-10T12:00:28.792Z</updated>
   <id>https://skr-king.github.io/</id>
   
   <author>
@@ -17,16 +17,22 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>new blog</title>
+    <title>New blog</title>
     <link href="https://skr-king.github.io/amazing.html/"/>
     <id>https://skr-king.github.io/amazing.html/</id>
     <published>2019-06-21T14:11:52.000Z</published>
-    <updated>2019-07-08T02:11:39.180Z</updated>
+    <updated>2019-07-10T12:00:28.792Z</updated>
     
     <summary type="html">
     
+      &lt;p&gt;This  a  sad  story！！  😐😐😐 &lt;/p&gt;
+    
     </summary>
     
+      <category term="life" scheme="https://skr-king.github.io/categories/life/"/>
+    
+    
+      <category term="life" scheme="https://skr-king.github.io/tags/life/"/>
     
   </entry>
   
