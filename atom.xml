@@ -6,7 +6,7 @@
   <link href="/Skr-king.github.io/atom.xml" rel="self"/>
   
   <link href="https://skr-king.github.io/"/>
-  <updated>2019-07-11T13:32:18.357Z</updated>
+  <updated>2019-07-18T15:35:01.735Z</updated>
   <id>https://skr-king.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>WordCloud——美丽的词云图</title>
+    <link href="https://skr-king.github.io/WordCloud%E2%80%94%E2%80%94%E7%BE%8E%E4%B8%BD%E7%9A%84%E8%AF%8D%E4%BA%91%E5%9B%BE.html/"/>
+    <id>https://skr-king.github.io/WordCloud——美丽的词云图.html/</id>
+    <published>2019-07-18T14:52:09.000Z</published>
+    <updated>2019-07-18T15:35:01.735Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;I  miss  you。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="python" scheme="https://skr-king.github.io/categories/python/"/>
+    
+    
+      <category term="python" scheme="https://skr-king.github.io/tags/python/"/>
+    
+  </entry>
   
   <entry>
     <title>Just do it!</title>
@@ -38,8 +58,8 @@
   
   <entry>
     <title>New blog</title>
-    <link href="https://skr-king.github.io/amazing.html/"/>
-    <id>https://skr-king.github.io/amazing.html/</id>
+    <link href="https://skr-king.github.io/%E7%BA%A6%E6%95%B0%E4%B8%AA%E6%95%B0%E5%AE%9A%E7%90%86/amazing.html/"/>
+    <id>https://skr-king.github.io/约数个数定理/amazing.html/</id>
     <published>2019-06-21T14:11:52.000Z</published>
     <updated>2019-07-13T03:14:35.034Z</updated>
     
@@ -342,9 +362,9 @@
       <category term="C++,算法" scheme="https://skr-king.github.io/categories/C-%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="C++" scheme="https://skr-king.github.io/tags/C/"/>
-    
       <category term="算法" scheme="https://skr-king.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="C++" scheme="https://skr-king.github.io/tags/C/"/>
     
   </entry>
   
@@ -408,26 +428,6 @@
     
     
       <category term="C++" scheme="https://skr-king.github.io/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>微小说欣赏</title>
-    <link href="https://skr-king.github.io/%E5%BE%AE%E5%B0%8F%E8%AF%B4%E6%AC%A3%E8%B5%8F.html/"/>
-    <id>https://skr-king.github.io/微小说欣赏.html/</id>
-    <published>2019-06-20T05:48:53.000Z</published>
-    <updated>2019-07-08T02:32:48.325Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h4 id=&quot;1&quot;&gt;&lt;a href=&quot;#1&quot; class=&quot;headerlink&quot; title=&quot;1.&quot;&gt;&lt;/a&gt;1.&lt;/h4&gt;&lt;p&gt;我因车祸而失明，所以我从不知女友长什么样。那年，她得了胃癌，临终前她将眼角膜移植给了我。我恢复光明后的第一件事就是找她的照片，然而我只找到她留给我的一封信，信里有一张空白照片，照片上写有一句话：“别再想我长什么样，下一个你爱上的人，就是我的模样。”&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="文学" scheme="https://skr-king.github.io/categories/%E6%96%87%E5%AD%A6/"/>
-    
-    
-      <category term="文学" scheme="https://skr-king.github.io/tags/%E6%96%87%E5%AD%A6/"/>
     
   </entry>
   
