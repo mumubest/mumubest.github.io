@@ -6,7 +6,7 @@
   <link href="/Skr-king.github.io/atom.xml" rel="self"/>
   
   <link href="https://skr-king.github.io/"/>
-  <updated>2019-07-18T15:35:01.735Z</updated>
+  <updated>2019-07-19T14:17:06.744Z</updated>
   <id>https://skr-king.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>神经网络——案例简单推导</title>
+    <link href="https://skr-king.github.io/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E2%80%94%E2%80%94%E6%A1%88%E4%BE%8B%E7%AE%80%E5%8D%95%E6%8E%A8%E5%AF%BC.html/"/>
+    <id>https://skr-king.github.io/神经网络——案例简单推导.html/</id>
+    <published>2019-07-19T01:42:23.000Z</published>
+    <updated>2019-07-19T14:17:06.744Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;   现在终于理解我们高中数学老师说的话了，计算不行，说明数学不行，数学不行能力不行，数学好才是真正的好！！！哈哈哈。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="AI" scheme="https://skr-king.github.io/categories/AI/"/>
+    
+    
+      <category term="AI" scheme="https://skr-king.github.io/tags/AI/"/>
+    
+  </entry>
   
   <entry>
     <title>WordCloud——美丽的词云图</title>
@@ -405,27 +425,6 @@
     
     
       <category term="算法" scheme="https://skr-king.github.io/tags/%E7%AE%97%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>C++初学</title>
-    <link href="https://skr-king.github.io/C-%E5%88%9D%E5%AD%A6.html/"/>
-    <id>https://skr-king.github.io/C-初学.html/</id>
-    <published>2019-06-20T05:58:33.000Z</published>
-    <updated>2019-07-08T02:35:00.891Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h4 id=&quot;C-初学（一）&quot;&gt;&lt;a href=&quot;#C-初学（一）&quot; class=&quot;headerlink&quot; title=&quot;C++ 初学（一）&quot;&gt;&lt;/a&gt;C++ 初学（一）&lt;/h4&gt;&lt;p&gt;在一次解决排序问题时，初步接触C++中的sort（）函数，在问题解决上非常好用，不用自己再写排序的代码，就像python中 import 函数库一样，因为懒嘛，所以更懒，嘿嘿！！所以想接触一下C++，简单学习一下子。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Skr-king.github.io/C-初学.html/1.jpg&quot; alt&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="C++" scheme="https://skr-king.github.io/categories/C/"/>
-    
-    
-      <category term="C++" scheme="https://skr-king.github.io/tags/C/"/>
     
   </entry>
   
