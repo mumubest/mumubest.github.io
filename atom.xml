@@ -6,7 +6,7 @@
   <link href="/Skr-king.github.io/atom.xml" rel="self"/>
   
   <link href="https://skr-king.github.io/"/>
-  <updated>2019-07-19T14:17:06.744Z</updated>
+  <updated>2019-07-19T14:51:02.998Z</updated>
   <id>https://skr-king.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>神经网络之激活函数</title>
+    <link href="https://skr-king.github.io/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E4%B9%8B%E6%BF%80%E6%B4%BB%E5%87%BD%E6%95%B0.html/"/>
+    <id>https://skr-king.github.io/神经网络之激活函数.html/</id>
+    <published>2019-07-19T14:27:39.000Z</published>
+    <updated>2019-07-19T14:51:02.998Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt; 有时候不敢去拥有，因为害怕失去，所以非常努力地去奋斗，让自己累，让自己不去想。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="AI" scheme="https://skr-king.github.io/categories/AI/"/>
+    
+    
+      <category term="AI" scheme="https://skr-king.github.io/tags/AI/"/>
+    
+  </entry>
   
   <entry>
     <title>神经网络——案例简单推导</title>
@@ -397,27 +417,6 @@
     
       &lt;h2 id=&quot;DFS&quot;&gt;&lt;a href=&quot;#DFS&quot; class=&quot;headerlink&quot; title=&quot;DFS&quot;&gt;&lt;/a&gt;DFS&lt;/h2&gt;&lt;p&gt;深度优先搜索算法（Depth-First-Search），是搜索算法的一种。是沿着树的深度遍历树的节点，尽可能深的搜索树的分支。当节点v的所有边都己被探寻过，搜索将回溯到发现节点v的那条边的起始节点。这一过程一直进行到已发现从源节点可达的所有节点为止。如果还存在未被发现的节点，则选择其中一个作为源节点并重复以上过程，整个进程反复进行直到所有节点都被访问为止（属于盲目搜索）。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://angelni.github.io/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2-DFS/7.jpg&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="算法" scheme="https://skr-king.github.io/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="算法" scheme="https://skr-king.github.io/tags/%E7%AE%97%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>天生棋局</title>
-    <link href="https://skr-king.github.io/%E5%A4%A9%E7%94%9F%E6%A3%8B%E5%B1%80.html/"/>
-    <id>https://skr-king.github.io/天生棋局.html/</id>
-    <published>2019-06-20T11:27:05.000Z</published>
-    <updated>2019-07-08T02:32:39.514Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;天生棋局问题，是C语言老师留的一个课外练习题。要求有用指针来写，因为指针学的不扎实，也因为第一次看到这道题时，第一个想法就是要用数组来写，所以以下是用数组对天生棋局代码。(指针的会后续补上)&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://angelni.github.io/%E5%A4%A9%E7%94%9F%E6%A3%8B%E5%B1%80/3.jpg&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;
     
     </summary>
     

@@ -5,24 +5,27 @@
 <html lang="en">
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-<title>Fermat&#39;s Last Theorem - SKY</title>
+<title>神经网络之激活函数 - SKY</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="google-site-verification" content="JwzmnANXlpmQlhwaSORuqpEB6P3Sr-tRhw4R_XDRcEc">
 <meta name="baidu-site-verification" content="ztPAF2oDcw">
 
 
 
-    <meta name="keywords" content="算法">
+    <meta name="description" content="有时候不敢去拥有，因为害怕失去，所以非常努力地去奋斗，让自己累，让自己不去想。">
+<meta name="keywords" content="AI">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Fermat&#39;s Last Theorem">
-<meta property="og:url" content="https://skr-king.github.io/Fermat-s-Last-Theorem.html/index.html">
+<meta property="og:title" content="神经网络之激活函数">
+<meta property="og:url" content="https://skr-king.github.io/神经网络之激活函数.html/index.html">
 <meta property="og:site_name" content="SKY">
+<meta property="og:description" content="有时候不敢去拥有，因为害怕失去，所以非常努力地去奋斗，让自己累，让自己不去想。">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="https://skr-king.github.io/Skr-king.github.io/images/og_image.png">
-<meta property="og:updated_time" content="2019-07-08T02:33:51.312Z">
+<meta property="og:image" content="https://skr-king.github.io/Skr-king.github.io/Skr-king.github.io/gallary/32.jpg">
+<meta property="og:updated_time" content="2019-07-19T14:51:02.998Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Fermat&#39;s Last Theorem">
-<meta name="twitter:image" content="https://skr-king.github.io/Skr-king.github.io/images/og_image.png">
+<meta name="twitter:title" content="神经网络之激活函数">
+<meta name="twitter:description" content="有时候不敢去拥有，因为害怕失去，所以非常努力地去奋斗，让自己累，让自己不去想。">
+<meta name="twitter:image" content="https://skr-king.github.io/Skr-king.github.io/Skr-king.github.io/gallary/32.jpg">
 
 
 
@@ -101,7 +104,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/Skr-king.github.io/">
             
-                <img src="/Skr-king.github.io/images/22.png" alt="Fermat&#39;s Last Theorem" height="28">
+                <img src="/Skr-king.github.io/images/22.png" alt="神经网络之激活函数" height="28">
             
             </a>
         </div>
@@ -152,21 +155,27 @@
             <div class="columns">
                 <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
     
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="/Skr-king.github.io/gallary/32.jpg" alt="神经网络之激活函数">
+        </span>
+    </div>
+    
     <div class="card-content article ">
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-06-20T11:32:14.000Z">2019-06-20</time>
+                <time class="level-item has-text-grey" datetime="2019-07-19T14:27:39.000Z">2019-07-19</time>
                 
                 <div class="level-item">
-                <a class="has-link-grey -link" href="/Skr-king.github.io/categories/算法/">算法</a>
+                <a class="has-link-grey -link" href="/Skr-king.github.io/categories/AI/">AI</a>
                 </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    2 minutes read (About 270 words)
+                    6 minutes read (About 915 words)
                 </span>
                 
                 
@@ -180,34 +189,59 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                Fermat&#39;s Last Theorem
+                神经网络之激活函数
             
         </h1>
         <div class="content">
-            <p><img src="https://angelni.github.io/Fermat-s-Last-Theorem/1.jpg" alt="img"></p>
-<a id="more"></a>
+            <p> 有时候不敢去拥有，因为害怕失去，所以非常努力地去奋斗，让自己累，让自己不去想。<a id="more"></a></p>
+<h1 id="激活函数"><a href="#激活函数" class="headerlink" title="激活函数"></a>激活函数</h1><p><strong>定义</strong></p>
+<p>所谓激活函数（Activation Function），就是在人工神经网络的神经元上运行的函数，负责将神经元的输入映射到输出端。</p>
+<p>判定每个神经元的输出</p>
+<p>通俗来说，激活函数一般是非线性函数，其作用是能够给神经网络加入一些非线性因素，使得神经网络可以更好地解决较为复杂的问题。</p>
+<p><strong>常见的激活函数</strong></p>
+<p>1.sigmoid</p>
+<p>2.tanh</p>
+<p>3.ReLu</p>
+<p>4.ELU</p>
+<p>5.PReLU</p>
+<p>这里简单的对前三个进行介绍</p>
+<h2 id="1-sigmoid"><a href="#1-sigmoid" class="headerlink" title="1.sigmoid"></a>1.sigmoid</h2><p><img src="/Skr-king.github.io/神经网络之激活函数.html/1.png" alt></p>
+<p>Sigmoid 函数的取值范围在 (0,1) 之间，单调连续，求导容易，一般用于二分类神经网络的输出层。</p>
+<p>sigmoid函数图像如图</p>
+<p><img src="/Skr-king.github.io/神经网络之激活函数.html/9.png" alt></p>
+<p>sigmoid函数求导</p>
+<p><img src="/Skr-king.github.io/神经网络之激活函数.html/2.jpg" alt></p>
+<p>缺点：</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1.Sigmoid 函数饱和区范围广，容易造成梯度消失</span><br><span class="line"></span><br><span class="line">2.参数矩阵 W 的每个元素都会朝着同一个方向变化，同为正或同为负。这对于神经网络训练是不利的，所有的 W 都朝着同一符号方向变化会减小训练速度，增加模型训练时间。</span><br><span class="line"></span><br><span class="line">3.Sigmoid 函数包含 exp 指数运算，运算成本也比较大</span><br></pre></td></tr></table></figure>
 
-<h2 id="Question"><a href="#Question" class="headerlink" title="Question"></a>Question</h2><p>Description</p>
-<p>对于输入的<em>n</em>,判断这个一个三元方程xn+yn=znx^n+y^n=z^n<em>x**n</em>+<em>y**n</em>=<em>z**n</em>是否有整数解</p>
-<p>Input</p>
-<p>单组输入</p>
-<p>第一行一个整数TT<em>T</em>,代表输入的数据个数</p>
-<p>接下来<em>T</em>行，每行一个正整数<em>n</em>。</p>
-<p>1≤T≤100</p>
-<p>1≤n≤100000</p>
-<p>Output</p>
-<p>输出<em>T</em>行，对于每个输入的<em>n</em>,如果有整数解输出”YES”,否则输出”NO”.</p>
-<h2 id="Analyse"><a href="#Analyse" class="headerlink" title="Analyse"></a>Analyse</h2><p>费马大定理，又被称为“费马最后的定理”，由17世纪法国数学家<a href="https://baike.baidu.com/item/皮耶·德·费玛/1444615" target="_blank" rel="noopener">皮耶·德·费玛</a>提出。</p>
-<p>他断言当整数n &gt;2时，关于x, y, z的方程 x^n + y^n = z^n 没有正整数解。</p>
-<p>费马达定理的证明有一个非常巧妙的方法证明，自己去领悟精髓吧。</p>
-<h2 id="code"><a href="#code" class="headerlink" title="code"></a>code</h2><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;bits/stdc++.h&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">const int N = 1e6+100;</span><br><span class="line">typedef long long ll;</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">int n,t;</span><br><span class="line">cin&gt;&gt;t;</span><br><span class="line">for(int i=1;i&lt;=t;i++)</span><br><span class="line">&#123;</span><br><span class="line">cin&gt;&gt;n;</span><br><span class="line">if(n&lt;=2) cout&lt;&lt;&quot;YES&quot;&lt;&lt;endl;</span><br><span class="line">else cout&lt;&lt;&quot;NO&quot;&lt;&lt;endl;</span><br><span class="line">&#125;</span><br><span class="line">return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="2-tanh"><a href="#2-tanh" class="headerlink" title="2.tanh"></a>2.tanh</h2><p><img src="/Skr-king.github.io/神经网络之激活函数.html/3.png" alt></p>
+<p>图像如图</p>
+<p><img src="/Skr-king.github.io/神经网络之激活函数.html/4.png" alt></p>
+<p>tanh 函数的取值范围在 (-1,1) 之间，单调连续，求导容易。</p>
+<p>相比于 Sigmoid 函数，tanh 函数的优点主要有两个：</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1.其一，收敛速度更快，如下图所示，tanh 函数线性区斜率较 Sigmoid 更大一些。在此区域内训练速度会更快。</span><br><span class="line">2.其二，tanh 函数输出均值为零，也就不存在 Sigmoid 函数中 dW 恒为正或者恒为负，从而影响训练速度的问题。</span><br></pre></td></tr></table></figure>
+
+<p>缺点：</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tanh 函数与 Sigmoid 函数一样，也存在饱和区梯度消失问题。其饱和区甚至比 Sigmoid 还要大一些，但不明显。</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-ReLu"><a href="#3-ReLu" class="headerlink" title="3.ReLu"></a>3.ReLu</h2><p><img src="/Skr-king.github.io/神经网络之激活函数.html/5.png" alt></p>
+<p><img src="/Skr-king.github.io/神经网络之激活函数.html/6.png" alt></p>
+<p>优点：</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">1.没有饱和区，不存在梯度消失问题。</span><br><span class="line"></span><br><span class="line">2.没有复杂的指数运算，计算简单、效率提高。</span><br><span class="line"></span><br><span class="line">3.实际收敛速度较快，大约是 Sigmoid/tanh 的 6 倍。</span><br><span class="line"></span><br><span class="line">4.比 Sigmoid 更符合生物学神经激活机制。</span><br></pre></td></tr></table></figure>
+
+<p>缺点： </p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1. ReLU 的输出仍然是非零对称的，可能出现 dW 恒为正或者恒为负，从而影响训练速度。</span><br><span class="line">2. 当 x&lt;0 时，ReLU 输出总为零。该神经元输出为零，则反向传播时，权重、参数的梯度横为零，造成权重、参数永远不会更新，即造成神经元失效，形成了“死神经元”。</span><br></pre></td></tr></table></figure>
+
+<h2 id="如何选择激活函数"><a href="#如何选择激活函数" class="headerlink" title="如何选择激活函数"></a><strong>如何选择激活函数</strong></h2><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">1.首选 ReLU，速度快，但是要注意学习速率的调整，</span><br><span class="line"></span><br><span class="line">2.如果 ReLU 效果欠佳,尝试使用 Leaky ReLU、ELU 或 Maxout 等变种。</span><br><span class="line"></span><br><span class="line">3.可以尝试使用 tanh。</span><br><span class="line"></span><br><span class="line">4.Sigmoid 和 tanh 在 RNN（LSTM、注意力机制等）结构中有所应用，作为门控或者概率值。其它情况下，减少 Sigmoid 的使用。</span><br><span class="line"></span><br><span class="line">5.在浅层神经网络中，选择使用哪种激励函数影响不大。</span><br></pre></td></tr></table></figure>
+
+
         </div>
         
         <div class="level is-size-7 is-uppercase">
             <div class="level-start">
                 <div class="level-item">
                     <span class="is-size-6 has-text-grey has-mr-7">#</span>
-                    <a class="has-link-grey -link" href="/Skr-king.github.io/tags/算法/">算法</a>
+                    <a class="has-link-grey -link" href="/Skr-king.github.io/tags/AI/">AI</a>
                 </div>
             </div>
         </div>
@@ -253,17 +287,10 @@
 <div class="card card-transparent">
     <div class="level post-navigation is-flex-wrap is-mobile">
         
-        <div class="level-start">
-            <a class="level level-item has-link-grey  article-nav-prev" href="/Skr-king.github.io/Fleury-算法.html/">
-                <i class="level-item fas fa-chevron-left"></i>
-                <span class="level-item">Fleury 算法</span>
-            </a>
-        </div>
-        
         
         <div class="level-end">
-            <a class="level level-item has-link-grey  article-nav-next" href="/Skr-king.github.io/Python-Operation-on-Excel.html/">
-                <span class="level-item">Python_Operation on Excel</span>
+            <a class="level level-item has-link-grey  article-nav-next" href="/Skr-king.github.io/神经网络——案例简单推导.html/">
+                <span class="level-item">神经网络——案例简单推导</span>
                 <i class="level-item fas fa-chevron-right"></i>
             </a>
         </div>
@@ -1103,7 +1130,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/Skr-king.github.io/">
                 
-                    <img src="/Skr-king.github.io/images/22.png" alt="Fermat&#39;s Last Theorem" height="28">
+                    <img src="/Skr-king.github.io/images/22.png" alt="神经网络之激活函数" height="28">
                 
                 </a>
                 <p class="is-size-7">
