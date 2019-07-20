@@ -6,7 +6,7 @@
   <link href="/Skr-king.github.io/atom.xml" rel="self"/>
   
   <link href="https://skr-king.github.io/"/>
-  <updated>2019-07-19T14:51:02.998Z</updated>
+  <updated>2019-07-20T11:34:07.645Z</updated>
   <id>https://skr-king.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>我的第一个神经网络搭建</title>
+    <link href="https://skr-king.github.io/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E6%90%AD%E5%BB%BA.html/"/>
+    <id>https://skr-king.github.io/我的第一个神经网络搭建.html/</id>
+    <published>2019-07-20T11:19:07.000Z</published>
+    <updated>2019-07-20T11:34:07.645Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt; 啊啊啊Ｏ(≧口≦)Ｏ！！！我的第一个神经网络竟然是算出来的。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="AI" scheme="https://skr-king.github.io/categories/AI/"/>
+    
+    
+      <category term="AI" scheme="https://skr-king.github.io/tags/AI/"/>
+    
+  </entry>
   
   <entry>
     <title>神经网络之激活函数</title>
@@ -403,27 +423,6 @@
     
     
       <category term="C++" scheme="https://skr-king.github.io/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>深度优先搜索(DFS)</title>
-    <link href="https://skr-king.github.io/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2-DFS.html/"/>
-    <id>https://skr-king.github.io/深度优先搜索-DFS.html/</id>
-    <published>2019-06-20T11:28:01.000Z</published>
-    <updated>2019-07-08T02:32:52.083Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;DFS&quot;&gt;&lt;a href=&quot;#DFS&quot; class=&quot;headerlink&quot; title=&quot;DFS&quot;&gt;&lt;/a&gt;DFS&lt;/h2&gt;&lt;p&gt;深度优先搜索算法（Depth-First-Search），是搜索算法的一种。是沿着树的深度遍历树的节点，尽可能深的搜索树的分支。当节点v的所有边都己被探寻过，搜索将回溯到发现节点v的那条边的起始节点。这一过程一直进行到已发现从源节点可达的所有节点为止。如果还存在未被发现的节点，则选择其中一个作为源节点并重复以上过程，整个进程反复进行直到所有节点都被访问为止（属于盲目搜索）。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://angelni.github.io/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2-DFS/7.jpg&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="算法" scheme="https://skr-king.github.io/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="算法" scheme="https://skr-king.github.io/tags/%E7%AE%97%E6%B3%95/"/>
     
   </entry>
   
