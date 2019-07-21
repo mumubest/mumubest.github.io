@@ -6,7 +6,7 @@
   <link href="/Skr-king.github.io/atom.xml" rel="self"/>
   
   <link href="https://skr-king.github.io/"/>
-  <updated>2019-07-20T11:34:07.645Z</updated>
+  <updated>2019-07-21T08:04:30.464Z</updated>
   <id>https://skr-king.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>map函数的简单用法</title>
+    <link href="https://skr-king.github.io/map%E5%87%BD%E6%95%B0%E7%9A%84%E7%AE%80%E5%8D%95%E7%94%A8%E6%B3%95.html/"/>
+    <id>https://skr-king.github.io/map函数的简单用法.html/</id>
+    <published>2019-07-21T02:19:50.000Z</published>
+    <updated>2019-07-21T08:04:30.464Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt; 你要开心，你要快乐，因为你是大哥，不可以难过。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="C++" scheme="https://skr-king.github.io/categories/C/"/>
+    
+    
+      <category term="C++" scheme="https://skr-king.github.io/tags/C/"/>
+    
+  </entry>
   
   <entry>
     <title>我的第一个神经网络搭建</title>
@@ -403,26 +423,6 @@
     
     
       <category term="算法" scheme="https://skr-king.github.io/tags/%E7%AE%97%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>sort()函数</title>
-    <link href="https://skr-king.github.io/sort-%E5%87%BD%E6%95%B0.html/"/>
-    <id>https://skr-king.github.io/sort-函数.html/</id>
-    <published>2019-06-20T11:28:25.000Z</published>
-    <updated>2019-07-18T15:40:48.548Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h4 id=&quot;C-中的sort（）函数&quot;&gt;&lt;a href=&quot;#C-中的sort（）函数&quot; class=&quot;headerlink&quot; title=&quot;C++中的sort（）函数&quot;&gt;&lt;/a&gt;C++中的sort（）函数&lt;/h4&gt;&lt;p&gt;我在之前的博客中提到，解决排序问题的一个好用的函数就是C++的sort（）函数啦。sort（）函数是C++内置的函数，只需要加入头文件，掌握正确的使用方法，你就可以在排序中驰骋疆场了（自吹自擂&lt;del&gt;）。好啦，下面就请主角登场吧&lt;/del&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="C++" scheme="https://skr-king.github.io/categories/C/"/>
-    
-    
-      <category term="C++" scheme="https://skr-king.github.io/tags/C/"/>
     
   </entry>
   
