@@ -6,7 +6,7 @@
   <link href="/Skr-king.github.io/atom.xml" rel="self"/>
   
   <link href="https://skr-king.github.io/"/>
-  <updated>2019-07-21T08:04:30.464Z</updated>
+  <updated>2019-07-22T05:44:22.801Z</updated>
   <id>https://skr-king.github.io/</id>
   
   <author>
@@ -15,6 +15,47 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>KNN-自我练习</title>
+    <link href="https://skr-king.github.io/KNN-%E8%87%AA%E6%88%91%E7%BB%83%E4%B9%A0.html/"/>
+    <id>https://skr-king.github.io/KNN-自我练习.html/</id>
+    <published>2019-07-22T04:59:00.000Z</published>
+    <updated>2019-07-22T05:44:22.801Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt; 有一天我结婚了，你一定要来哦，因为没有新娘，那该有多尴尬.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="AI" scheme="https://skr-king.github.io/categories/AI/"/>
+    
+    
+      <category term="AI" scheme="https://skr-king.github.io/tags/AI/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>KNN——K临近算法</title>
+    <link href="https://skr-king.github.io/KNN%E2%80%94%E2%80%94K%E4%B8%B4%E8%BF%91%E7%AE%97%E6%B3%95.html/"/>
+    <id>https://skr-king.github.io/KNN——K临近算法.html/</id>
+    <published>2019-07-22T04:40:24.000Z</published>
+    <updated>2019-07-22T04:58:17.300Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt; 海绵宝宝：“派大星，你为什么叫派大星”&lt;/p&gt;
+&lt;p&gt;派大星：“因为我是上帝拍下来保护你的大星星” &lt;/p&gt;
+    
+    </summary>
+    
+      <category term="AI" scheme="https://skr-king.github.io/categories/AI/"/>
+    
+    
+      <category term="AI" scheme="https://skr-king.github.io/tags/AI/"/>
+    
+  </entry>
   
   <entry>
     <title>map函数的简单用法</title>
@@ -380,49 +421,6 @@
     
     
       <category term="文学" scheme="https://skr-king.github.io/tags/%E6%96%87%E5%AD%A6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>HTML学习</title>
-    <link href="https://skr-king.github.io/HTML%E5%AD%A6%E4%B9%A0.html/"/>
-    <id>https://skr-king.github.io/HTML学习.html/</id>
-    <published>2019-06-20T11:29:28.000Z</published>
-    <updated>2019-07-08T02:34:15.702Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h4 id=&quot;HTNL——Begin&quot;&gt;&lt;a href=&quot;#HTNL——Begin&quot; class=&quot;headerlink&quot; title=&quot;HTNL——Begin&quot;&gt;&lt;/a&gt;HTNL——Begin&lt;/h4&gt;&lt;p&gt;Hyper Text Markup Language ，short for HTML ,is a standard markup language for creating web pages.The web pages which we usually scan are written by it.I want to learn a fewer about it because of writing blog and modifying my blog’s framework.&lt;/p&gt;
-&lt;p&gt;I need it.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Skr-king.github.io/HTML学习.html/1.jpg&quot; alt&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Learning" scheme="https://skr-king.github.io/categories/Learning/"/>
-    
-    
-      <category term="Learing" scheme="https://skr-king.github.io/tags/Learing/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>天生棋局(指针)</title>
-    <link href="https://skr-king.github.io/%E5%A4%A9%E7%94%9F%E6%A3%8B%E5%B1%80-%E6%8C%87%E9%92%88.html/"/>
-    <id>https://skr-king.github.io/天生棋局-指针.html/</id>
-    <published>2019-06-20T11:29:00.000Z</published>
-    <updated>2019-07-08T02:32:43.669Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;上次用数组写的天生棋局题，这里补上指针版的。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Skr-king.github.io/天生棋局-指针.html/3.jpg&quot; alt&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="算法" scheme="https://skr-king.github.io/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="算法" scheme="https://skr-king.github.io/tags/%E7%AE%97%E6%B3%95/"/>
     
   </entry>
   
