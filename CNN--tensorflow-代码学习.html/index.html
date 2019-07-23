@@ -5,25 +5,27 @@
 <html lang="en">
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-<title>Category: 文学 - SKY</title>
+<title>CNN--tensorflow--代码学习 - SKY</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="google-site-verification" content="JwzmnANXlpmQlhwaSORuqpEB6P3Sr-tRhw4R_XDRcEc">
 <meta name="baidu-site-verification" content="ztPAF2oDcw">
 
 
 
-    <meta name="description" content="This is a simple record of learning bits and pieces, so that each step of learning into an unforgettable memory.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="SKY">
-<meta property="og:url" content="https://skr-king.github.io/categories/文学/index.html">
+    <meta name="description" content="不知道未来如何变化，总有人相信童话。">
+<meta name="keywords" content="AI">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CNN--tensorflow--代码学习">
+<meta property="og:url" content="https://skr-king.github.io/CNN--tensorflow-代码学习.html/index.html">
 <meta property="og:site_name" content="SKY">
-<meta property="og:description" content="This is a simple record of learning bits and pieces, so that each step of learning into an unforgettable memory.">
+<meta property="og:description" content="不知道未来如何变化，总有人相信童话。">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="https://skr-king.github.io/Skr-king.github.io/images/og_image.png">
+<meta property="og:image" content="https://skr-king.github.io/Skr-king.github.io/Skr-king.github.io/gallary/9.jpg">
+<meta property="og:updated_time" content="2019-07-22T15:02:38.179Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="SKY">
-<meta name="twitter:description" content="This is a simple record of learning bits and pieces, so that each step of learning into an unforgettable memory.">
-<meta name="twitter:image" content="https://skr-king.github.io/Skr-king.github.io/images/og_image.png">
+<meta name="twitter:title" content="CNN--tensorflow--代码学习">
+<meta name="twitter:description" content="不知道未来如何变化，总有人相信童话。">
+<meta name="twitter:image" content="https://skr-king.github.io/Skr-king.github.io/Skr-king.github.io/gallary/9.jpg">
 
 
 
@@ -102,7 +104,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/Skr-king.github.io/">
             
-                <img src="/Skr-king.github.io/images/22.png" alt="SKY" height="28">
+                <img src="/Skr-king.github.io/images/22.png" alt="CNN--tensorflow--代码学习" height="28">
             
             </a>
         </div>
@@ -152,122 +154,140 @@
         <div class="container">
             <div class="columns">
                 <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="/Skr-king.github.io/gallary/9.jpg" alt="CNN--tensorflow--代码学习">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-07-22T14:29:57.000Z">2019-07-22</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/Skr-king.github.io/categories/AI/">AI</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    5 minutes read (About 769 words)
+                </span>
+                
+                
+                <span class="level-item has-text-grey" id="busuanzi_container_page_pv">
+                    <i class="far fa-eye"></i>
+                    <span id="busuanzi_value_page_pv">0</span> visits
+                </span>
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                CNN--tensorflow--代码学习
+            
+        </h1>
+        <div class="content">
+            <p> 不知道未来如何变化，总有人相信童话。</p>
+<a id="more"></a>
+
+<p>这是以tensorflow为框架，写的关于MNIST数据识别的卷积神经网络的python代码，这个代码是自己一点一点把别人的代码打印到Calab，修改，运行，再修改，再运行，我是代码的生产者，也是代码的搬运工，哈哈~</p>
+<p>发到博客上，也很方便看，啊哈哈哈。</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">import tensorflow as tf </span><br><span class="line">import tensorflow.examples.tutorials.mnist.input_data as input_data</span><br><span class="line">mnist = input_data.read_data_sets(&quot;MNIST_data/&quot;, one_hot=True)     #下载并加载mnist数据</span><br><span class="line">x = tf.placeholder(tf.float32, [None, 784])                        #输入的数据占位符</span><br><span class="line">y_actual = tf.placeholder(tf.float32, shape=[None, 10])            #输入的标签占位符</span><br><span class="line"></span><br><span class="line">#定义一个函数，用于初始化所有的权值 W</span><br><span class="line">def weight_variable(shape):</span><br><span class="line">  initial = tf.truncated_normal(shape, stddev=0.1)</span><br><span class="line">  return tf.Variable(initial)</span><br><span class="line"></span><br><span class="line">#定义一个函数，用于初始化所有的偏置项 b</span><br><span class="line">def bias_variable(shape):</span><br><span class="line">  initial = tf.constant(0.1, shape=shape)</span><br><span class="line">  return tf.Variable(initial)</span><br><span class="line">  </span><br><span class="line">#定义一个函数，用于构建卷积层</span><br><span class="line">def conv2d(x, W):</span><br><span class="line">  return tf.nn.conv2d(x, W, strides=[1, 1, 1, 1], padding=&apos;SAME&apos;)</span><br><span class="line"></span><br><span class="line">#定义一个函数，用于构建池化层</span><br><span class="line">def max_pool(x):</span><br><span class="line">  return tf.nn.max_pool(x, ksize=[1, 2, 2, 1],strides=[1, 2, 2, 1], padding=&apos;SAME&apos;)</span><br><span class="line">#定义一个函数，用于初始化所有的权值 W</span><br><span class="line">def weight_variable(shape):</span><br><span class="line">  initial = tf.truncated_normal(shape, stddev=0.1)</span><br><span class="line">  return tf.Variable(initial)</span><br><span class="line"></span><br><span class="line">#定义一个函数，用于初始化所有的偏置项 b</span><br><span class="line">def bias_variable(shape):</span><br><span class="line">  initial = tf.constant(0.1, shape=shape)</span><br><span class="line">  return tf.Variable(initial)</span><br><span class="line">  </span><br><span class="line">#定义一个函数，用于构建卷积层</span><br><span class="line">def conv2d(x, W):</span><br><span class="line">  return tf.nn.conv2d(x, W, strides=[1, 1, 1, 1], padding=&apos;SAME&apos;)</span><br><span class="line"></span><br><span class="line">#定义一个函数，用于构建池化层</span><br><span class="line">def max_pool(x):</span><br><span class="line">  return tf.nn.max_pool(x, ksize=[1, 2, 2, 1],strides=[1, 2, 2, 1], padding=&apos;SAME&apos;)</span><br><span class="line"></span><br><span class="line">#构建网络</span><br><span class="line">x_image = tf.reshape(x, [-1,28,28,1])         #转换输入数据shape,以便于用于网络中</span><br><span class="line">W_conv1 = weight_variable([5, 5, 1, 32])      </span><br><span class="line">b_conv1 = bias_variable([32])       </span><br><span class="line">h_conv1 = tf.nn.relu(conv2d(x_image, W_conv1) + b_conv1)     #第一个卷积层</span><br><span class="line">h_pool1 = max_pool(h_conv1)                                  #第一个池化层</span><br><span class="line"></span><br><span class="line">W_conv2 = weight_variable([5, 5, 32, 64])</span><br><span class="line">b_conv2 = bias_variable([64])</span><br><span class="line">h_conv2 = tf.nn.relu(conv2d(h_pool1, W_conv2) + b_conv2)      #第二个卷积层</span><br><span class="line">h_pool2 = max_pool(h_conv2)                                   #第二个池化层</span><br><span class="line"></span><br><span class="line">W_fc1 = weight_variable([7 * 7 * 64, 1024])</span><br><span class="line">b_fc1 = bias_variable([1024])</span><br><span class="line">h_pool2_flat = tf.reshape(h_pool2, [-1, 7*7*64])              #reshape成向量</span><br><span class="line">h_fc1 = tf.nn.relu(tf.matmul(h_pool2_flat, W_fc1) + b_fc1)    #第一个全连接层</span><br><span class="line"></span><br><span class="line">keep_prob = tf.placeholder(&quot;float&quot;) </span><br><span class="line">h_fc1_drop = tf.nn.dropout(h_fc1, keep_prob)                  #dropout层</span><br><span class="line"></span><br><span class="line">W_fc2 = weight_variable([1024, 10])</span><br><span class="line">b_fc2 = bias_variable([10])</span><br><span class="line">y_predict=tf.nn.softmax(tf.matmul(h_fc1_drop, W_fc2) + b_fc2)   #softmax层</span><br><span class="line">cross_entropy = -tf.reduce_sum(y_actual*tf.log(y_predict))     #交叉熵</span><br><span class="line"></span><br><span class="line">train_step = tf.train.GradientDescentOptimizer(1e-3).minimize(cross_entropy)    #梯度下降法</span><br><span class="line">correct_prediction = tf.equal(tf.argmax(y_predict,1), tf.argmax(y_actual,1))    </span><br><span class="line"></span><br><span class="line">accuracy = tf.reduce_mean(tf.cast(correct_prediction, &quot;float&quot;))                 #精确度计算</span><br><span class="line">sess=tf.InteractiveSession()                          </span><br><span class="line">sess.run(tf.initialize_all_variables())</span><br><span class="line"></span><br><span class="line">for i in range(20000):</span><br><span class="line">  batch = mnist.train.next_batch(50)</span><br><span class="line">  if i%100 == 0:                  #训练100次，验证一次</span><br><span class="line">    train_acc = accuracy.eval(feed_dict=&#123;x:batch[0], y_actual: batch[1], keep_prob: 1.0&#125;)</span><br><span class="line">    print(&apos;step %d, training accuracy %g&apos;%(i,train_acc))</span><br><span class="line">    train_step.run(feed_dict=&#123;x: batch[0], y_actual: batch[1], keep_prob: 0.5&#125;)</span><br><span class="line"></span><br><span class="line">test_acc=accuracy.eval(feed_dict=&#123;x: mnist.test.images, y_actual: mnist.test.labels, keep_prob: 1.0&#125;)</span><br><span class="line">print(&quot;test accuracy %g&quot;%test_acc)</span><br></pre></td></tr></table></figure>
+
+<p><img src="/Skr-king.github.io/CNN--tensorflow-代码学习.html/1.png" alt></p>
+<p>博文参考：<a href="https://morvanzhou.github.io/tutorials/machine-learning/tensorflow/5-03-CNN1/" target="_blank" rel="noopener">https://morvanzhou.github.io/tutorials/machine-learning/tensorflow/5-03-CNN1/</a></p>
+
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/Skr-king.github.io/tags/AI/">AI</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+<div class="card">
     <div class="card-content">
-        <nav class="breadcrumb" aria-label="breadcrumbs">
-        <ul>
-            <li><a href="/Skr-king.github.io/categories">Categories</a></li>
+        <h3 class="menu-label has-text-centered">Like this article? Support the author with</h3>
+        <div class="buttons is-centered">
             
-            <li class="is-active"><a href="#" aria-current="page">文学</a></li>
-        </ul>
-        </nav>
+                
+<a class="button is-info donate">
+    <span class="icon is-small">
+        <i class="fab fa-alipay"></i>
+    </span>
+    <span>Alipay</span>
+    <div class="qrcode"><img src="/Skr-king.github.io/images/1.jpg" alt="Alipay"></div>
+</a>
+
+                
+                
+<a class="button is-success donate">
+    <span class="icon is-small">
+        <i class="fab fa-weixin"></i>
+    </span>
+    <span>Wechat</span>
+    <div class="qrcode"><img src="/Skr-king.github.io/images/2.png" alt="Wechat"></div>
+</a>
+
+                
+        </div>
     </div>
 </div>
 
-    <div class="card">
-    
-    <div class="card-content article ">
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
         
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-06-20T11:30:10.000Z">2019-06-20</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/Skr-king.github.io/categories/文学/">文学</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    5 minutes read (About 791 words)
-                </span>
-                
-                
-            </div>
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/Skr-king.github.io/KNN-自我练习.html/">
+                <span class="level-item">KNN-自我练习</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
         </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/Skr-king.github.io/Poetry-Appreciation.html/">Poetry Appreciation</a>
-            
-        </h1>
-        <div class="content">
-            <p>I think poetry is a kind of life experience,a kind of inner sublimation.Cultivate sentiment and enrich oneself.</p>
-<p><img src="/Skr-king.github.io/Poetry-Appreciation.html/1.png" alt></p>
-        </div>
-        
-        
-        <div class="level is-mobile">
-            <div class="level-start">
-                <div class="level-item">
-                <a class="button is-size-7 is-light" href="/Skr-king.github.io/Poetry-Appreciation.html/#more">Read More</a>
-                </div>
-            </div>
-        </div>
-        
         
     </div>
 </div>
 
 
 
+<div class="card">
+    <div class="card-content">
+        <h3 class="title is-5 has-text-weight-normal">Comments</h3>
+        
+<div id="valine-thread" class="content"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#valine-thread' ,
+        notify: false,
+        verify: false,
+        app_id: '0dNioPuDCFsscn6y58dczYiy-gzGzoHsz',
+        app_key: 'jbyn5TRGmiiAsYjo7PFFzrYJ',
+        placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!'
+    });
+</script>
 
-
-
-
-
-    <div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-06-20T05:48:53.000Z">2019-06-20</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/Skr-king.github.io/categories/文学/">文学</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    9 minutes read (About 1317 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/Skr-king.github.io/微小说欣赏.html/">微小说欣赏</a>
-            
-        </h1>
-        <div class="content">
-            <h4 id="1"><a href="#1" class="headerlink" title="1."></a>1.</h4><p>我因车祸而失明，所以我从不知女友长什么样。那年，她得了胃癌，临终前她将眼角膜移植给了我。我恢复光明后的第一件事就是找她的照片，然而我只找到她留给我的一封信，信里有一张空白照片，照片上写有一句话：“别再想我长什么样，下一个你爱上的人，就是我的模样。”</p>
-        </div>
-        
-        
-        <div class="level is-mobile">
-            <div class="level-start">
-                <div class="level-item">
-                <a class="button is-size-7 is-light" href="/Skr-king.github.io/微小说欣赏.html/#more">Read More</a>
-                </div>
-            </div>
-        </div>
-        
-        
     </div>
 </div>
-
-
-
-
-
-
-
-
 </div>
                 
 
@@ -1089,7 +1109,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/Skr-king.github.io/">
                 
-                    <img src="/Skr-king.github.io/images/22.png" alt="SKY" height="28">
+                    <img src="/Skr-king.github.io/images/22.png" alt="CNN--tensorflow--代码学习" height="28">
                 
                 </a>
                 <p class="is-size-7">

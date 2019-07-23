@@ -6,7 +6,7 @@
   <link href="/Skr-king.github.io/atom.xml" rel="self"/>
   
   <link href="https://skr-king.github.io/"/>
-  <updated>2019-07-22T05:49:06.124Z</updated>
+  <updated>2019-07-22T15:02:38.179Z</updated>
   <id>https://skr-king.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CNN--tensorflow--代码学习</title>
+    <link href="https://skr-king.github.io/CNN--tensorflow-%E4%BB%A3%E7%A0%81%E5%AD%A6%E4%B9%A0.html/"/>
+    <id>https://skr-king.github.io/CNN--tensorflow-代码学习.html/</id>
+    <published>2019-07-22T14:29:57.000Z</published>
+    <updated>2019-07-22T15:02:38.179Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt; 不知道未来如何变化，总有人相信童话。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="AI" scheme="https://skr-king.github.io/categories/AI/"/>
+    
+    
+      <category term="AI" scheme="https://skr-king.github.io/tags/AI/"/>
+    
+  </entry>
   
   <entry>
     <title>KNN-自我练习</title>
@@ -400,27 +420,6 @@
     
     
       <category term="life" scheme="https://skr-king.github.io/tags/life/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Poetry Appreciation</title>
-    <link href="https://skr-king.github.io/Poetry-Appreciation.html/"/>
-    <id>https://skr-king.github.io/Poetry-Appreciation.html/</id>
-    <published>2019-06-20T11:30:10.000Z</published>
-    <updated>2019-07-08T02:32:22.060Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;I think poetry is a kind of life experience,a kind of inner sublimation.Cultivate sentiment and enrich oneself.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Skr-king.github.io/Poetry-Appreciation.html/1.png&quot; alt&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="文学" scheme="https://skr-king.github.io/categories/%E6%96%87%E5%AD%A6/"/>
-    
-    
-      <category term="文学" scheme="https://skr-king.github.io/tags/%E6%96%87%E5%AD%A6/"/>
     
   </entry>
   
