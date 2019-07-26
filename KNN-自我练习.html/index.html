@@ -13,7 +13,7 @@
 
 
     <meta name="description" content="有一天我结婚了，你一定要来哦，因为没有新娘，那该有多尴尬.">
-<meta name="keywords" content="AI">
+<meta name="keywords" content="KNN">
 <meta property="og:type" content="article">
 <meta property="og:title" content="KNN-自我练习">
 <meta property="og:url" content="https://skr-king.github.io/KNN-自我练习.html/index.html">
@@ -21,7 +21,7 @@
 <meta property="og:description" content="有一天我结婚了，你一定要来哦，因为没有新娘，那该有多尴尬.">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://skr-king.github.io/Skr-king.github.io/Skr-king.github.io/gallary/31.jpg">
-<meta property="og:updated_time" content="2019-07-22T05:49:06.124Z">
+<meta property="og:updated_time" content="2019-07-26T14:42:57.453Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="KNN-自我练习">
 <meta name="twitter:description" content="有一天我结婚了，你一定要来哦，因为没有新娘，那该有多尴尬.">
@@ -175,7 +175,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    4 minutes read (About 546 words)
+                    4 minutes read (About 552 words)
                 </span>
                 
                 
@@ -197,21 +197,21 @@
 <a id="more"></a>
 
 <p>  这是我的自己写的第一个KNN比较简单的练习案例，有关于KNN的介绍请参考我的上篇博文 <a href="https://skr-king.github.io/Skr-king.github.io/KNN%E2%80%94%E2%80%94K%E4%B8%B4%E8%BF%91%E7%AE%97%E6%B3%95.html/#more">我在这里</a></p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">#导包</span><br><span class="line">import numpy as np</span><br><span class="line">from matplotlib import pyplot as plt</span><br><span class="line">import operator</span><br><span class="line">%matplotlib inline</span><br><span class="line">#自我创建数据集</span><br><span class="line">data=[</span><br><span class="line">    [0.8,1.8],</span><br><span class="line">    [0.9,2.1],</span><br><span class="line">    [1.0,1.5],</span><br><span class="line">    [1.2,1.9],</span><br><span class="line">    [1.3,2.0],</span><br><span class="line">    [2.5,1.7],</span><br><span class="line">    [2.8,1.5],</span><br><span class="line">    [2.5,1.4],</span><br><span class="line">    [2.7,1.9],</span><br><span class="line">    [2.6,1.8],</span><br><span class="line">    [1.9,3.3],</span><br><span class="line">    [2.0,2.9],</span><br><span class="line">    [2.2,2.8],</span><br><span class="line">    [2.1,2.9],</span><br><span class="line">    [1.8,3.0],</span><br><span class="line">]</span><br><span class="line">label=[&apos;a&apos;,&apos;a&apos;,&apos;a&apos;,&apos;a&apos;,&apos;a&apos;,&apos;b&apos;,&apos;b&apos;,&apos;b&apos;,&apos;b&apos;,&apos;b&apos;,&apos;c&apos;,&apos;c&apos;,&apos;c&apos;,&apos;c&apos;,&apos;c&apos;]</span><br><span class="line">print(label)</span><br><span class="line">train_data = np.array(data)</span><br><span class="line">print(train_data)</span><br></pre></td></tr></table></figure>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">#导包</span></span><br><span class="line"><span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np</span><br><span class="line"><span class="hljs-keyword">from</span> matplotlib <span class="hljs-keyword">import</span> pyplot <span class="hljs-keyword">as</span> plt</span><br><span class="line"><span class="hljs-keyword">import</span> operator</span><br><span class="line">%matplotlib inline</span><br><span class="line"><span class="hljs-comment">#自我创建数据集</span></span><br><span class="line">data=[</span><br><span class="line">    [<span class="hljs-number">0.8</span>,<span class="hljs-number">1.8</span>],</span><br><span class="line">    [<span class="hljs-number">0.9</span>,<span class="hljs-number">2.1</span>],</span><br><span class="line">    [<span class="hljs-number">1.0</span>,<span class="hljs-number">1.5</span>],</span><br><span class="line">    [<span class="hljs-number">1.2</span>,<span class="hljs-number">1.9</span>],</span><br><span class="line">    [<span class="hljs-number">1.3</span>,<span class="hljs-number">2.0</span>],</span><br><span class="line">    [<span class="hljs-number">2.5</span>,<span class="hljs-number">1.7</span>],</span><br><span class="line">    [<span class="hljs-number">2.8</span>,<span class="hljs-number">1.5</span>],</span><br><span class="line">    [<span class="hljs-number">2.5</span>,<span class="hljs-number">1.4</span>],</span><br><span class="line">    [<span class="hljs-number">2.7</span>,<span class="hljs-number">1.9</span>],</span><br><span class="line">    [<span class="hljs-number">2.6</span>,<span class="hljs-number">1.8</span>],</span><br><span class="line">    [<span class="hljs-number">1.9</span>,<span class="hljs-number">3.3</span>],</span><br><span class="line">    [<span class="hljs-number">2.0</span>,<span class="hljs-number">2.9</span>],</span><br><span class="line">    [<span class="hljs-number">2.2</span>,<span class="hljs-number">2.8</span>],</span><br><span class="line">    [<span class="hljs-number">2.1</span>,<span class="hljs-number">2.9</span>],</span><br><span class="line">    [<span class="hljs-number">1.8</span>,<span class="hljs-number">3.0</span>],</span><br><span class="line">]</span><br><span class="line">label=[<span class="hljs-string">'a'</span>,<span class="hljs-string">'a'</span>,<span class="hljs-string">'a'</span>,<span class="hljs-string">'a'</span>,<span class="hljs-string">'a'</span>,<span class="hljs-string">'b'</span>,<span class="hljs-string">'b'</span>,<span class="hljs-string">'b'</span>,<span class="hljs-string">'b'</span>,<span class="hljs-string">'b'</span>,<span class="hljs-string">'c'</span>,<span class="hljs-string">'c'</span>,<span class="hljs-string">'c'</span>,<span class="hljs-string">'c'</span>,<span class="hljs-string">'c'</span>]</span><br><span class="line">print(label)</span><br><span class="line">train_data = np.array(data)</span><br><span class="line">print(train_data)</span><br></pre></td></tr></table></figure>
 
 <p><img src="/Skr-king.github.io/KNN-自我练习.html/10.png" alt></p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">x_1=[]</span><br><span class="line">y_1=[]</span><br><span class="line">x_2=[]</span><br><span class="line">y_2=[]</span><br><span class="line">x_3=[]</span><br><span class="line">y_3=[]</span><br><span class="line"></span><br><span class="line">for i in range(5):</span><br><span class="line">        x_1.append(data[i][0])</span><br><span class="line">        y_1.append(data[i][1])</span><br><span class="line">        x_2.append(data[i+5][0])</span><br><span class="line">        y_2.append(data[i+5][1])</span><br><span class="line">        x_3.append(data[i+10][0])</span><br><span class="line">        y_3.append(data[i+10][1])</span><br><span class="line">x = []</span><br><span class="line">y = []</span><br><span class="line">for j in range(15):</span><br><span class="line">    x.append(data[j][0])</span><br><span class="line">    y.append(data[j][1])</span><br><span class="line">plt.scatter(x,y)</span><br><span class="line">print(f&apos;&#123;x_1&#125; \n &#123;y_1&#125;\n&#123;x_2&#125; \n  &#123;y_2&#125;\n&#123;x_3&#125;\n &#123;y_3&#125; &apos;)</span><br><span class="line">f,ax=plt.subplots(1,1,figsize=(10,10))</span><br><span class="line">for i in range (5):</span><br><span class="line">        ax.scatter(x_1[i],y_1[i],label=&apos;skitcat&apos;,color=&apos;r&apos;,marker=&apos;o&apos;)</span><br><span class="line">        ax.scatter(x_2[i],y_2[i],label=&apos;skitcat&apos;,color=&apos;b&apos;,marker=&apos;o&apos;)</span><br><span class="line">        ax.scatter(x_3[i],y_3[i],label=&apos;skitcat&apos;,color=&apos;g&apos;,marker=&apos;o&apos;)</span><br><span class="line">test = [[1.5,2.85]]##自定义点，从图中可以看出，很明显属于第三类</span><br><span class="line">x_test=1.5</span><br><span class="line">y_test=2.85</span><br><span class="line">ax.scatter(test[0][0],test[0][1],label=&apos;skitcat&apos;,color=&apos;m&apos;,marker = &apos;x&apos;)</span><br><span class="line">test = np.array(test)</span><br></pre></td></tr></table></figure>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">x_1=[]</span><br><span class="line">y_1=[]</span><br><span class="line">x_2=[]</span><br><span class="line">y_2=[]</span><br><span class="line">x_3=[]</span><br><span class="line">y_3=[]</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">5</span>):</span><br><span class="line">        x_1.append(data[i][<span class="hljs-number">0</span>])</span><br><span class="line">        y_1.append(data[i][<span class="hljs-number">1</span>])</span><br><span class="line">        x_2.append(data[i+<span class="hljs-number">5</span>][<span class="hljs-number">0</span>])</span><br><span class="line">        y_2.append(data[i+<span class="hljs-number">5</span>][<span class="hljs-number">1</span>])</span><br><span class="line">        x_3.append(data[i+<span class="hljs-number">10</span>][<span class="hljs-number">0</span>])</span><br><span class="line">        y_3.append(data[i+<span class="hljs-number">10</span>][<span class="hljs-number">1</span>])</span><br><span class="line">x = []</span><br><span class="line">y = []</span><br><span class="line"><span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> range(<span class="hljs-number">15</span>):</span><br><span class="line">    x.append(data[j][<span class="hljs-number">0</span>])</span><br><span class="line">    y.append(data[j][<span class="hljs-number">1</span>])</span><br><span class="line">plt.scatter(x,y)</span><br><span class="line">print(<span class="hljs-string">f'<span class="hljs-subst">&#123;x_1&#125;</span> \n <span class="hljs-subst">&#123;y_1&#125;</span>\n<span class="hljs-subst">&#123;x_2&#125;</span> \n  <span class="hljs-subst">&#123;y_2&#125;</span>\n<span class="hljs-subst">&#123;x_3&#125;</span>\n <span class="hljs-subst">&#123;y_3&#125;</span> '</span>)</span><br><span class="line">f,ax=plt.subplots(<span class="hljs-number">1</span>,<span class="hljs-number">1</span>,figsize=(<span class="hljs-number">10</span>,<span class="hljs-number">10</span>))</span><br><span class="line"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range (<span class="hljs-number">5</span>):</span><br><span class="line">        ax.scatter(x_1[i],y_1[i],label=<span class="hljs-string">'skitcat'</span>,color=<span class="hljs-string">'r'</span>,marker=<span class="hljs-string">'o'</span>)</span><br><span class="line">        ax.scatter(x_2[i],y_2[i],label=<span class="hljs-string">'skitcat'</span>,color=<span class="hljs-string">'b'</span>,marker=<span class="hljs-string">'o'</span>)</span><br><span class="line">        ax.scatter(x_3[i],y_3[i],label=<span class="hljs-string">'skitcat'</span>,color=<span class="hljs-string">'g'</span>,marker=<span class="hljs-string">'o'</span>)</span><br><span class="line">test = [[<span class="hljs-number">1.5</span>,<span class="hljs-number">2.85</span>]]<span class="hljs-comment">##自定义点，从图中可以看出，很明显属于第三类</span></span><br><span class="line">x_test=<span class="hljs-number">1.5</span></span><br><span class="line">y_test=<span class="hljs-number">2.85</span></span><br><span class="line">ax.scatter(test[<span class="hljs-number">0</span>][<span class="hljs-number">0</span>],test[<span class="hljs-number">0</span>][<span class="hljs-number">1</span>],label=<span class="hljs-string">'skitcat'</span>,color=<span class="hljs-string">'m'</span>,marker = <span class="hljs-string">'x'</span>)</span><br><span class="line">test = np.array(test)</span><br></pre></td></tr></table></figure>
 
 <p><img src="/Skr-king.github.io/KNN-自我练习.html/11.png" alt></p>
 <p><img src="/Skr-king.github.io/KNN-自我练习.html/12.png" alt></p>
 <p><strong>从图中可以看出，很明显属于第三类</strong></p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#定义距离公式</span><br><span class="line">def d_euc(x, y):#欧式距离</span><br><span class="line">    d = np.sqrt(np.sum(np.square(x- y)))</span><br><span class="line">    return d</span><br></pre></td></tr></table></figure>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">#定义距离公式</span></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">d_euc</span><span class="hljs-params">(x, y)</span>:</span><span class="hljs-comment">#欧式距离</span></span><br><span class="line">    d = np.sqrt(np.sum(np.square(x- y)))</span><br><span class="line">    <span class="hljs-keyword">return</span> d</span><br></pre></td></tr></table></figure>
 
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">def KNN(train_data,test,label,k):</span><br><span class="line">    distance=[]</span><br><span class="line">    for i in train_data:</span><br><span class="line">        distance.append(d_euc(i,train_data))</span><br><span class="line">    distance = np.array(distance)</span><br><span class="line">    index = distance.argsort()  # 获取按距离大小排序后的索引</span><br><span class="line">    #print(index)</span><br><span class="line">    sort_dis = np.sort(distance)</span><br><span class="line">    count=&#123;&#125;</span><br><span class="line">	o=0</span><br><span class="line">	print(label)</span><br><span class="line">	for i in index:</span><br><span class="line">   		o=o+1</span><br><span class="line">    	label_vote=label[i]</span><br><span class="line">    	count[label_vote] = count.get(label_vote,0)+1   ##返回特定的键值，否则返回 0</span><br><span class="line">    	if o&gt;k:</span><br><span class="line">        	break</span><br><span class="line">    	print(label_vote)</span><br><span class="line">	print(count)</span><br><span class="line">	final_outcome=majory_vote(count)</span><br><span class="line">	return final_outcome</span><br></pre></td></tr></table></figure>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">KNN</span><span class="hljs-params">(train_data,test,label,k)</span>:</span></span><br><span class="line">    distance=[]</span><br><span class="line">    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> train_data:</span><br><span class="line">        distance.append(d_euc(i,train_data))</span><br><span class="line">    distance = np.array(distance)</span><br><span class="line">    index = distance.argsort()  <span class="hljs-comment"># 获取按距离大小排序后的索引</span></span><br><span class="line">    <span class="hljs-comment">#print(index)</span></span><br><span class="line">    sort_dis = np.sort(distance)</span><br><span class="line">    count=&#123;&#125;</span><br><span class="line">	o=<span class="hljs-number">0</span></span><br><span class="line">	print(label)</span><br><span class="line">	<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> index:</span><br><span class="line">   		o=o+<span class="hljs-number">1</span></span><br><span class="line">    	label_vote=label[i]</span><br><span class="line">    	count[label_vote] = count.get(label_vote,<span class="hljs-number">0</span>)+<span class="hljs-number">1</span>   <span class="hljs-comment">##返回特定的键值，否则返回 0</span></span><br><span class="line">    	<span class="hljs-keyword">if</span> o&gt;k:</span><br><span class="line">        	<span class="hljs-keyword">break</span></span><br><span class="line">    	print(label_vote)</span><br><span class="line">	print(count)</span><br><span class="line">	final_outcome=majory_vote(count)</span><br><span class="line">	<span class="hljs-keyword">return</span> final_outcome</span><br></pre></td></tr></table></figure>
 
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">#定义决策方案——多数表决法</span><br><span class="line">def majory_vote(count):</span><br><span class="line">    sorted_class_count = sorted(</span><br><span class="line">        count.items(), key=operator.itemgetter(1), reverse=True)</span><br><span class="line">    return sorted_class_count</span><br></pre></td></tr></table></figure>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">#定义决策方案——多数表决法</span></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">majory_vote</span><span class="hljs-params">(count)</span>:</span></span><br><span class="line">    sorted_class_count = sorted(</span><br><span class="line">        count.items(), key=operator.itemgetter(<span class="hljs-number">1</span>), reverse=<span class="hljs-literal">True</span>)</span><br><span class="line">    <span class="hljs-keyword">return</span> sorted_class_count</span><br></pre></td></tr></table></figure>
 
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">label=[&apos;a&apos;,&apos;a&apos;,&apos;a&apos;,&apos;a&apos;,&apos;a&apos;,&apos;b&apos;,&apos;b&apos;,&apos;b&apos;,&apos;b&apos;,&apos;b&apos;,&apos;c&apos;,&apos;c&apos;,&apos;c&apos;,&apos;c&apos;,&apos;c&apos;]</span><br><span class="line">test=[3.0,2.0]</span><br><span class="line">test = np.array(test)</span><br><span class="line">final_label = KNN(train_data,test,label, 6)</span><br><span class="line">final_label</span><br></pre></td></tr></table></figure>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">label=[<span class="hljs-string">'a'</span>,<span class="hljs-string">'a'</span>,<span class="hljs-string">'a'</span>,<span class="hljs-string">'a'</span>,<span class="hljs-string">'a'</span>,<span class="hljs-string">'b'</span>,<span class="hljs-string">'b'</span>,<span class="hljs-string">'b'</span>,<span class="hljs-string">'b'</span>,<span class="hljs-string">'b'</span>,<span class="hljs-string">'c'</span>,<span class="hljs-string">'c'</span>,<span class="hljs-string">'c'</span>,<span class="hljs-string">'c'</span>,<span class="hljs-string">'c'</span>]</span><br><span class="line">test=[<span class="hljs-number">3.0</span>,<span class="hljs-number">2.0</span>]</span><br><span class="line">test = np.array(test)</span><br><span class="line">final_label = KNN(train_data,test,label, <span class="hljs-number">6</span>)</span><br><span class="line">final_label</span><br></pre></td></tr></table></figure>
 
 <p>最后结果</p>
 <p><img src="/Skr-king.github.io/KNN-自我练习.html/13.png" alt>)</p>
@@ -223,7 +223,7 @@
             <div class="level-start">
                 <div class="level-item">
                     <span class="is-size-6 has-text-grey has-mr-7">#</span>
-                    <a class="has-link-grey -link" href="/Skr-king.github.io/tags/AI/">AI</a>
+                    <a class="has-link-grey -link" href="/Skr-king.github.io/tags/KNN/">KNN</a>
                 </div>
             </div>
         </div>
@@ -354,7 +354,7 @@
                         Posts
                     </p>
                     <p class="title has-text-weight-normal">
-                        33
+                        34
                     </p>
                 </div>
             </div>
@@ -374,7 +374,7 @@
                         Tags
                     </p>
                     <p class="title has-text-weight-normal">
-                        11
+                        14
                     </p>
                 </div>
             </div>
@@ -543,7 +543,7 @@
                 <span class="level-item">AI</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">7</span>
+                <span class="level-item tag">8</span>
             </span>
         </a></li><li>
         <a class="level is-marginless" href="/Skr-king.github.io/categories/C/">
@@ -637,7 +637,7 @@
         <h3 class="menu-label">
             Tag Cloud
         </h3>
-        <a href="/Skr-king.github.io/tags/C/" style="font-size: 17px; color: #c20099">C++</a> <a href="/Skr-king.github.io/tags/life/" style="font-size: 19px; color: #d60066">life</a> <a href="/Skr-king.github.io/tags/AI/" style="font-size: 21px; color: #eb0033">AI</a> <a href="/Skr-king.github.io/tags/算法/" style="font-size: 23px; color: #f00">算法</a> <a href="/Skr-king.github.io/tags/Learing/" style="font-size: 13px; color: #90f">Learing</a> <a href="/Skr-king.github.io/tags/sharing/" style="font-size: 13px; color: #90f">sharing</a> <a href="/Skr-king.github.io/tags/Makedown语法/" style="font-size: 13px; color: #90f">Makedown语法</a> <a href="/Skr-king.github.io/tags/python/" style="font-size: 15px; color: #ad00cc">python</a> <a href="/Skr-king.github.io/tags/文学/" style="font-size: 15px; color: #ad00cc">文学</a> <a href="/Skr-king.github.io/tags/hexo-github/" style="font-size: 13px; color: #90f">hexo+github</a> <a href="/Skr-king.github.io/tags/Game/" style="font-size: 15px; color: #ad00cc">Game</a>
+        <a href="/Skr-king.github.io/tags/life/" style="font-size: 20.5px; color: #e60040">life</a> <a href="/Skr-king.github.io/tags/C/" style="font-size: 18px; color: #cc0080">C++</a> <a href="/Skr-king.github.io/tags/AI/" style="font-size: 18px; color: #cc0080">AI</a> <a href="/Skr-king.github.io/tags/算法/" style="font-size: 23px; color: #f00">算法</a> <a href="/Skr-king.github.io/tags/Learing/" style="font-size: 13px; color: #90f">Learing</a> <a href="/Skr-king.github.io/tags/KNN/" style="font-size: 13px; color: #90f">KNN</a> <a href="/Skr-king.github.io/tags/Makedown语法/" style="font-size: 13px; color: #90f">Makedown语法</a> <a href="/Skr-king.github.io/tags/sharing/" style="font-size: 13px; color: #90f">sharing</a> <a href="/Skr-king.github.io/tags/文学/" style="font-size: 15.5px; color: #b300bf">文学</a> <a href="/Skr-king.github.io/tags/python/" style="font-size: 15.5px; color: #b300bf">python</a> <a href="/Skr-king.github.io/tags/hexo-github/" style="font-size: 13px; color: #90f">hexo+github</a> <a href="/Skr-king.github.io/tags/Game/" style="font-size: 15.5px; color: #b300bf">Game</a> <a href="/Skr-king.github.io/tags/矩阵分解/" style="font-size: 13px; color: #90f">矩阵分解</a> <a href="/Skr-king.github.io/tags/NN/" style="font-size: 15.5px; color: #b300bf">NN</a>
     </div>
 </div>
 
@@ -651,6 +651,25 @@
         <h3 class="menu-label">
             Recent
         </h3>
+        
+        <article class="media">
+            
+            <a href="/Skr-king.github.io/矩阵分解之推荐系统.html/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/Skr-king.github.io/gallary/37.png" alt="矩阵分解之推荐系统">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-26T14:11:46.000Z">2019-07-26</time></div>
+                    <a href="/Skr-king.github.io/矩阵分解之推荐系统.html/" class="has-link-black-ter is-size-6">矩阵分解之推荐系统</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/Skr-king.github.io/categories/AI/">AI</a>
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -728,25 +747,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/Skr-king.github.io/map函数的简单用法.html/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/Skr-king.github.io/gallary/35.jpg" alt="map函数的简单用法">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-21T02:19:50.000Z">2019-07-21</time></div>
-                    <a href="/Skr-king.github.io/map函数的简单用法.html/" class="has-link-black-ter is-size-6">map函数的简单用法</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/Skr-king.github.io/categories/C/">C++</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
 
@@ -765,7 +765,7 @@
                     <span class="level-item">July 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">10</span>
+                    <span class="level-item tag">11</span>
                 </span>
             </a>
         </li>
@@ -797,7 +797,7 @@
                 <div class="control">
                     <a class="tags has-addons" href="/Skr-king.github.io/tags/AI/">
                         <span class="tag">AI</span>
-                        <span class="tag is-grey">6</span>
+                        <span class="tag is-grey">3</span>
                     </a>
                 </div>
                 
@@ -816,6 +816,13 @@
                 </div>
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/Skr-king.github.io/tags/KNN/">
+                        <span class="tag">KNN</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/Skr-king.github.io/tags/Learing/">
                         <span class="tag">Learing</span>
                         <span class="tag is-grey">1</span>
@@ -826,6 +833,13 @@
                     <a class="tags has-addons" href="/Skr-king.github.io/tags/Makedown语法/">
                         <span class="tag">Makedown语法</span>
                         <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/Skr-king.github.io/tags/NN/">
+                        <span class="tag">NN</span>
+                        <span class="tag is-grey">2</span>
                     </a>
                 </div>
                 
@@ -861,6 +875,13 @@
                     <a class="tags has-addons" href="/Skr-king.github.io/tags/文学/">
                         <span class="tag">文学</span>
                         <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/Skr-king.github.io/tags/矩阵分解/">
+                        <span class="tag">矩阵分解</span>
+                        <span class="tag is-grey">1</span>
                     </a>
                 </div>
                 
@@ -896,6 +917,25 @@
         
         <article class="media">
             
+            <a href="/Skr-king.github.io/矩阵分解之推荐系统.html/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/Skr-king.github.io/gallary/37.png" alt="矩阵分解之推荐系统">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-26T14:11:46.000Z">2019-07-26</time></div>
+                    <a href="/Skr-king.github.io/矩阵分解之推荐系统.html/" class="has-link-black-ter is-size-6">矩阵分解之推荐系统</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/Skr-king.github.io/categories/AI/">AI</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
             <a href="/Skr-king.github.io/五子棋？.html/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/Skr-king.github.io/gallary/22.jpg" alt="五子棋？">
@@ -970,25 +1010,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/Skr-king.github.io/map函数的简单用法.html/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/Skr-king.github.io/gallary/35.jpg" alt="map函数的简单用法">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-21T02:19:50.000Z">2019-07-21</time></div>
-                    <a href="/Skr-king.github.io/map函数的简单用法.html/" class="has-link-black-ter is-size-6">map函数的简单用法</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/Skr-king.github.io/categories/C/">C++</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
 
@@ -1007,7 +1028,7 @@
                     <span class="level-item">July 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">10</span>
+                    <span class="level-item tag">11</span>
                 </span>
             </a>
         </li>
@@ -1039,7 +1060,7 @@
                 <div class="control">
                     <a class="tags has-addons" href="/Skr-king.github.io/tags/AI/">
                         <span class="tag">AI</span>
-                        <span class="tag is-grey">6</span>
+                        <span class="tag is-grey">3</span>
                     </a>
                 </div>
                 
@@ -1058,6 +1079,13 @@
                 </div>
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/Skr-king.github.io/tags/KNN/">
+                        <span class="tag">KNN</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/Skr-king.github.io/tags/Learing/">
                         <span class="tag">Learing</span>
                         <span class="tag is-grey">1</span>
@@ -1068,6 +1096,13 @@
                     <a class="tags has-addons" href="/Skr-king.github.io/tags/Makedown语法/">
                         <span class="tag">Makedown语法</span>
                         <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/Skr-king.github.io/tags/NN/">
+                        <span class="tag">NN</span>
+                        <span class="tag is-grey">2</span>
                     </a>
                 </div>
                 
@@ -1103,6 +1138,13 @@
                     <a class="tags has-addons" href="/Skr-king.github.io/tags/文学/">
                         <span class="tag">文学</span>
                         <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/Skr-king.github.io/tags/矩阵分解/">
+                        <span class="tag">矩阵分解</span>
+                        <span class="tag is-grey">1</span>
                     </a>
                 </div>
                 

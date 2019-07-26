@@ -21,7 +21,7 @@
 <meta property="og:description" content="Fleury 算法Fleury算法是从离散书上看到的，书上详细的写了算法的操作。在这里用主要用C语言实现。在这里隆重感谢曹老板的鼎力支持。膜拜~">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://skr-king.github.io/Skr-king.github.io/images/og_image.png">
-<meta property="og:updated_time" content="2019-06-21T13:28:49.606Z">
+<meta property="og:updated_time" content="2019-07-26T14:45:12.275Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Fleury 算法">
 <meta name="twitter:description" content="Fleury 算法Fleury算法是从离散书上看到的，书上详细的写了算法的操作。在这里用主要用C语言实现。在这里隆重感谢曹老板的鼎力支持。膜拜~">
@@ -169,7 +169,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    3 minutes read (About 496 words)
+                    3 minutes read (About 498 words)
                 </span>
                 
                 
@@ -204,29 +204,9 @@
 <ol>
 <li><code>令i=i+1，返回2.</code></li>
 </ol>
-<h2 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h2><p>#include&lt;stdio.h&gt;<br>void fleury ();<br>int Bridge (int m, int k);<br>int eulertu[10000][10000] = 0;<br>int V,E;<br>int main ()<br>{
-printf(“顶点数：”);<br>scanf(“%d”,&amp;V);<br>printf(“边数：”);<br>scanf(“%d”,&amp;E); //输入几个点，几条边<br>int i,j;<br>int m,n;<br>int count;<br>int o=1;<br>printf(“输入有边的俩个点:\n”);<br>for (i = 0; i &lt; E; i++)<br>{</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">    scanf(&quot;%d %d&quot;,&amp;m,&amp;n);       //输入有边的俩个点 </span><br><span class="line">    eulertu[m][n] = eulertu[n][m] = 1;  </span><br><span class="line">&#125;</span><br><span class="line">for (i = 0; i &lt; V; i++)         //判断是否为欧拉图 </span><br><span class="line">&#123;</span><br><span class="line">    count = 0;</span><br><span class="line">    for (j = 0; j &lt; V; j++) </span><br><span class="line">    &#123;</span><br><span class="line">        if (eulertu[i][j]==1) </span><br><span class="line">            count++;</span><br><span class="line">    &#125;</span><br><span class="line">    if (count%2!=0)</span><br><span class="line">    &#123;</span><br><span class="line">        printf(&quot;不是欧拉图&quot;);</span><br><span class="line">        o=0;</span><br><span class="line">        break;</span><br><span class="line">    &#125;</span><br><span class="line">    if(o==0)</span><br><span class="line">        break;        </span><br><span class="line">&#125;</span><br><span class="line">if(o==1)</span><br><span class="line">&#123; </span><br><span class="line">    fleury();</span><br><span class="line">    printf(&quot;end&quot;);</span><br><span class="line">&#125; </span><br><span class="line">return 0;</span><br></pre></td></tr></table></figure>
+<h2 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h2><figure class="highlight c hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">fleury</span> <span class="hljs-params">()</span></span>;</span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">Bridge</span> <span class="hljs-params">(<span class="hljs-keyword">int</span> m, <span class="hljs-keyword">int</span> k)</span></span>;</span><br><span class="line"><span class="hljs-keyword">int</span> eulertu[<span class="hljs-number">10000</span>][<span class="hljs-number">10000</span>] = <span class="hljs-number">0</span>;</span><br><span class="line"><span class="hljs-keyword">int</span> V,E;</span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span> <span class="hljs-params">()</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line"><span class="hljs-built_in">printf</span>(“顶点数：”);</span><br><span class="line"><span class="hljs-built_in">scanf</span>(“%d”,&amp;V);</span><br><span class="line"><span class="hljs-built_in">printf</span>(“边数：”);</span><br><span class="line"><span class="hljs-built_in">scanf</span>(“%d”,&amp;E); <span class="hljs-comment">//输入几个点，几条边</span></span><br><span class="line"><span class="hljs-keyword">int</span> i,j;</span><br><span class="line"><span class="hljs-keyword">int</span> m,n;</span><br><span class="line"><span class="hljs-keyword">int</span> count;</span><br><span class="line"><span class="hljs-keyword">int</span> o=<span class="hljs-number">1</span>;</span><br><span class="line"><span class="hljs-built_in">printf</span>(“输入有边的俩个点:\n”);</span><br><span class="line"><span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; E; i++)</span><br><span class="line">&#123;</span><br><span class="line"><span class="hljs-built_in">scanf</span>(<span class="hljs-string">"%d %d"</span>,&amp;m,&amp;n);       <span class="hljs-comment">//输入有边的俩个点 </span></span><br><span class="line">    eulertu[m][n] = eulertu[n][m] = <span class="hljs-number">1</span>;  </span><br><span class="line">&#125;</span><br><span class="line"><span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; V; i++)         <span class="hljs-comment">//判断是否为欧拉图 </span></span><br><span class="line">&#123;</span><br><span class="line">    count = <span class="hljs-number">0</span>;</span><br><span class="line">    <span class="hljs-keyword">for</span> (j = <span class="hljs-number">0</span>; j &lt; V; j++) </span><br><span class="line">    &#123;</span><br><span class="line">        <span class="hljs-keyword">if</span> (eulertu[i][j]==<span class="hljs-number">1</span>) </span><br><span class="line">            count++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-keyword">if</span> (count%<span class="hljs-number">2</span>!=<span class="hljs-number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="hljs-built_in">printf</span>(<span class="hljs-string">"不是欧拉图"</span>);</span><br><span class="line">        o=<span class="hljs-number">0</span>;</span><br><span class="line">        <span class="hljs-keyword">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-keyword">if</span>(o==<span class="hljs-number">0</span>)</span><br><span class="line">        <span class="hljs-keyword">break</span>;        </span><br><span class="line">&#125;</span><br><span class="line"><span class="hljs-keyword">if</span>(o==<span class="hljs-number">1</span>)</span><br><span class="line">&#123; </span><br><span class="line">    fleury();</span><br><span class="line">    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"end"</span>);</span><br><span class="line">&#125; </span><br><span class="line"><span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">fleury</span> <span class="hljs-params">()</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line"><span class="hljs-keyword">int</span> a[<span class="hljs-number">10000</span>] =&#123;<span class="hljs-number">0</span>&#125;;</span><br><span class="line"><span class="hljs-keyword">int</span> i,j;</span><br><span class="line"><span class="hljs-keyword">int</span> k = <span class="hljs-number">0</span>;</span><br><span class="line"><span class="hljs-keyword">int</span> bridge = <span class="hljs-number">1</span>;</span><br><span class="line"><span class="hljs-keyword">int</span> t;</span><br><span class="line"><span class="hljs-built_in">printf</span>(“%d—&gt;”,a[<span class="hljs-number">0</span>]);</span><br><span class="line"><span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; E; i++)</span><br><span class="line">&#123;</span><br><span class="line"><span class="hljs-keyword">for</span> (j = <span class="hljs-number">0</span>; j &lt; V; j++)</span><br><span class="line">&#123;</span><br><span class="line"><span class="hljs-keyword">if</span>(eulertu[a[k]][j]==<span class="hljs-number">1</span>)</span><br><span class="line">&#123;</span><br><span class="line">eulertu[a[k]][j] = eulertu[j][a[k]] = <span class="hljs-number">0</span>;</span><br><span class="line"><span class="hljs-keyword">if</span>(Bridge(a[k],j))</span><br><span class="line">&#123;</span><br><span class="line">t = j;</span><br><span class="line">eulertu[a[k]][j] = eulertu[j][a[k]] = <span class="hljs-number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="hljs-keyword">else</span></span><br><span class="line">&#123;</span><br><span class="line">k++;</span><br><span class="line">a[k] = j;</span><br><span class="line"><span class="hljs-built_in">printf</span>(“%d—&gt;”,j);</span><br><span class="line">bridge = <span class="hljs-number">0</span>;</span><br><span class="line"><span class="hljs-keyword">break</span>;</span><br><span class="line">&#125;</span><br><span class="line">    &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-keyword">if</span> (bridge) </span><br><span class="line">    &#123;</span><br><span class="line">        eulertu[a[k]][t] = eulertu[t][a[k]] = <span class="hljs-number">0</span>;</span><br><span class="line">        k++;</span><br><span class="line">        a[k] = t;</span><br><span class="line">        <span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d---&gt;"</span>,t);</span><br><span class="line">    &#125;</span><br><span class="line">    bridge = <span class="hljs-number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">Bridge</span> <span class="hljs-params">(<span class="hljs-keyword">int</span> m, <span class="hljs-keyword">int</span> k)</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line"><span class="hljs-keyword">int</span> a[<span class="hljs-number">10000</span>];</span><br><span class="line"><span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>;</span><br><span class="line"><span class="hljs-keyword">int</span> t = <span class="hljs-number">0</span>;</span><br><span class="line"><span class="hljs-keyword">int</span> n = <span class="hljs-number">0</span>;</span><br><span class="line"><span class="hljs-keyword">int</span> p = <span class="hljs-number">0</span>;</span><br><span class="line"><span class="hljs-keyword">for</span>(i=<span class="hljs-number">0</span>;i&lt;<span class="hljs-number">10000</span>;i++)</span><br><span class="line">a[i]=<span class="hljs-number">-1</span>;</span><br><span class="line">a[t] = m;</span><br><span class="line"><span class="hljs-keyword">for</span> (t = <span class="hljs-number">0</span>; a[t] != <span class="hljs-number">-1</span>; t++ )</span><br><span class="line">&#123;</span><br><span class="line"><span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; V; i++)</span><br><span class="line">&#123;</span><br><span class="line"><span class="hljs-keyword">if</span> (eulertu[a[t]][i] == <span class="hljs-number">1</span> &amp;&amp; i == k)</span><br><span class="line"><span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;</span><br><span class="line"><span class="hljs-keyword">if</span> (eulertu[a[t]][i] == <span class="hljs-number">1</span>)</span><br><span class="line">&#123;</span><br><span class="line">            p=<span class="hljs-number">0</span>;</span><br><span class="line">            <span class="hljs-keyword">while</span>(a[p]==<span class="hljs-number">-1</span>)</span><br><span class="line">            &#123;</span><br><span class="line">                p++;</span><br><span class="line">                n++;</span><br><span class="line">                a[n] = i;</span><br><span class="line">            &#125;    </span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>}</p>
-<p>void fleury ()<br>{
-int a[10000] ={0};<br>int i,j;<br>int k = 0;<br>int bridge = 1;<br>int t;<br>printf(“%d—&gt;”,a[0]);<br>for (i = 0; i &lt; E; i++)<br>{
-for (j = 0; j &lt; V; j++)<br>{
-if(eulertu[a[k]][j]==1)<br>{
-eulertu[a[k]][j] = eulertu[j][a[k]] = 0;<br>if(Bridge(a[k],j))<br>{
-t = j;<br>eulertu[a[k]][j] = eulertu[j][a[k]] = 1;<br>}
-else<br>{
-k++;<br>a[k] = j;<br>printf(“%d—&gt;”,j);<br>bridge = 0;<br>break;<br>}</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    if (bridge) </span><br><span class="line">    &#123;</span><br><span class="line">        eulertu[a[k]][t] = eulertu[t][a[k]] = 0;</span><br><span class="line">        k++;</span><br><span class="line">        a[k] = t;</span><br><span class="line">        printf(&quot;%d---&gt;&quot;,t);</span><br><span class="line">    &#125;</span><br><span class="line">    bridge = 1;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>}</p>
-<p>int Bridge (int m, int k)<br>{
-int a[10000];<br>int i = 0;<br>int t = 0;<br>int n = 0;<br>int p = 0;<br>for(i=0;i&lt;10000;i++)<br>a[i]=-1;<br>a[t] = m;<br>for (t = 0; a[t] != -1; t++ )<br>{
-for (i = 0; i &lt; V; i++)<br>{
-if (eulertu[a[t]][i] == 1 &amp;&amp; i == k)<br>return 0;<br>if (eulertu[a[t]][i] == 1)<br>{</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">            p=0;</span><br><span class="line">            while(a[p]==-1)</span><br><span class="line">            &#123;</span><br><span class="line">                p++;</span><br><span class="line">                n++;</span><br><span class="line">                a[n] = i;</span><br><span class="line">            &#125;    </span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">return 1;</span><br></pre></td></tr></table></figure>
-
-<p>}</p>
+<p>​    </p>
 
         </div>
         
@@ -365,7 +345,7 @@ if (eulertu[a[t]][i] == 1 &amp;&amp; i == k)<br>return 0;<br>if (eulertu[a[t]][i
                         Posts
                     </p>
                     <p class="title has-text-weight-normal">
-                        33
+                        34
                     </p>
                 </div>
             </div>
@@ -385,7 +365,7 @@ if (eulertu[a[t]][i] == 1 &amp;&amp; i == k)<br>return 0;<br>if (eulertu[a[t]][i
                         Tags
                     </p>
                     <p class="title has-text-weight-normal">
-                        11
+                        14
                     </p>
                 </div>
             </div>
@@ -554,7 +534,7 @@ if (eulertu[a[t]][i] == 1 &amp;&amp; i == k)<br>return 0;<br>if (eulertu[a[t]][i
                 <span class="level-item">AI</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">7</span>
+                <span class="level-item tag">8</span>
             </span>
         </a></li><li>
         <a class="level is-marginless" href="/Skr-king.github.io/categories/C/">
@@ -648,7 +628,7 @@ if (eulertu[a[t]][i] == 1 &amp;&amp; i == k)<br>return 0;<br>if (eulertu[a[t]][i
         <h3 class="menu-label">
             Tag Cloud
         </h3>
-        <a href="/Skr-king.github.io/tags/C/" style="font-size: 17px; color: #c20099">C++</a> <a href="/Skr-king.github.io/tags/life/" style="font-size: 19px; color: #d60066">life</a> <a href="/Skr-king.github.io/tags/AI/" style="font-size: 21px; color: #eb0033">AI</a> <a href="/Skr-king.github.io/tags/算法/" style="font-size: 23px; color: #f00">算法</a> <a href="/Skr-king.github.io/tags/Learing/" style="font-size: 13px; color: #90f">Learing</a> <a href="/Skr-king.github.io/tags/sharing/" style="font-size: 13px; color: #90f">sharing</a> <a href="/Skr-king.github.io/tags/Makedown语法/" style="font-size: 13px; color: #90f">Makedown语法</a> <a href="/Skr-king.github.io/tags/python/" style="font-size: 15px; color: #ad00cc">python</a> <a href="/Skr-king.github.io/tags/文学/" style="font-size: 15px; color: #ad00cc">文学</a> <a href="/Skr-king.github.io/tags/hexo-github/" style="font-size: 13px; color: #90f">hexo+github</a> <a href="/Skr-king.github.io/tags/Game/" style="font-size: 15px; color: #ad00cc">Game</a>
+        <a href="/Skr-king.github.io/tags/life/" style="font-size: 20.5px; color: #e60040">life</a> <a href="/Skr-king.github.io/tags/C/" style="font-size: 18px; color: #cc0080">C++</a> <a href="/Skr-king.github.io/tags/AI/" style="font-size: 18px; color: #cc0080">AI</a> <a href="/Skr-king.github.io/tags/算法/" style="font-size: 23px; color: #f00">算法</a> <a href="/Skr-king.github.io/tags/Learing/" style="font-size: 13px; color: #90f">Learing</a> <a href="/Skr-king.github.io/tags/KNN/" style="font-size: 13px; color: #90f">KNN</a> <a href="/Skr-king.github.io/tags/Makedown语法/" style="font-size: 13px; color: #90f">Makedown语法</a> <a href="/Skr-king.github.io/tags/sharing/" style="font-size: 13px; color: #90f">sharing</a> <a href="/Skr-king.github.io/tags/文学/" style="font-size: 15.5px; color: #b300bf">文学</a> <a href="/Skr-king.github.io/tags/python/" style="font-size: 15.5px; color: #b300bf">python</a> <a href="/Skr-king.github.io/tags/hexo-github/" style="font-size: 13px; color: #90f">hexo+github</a> <a href="/Skr-king.github.io/tags/Game/" style="font-size: 15.5px; color: #b300bf">Game</a> <a href="/Skr-king.github.io/tags/矩阵分解/" style="font-size: 13px; color: #90f">矩阵分解</a> <a href="/Skr-king.github.io/tags/NN/" style="font-size: 15.5px; color: #b300bf">NN</a>
     </div>
 </div>
 
@@ -662,6 +642,25 @@ if (eulertu[a[t]][i] == 1 &amp;&amp; i == k)<br>return 0;<br>if (eulertu[a[t]][i
         <h3 class="menu-label">
             Recent
         </h3>
+        
+        <article class="media">
+            
+            <a href="/Skr-king.github.io/矩阵分解之推荐系统.html/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/Skr-king.github.io/gallary/37.png" alt="矩阵分解之推荐系统">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-26T14:11:46.000Z">2019-07-26</time></div>
+                    <a href="/Skr-king.github.io/矩阵分解之推荐系统.html/" class="has-link-black-ter is-size-6">矩阵分解之推荐系统</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/Skr-king.github.io/categories/AI/">AI</a>
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -739,25 +738,6 @@ if (eulertu[a[t]][i] == 1 &amp;&amp; i == k)<br>return 0;<br>if (eulertu[a[t]][i
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/Skr-king.github.io/map函数的简单用法.html/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/Skr-king.github.io/gallary/35.jpg" alt="map函数的简单用法">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-21T02:19:50.000Z">2019-07-21</time></div>
-                    <a href="/Skr-king.github.io/map函数的简单用法.html/" class="has-link-black-ter is-size-6">map函数的简单用法</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/Skr-king.github.io/categories/C/">C++</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
 
@@ -776,7 +756,7 @@ if (eulertu[a[t]][i] == 1 &amp;&amp; i == k)<br>return 0;<br>if (eulertu[a[t]][i
                     <span class="level-item">July 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">10</span>
+                    <span class="level-item tag">11</span>
                 </span>
             </a>
         </li>
@@ -808,7 +788,7 @@ if (eulertu[a[t]][i] == 1 &amp;&amp; i == k)<br>return 0;<br>if (eulertu[a[t]][i
                 <div class="control">
                     <a class="tags has-addons" href="/Skr-king.github.io/tags/AI/">
                         <span class="tag">AI</span>
-                        <span class="tag is-grey">6</span>
+                        <span class="tag is-grey">3</span>
                     </a>
                 </div>
                 
@@ -827,6 +807,13 @@ if (eulertu[a[t]][i] == 1 &amp;&amp; i == k)<br>return 0;<br>if (eulertu[a[t]][i
                 </div>
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/Skr-king.github.io/tags/KNN/">
+                        <span class="tag">KNN</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/Skr-king.github.io/tags/Learing/">
                         <span class="tag">Learing</span>
                         <span class="tag is-grey">1</span>
@@ -837,6 +824,13 @@ if (eulertu[a[t]][i] == 1 &amp;&amp; i == k)<br>return 0;<br>if (eulertu[a[t]][i
                     <a class="tags has-addons" href="/Skr-king.github.io/tags/Makedown语法/">
                         <span class="tag">Makedown语法</span>
                         <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/Skr-king.github.io/tags/NN/">
+                        <span class="tag">NN</span>
+                        <span class="tag is-grey">2</span>
                     </a>
                 </div>
                 
@@ -872,6 +866,13 @@ if (eulertu[a[t]][i] == 1 &amp;&amp; i == k)<br>return 0;<br>if (eulertu[a[t]][i
                     <a class="tags has-addons" href="/Skr-king.github.io/tags/文学/">
                         <span class="tag">文学</span>
                         <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/Skr-king.github.io/tags/矩阵分解/">
+                        <span class="tag">矩阵分解</span>
+                        <span class="tag is-grey">1</span>
                     </a>
                 </div>
                 
@@ -907,6 +908,25 @@ if (eulertu[a[t]][i] == 1 &amp;&amp; i == k)<br>return 0;<br>if (eulertu[a[t]][i
         
         <article class="media">
             
+            <a href="/Skr-king.github.io/矩阵分解之推荐系统.html/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/Skr-king.github.io/gallary/37.png" alt="矩阵分解之推荐系统">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-26T14:11:46.000Z">2019-07-26</time></div>
+                    <a href="/Skr-king.github.io/矩阵分解之推荐系统.html/" class="has-link-black-ter is-size-6">矩阵分解之推荐系统</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/Skr-king.github.io/categories/AI/">AI</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
             <a href="/Skr-king.github.io/五子棋？.html/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/Skr-king.github.io/gallary/22.jpg" alt="五子棋？">
@@ -981,25 +1001,6 @@ if (eulertu[a[t]][i] == 1 &amp;&amp; i == k)<br>return 0;<br>if (eulertu[a[t]][i
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/Skr-king.github.io/map函数的简单用法.html/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/Skr-king.github.io/gallary/35.jpg" alt="map函数的简单用法">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-21T02:19:50.000Z">2019-07-21</time></div>
-                    <a href="/Skr-king.github.io/map函数的简单用法.html/" class="has-link-black-ter is-size-6">map函数的简单用法</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/Skr-king.github.io/categories/C/">C++</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
 
@@ -1018,7 +1019,7 @@ if (eulertu[a[t]][i] == 1 &amp;&amp; i == k)<br>return 0;<br>if (eulertu[a[t]][i
                     <span class="level-item">July 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">10</span>
+                    <span class="level-item tag">11</span>
                 </span>
             </a>
         </li>
@@ -1050,7 +1051,7 @@ if (eulertu[a[t]][i] == 1 &amp;&amp; i == k)<br>return 0;<br>if (eulertu[a[t]][i
                 <div class="control">
                     <a class="tags has-addons" href="/Skr-king.github.io/tags/AI/">
                         <span class="tag">AI</span>
-                        <span class="tag is-grey">6</span>
+                        <span class="tag is-grey">3</span>
                     </a>
                 </div>
                 
@@ -1069,6 +1070,13 @@ if (eulertu[a[t]][i] == 1 &amp;&amp; i == k)<br>return 0;<br>if (eulertu[a[t]][i
                 </div>
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/Skr-king.github.io/tags/KNN/">
+                        <span class="tag">KNN</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/Skr-king.github.io/tags/Learing/">
                         <span class="tag">Learing</span>
                         <span class="tag is-grey">1</span>
@@ -1079,6 +1087,13 @@ if (eulertu[a[t]][i] == 1 &amp;&amp; i == k)<br>return 0;<br>if (eulertu[a[t]][i
                     <a class="tags has-addons" href="/Skr-king.github.io/tags/Makedown语法/">
                         <span class="tag">Makedown语法</span>
                         <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/Skr-king.github.io/tags/NN/">
+                        <span class="tag">NN</span>
+                        <span class="tag is-grey">2</span>
                     </a>
                 </div>
                 
@@ -1114,6 +1129,13 @@ if (eulertu[a[t]][i] == 1 &amp;&amp; i == k)<br>return 0;<br>if (eulertu[a[t]][i
                     <a class="tags has-addons" href="/Skr-king.github.io/tags/文学/">
                         <span class="tag">文学</span>
                         <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/Skr-king.github.io/tags/矩阵分解/">
+                        <span class="tag">矩阵分解</span>
+                        <span class="tag is-grey">1</span>
                     </a>
                 </div>
                 

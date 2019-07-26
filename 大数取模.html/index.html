@@ -21,7 +21,7 @@
 <meta property="og:description" content="THIS A SAD STORY…… 頑張って">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://skr-king.github.io/Skr-king.github.io/Skr-king.github.io/gallary/19.jpg">
-<meta property="og:updated_time" content="2019-07-08T02:42:36.530Z">
+<meta property="og:updated_time" content="2019-07-26T14:40:31.324Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="大数取模">
 <meta name="twitter:description" content="THIS A SAD STORY…… 頑張って">
@@ -175,7 +175,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    4 minutes read (About 572 words)
+                    4 minutes read (About 575 words)
                 </span>
                 
                 
@@ -203,7 +203,7 @@
 <h3 id="取模方法"><a href="#取模方法" class="headerlink" title="取模方法"></a>取模方法</h3><p>模仿我们曾学过的竖式乘除法。</p>
 <p>对于一个大数 A ，他从高到低的每一位乘以10再对mod取余，最后的结果就是取模的结果。</p>
 <p>`</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;iostream&gt;</span><br><span class="line">#include&lt;cstring&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">#define MOD 100000007</span><br><span class="line">long divmod(char *ch,int a)</span><br><span class="line">&#123;</span><br><span class="line">	long s = 0;</span><br><span class="line">	</span><br><span class="line">	for(int i=0;ch[i]!=&apos;\0&apos;;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		s=(s*10+ch[i]-&apos;0&apos;)%MOD;</span><br><span class="line">	&#125;</span><br><span class="line">	return s;</span><br><span class="line">&#125;</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	long a,b;</span><br><span class="line">	char num[100000];</span><br><span class="line">	gets(num);</span><br><span class="line">	a = strlen(num);</span><br><span class="line">	b = divmod(num,a);</span><br><span class="line">	printf(&quot;%ld&quot;,b);</span><br><span class="line">	return 0;</span><br><span class="line">	</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight c hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;</span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> MOD 100000007</span></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">long</span> <span class="hljs-title">divmod</span><span class="hljs-params">(<span class="hljs-keyword">char</span> *ch,<span class="hljs-keyword">int</span> a)</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">	<span class="hljs-keyword">long</span> s = <span class="hljs-number">0</span>;</span><br><span class="line">	</span><br><span class="line">	<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">0</span>;ch[i]!=<span class="hljs-string">'\0'</span>;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		s=(s*<span class="hljs-number">10</span>+ch[i]-<span class="hljs-string">'0'</span>)%MOD;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="hljs-keyword">return</span> s;</span><br><span class="line">&#125;</span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">	<span class="hljs-keyword">long</span> a,b;</span><br><span class="line">	<span class="hljs-keyword">char</span> num[<span class="hljs-number">100000</span>];</span><br><span class="line">	gets(num);</span><br><span class="line">	a = <span class="hljs-built_in">strlen</span>(num);</span><br><span class="line">	b = divmod(num,a);</span><br><span class="line">	<span class="hljs-built_in">printf</span>(<span class="hljs-string">"%ld"</span>,b);</span><br><span class="line">	<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;</span><br><span class="line">	</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
 
 <p>`</p>
 <h2 id="快速幂取模"><a href="#快速幂取模" class="headerlink" title="快速幂取模"></a>快速幂取模</h2><p>对于一般的大数取模，时间复杂度太大，可能会TE了。对于指数型的大数取模问题，，快速幂取模就简单方便多了，在空间和时间上相对于一般取模都做了优化。</p>
@@ -214,10 +214,10 @@
 <p>(3^40)–&gt;(9^20)–&gt;(18^10) ……这样依次类推</p>
 <p>这里指数幂是偶数，如果是奇数先乘在重复上述工作。</p>
 <p>再这里有一个简单判断奇偶数的方法。附上代码</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;stdio.h&gt;</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	int n;</span><br><span class="line">	while(~scanf(&quot;%d&quot;,&amp;n))&#123;</span><br><span class="line">	</span><br><span class="line">	if(n&amp;1)</span><br><span class="line">		printf(&quot;奇数&quot;);</span><br><span class="line">	else</span><br><span class="line">		printf(&quot;偶数&quot;);&#125;</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight c hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">	<span class="hljs-keyword">int</span> n;</span><br><span class="line">	<span class="hljs-keyword">while</span>(~<span class="hljs-built_in">scanf</span>(<span class="hljs-string">"%d"</span>,&amp;n))&#123;</span><br><span class="line">	</span><br><span class="line">	<span class="hljs-keyword">if</span>(n&amp;<span class="hljs-number">1</span>)</span><br><span class="line">		<span class="hljs-built_in">printf</span>(<span class="hljs-string">"奇数"</span>);</span><br><span class="line">	<span class="hljs-keyword">else</span></span><br><span class="line">		<span class="hljs-built_in">printf</span>(<span class="hljs-string">"偶数"</span>);&#125;</span><br><span class="line">	<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>这里简单的运用了位运算。这比一般奇偶的判断高大上多了。活到老学到老。。。</p>
-<h3 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h3><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">long powermode(long a, long b, long mod)</span><br><span class="line">&#123;</span><br><span class="line">    long ans = 1;</span><br><span class="line">    while (b) &#123;</span><br><span class="line">        if (b &amp; 1) &#123;</span><br><span class="line">            ans = (ans * a) % mod;</span><br><span class="line">            b--;</span><br><span class="line">        &#125;</span><br><span class="line">        b /= 2;</span><br><span class="line">        a = a * a % mod;</span><br><span class="line">    &#125;</span><br><span class="line">    return ans;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h3><figure class="highlight c hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-function"><span class="hljs-keyword">long</span> <span class="hljs-title">powermode</span><span class="hljs-params">(<span class="hljs-keyword">long</span> a, <span class="hljs-keyword">long</span> b, <span class="hljs-keyword">long</span> mod)</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">    <span class="hljs-keyword">long</span> ans = <span class="hljs-number">1</span>;</span><br><span class="line">    <span class="hljs-keyword">while</span> (b) &#123;</span><br><span class="line">        <span class="hljs-keyword">if</span> (b &amp; <span class="hljs-number">1</span>) &#123;</span><br><span class="line">            ans = (ans * a) % mod;</span><br><span class="line">            b--;</span><br><span class="line">        &#125;</span><br><span class="line">        b /= <span class="hljs-number">2</span>;</span><br><span class="line">        a = a * a % mod;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-keyword">return</span> ans;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h3 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h3><p>对于大数取模还有欧拉函数（费马小定理），技巧去摸，这里不多介绍，后续会补上</p>
 
@@ -358,7 +358,7 @@
                         Posts
                     </p>
                     <p class="title has-text-weight-normal">
-                        33
+                        34
                     </p>
                 </div>
             </div>
@@ -378,7 +378,7 @@
                         Tags
                     </p>
                     <p class="title has-text-weight-normal">
-                        11
+                        14
                     </p>
                 </div>
             </div>
@@ -547,7 +547,7 @@
                 <span class="level-item">AI</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">7</span>
+                <span class="level-item tag">8</span>
             </span>
         </a></li><li>
         <a class="level is-marginless" href="/Skr-king.github.io/categories/C/">
@@ -641,7 +641,7 @@
         <h3 class="menu-label">
             Tag Cloud
         </h3>
-        <a href="/Skr-king.github.io/tags/C/" style="font-size: 17px; color: #c20099">C++</a> <a href="/Skr-king.github.io/tags/life/" style="font-size: 19px; color: #d60066">life</a> <a href="/Skr-king.github.io/tags/AI/" style="font-size: 21px; color: #eb0033">AI</a> <a href="/Skr-king.github.io/tags/算法/" style="font-size: 23px; color: #f00">算法</a> <a href="/Skr-king.github.io/tags/Learing/" style="font-size: 13px; color: #90f">Learing</a> <a href="/Skr-king.github.io/tags/sharing/" style="font-size: 13px; color: #90f">sharing</a> <a href="/Skr-king.github.io/tags/Makedown语法/" style="font-size: 13px; color: #90f">Makedown语法</a> <a href="/Skr-king.github.io/tags/python/" style="font-size: 15px; color: #ad00cc">python</a> <a href="/Skr-king.github.io/tags/文学/" style="font-size: 15px; color: #ad00cc">文学</a> <a href="/Skr-king.github.io/tags/hexo-github/" style="font-size: 13px; color: #90f">hexo+github</a> <a href="/Skr-king.github.io/tags/Game/" style="font-size: 15px; color: #ad00cc">Game</a>
+        <a href="/Skr-king.github.io/tags/life/" style="font-size: 20.5px; color: #e60040">life</a> <a href="/Skr-king.github.io/tags/C/" style="font-size: 18px; color: #cc0080">C++</a> <a href="/Skr-king.github.io/tags/AI/" style="font-size: 18px; color: #cc0080">AI</a> <a href="/Skr-king.github.io/tags/算法/" style="font-size: 23px; color: #f00">算法</a> <a href="/Skr-king.github.io/tags/Learing/" style="font-size: 13px; color: #90f">Learing</a> <a href="/Skr-king.github.io/tags/KNN/" style="font-size: 13px; color: #90f">KNN</a> <a href="/Skr-king.github.io/tags/Makedown语法/" style="font-size: 13px; color: #90f">Makedown语法</a> <a href="/Skr-king.github.io/tags/sharing/" style="font-size: 13px; color: #90f">sharing</a> <a href="/Skr-king.github.io/tags/文学/" style="font-size: 15.5px; color: #b300bf">文学</a> <a href="/Skr-king.github.io/tags/python/" style="font-size: 15.5px; color: #b300bf">python</a> <a href="/Skr-king.github.io/tags/hexo-github/" style="font-size: 13px; color: #90f">hexo+github</a> <a href="/Skr-king.github.io/tags/Game/" style="font-size: 15.5px; color: #b300bf">Game</a> <a href="/Skr-king.github.io/tags/矩阵分解/" style="font-size: 13px; color: #90f">矩阵分解</a> <a href="/Skr-king.github.io/tags/NN/" style="font-size: 15.5px; color: #b300bf">NN</a>
     </div>
 </div>
 
@@ -655,6 +655,25 @@
         <h3 class="menu-label">
             Recent
         </h3>
+        
+        <article class="media">
+            
+            <a href="/Skr-king.github.io/矩阵分解之推荐系统.html/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/Skr-king.github.io/gallary/37.png" alt="矩阵分解之推荐系统">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-26T14:11:46.000Z">2019-07-26</time></div>
+                    <a href="/Skr-king.github.io/矩阵分解之推荐系统.html/" class="has-link-black-ter is-size-6">矩阵分解之推荐系统</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/Skr-king.github.io/categories/AI/">AI</a>
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -732,25 +751,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/Skr-king.github.io/map函数的简单用法.html/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/Skr-king.github.io/gallary/35.jpg" alt="map函数的简单用法">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-21T02:19:50.000Z">2019-07-21</time></div>
-                    <a href="/Skr-king.github.io/map函数的简单用法.html/" class="has-link-black-ter is-size-6">map函数的简单用法</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/Skr-king.github.io/categories/C/">C++</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
 
@@ -769,7 +769,7 @@
                     <span class="level-item">July 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">10</span>
+                    <span class="level-item tag">11</span>
                 </span>
             </a>
         </li>
@@ -801,7 +801,7 @@
                 <div class="control">
                     <a class="tags has-addons" href="/Skr-king.github.io/tags/AI/">
                         <span class="tag">AI</span>
-                        <span class="tag is-grey">6</span>
+                        <span class="tag is-grey">3</span>
                     </a>
                 </div>
                 
@@ -820,6 +820,13 @@
                 </div>
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/Skr-king.github.io/tags/KNN/">
+                        <span class="tag">KNN</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/Skr-king.github.io/tags/Learing/">
                         <span class="tag">Learing</span>
                         <span class="tag is-grey">1</span>
@@ -830,6 +837,13 @@
                     <a class="tags has-addons" href="/Skr-king.github.io/tags/Makedown语法/">
                         <span class="tag">Makedown语法</span>
                         <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/Skr-king.github.io/tags/NN/">
+                        <span class="tag">NN</span>
+                        <span class="tag is-grey">2</span>
                     </a>
                 </div>
                 
@@ -865,6 +879,13 @@
                     <a class="tags has-addons" href="/Skr-king.github.io/tags/文学/">
                         <span class="tag">文学</span>
                         <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/Skr-king.github.io/tags/矩阵分解/">
+                        <span class="tag">矩阵分解</span>
+                        <span class="tag is-grey">1</span>
                     </a>
                 </div>
                 
@@ -900,6 +921,25 @@
         
         <article class="media">
             
+            <a href="/Skr-king.github.io/矩阵分解之推荐系统.html/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/Skr-king.github.io/gallary/37.png" alt="矩阵分解之推荐系统">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-26T14:11:46.000Z">2019-07-26</time></div>
+                    <a href="/Skr-king.github.io/矩阵分解之推荐系统.html/" class="has-link-black-ter is-size-6">矩阵分解之推荐系统</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/Skr-king.github.io/categories/AI/">AI</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
             <a href="/Skr-king.github.io/五子棋？.html/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/Skr-king.github.io/gallary/22.jpg" alt="五子棋？">
@@ -974,25 +1014,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/Skr-king.github.io/map函数的简单用法.html/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/Skr-king.github.io/gallary/35.jpg" alt="map函数的简单用法">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-21T02:19:50.000Z">2019-07-21</time></div>
-                    <a href="/Skr-king.github.io/map函数的简单用法.html/" class="has-link-black-ter is-size-6">map函数的简单用法</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/Skr-king.github.io/categories/C/">C++</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
 
@@ -1011,7 +1032,7 @@
                     <span class="level-item">July 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">10</span>
+                    <span class="level-item tag">11</span>
                 </span>
             </a>
         </li>
@@ -1043,7 +1064,7 @@
                 <div class="control">
                     <a class="tags has-addons" href="/Skr-king.github.io/tags/AI/">
                         <span class="tag">AI</span>
-                        <span class="tag is-grey">6</span>
+                        <span class="tag is-grey">3</span>
                     </a>
                 </div>
                 
@@ -1062,6 +1083,13 @@
                 </div>
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/Skr-king.github.io/tags/KNN/">
+                        <span class="tag">KNN</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/Skr-king.github.io/tags/Learing/">
                         <span class="tag">Learing</span>
                         <span class="tag is-grey">1</span>
@@ -1072,6 +1100,13 @@
                     <a class="tags has-addons" href="/Skr-king.github.io/tags/Makedown语法/">
                         <span class="tag">Makedown语法</span>
                         <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/Skr-king.github.io/tags/NN/">
+                        <span class="tag">NN</span>
+                        <span class="tag is-grey">2</span>
                     </a>
                 </div>
                 
@@ -1107,6 +1142,13 @@
                     <a class="tags has-addons" href="/Skr-king.github.io/tags/文学/">
                         <span class="tag">文学</span>
                         <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/Skr-king.github.io/tags/矩阵分解/">
+                        <span class="tag">矩阵分解</span>
+                        <span class="tag is-grey">1</span>
                     </a>
                 </div>
                 

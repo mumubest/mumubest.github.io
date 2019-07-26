@@ -21,7 +21,7 @@
 <meta property="og:description" content="C++中的sort（）函数我在之前的博客中提到，解决排序问题的一个好用的函数就是C++的sort（）函数啦。sort（）函数是C++内置的函数，只需要加入头文件，掌握正确的使用方法，你就可以在排序中驰骋疆场了（自吹自擂）。好啦，下面就请主角登场吧">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://skr-king.github.io/Skr-king.github.io/Skr-king.github.io/gallary/10.jpg">
-<meta property="og:updated_time" content="2019-07-18T15:40:48.548Z">
+<meta property="og:updated_time" content="2019-07-26T14:41:46.381Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="sort()函数">
 <meta name="twitter:description" content="C++中的sort（）函数我在之前的博客中提到，解决排序问题的一个好用的函数就是C++的sort（）函数啦。sort（）函数是C++内置的函数，只需要加入头文件，掌握正确的使用方法，你就可以在排序中驰骋疆场了（自吹自擂）。好啦，下面就请主角登场吧">
@@ -175,7 +175,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    6 minutes read (About 958 words)
+                    7 minutes read (About 980 words)
                 </span>
                 
                 
@@ -199,14 +199,14 @@
 <p><img src="/Skr-king.github.io/sort-函数.html/1.jpg" alt></p>
 <h2 id="sort"><a href="#sort" class="headerlink" title="sort()"></a>sort()</h2><h4 id="1-介绍"><a href="#1-介绍" class="headerlink" title="1.介绍"></a>1.介绍</h4><p>c++语言中 STL 库中的sort函数可以用来对数组进行排序。对于c++语言来说由于其自带的sort()函数更容易被编译器编译，其排序速度比基于快速排序的qsort要快上不少，且用法简单。(百度知道)</p>
 <h4 id="2-准备"><a href="#2-准备" class="headerlink" title="2.准备"></a>2.准备</h4><p>sort（）函数的使用需要添加头文件</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;algorithm&gt;</span><br><span class="line">或者万能头文件</span><br><span class="line">#include&lt;bits/stdc++.h&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight c hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line">或者万能头文件</span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br></pre></td></tr></table></figure>
 
 <h4 id="3-使用方法"><a href="#3-使用方法" class="headerlink" title="3.使用方法"></a>3.使用方法</h4><p><strong>sort（star,end,cmp）*</strong></p>
 <p>sort函数有三个参数：</p>
 <p>1.第一个是要排序的数组的起始地址</p>
 <p>2.第二个是结束地址（最后一位的地址的下一地址）</p>
 <p>3.第三个参数是排序的方法。sort函数默认是按从小到大排序。可以修改cmp实现从大到小排序</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sort（begin，end，less&lt;data-type&gt;)——升序</span><br><span class="line"></span><br><span class="line">sort（begin，end，greater&lt;data-type&gt;)——降序</span><br></pre></td></tr></table></figure>
+<figure class="highlight c hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sort（begin，end，less&lt;data-type&gt;)——升序</span><br><span class="line"></span><br><span class="line">sort（begin，end，greater&lt;data-type&gt;)——降序</span><br></pre></td></tr></table></figure>
 
 <p>以上是比较简单常用的对数组的排序方法，sort（）类函数中还有其他的排序功能。</p>
 <h4 id="4-sort-类函数"><a href="#4-sort-类函数" class="headerlink" title="4.sort()类函数"></a>4.sort()类函数</h4><table>
@@ -265,7 +265,7 @@
 <p>输出为一行，输出长度为n+m的升序序列，即长度为n的升序序列和长度为m的升序序列中的元素重新进行升序序列排列合并。</p>
 <p><strong>示例1</strong></p>
 <p>输入<br>5 6<br>1 3 7 9 22<br>2 8 10 17 33 44<br>输出<br>1 2 3 7 8 9 10 17 22 33 44</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;cstdio&gt;</span><br><span class="line">#include&lt;iostream&gt;</span><br><span class="line">#include&lt;algorithm&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">int n,m,t;</span><br><span class="line">int a[100],b[100],c[200];</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    cin&gt;&gt;n&gt;&gt;m;</span><br><span class="line">    t=n;</span><br><span class="line">    for(int i=0;i&lt;n;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        cin&gt;&gt;a[i];</span><br><span class="line">        c[i]=a[i];</span><br><span class="line">    &#125;</span><br><span class="line">   </span><br><span class="line">    for(int i=0;i&lt;m;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        cin&gt;&gt;b[i];</span><br><span class="line">        c[t++]=b[i];</span><br><span class="line">    &#125;</span><br><span class="line">    sort(c,c+m+n);</span><br><span class="line">    for(int i=0;i&lt;m+n;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        cout&lt;&lt;c[i];</span><br><span class="line">        putchar(&apos; &apos;);</span><br><span class="line">    &#125;          </span><br><span class="line">    return 0;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight c hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;</span><br><span class="line"><span class="hljs-keyword">int</span> n,m,t;</span><br><span class="line"><span class="hljs-keyword">int</span> a[<span class="hljs-number">100</span>],b[<span class="hljs-number">100</span>],c[<span class="hljs-number">200</span>];</span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">    <span class="hljs-built_in">cin</span>&gt;&gt;n&gt;&gt;m;</span><br><span class="line">    t=n;</span><br><span class="line">    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">0</span>;i&lt;n;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="hljs-built_in">cin</span>&gt;&gt;a[i];</span><br><span class="line">        c[i]=a[i];</span><br><span class="line">    &#125;</span><br><span class="line">   </span><br><span class="line">    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">0</span>;i&lt;m;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="hljs-built_in">cin</span>&gt;&gt;b[i];</span><br><span class="line">        c[t++]=b[i];</span><br><span class="line">    &#125;</span><br><span class="line">    sort(c,c+m+n);</span><br><span class="line">    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">0</span>;i&lt;m+n;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="hljs-built_in">cout</span>&lt;&lt;c[i];</span><br><span class="line">        <span class="hljs-built_in">putchar</span>(<span class="hljs-string">' '</span>);</span><br><span class="line">    &#125;          </span><br><span class="line">    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
 
 <h6 id="2-最高最低分差"><a href="#2-最高最低分差" class="headerlink" title="2.最高最低分差"></a>2.最高最低分差</h6><p>链接：</p>
 <p><a href="https://ac.nowcoder.com/acm/contest/827/E" target="_blank" rel="noopener">https://ac.nowcoder.com/acm/contest/827/E</a></p>
@@ -284,11 +284,9 @@
 
 <p>输出</p>
 <p>5</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;stdio.h&gt;</span><br><span class="line">#include&lt;algorithm&gt;</span><br><span class="line">#include&lt;iostream&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    int n,a[10000],sum=0;</span><br><span class="line">    scanf(&quot;%d&quot;,&amp;n);</span><br><span class="line">    for(int i=0;i&lt;n;i++)</span><br><span class="line">        scanf(&quot;%d&quot;,&amp;a[i]);</span><br><span class="line">    sort(a,a+n);</span><br><span class="line">    sum=a[n-1]-a[0];</span><br><span class="line">    printf(&quot;%d&quot;,sum);</span><br><span class="line">    return 0;</span><br><span class="line"> </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight c hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;</span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">    <span class="hljs-keyword">int</span> n,a[<span class="hljs-number">10000</span>],sum=<span class="hljs-number">0</span>;</span><br><span class="line">    <span class="hljs-built_in">scanf</span>(<span class="hljs-string">"%d"</span>,&amp;n);</span><br><span class="line">    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">0</span>;i&lt;n;i++)</span><br><span class="line">        <span class="hljs-built_in">scanf</span>(<span class="hljs-string">"%d"</span>,&amp;a[i]);</span><br><span class="line">    sort(a,a+n);</span><br><span class="line">    sum=a[n<span class="hljs-number">-1</span>]-a[<span class="hljs-number">0</span>];</span><br><span class="line">    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d"</span>,sum);</span><br><span class="line">    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;</span><br><span class="line"> </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h3 id="休息一下"><a href="#休息一下" class="headerlink" title="休息一下"></a>休息一下</h3><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="https://music.163.com/outchain/player?type=2&amp;id=2788529&amp;auto=0&amp;height=66" style="cursor: url(&quot;/images/sword.ico&quot;), auto !important; width: 663.6px; height: 85.9375px; position: absolute; top: 0px; left: 0px;"></iframe>
-
-
+<p>### </p>
 
         </div>
         
@@ -427,7 +425,7 @@
                         Posts
                     </p>
                     <p class="title has-text-weight-normal">
-                        33
+                        34
                     </p>
                 </div>
             </div>
@@ -447,7 +445,7 @@
                         Tags
                     </p>
                     <p class="title has-text-weight-normal">
-                        11
+                        14
                     </p>
                 </div>
             </div>
@@ -616,7 +614,7 @@
                 <span class="level-item">AI</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">7</span>
+                <span class="level-item tag">8</span>
             </span>
         </a></li><li>
         <a class="level is-marginless" href="/Skr-king.github.io/categories/C/">
@@ -710,7 +708,7 @@
         <h3 class="menu-label">
             Tag Cloud
         </h3>
-        <a href="/Skr-king.github.io/tags/C/" style="font-size: 17px; color: #c20099">C++</a> <a href="/Skr-king.github.io/tags/life/" style="font-size: 19px; color: #d60066">life</a> <a href="/Skr-king.github.io/tags/AI/" style="font-size: 21px; color: #eb0033">AI</a> <a href="/Skr-king.github.io/tags/算法/" style="font-size: 23px; color: #f00">算法</a> <a href="/Skr-king.github.io/tags/Learing/" style="font-size: 13px; color: #90f">Learing</a> <a href="/Skr-king.github.io/tags/sharing/" style="font-size: 13px; color: #90f">sharing</a> <a href="/Skr-king.github.io/tags/Makedown语法/" style="font-size: 13px; color: #90f">Makedown语法</a> <a href="/Skr-king.github.io/tags/python/" style="font-size: 15px; color: #ad00cc">python</a> <a href="/Skr-king.github.io/tags/文学/" style="font-size: 15px; color: #ad00cc">文学</a> <a href="/Skr-king.github.io/tags/hexo-github/" style="font-size: 13px; color: #90f">hexo+github</a> <a href="/Skr-king.github.io/tags/Game/" style="font-size: 15px; color: #ad00cc">Game</a>
+        <a href="/Skr-king.github.io/tags/life/" style="font-size: 20.5px; color: #e60040">life</a> <a href="/Skr-king.github.io/tags/C/" style="font-size: 18px; color: #cc0080">C++</a> <a href="/Skr-king.github.io/tags/AI/" style="font-size: 18px; color: #cc0080">AI</a> <a href="/Skr-king.github.io/tags/算法/" style="font-size: 23px; color: #f00">算法</a> <a href="/Skr-king.github.io/tags/Learing/" style="font-size: 13px; color: #90f">Learing</a> <a href="/Skr-king.github.io/tags/KNN/" style="font-size: 13px; color: #90f">KNN</a> <a href="/Skr-king.github.io/tags/Makedown语法/" style="font-size: 13px; color: #90f">Makedown语法</a> <a href="/Skr-king.github.io/tags/sharing/" style="font-size: 13px; color: #90f">sharing</a> <a href="/Skr-king.github.io/tags/文学/" style="font-size: 15.5px; color: #b300bf">文学</a> <a href="/Skr-king.github.io/tags/python/" style="font-size: 15.5px; color: #b300bf">python</a> <a href="/Skr-king.github.io/tags/hexo-github/" style="font-size: 13px; color: #90f">hexo+github</a> <a href="/Skr-king.github.io/tags/Game/" style="font-size: 15.5px; color: #b300bf">Game</a> <a href="/Skr-king.github.io/tags/矩阵分解/" style="font-size: 13px; color: #90f">矩阵分解</a> <a href="/Skr-king.github.io/tags/NN/" style="font-size: 15.5px; color: #b300bf">NN</a>
     </div>
 </div>
 
@@ -724,6 +722,25 @@
         <h3 class="menu-label">
             Recent
         </h3>
+        
+        <article class="media">
+            
+            <a href="/Skr-king.github.io/矩阵分解之推荐系统.html/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/Skr-king.github.io/gallary/37.png" alt="矩阵分解之推荐系统">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-26T14:11:46.000Z">2019-07-26</time></div>
+                    <a href="/Skr-king.github.io/矩阵分解之推荐系统.html/" class="has-link-black-ter is-size-6">矩阵分解之推荐系统</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/Skr-king.github.io/categories/AI/">AI</a>
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -801,25 +818,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/Skr-king.github.io/map函数的简单用法.html/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/Skr-king.github.io/gallary/35.jpg" alt="map函数的简单用法">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-21T02:19:50.000Z">2019-07-21</time></div>
-                    <a href="/Skr-king.github.io/map函数的简单用法.html/" class="has-link-black-ter is-size-6">map函数的简单用法</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/Skr-king.github.io/categories/C/">C++</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
 
@@ -838,7 +836,7 @@
                     <span class="level-item">July 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">10</span>
+                    <span class="level-item tag">11</span>
                 </span>
             </a>
         </li>
@@ -870,7 +868,7 @@
                 <div class="control">
                     <a class="tags has-addons" href="/Skr-king.github.io/tags/AI/">
                         <span class="tag">AI</span>
-                        <span class="tag is-grey">6</span>
+                        <span class="tag is-grey">3</span>
                     </a>
                 </div>
                 
@@ -889,6 +887,13 @@
                 </div>
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/Skr-king.github.io/tags/KNN/">
+                        <span class="tag">KNN</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/Skr-king.github.io/tags/Learing/">
                         <span class="tag">Learing</span>
                         <span class="tag is-grey">1</span>
@@ -899,6 +904,13 @@
                     <a class="tags has-addons" href="/Skr-king.github.io/tags/Makedown语法/">
                         <span class="tag">Makedown语法</span>
                         <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/Skr-king.github.io/tags/NN/">
+                        <span class="tag">NN</span>
+                        <span class="tag is-grey">2</span>
                     </a>
                 </div>
                 
@@ -934,6 +946,13 @@
                     <a class="tags has-addons" href="/Skr-king.github.io/tags/文学/">
                         <span class="tag">文学</span>
                         <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/Skr-king.github.io/tags/矩阵分解/">
+                        <span class="tag">矩阵分解</span>
+                        <span class="tag is-grey">1</span>
                     </a>
                 </div>
                 
@@ -969,6 +988,25 @@
         
         <article class="media">
             
+            <a href="/Skr-king.github.io/矩阵分解之推荐系统.html/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/Skr-king.github.io/gallary/37.png" alt="矩阵分解之推荐系统">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-26T14:11:46.000Z">2019-07-26</time></div>
+                    <a href="/Skr-king.github.io/矩阵分解之推荐系统.html/" class="has-link-black-ter is-size-6">矩阵分解之推荐系统</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/Skr-king.github.io/categories/AI/">AI</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
             <a href="/Skr-king.github.io/五子棋？.html/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/Skr-king.github.io/gallary/22.jpg" alt="五子棋？">
@@ -1043,25 +1081,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/Skr-king.github.io/map函数的简单用法.html/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/Skr-king.github.io/gallary/35.jpg" alt="map函数的简单用法">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-21T02:19:50.000Z">2019-07-21</time></div>
-                    <a href="/Skr-king.github.io/map函数的简单用法.html/" class="has-link-black-ter is-size-6">map函数的简单用法</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/Skr-king.github.io/categories/C/">C++</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
 
@@ -1080,7 +1099,7 @@
                     <span class="level-item">July 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">10</span>
+                    <span class="level-item tag">11</span>
                 </span>
             </a>
         </li>
@@ -1112,7 +1131,7 @@
                 <div class="control">
                     <a class="tags has-addons" href="/Skr-king.github.io/tags/AI/">
                         <span class="tag">AI</span>
-                        <span class="tag is-grey">6</span>
+                        <span class="tag is-grey">3</span>
                     </a>
                 </div>
                 
@@ -1131,6 +1150,13 @@
                 </div>
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/Skr-king.github.io/tags/KNN/">
+                        <span class="tag">KNN</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/Skr-king.github.io/tags/Learing/">
                         <span class="tag">Learing</span>
                         <span class="tag is-grey">1</span>
@@ -1141,6 +1167,13 @@
                     <a class="tags has-addons" href="/Skr-king.github.io/tags/Makedown语法/">
                         <span class="tag">Makedown语法</span>
                         <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/Skr-king.github.io/tags/NN/">
+                        <span class="tag">NN</span>
+                        <span class="tag is-grey">2</span>
                     </a>
                 </div>
                 
@@ -1176,6 +1209,13 @@
                     <a class="tags has-addons" href="/Skr-king.github.io/tags/文学/">
                         <span class="tag">文学</span>
                         <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/Skr-king.github.io/tags/矩阵分解/">
+                        <span class="tag">矩阵分解</span>
+                        <span class="tag is-grey">1</span>
                     </a>
                 </div>
                 

@@ -13,7 +13,7 @@
 
 
     <meta name="description" content="现在终于理解我们高中数学老师说的话了，计算不行，说明数学不行，数学不行能力不行，数学好才是真正的好！！！哈哈哈。">
-<meta name="keywords" content="AI">
+<meta name="keywords" content="NN">
 <meta property="og:type" content="article">
 <meta property="og:title" content="神经网络——案例简单推导">
 <meta property="og:url" content="https://skr-king.github.io/神经网络——案例简单推导.html/index.html">
@@ -21,7 +21,7 @@
 <meta property="og:description" content="现在终于理解我们高中数学老师说的话了，计算不行，说明数学不行，数学不行能力不行，数学好才是真正的好！！！哈哈哈。">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://skr-king.github.io/Skr-king.github.io/Skr-king.github.io/gallary/36.jpg">
-<meta property="og:updated_time" content="2019-07-19T14:17:06.744Z">
+<meta property="og:updated_time" content="2019-07-26T14:39:24.739Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="神经网络——案例简单推导">
 <meta name="twitter:description" content="现在终于理解我们高中数学老师说的话了，计算不行，说明数学不行，数学不行能力不行，数学好才是真正的好！！！哈哈哈。">
@@ -175,7 +175,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    7 minutes read (About 1009 words)
+                    7 minutes read (About 1010 words)
                 </span>
                 
                 
@@ -224,7 +224,7 @@
 <p>权值跟新</p>
 <p><img src="/Skr-king.github.io/神经网络——案例简单推导.html/8.jpg" alt></p>
 <p>权值更新后测试数据，会发现数据误差变小许多</p>
-<h1 id="三、栗子"><a href="#三、栗子" class="headerlink" title="三、栗子"></a>三、栗子</h1><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br></pre></td><td class="code"><pre><span class="line">import numpy as np</span><br><span class="line">#激励函数与其偏导数</span><br><span class="line">def tanh(x):</span><br><span class="line">    return np.tanh(x)</span><br><span class="line"></span><br><span class="line">def tanh_derivative(x):</span><br><span class="line">    return 1.0 - np.tanh(x) * np.tanh(x)</span><br><span class="line"></span><br><span class="line">def logistic(x):</span><br><span class="line">    return 1 / (1 + np.exp(-x))</span><br><span class="line"></span><br><span class="line">def logistic_derivative(x):</span><br><span class="line">    return logistic(x) * (1 - logistic(x) )</span><br><span class="line">#神经网络模型</span><br><span class="line">class NeuralNetwork:</span><br><span class="line">    def __init__(self, layers, activation=&apos;tanh&apos;):</span><br><span class="line">        if activation == &apos;Logistic&apos;:</span><br><span class="line">            self.activation = logistic</span><br><span class="line">            self.activation_deriv = logistic_derivative</span><br><span class="line">        elif activation == &apos;tanh&apos;:</span><br><span class="line">            self.activation = tanh</span><br><span class="line">            self.activation_deriv = tanh_derivative</span><br><span class="line"></span><br><span class="line">        self.weights = []</span><br><span class="line">        for i in range(1, len(layers)-1):</span><br><span class="line">            # [0,1) * 2 - 1 =&gt; [-1,1) =&gt; * 0.25 =&gt; [-0.25,0.25)  随机权值</span><br><span class="line">            self.weights.append( (2*np.random.random((layers[i-1] + 1, layers[i] + 1 ))-1 ) * 0.25 )</span><br><span class="line">            self.weights.append( (2*np.random.random((layers[i] + 1, layers[i+1] ))-1 ) * 0.25 )</span><br><span class="line">        # for i in range(0, len(layers)-1):</span><br><span class="line">        #     m = layers[i]  # 第i层节点数</span><br><span class="line">        #     n = layers[i+1]  # 第i+1层节点数</span><br><span class="line">        #     wm = m + 1</span><br><span class="line">        #     wn = n + 1</span><br><span class="line">        #     if i == len(layers)-2:</span><br><span class="line">        #         wn = n</span><br><span class="line">        #     weight = np.random.random((wm, wn)) * 2 - 1</span><br><span class="line">        #     self.weights.append(0.25 * weight)</span><br><span class="line"></span><br><span class="line">    #类比梯度下降</span><br><span class="line">    def fit(self, X, y, learning_rate=0.2, epochs = 10000):</span><br><span class="line">        X = np.atleast_2d(X)</span><br><span class="line">        # temp = np.ones([X.shape[0], X.shape[1]+1])</span><br><span class="line">        # temp[:,0:-1] = X</span><br><span class="line">        # X = temp</span><br><span class="line">        X = np.column_stack((X, np.ones(len(X))))</span><br><span class="line">        y = np.array(y)</span><br><span class="line"></span><br><span class="line">        for k in range(epochs):</span><br><span class="line">            i = np.random.randint(X.shape[0])</span><br><span class="line">            a = [X[i]]</span><br><span class="line">            # 正向计算</span><br><span class="line">            for l in range(len(self.weights)):</span><br><span class="line">                a.append(self.activation( np.dot(a[l], self.weights[l])) )</span><br><span class="line">            # 反向传播</span><br><span class="line">            error = y[i] - a[-1]</span><br><span class="line">            deltas = [error * self.activation_deriv(a[-1])]</span><br><span class="line"></span><br><span class="line">            # starting backprobagation</span><br><span class="line">            layerNum = len(a) - 2</span><br><span class="line">            for j in range(layerNum, 0, -1): # 倒数第二层开始</span><br><span class="line">                deltas.append(deltas[-1].dot(self.weights[j].T) * self.activation_deriv(a[j]))</span><br><span class="line">                # deltas.append(deltas[-(layerNum+1-j)].dot(self.weights[j].T) * self.activation_deriv(a[j]))</span><br><span class="line">            deltas.reverse()</span><br><span class="line">            for i in range(len(self.weights)):</span><br><span class="line">                layer = np.atleast_2d(a[i])</span><br><span class="line">                delta = np.atleast_2d(deltas[i])</span><br><span class="line">                self.weights[i] += learning_rate * layer.T.dot(delta)</span><br><span class="line"></span><br><span class="line">    def predict(self, x):</span><br><span class="line">        x = np.array(x)</span><br><span class="line">        temp = np.ones(x.shape[0] + 1)</span><br><span class="line">        temp[0:-1] = x</span><br><span class="line">        a = temp</span><br><span class="line">        for l in range(0, len(self.weights)):</span><br><span class="line">            a = self.activation(np.dot(a, self.weights[l]))</span><br><span class="line">        return a</span><br><span class="line">nn = NeuralNetwork([2, 2, 1], &apos;tanh&apos;)</span><br><span class="line">x = np.array([[0,0],[0,1],[1,0],[1,1]])</span><br><span class="line">y = np.array([0,1,1,0])</span><br><span class="line">nn.fit(x, y)</span><br><span class="line">for i in [[0,0],[0,1],[1,0],[1,1]]:</span><br><span class="line">    print (i, nn.predict(i))</span><br></pre></td></tr></table></figure>
+<h1 id="三、栗子"><a href="#三、栗子" class="headerlink" title="三、栗子"></a>三、栗子</h1><figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np</span><br><span class="line"><span class="hljs-comment">#激励函数与其偏导数</span></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">tanh</span><span class="hljs-params">(x)</span>:</span></span><br><span class="line">    <span class="hljs-keyword">return</span> np.tanh(x)</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">tanh_derivative</span><span class="hljs-params">(x)</span>:</span></span><br><span class="line">    <span class="hljs-keyword">return</span> <span class="hljs-number">1.0</span> - np.tanh(x) * np.tanh(x)</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">logistic</span><span class="hljs-params">(x)</span>:</span></span><br><span class="line">    <span class="hljs-keyword">return</span> <span class="hljs-number">1</span> / (<span class="hljs-number">1</span> + np.exp(-x))</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">logistic_derivative</span><span class="hljs-params">(x)</span>:</span></span><br><span class="line">    <span class="hljs-keyword">return</span> logistic(x) * (<span class="hljs-number">1</span> - logistic(x) )</span><br><span class="line"><span class="hljs-comment">#神经网络模型</span></span><br><span class="line"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">NeuralNetwork</span>:</span></span><br><span class="line">    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, layers, activation=<span class="hljs-string">'tanh'</span>)</span>:</span></span><br><span class="line">        <span class="hljs-keyword">if</span> activation == <span class="hljs-string">'Logistic'</span>:</span><br><span class="line">            self.activation = logistic</span><br><span class="line">            self.activation_deriv = logistic_derivative</span><br><span class="line">        <span class="hljs-keyword">elif</span> activation == <span class="hljs-string">'tanh'</span>:</span><br><span class="line">            self.activation = tanh</span><br><span class="line">            self.activation_deriv = tanh_derivative</span><br><span class="line"></span><br><span class="line">        self.weights = []</span><br><span class="line">        <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>, len(layers)<span class="hljs-number">-1</span>):</span><br><span class="line">            <span class="hljs-comment"># [0,1) * 2 - 1 =&gt; [-1,1) =&gt; * 0.25 =&gt; [-0.25,0.25)  随机权值</span></span><br><span class="line">            self.weights.append( (<span class="hljs-number">2</span>*np.random.random((layers[i<span class="hljs-number">-1</span>] + <span class="hljs-number">1</span>, layers[i] + <span class="hljs-number">1</span> ))<span class="hljs-number">-1</span> ) * <span class="hljs-number">0.25</span> )</span><br><span class="line">            self.weights.append( (<span class="hljs-number">2</span>*np.random.random((layers[i] + <span class="hljs-number">1</span>, layers[i+<span class="hljs-number">1</span>] ))<span class="hljs-number">-1</span> ) * <span class="hljs-number">0.25</span> )</span><br><span class="line">        <span class="hljs-comment"># for i in range(0, len(layers)-1):</span></span><br><span class="line">        <span class="hljs-comment">#     m = layers[i]  # 第i层节点数</span></span><br><span class="line">        <span class="hljs-comment">#     n = layers[i+1]  # 第i+1层节点数</span></span><br><span class="line">        <span class="hljs-comment">#     wm = m + 1</span></span><br><span class="line">        <span class="hljs-comment">#     wn = n + 1</span></span><br><span class="line">        <span class="hljs-comment">#     if i == len(layers)-2:</span></span><br><span class="line">        <span class="hljs-comment">#         wn = n</span></span><br><span class="line">        <span class="hljs-comment">#     weight = np.random.random((wm, wn)) * 2 - 1</span></span><br><span class="line">        <span class="hljs-comment">#     self.weights.append(0.25 * weight)</span></span><br><span class="line"></span><br><span class="line">    <span class="hljs-comment">#类比梯度下降</span></span><br><span class="line">    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">fit</span><span class="hljs-params">(self, X, y, learning_rate=<span class="hljs-number">0.2</span>, epochs = <span class="hljs-number">10000</span>)</span>:</span></span><br><span class="line">        X = np.atleast_2d(X)</span><br><span class="line">        <span class="hljs-comment"># temp = np.ones([X.shape[0], X.shape[1]+1])</span></span><br><span class="line">        <span class="hljs-comment"># temp[:,0:-1] = X</span></span><br><span class="line">        <span class="hljs-comment"># X = temp</span></span><br><span class="line">        X = np.column_stack((X, np.ones(len(X))))</span><br><span class="line">        y = np.array(y)</span><br><span class="line"></span><br><span class="line">        <span class="hljs-keyword">for</span> k <span class="hljs-keyword">in</span> range(epochs):</span><br><span class="line">            i = np.random.randint(X.shape[<span class="hljs-number">0</span>])</span><br><span class="line">            a = [X[i]]</span><br><span class="line">            <span class="hljs-comment"># 正向计算</span></span><br><span class="line">            <span class="hljs-keyword">for</span> l <span class="hljs-keyword">in</span> range(len(self.weights)):</span><br><span class="line">                a.append(self.activation( np.dot(a[l], self.weights[l])) )</span><br><span class="line">            <span class="hljs-comment"># 反向传播</span></span><br><span class="line">            error = y[i] - a[<span class="hljs-number">-1</span>]</span><br><span class="line">            deltas = [error * self.activation_deriv(a[<span class="hljs-number">-1</span>])]</span><br><span class="line"></span><br><span class="line">            <span class="hljs-comment"># starting backprobagation</span></span><br><span class="line">            layerNum = len(a) - <span class="hljs-number">2</span></span><br><span class="line">            <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> range(layerNum, <span class="hljs-number">0</span>, <span class="hljs-number">-1</span>): <span class="hljs-comment"># 倒数第二层开始</span></span><br><span class="line">                deltas.append(deltas[<span class="hljs-number">-1</span>].dot(self.weights[j].T) * self.activation_deriv(a[j]))</span><br><span class="line">                <span class="hljs-comment"># deltas.append(deltas[-(layerNum+1-j)].dot(self.weights[j].T) * self.activation_deriv(a[j]))</span></span><br><span class="line">            deltas.reverse()</span><br><span class="line">            <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(len(self.weights)):</span><br><span class="line">                layer = np.atleast_2d(a[i])</span><br><span class="line">                delta = np.atleast_2d(deltas[i])</span><br><span class="line">                self.weights[i] += learning_rate * layer.T.dot(delta)</span><br><span class="line"></span><br><span class="line">    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">predict</span><span class="hljs-params">(self, x)</span>:</span></span><br><span class="line">        x = np.array(x)</span><br><span class="line">        temp = np.ones(x.shape[<span class="hljs-number">0</span>] + <span class="hljs-number">1</span>)</span><br><span class="line">        temp[<span class="hljs-number">0</span>:<span class="hljs-number">-1</span>] = x</span><br><span class="line">        a = temp</span><br><span class="line">        <span class="hljs-keyword">for</span> l <span class="hljs-keyword">in</span> range(<span class="hljs-number">0</span>, len(self.weights)):</span><br><span class="line">            a = self.activation(np.dot(a, self.weights[l]))</span><br><span class="line">        <span class="hljs-keyword">return</span> a</span><br><span class="line">nn = NeuralNetwork([<span class="hljs-number">2</span>, <span class="hljs-number">2</span>, <span class="hljs-number">1</span>], <span class="hljs-string">'tanh'</span>)</span><br><span class="line">x = np.array([[<span class="hljs-number">0</span>,<span class="hljs-number">0</span>],[<span class="hljs-number">0</span>,<span class="hljs-number">1</span>],[<span class="hljs-number">1</span>,<span class="hljs-number">0</span>],[<span class="hljs-number">1</span>,<span class="hljs-number">1</span>]])</span><br><span class="line">y = np.array([<span class="hljs-number">0</span>,<span class="hljs-number">1</span>,<span class="hljs-number">1</span>,<span class="hljs-number">0</span>])</span><br><span class="line">nn.fit(x, y)</span><br><span class="line"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> [[<span class="hljs-number">0</span>,<span class="hljs-number">0</span>],[<span class="hljs-number">0</span>,<span class="hljs-number">1</span>],[<span class="hljs-number">1</span>,<span class="hljs-number">0</span>],[<span class="hljs-number">1</span>,<span class="hljs-number">1</span>]]:</span><br><span class="line">    <span class="hljs-keyword">print</span> (i, nn.predict(i))</span><br></pre></td></tr></table></figure>
 
 <p>这是我的运行结果</p>
 <p><img src="/Skr-king.github.io/神经网络——案例简单推导.html/0.png" alt></p>
@@ -235,7 +235,7 @@
             <div class="level-start">
                 <div class="level-item">
                     <span class="is-size-6 has-text-grey has-mr-7">#</span>
-                    <a class="has-link-grey -link" href="/Skr-king.github.io/tags/AI/">AI</a>
+                    <a class="has-link-grey -link" href="/Skr-king.github.io/tags/NN/">NN</a>
                 </div>
             </div>
         </div>
@@ -366,7 +366,7 @@
                         Posts
                     </p>
                     <p class="title has-text-weight-normal">
-                        33
+                        34
                     </p>
                 </div>
             </div>
@@ -386,7 +386,7 @@
                         Tags
                     </p>
                     <p class="title has-text-weight-normal">
-                        11
+                        14
                     </p>
                 </div>
             </div>
@@ -555,7 +555,7 @@
                 <span class="level-item">AI</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">7</span>
+                <span class="level-item tag">8</span>
             </span>
         </a></li><li>
         <a class="level is-marginless" href="/Skr-king.github.io/categories/C/">
@@ -649,7 +649,7 @@
         <h3 class="menu-label">
             Tag Cloud
         </h3>
-        <a href="/Skr-king.github.io/tags/C/" style="font-size: 17px; color: #c20099">C++</a> <a href="/Skr-king.github.io/tags/life/" style="font-size: 19px; color: #d60066">life</a> <a href="/Skr-king.github.io/tags/AI/" style="font-size: 21px; color: #eb0033">AI</a> <a href="/Skr-king.github.io/tags/算法/" style="font-size: 23px; color: #f00">算法</a> <a href="/Skr-king.github.io/tags/Learing/" style="font-size: 13px; color: #90f">Learing</a> <a href="/Skr-king.github.io/tags/sharing/" style="font-size: 13px; color: #90f">sharing</a> <a href="/Skr-king.github.io/tags/Makedown语法/" style="font-size: 13px; color: #90f">Makedown语法</a> <a href="/Skr-king.github.io/tags/python/" style="font-size: 15px; color: #ad00cc">python</a> <a href="/Skr-king.github.io/tags/文学/" style="font-size: 15px; color: #ad00cc">文学</a> <a href="/Skr-king.github.io/tags/hexo-github/" style="font-size: 13px; color: #90f">hexo+github</a> <a href="/Skr-king.github.io/tags/Game/" style="font-size: 15px; color: #ad00cc">Game</a>
+        <a href="/Skr-king.github.io/tags/life/" style="font-size: 20.5px; color: #e60040">life</a> <a href="/Skr-king.github.io/tags/C/" style="font-size: 18px; color: #cc0080">C++</a> <a href="/Skr-king.github.io/tags/AI/" style="font-size: 18px; color: #cc0080">AI</a> <a href="/Skr-king.github.io/tags/算法/" style="font-size: 23px; color: #f00">算法</a> <a href="/Skr-king.github.io/tags/Learing/" style="font-size: 13px; color: #90f">Learing</a> <a href="/Skr-king.github.io/tags/KNN/" style="font-size: 13px; color: #90f">KNN</a> <a href="/Skr-king.github.io/tags/Makedown语法/" style="font-size: 13px; color: #90f">Makedown语法</a> <a href="/Skr-king.github.io/tags/sharing/" style="font-size: 13px; color: #90f">sharing</a> <a href="/Skr-king.github.io/tags/文学/" style="font-size: 15.5px; color: #b300bf">文学</a> <a href="/Skr-king.github.io/tags/python/" style="font-size: 15.5px; color: #b300bf">python</a> <a href="/Skr-king.github.io/tags/hexo-github/" style="font-size: 13px; color: #90f">hexo+github</a> <a href="/Skr-king.github.io/tags/Game/" style="font-size: 15.5px; color: #b300bf">Game</a> <a href="/Skr-king.github.io/tags/矩阵分解/" style="font-size: 13px; color: #90f">矩阵分解</a> <a href="/Skr-king.github.io/tags/NN/" style="font-size: 15.5px; color: #b300bf">NN</a>
     </div>
 </div>
 
@@ -663,6 +663,25 @@
         <h3 class="menu-label">
             Recent
         </h3>
+        
+        <article class="media">
+            
+            <a href="/Skr-king.github.io/矩阵分解之推荐系统.html/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/Skr-king.github.io/gallary/37.png" alt="矩阵分解之推荐系统">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-26T14:11:46.000Z">2019-07-26</time></div>
+                    <a href="/Skr-king.github.io/矩阵分解之推荐系统.html/" class="has-link-black-ter is-size-6">矩阵分解之推荐系统</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/Skr-king.github.io/categories/AI/">AI</a>
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -740,25 +759,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/Skr-king.github.io/map函数的简单用法.html/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/Skr-king.github.io/gallary/35.jpg" alt="map函数的简单用法">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-21T02:19:50.000Z">2019-07-21</time></div>
-                    <a href="/Skr-king.github.io/map函数的简单用法.html/" class="has-link-black-ter is-size-6">map函数的简单用法</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/Skr-king.github.io/categories/C/">C++</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
 
@@ -777,7 +777,7 @@
                     <span class="level-item">July 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">10</span>
+                    <span class="level-item tag">11</span>
                 </span>
             </a>
         </li>
@@ -809,7 +809,7 @@
                 <div class="control">
                     <a class="tags has-addons" href="/Skr-king.github.io/tags/AI/">
                         <span class="tag">AI</span>
-                        <span class="tag is-grey">6</span>
+                        <span class="tag is-grey">3</span>
                     </a>
                 </div>
                 
@@ -828,6 +828,13 @@
                 </div>
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/Skr-king.github.io/tags/KNN/">
+                        <span class="tag">KNN</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/Skr-king.github.io/tags/Learing/">
                         <span class="tag">Learing</span>
                         <span class="tag is-grey">1</span>
@@ -838,6 +845,13 @@
                     <a class="tags has-addons" href="/Skr-king.github.io/tags/Makedown语法/">
                         <span class="tag">Makedown语法</span>
                         <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/Skr-king.github.io/tags/NN/">
+                        <span class="tag">NN</span>
+                        <span class="tag is-grey">2</span>
                     </a>
                 </div>
                 
@@ -873,6 +887,13 @@
                     <a class="tags has-addons" href="/Skr-king.github.io/tags/文学/">
                         <span class="tag">文学</span>
                         <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/Skr-king.github.io/tags/矩阵分解/">
+                        <span class="tag">矩阵分解</span>
+                        <span class="tag is-grey">1</span>
                     </a>
                 </div>
                 
@@ -908,6 +929,25 @@
         
         <article class="media">
             
+            <a href="/Skr-king.github.io/矩阵分解之推荐系统.html/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/Skr-king.github.io/gallary/37.png" alt="矩阵分解之推荐系统">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-26T14:11:46.000Z">2019-07-26</time></div>
+                    <a href="/Skr-king.github.io/矩阵分解之推荐系统.html/" class="has-link-black-ter is-size-6">矩阵分解之推荐系统</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/Skr-king.github.io/categories/AI/">AI</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
             <a href="/Skr-king.github.io/五子棋？.html/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/Skr-king.github.io/gallary/22.jpg" alt="五子棋？">
@@ -982,25 +1022,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/Skr-king.github.io/map函数的简单用法.html/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/Skr-king.github.io/gallary/35.jpg" alt="map函数的简单用法">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-21T02:19:50.000Z">2019-07-21</time></div>
-                    <a href="/Skr-king.github.io/map函数的简单用法.html/" class="has-link-black-ter is-size-6">map函数的简单用法</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/Skr-king.github.io/categories/C/">C++</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
 
@@ -1019,7 +1040,7 @@
                     <span class="level-item">July 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">10</span>
+                    <span class="level-item tag">11</span>
                 </span>
             </a>
         </li>
@@ -1051,7 +1072,7 @@
                 <div class="control">
                     <a class="tags has-addons" href="/Skr-king.github.io/tags/AI/">
                         <span class="tag">AI</span>
-                        <span class="tag is-grey">6</span>
+                        <span class="tag is-grey">3</span>
                     </a>
                 </div>
                 
@@ -1070,6 +1091,13 @@
                 </div>
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/Skr-king.github.io/tags/KNN/">
+                        <span class="tag">KNN</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/Skr-king.github.io/tags/Learing/">
                         <span class="tag">Learing</span>
                         <span class="tag is-grey">1</span>
@@ -1080,6 +1108,13 @@
                     <a class="tags has-addons" href="/Skr-king.github.io/tags/Makedown语法/">
                         <span class="tag">Makedown语法</span>
                         <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/Skr-king.github.io/tags/NN/">
+                        <span class="tag">NN</span>
+                        <span class="tag is-grey">2</span>
                     </a>
                 </div>
                 
@@ -1115,6 +1150,13 @@
                     <a class="tags has-addons" href="/Skr-king.github.io/tags/文学/">
                         <span class="tag">文学</span>
                         <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/Skr-king.github.io/tags/矩阵分解/">
+                        <span class="tag">矩阵分解</span>
+                        <span class="tag is-grey">1</span>
                     </a>
                 </div>
                 
