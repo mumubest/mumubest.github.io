@@ -6,7 +6,7 @@
   <link href="/Skr-king.github.io/atom.xml" rel="self"/>
   
   <link href="https://skr-king.github.io/"/>
-  <updated>2019-07-26T14:38:55.847Z</updated>
+  <updated>2019-07-29T11:13:19.786Z</updated>
   <id>https://skr-king.github.io/</id>
   
   <author>
@@ -15,6 +15,24 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>K-means</title>
+    <link href="https://skr-king.github.io/K-means.html/"/>
+    <id>https://skr-king.github.io/K-means.html/</id>
+    <published>2019-07-29T11:10:47.000Z</published>
+    <updated>2019-07-29T11:13:19.786Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="AI" scheme="https://skr-king.github.io/categories/AI/"/>
+    
+    
+      <category term="K-means" scheme="https://skr-king.github.io/tags/K-means/"/>
+    
+  </entry>
   
   <entry>
     <title>矩阵分解之推荐系统</title>
@@ -393,26 +411,6 @@
     
       &lt;h1 id=&quot;Fleury-算法&quot;&gt;&lt;a href=&quot;#Fleury-算法&quot; class=&quot;headerlink&quot; title=&quot;Fleury 算法&quot;&gt;&lt;/a&gt;Fleury 算法&lt;/h1&gt;&lt;p&gt;Fleury算法是从离散书上看到的，书上详细的写了算法的操作。在这里用主要用C语言实现。在这里隆重感谢曹老板的鼎力支持。膜拜~&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/Skr-king.github.io/Fleury-算法.html/1.jpg&quot; alt&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="算法" scheme="https://skr-king.github.io/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="算法" scheme="https://skr-king.github.io/tags/%E7%AE%97%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Fermat&#39;s Last Theorem</title>
-    <link href="https://skr-king.github.io/Fermat-s-Last-Theorem.html/"/>
-    <id>https://skr-king.github.io/Fermat-s-Last-Theorem.html/</id>
-    <published>2019-06-20T11:32:14.000Z</published>
-    <updated>2019-07-26T14:45:19.960Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;https://angelni.github.io/Fermat-s-Last-Theorem/1.jpg&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;
     
     </summary>
     
