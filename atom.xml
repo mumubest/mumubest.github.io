@@ -37,11 +37,11 @@
   </entry>
   
   <entry>
-    <title>矩阵分解之推荐系统</title>
+    <title>Matrix Factorization For Recommendation System</title>
     <link href="https://skr-king.github.io/%E7%9F%A9%E9%98%B5%E5%88%86%E8%A7%A3%E4%B9%8B%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F.html/"/>
     <id>https://skr-king.github.io/矩阵分解之推荐系统.html/</id>
     <published>2019-07-26T14:11:46.000Z</published>
-    <updated>2019-07-26T14:38:55.847Z</updated>
+    <updated>2019-07-30T13:58:30.582Z</updated>
     
     <summary type="html">
     
@@ -52,16 +52,16 @@
       <category term="AI" scheme="https://skr-king.github.io/categories/AI/"/>
     
     
-      <category term="矩阵分解" scheme="https://skr-king.github.io/tags/%E7%9F%A9%E9%98%B5%E5%88%86%E8%A7%A3/"/>
+      <category term="MF" scheme="https://skr-king.github.io/tags/MF/"/>
     
   </entry>
   
   <entry>
-    <title>五子棋？</title>
+    <title>Gobang？</title>
     <link href="https://skr-king.github.io/%E4%BA%94%E5%AD%90%E6%A3%8B%EF%BC%9F.html/"/>
     <id>https://skr-king.github.io/五子棋？.html/</id>
     <published>2019-07-23T15:50:43.000Z</published>
-    <updated>2019-07-23T16:04:44.486Z</updated>
+    <updated>2019-07-30T14:03:55.735Z</updated>
     
     <summary type="html">
     
@@ -97,11 +97,11 @@
   </entry>
   
   <entry>
-    <title>KNN-自我练习</title>
+    <title>KNN-Self-practice</title>
     <link href="https://skr-king.github.io/KNN-%E8%87%AA%E6%88%91%E7%BB%83%E4%B9%A0.html/"/>
     <id>https://skr-king.github.io/KNN-自我练习.html/</id>
     <published>2019-07-22T04:59:00.000Z</published>
-    <updated>2019-07-26T14:42:57.453Z</updated>
+    <updated>2019-07-30T14:03:12.058Z</updated>
     
     <summary type="html">
     
@@ -117,11 +117,11 @@
   </entry>
   
   <entry>
-    <title>KNN——K临近算法</title>
+    <title>KNN——k-Nearest Neighbor</title>
     <link href="https://skr-king.github.io/KNN%E2%80%94%E2%80%94K%E4%B8%B4%E8%BF%91%E7%AE%97%E6%B3%95.html/"/>
     <id>https://skr-king.github.io/KNN——K临近算法.html/</id>
     <published>2019-07-22T04:40:24.000Z</published>
-    <updated>2019-07-22T04:58:17.300Z</updated>
+    <updated>2019-07-30T14:02:44.526Z</updated>
     
     <summary type="html">
     
@@ -133,7 +133,7 @@
       <category term="AI" scheme="https://skr-king.github.io/categories/AI/"/>
     
     
-      <category term="AI" scheme="https://skr-king.github.io/tags/AI/"/>
+      <category term="KNN" scheme="https://skr-king.github.io/tags/KNN/"/>
     
   </entry>
   
@@ -158,11 +158,11 @@
   </entry>
   
   <entry>
-    <title>我的第一个神经网络搭建</title>
+    <title>My First Neural Network Construction</title>
     <link href="https://skr-king.github.io/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E6%90%AD%E5%BB%BA.html/"/>
     <id>https://skr-king.github.io/我的第一个神经网络搭建.html/</id>
     <published>2019-07-20T11:19:07.000Z</published>
-    <updated>2019-07-26T14:39:46.182Z</updated>
+    <updated>2019-07-30T13:51:01.370Z</updated>
     
     <summary type="html">
     
@@ -173,16 +173,16 @@
       <category term="AI" scheme="https://skr-king.github.io/categories/AI/"/>
     
     
-      <category term="AI" scheme="https://skr-king.github.io/tags/AI/"/>
+      <category term="NN" scheme="https://skr-king.github.io/tags/NN/"/>
     
   </entry>
   
   <entry>
-    <title>神经网络之激活函数</title>
+    <title>Artificial Neural Networks——Activation Funcation</title>
     <link href="https://skr-king.github.io/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E4%B9%8B%E6%BF%80%E6%B4%BB%E5%87%BD%E6%95%B0.html/"/>
     <id>https://skr-king.github.io/神经网络之激活函数.html/</id>
     <published>2019-07-19T14:27:39.000Z</published>
-    <updated>2019-07-26T14:14:09.725Z</updated>
+    <updated>2019-07-30T13:49:38.351Z</updated>
     
     <summary type="html">
     
@@ -198,11 +198,11 @@
   </entry>
   
   <entry>
-    <title>神经网络——案例简单推导</title>
+    <title>Artificial Neural Networks</title>
     <link href="https://skr-king.github.io/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E2%80%94%E2%80%94%E6%A1%88%E4%BE%8B%E7%AE%80%E5%8D%95%E6%8E%A8%E5%AF%BC.html/"/>
     <id>https://skr-king.github.io/神经网络——案例简单推导.html/</id>
     <published>2019-07-19T01:42:23.000Z</published>
-    <updated>2019-07-26T14:39:24.739Z</updated>
+    <updated>2019-07-30T13:49:12.793Z</updated>
     
     <summary type="html">
     
@@ -218,11 +218,11 @@
   </entry>
   
   <entry>
-    <title>WordCloud——美丽的词云图</title>
+    <title>WordCloud——A Beautiful Cloud of Words</title>
     <link href="https://skr-king.github.io/WordCloud%E2%80%94%E2%80%94%E7%BE%8E%E4%B8%BD%E7%9A%84%E8%AF%8D%E4%BA%91%E5%9B%BE.html/"/>
     <id>https://skr-king.github.io/WordCloud——美丽的词云图.html/</id>
     <published>2019-07-18T14:52:09.000Z</published>
-    <updated>2019-07-26T14:41:02.611Z</updated>
+    <updated>2019-07-30T13:57:07.344Z</updated>
     
     <summary type="html">
     
@@ -367,7 +367,7 @@
     <link href="https://skr-king.github.io/%E7%BA%A6%E6%95%B0%E4%B8%AA%E6%95%B0%E5%AE%9A%E7%90%86.html/"/>
     <id>https://skr-king.github.io/约数个数定理.html/</id>
     <published>2019-06-20T11:36:09.000Z</published>
-    <updated>2019-07-08T02:32:59.655Z</updated>
+    <updated>2019-07-30T14:04:29.264Z</updated>
     
     <summary type="html">
     
