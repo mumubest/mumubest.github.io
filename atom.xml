@@ -6,7 +6,7 @@
   <link href="/Skr-king.github.io/atom.xml" rel="self"/>
   
   <link href="https://skr-king.github.io/"/>
-  <updated>2019-07-29T14:10:32.138Z</updated>
+  <updated>2019-08-03T14:53:19.359Z</updated>
   <id>https://skr-king.github.io/</id>
   
   <author>
@@ -15,6 +15,46 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>NCF Data Processing</title>
+    <link href="https://skr-king.github.io/NCF-Data-Processing.html/"/>
+    <id>https://skr-king.github.io/NCF-Data-Processing.html/</id>
+    <published>2019-08-03T14:02:07.000Z</published>
+    <updated>2019-08-03T14:53:19.359Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;  左眼永远见不到有眼，只能陪她一起哭泣。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="AI" scheme="https://skr-king.github.io/categories/AI/"/>
+    
+    
+      <category term="AI" scheme="https://skr-king.github.io/tags/AI/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Gradient Descent</title>
+    <link href="https://skr-king.github.io/Gradient-Descent.html/"/>
+    <id>https://skr-king.github.io/Gradient-Descent.html/</id>
+    <published>2019-07-31T06:17:56.000Z</published>
+    <updated>2019-08-03T13:59:21.629Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;  最美的等待是，我们——未来可期。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="AI" scheme="https://skr-king.github.io/categories/AI/"/>
+    
+    
+      <category term="Gradient Descent" scheme="https://skr-king.github.io/tags/Gradient-Descent/"/>
+    
+  </entry>
   
   <entry>
     <title>K-means</title>
@@ -372,47 +412,6 @@
     <summary type="html">
     
       &lt;p&gt;自从那时起，它就有了特别的含义，既是与她的一种约定，也是自己出海航行的方向。one piece 是我的，我可是要成为海贼王的男人哈哈哈。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="算法" scheme="https://skr-king.github.io/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="算法" scheme="https://skr-king.github.io/tags/%E7%AE%97%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>DFS_自我练习</title>
-    <link href="https://skr-king.github.io/DFS-%E8%87%AA%E6%88%91%E7%BB%83%E4%B9%A0.html/"/>
-    <id>https://skr-king.github.io/DFS-自我练习.html/</id>
-    <published>2019-06-20T11:33:13.000Z</published>
-    <updated>2019-07-26T14:45:34.083Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;DFS——exercise&quot;&gt;&lt;a href=&quot;#DFS——exercise&quot; class=&quot;headerlink&quot; title=&quot;DFS——exercise.&quot;&gt;&lt;/a&gt;DFS——exercise.&lt;/h1&gt;&lt;p&gt;I learned DFS last month,I almost forgot how to use it,so that I can’t solve a problem in a practice competition. So I require to review it,and review carefully!&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="算法" scheme="https://skr-king.github.io/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-      <category term="算法" scheme="https://skr-king.github.io/tags/%E7%AE%97%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Fleury 算法</title>
-    <link href="https://skr-king.github.io/Fleury-%E7%AE%97%E6%B3%95.html/"/>
-    <id>https://skr-king.github.io/Fleury-算法.html/</id>
-    <published>2019-06-20T11:32:46.000Z</published>
-    <updated>2019-07-26T14:45:12.275Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;Fleury-算法&quot;&gt;&lt;a href=&quot;#Fleury-算法&quot; class=&quot;headerlink&quot; title=&quot;Fleury 算法&quot;&gt;&lt;/a&gt;Fleury 算法&lt;/h1&gt;&lt;p&gt;Fleury算法是从离散书上看到的，书上详细的写了算法的操作。在这里用主要用C语言实现。在这里隆重感谢曹老板的鼎力支持。膜拜~&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/Skr-king.github.io/Fleury-算法.html/1.jpg&quot; alt&gt;&lt;/p&gt;
     
     </summary>
     
