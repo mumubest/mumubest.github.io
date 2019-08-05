@@ -1,0 +1,1461 @@
+<!DOCTYPE html>
+<script src="/js/src/click.js"></script>
+<script type="text/javascript" src="//libs.baidu.com/jquery/1.8.3/jquery.min.js"></script>
+
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+<title>NCF Data Processing - SKY</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="google-site-verification" content="JwzmnANXlpmQlhwaSORuqpEB6P3Sr-tRhw4R_XDRcEc">
+<meta name="baidu-site-verification" content="ztPAF2oDcw">
+
+
+
+    <meta name="description" content="左眼永远见不到右眼，只能陪她一起哭泣。">
+<meta name="keywords" content="AI">
+<meta property="og:type" content="article">
+<meta property="og:title" content="NCF Data Processing">
+<meta property="og:url" content="https://skr-king.github.io/post/84f33e3c.html">
+<meta property="og:site_name" content="SKY">
+<meta property="og:description" content="左眼永远见不到右眼，只能陪她一起哭泣。">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="https://skr-king.github.io/Skr-king.github.io/Skr-king.github.io/gallary/43.jpg">
+<meta property="og:updated_time" content="2019-08-03T15:01:07.617Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="NCF Data Processing">
+<meta name="twitter:description" content="左眼永远见不到右眼，只能陪她一起哭泣。">
+<meta name="twitter:image" content="https://skr-king.github.io/Skr-king.github.io/Skr-king.github.io/gallary/43.jpg">
+
+
+
+
+
+
+
+<link rel="icon" href="/Skr-king.github.io/images/11.png">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+<link rel="stylesheet" href="/Skr-king.github.io/css/back-to-top.css">
+
+
+    
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=144678502-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', '144678502-1');
+</script>
+
+
+    
+    
+    
+    
+
+    
+    
+<link rel="stylesheet" href="/Skr-king.github.io/css/progressbar.css">
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+
+<link rel="stylesheet" href="/Skr-king.github.io/css/style.css">
+</head>
+<body class="is-3-column">
+
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/Skr-king.github.io/">
+            
+                <img src="/Skr-king.github.io/images/22.png" alt="NCF Data Processing" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/Skr-king.github.io/">Home</a>
+                
+                <a class="navbar-item" href="/Skr-king.github.io/about">About</a>
+                
+                <a class="navbar-item" href="/Skr-king.github.io/archives">Archives</a>
+                
+                <a class="navbar-item" href="/Skr-king.github.io/categories">Categories</a>
+                
+                <a class="navbar-item" href="/Skr-king.github.io/tags">Tags</a>
+                
+                <a class="navbar-item" href="/Skr-king.github.io/music">Music</a>
+                
+                <a class="navbar-item" href="/Skr-king.github.io/sitemap.xml">Sitemap</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                    
+                    
+                    <a class="navbar-item" target="_blank" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus">
+                        
+                        <i class="fab fa-github"></i>
+                        
+                    </a>
+                    
+                
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="/Skr-king.github.io/gallary/43.jpg" alt="NCF Data Processing">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-08-03T14:02:07.000Z">2019-08-03</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/Skr-king.github.io/categories/AI/">AI</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    4 minutes read (About 581 words)
+                </span>
+                
+                
+                <span class="level-item has-text-grey" id="busuanzi_container_page_pv">
+                    <i class="far fa-eye"></i>
+                    <span id="busuanzi_value_page_pv">0</span> visits
+                </span>
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                NCF Data Processing
+            
+        </h1>
+        <div class="content">
+            <p>  左眼永远见不到右眼，只能陪她一起哭泣。<a id="more"></a></p>
+<p>NCF数据处理是对论文neural_collaborative_filtering作者所提出的神经网络协同过滤源代码的运行结果，不过在源代码的基础上做了一些更改，运行环境是 python3.6，keras1.2.2，tensorflow1.3.0  ，电脑本地运行约7个小时。</p>
+<h1 id="数据处理"><a href="#数据处理" class="headerlink" title="数据处理"></a>数据处理</h1><p><strong>前言</strong></p>
+<p><strong>GMF</strong> batch_size=256, dataset=’ml-1m’, epochs=100, learner=’adam’, lr=0.001, num_factors=8, num_neg=4, out=1, path=’Data/‘, regs=’[0,0]’, verbose=1</p>
+<p><strong>MLP</strong> batch_size=256, dataset=’ml-1m’, epochs=100, layers=’[64,32,16,8]’, learner=’adam’, lr=0.001, num_neg=4, out=1, path=’Data/‘, reg_layers=’[0,0,0,0]’, verbose=1</p>
+<p><strong>NeuMF</strong> batch_size=256, dataset=’ml-1m’, epochs=100, layers=’[64,32,16,8]’, learner=’adam’, lr=0.001, mf_pretrain=’’, mlp_pretrain=’’, num_factors=8, num_neg=4, out=1, path=’Data/‘, reg_layers=’[0,0,0,0]’, reg_mf=0, verbose=1</p>
+<p>#user=6040, #item=3706, #train=994169, #test=6040</p>
+<p><strong>评估 leave-one-out</strong></p>
+<ol>
+<li>命中率（HR）</li>
+<li>归一化折扣累积增益（NDCG）</li>
+</ol>
+<h2 id="读取数据"><a href="#读取数据" class="headerlink" title="读取数据"></a>读取数据</h2><figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">import</span> pandas <span class="hljs-keyword">as</span> pd</span><br><span class="line"><span class="hljs-keyword">import</span> matplotlib.pyplot <span class="hljs-keyword">as</span> plt</span><br><span class="line">%matplotlib inline</span><br><span class="line">GMF = pd.read_table(<span class="hljs-string">'GMF.txt'</span>,header=<span class="hljs-literal">None</span>, encoding=<span class="hljs-string">'gb2312'</span>, sep=<span class="hljs-string">','</span>)</span><br><span class="line">MLP = pd.read_table(<span class="hljs-string">'MLP.txt'</span>,header=<span class="hljs-literal">None</span>, encoding=<span class="hljs-string">'gb2312'</span>, sep=<span class="hljs-string">','</span>)</span><br><span class="line">NeuMF = pd.read_table(<span class="hljs-string">'NEUMF.txt'</span>,header=<span class="hljs-literal">None</span>, encoding=<span class="hljs-string">'gb2312'</span>, sep=<span class="hljs-string">','</span>)</span><br></pre></td></tr></table></figure>
+
+<h2 id="查看数据"><a href="#查看数据" class="headerlink" title="查看数据"></a>查看数据</h2><img src="https://s2.ax1x.com/2019/08/03/eskaTI.png" alt border="0">
+
+<img src="https://s2.ax1x.com/2019/08/03/eskU0A.png" alt border="0">
+
+<img src="https://s2.ax1x.com/2019/08/03/eskBff.png" alt border="0">
+
+<h2 id="获取数据"><a href="#获取数据" class="headerlink" title="获取数据"></a>获取数据</h2><h3 id="获取HR数据"><a href="#获取HR数据" class="headerlink" title="获取HR数据"></a>获取HR数据</h3><figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">GMF_HR = []</span><br><span class="line">MLP_HR = []</span><br><span class="line">NeuMF_HR = []</span><br><span class="line"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> GMF[<span class="hljs-number">0</span>]:</span><br><span class="line">    GMF_HR.append(eval(i[<span class="hljs-number">-6</span>:]))</span><br><span class="line"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span>  MLP[<span class="hljs-number">0</span>]:</span><br><span class="line">    MLP_HR.append(eval(i[<span class="hljs-number">-6</span>:]))</span><br><span class="line"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> NeuMF[<span class="hljs-number">0</span>]:</span><br><span class="line">    NeuMF_HR.append(eval(i[<span class="hljs-number">-6</span>:]))</span><br></pre></td></tr></table></figure>
+
+<h3 id="获取NDGC"><a href="#获取NDGC" class="headerlink" title="获取NDGC"></a>获取NDGC</h3><figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">GMF_NDGC= []</span><br><span class="line">MLP_NDGC = []</span><br><span class="line">NeuMF_NDGC = []</span><br><span class="line"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> GMF[<span class="hljs-number">1</span>]:</span><br><span class="line">    GMF_NDGC.append(eval(i[<span class="hljs-number">-6</span>:]))</span><br><span class="line"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span>  MLP[<span class="hljs-number">1</span>]:</span><br><span class="line">    MLP_NDGC.append(eval(i[<span class="hljs-number">-6</span>:]))</span><br><span class="line"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> NeuMF[<span class="hljs-number">1</span>]:</span><br><span class="line">    NeuMF_NDGC.append(eval(i[<span class="hljs-number">-6</span>:]))</span><br></pre></td></tr></table></figure>
+
+<h3 id="获取loss"><a href="#获取loss" class="headerlink" title="获取loss"></a>获取loss</h3><figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">GMF_loss= []</span><br><span class="line">MLP_loss = []</span><br><span class="line">NeuMF_loss = []</span><br><span class="line"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> GMF[<span class="hljs-number">2</span>]:</span><br><span class="line">    GMF_loss.append(eval(i[<span class="hljs-number">-14</span>:<span class="hljs-number">-8</span>]))</span><br><span class="line"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span>  MLP[<span class="hljs-number">2</span>]:</span><br><span class="line">    MLP_loss.append(eval(i[<span class="hljs-number">-14</span>:<span class="hljs-number">-8</span>]))</span><br><span class="line"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> NeuMF[<span class="hljs-number">2</span>]:</span><br><span class="line">    NeuMF_loss.append(eval(i[<span class="hljs-number">-14</span>:<span class="hljs-number">-8</span>]))</span><br></pre></td></tr></table></figure>
+
+<h2 id="图表表示"><a href="#图表表示" class="headerlink" title="图表表示"></a>图表表示</h2><h3 id="HR对比"><a href="#HR对比" class="headerlink" title="HR对比"></a>HR对比</h3><figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">f=plt.figure(figsize=(<span class="hljs-number">12</span>,<span class="hljs-number">10</span>))</span><br><span class="line">plt.rcParams[<span class="hljs-string">'font.sans-serif'</span>] = [<span class="hljs-string">'SimHei'</span>]</span><br><span class="line">plt.title(<span class="hljs-string">"GMF-MLP-NeuMF  HR 对比图"</span>,fontsize = <span class="hljs-number">20</span>)</span><br><span class="line">plt.xlabel(<span class="hljs-string">"Iteration"</span>,fontsize = <span class="hljs-number">20</span>)</span><br><span class="line">plt.ylabel(<span class="hljs-string">"HR"</span>,fontsize = <span class="hljs-number">20</span>)</span><br><span class="line">plt.plot(range(<span class="hljs-number">100</span>),GMF_HR,label = <span class="hljs-string">"GMF"</span>)<span class="hljs-comment">#,linestyle='--')</span></span><br><span class="line">plt.plot(range(<span class="hljs-number">100</span>),MLP_HR,label = <span class="hljs-string">"MLP"</span>)<span class="hljs-comment">#,linestyle='-.')</span></span><br><span class="line">plt.plot(range(<span class="hljs-number">100</span>),NeuMF_HR,label =<span class="hljs-string">"NeuMF"</span>)</span><br><span class="line">plt.scatter(<span class="hljs-number">98</span>,<span class="hljs-number">0.6437</span>,marker=<span class="hljs-string">'^'</span>,color = <span class="hljs-string">'black'</span>)</span><br><span class="line">plt.scatter(<span class="hljs-number">29</span>,<span class="hljs-number">0.6763</span>,marker=<span class="hljs-string">'^'</span>,color = <span class="hljs-string">'black'</span>)</span><br><span class="line">plt.scatter(<span class="hljs-number">35</span>,<span class="hljs-number">0.6848</span>,marker=<span class="hljs-string">'^'</span>,color = <span class="hljs-string">'black'</span>)</span><br><span class="line">plt.legend()</span><br><span class="line"></span><br><span class="line">plt.grid(c=<span class="hljs-string">"w"</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+
+<img src="https://s2.ax1x.com/2019/08/03/eskwkt.png" alt border="0">
+
+<h3 id="NDGC-对比"><a href="#NDGC-对比" class="headerlink" title="NDGC 对比"></a>NDGC 对比</h3><figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">f=plt.figure(figsize=(<span class="hljs-number">12</span>,<span class="hljs-number">10</span>))</span><br><span class="line">plt.rcParams[<span class="hljs-string">'font.sans-serif'</span>] = [<span class="hljs-string">'SimHei'</span>]</span><br><span class="line">plt.title(<span class="hljs-string">"GMF-MLP-NeuMF NDGC 对比图"</span>,fontsize = <span class="hljs-number">20</span>)</span><br><span class="line">plt.xlabel(<span class="hljs-string">"Iteration"</span>,fontsize = <span class="hljs-number">20</span>)</span><br><span class="line">plt.ylabel(<span class="hljs-string">"NDGC"</span>,fontsize = <span class="hljs-number">20</span>)</span><br><span class="line">plt.plot(range(<span class="hljs-number">100</span>),GMF_NDGC,label = <span class="hljs-string">"GMF"</span>)</span><br><span class="line">plt.plot(range(<span class="hljs-number">100</span>),MLP_NDGC,label = <span class="hljs-string">"MLP"</span>)</span><br><span class="line">plt.plot(range(<span class="hljs-number">100</span>),NeuMF_NDGC,label =<span class="hljs-string">"NeuMF"</span>)</span><br><span class="line">plt.scatter(<span class="hljs-number">98</span>,<span class="hljs-number">0.3749</span>,marker=<span class="hljs-string">'^'</span>,color = <span class="hljs-string">'black'</span>)</span><br><span class="line">plt.scatter(<span class="hljs-number">29</span>,<span class="hljs-number">0.3988</span>,marker=<span class="hljs-string">'^'</span>,color = <span class="hljs-string">'black'</span>)</span><br><span class="line">plt.scatter(<span class="hljs-number">35</span>,<span class="hljs-number">0.4095</span>,marker=<span class="hljs-string">'^'</span>,color = <span class="hljs-string">'black'</span>)</span><br><span class="line">plt.legend()</span><br><span class="line">plt.grid(c=<span class="hljs-string">"w"</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://s2.ax1x.com/2019/08/03/eskNmd.png" alt border="0"></p>
+<h3 id="LOSS-对比"><a href="#LOSS-对比" class="headerlink" title="LOSS 对比"></a>LOSS 对比</h3><figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">f=plt.figure(figsize=(<span class="hljs-number">12</span>,<span class="hljs-number">10</span>))</span><br><span class="line">plt.rcParams[<span class="hljs-string">'font.sans-serif'</span>] = [<span class="hljs-string">'SimHei'</span>]</span><br><span class="line">plt.title(<span class="hljs-string">"GMF-MLP-NeuMF  loss 对比图"</span>,fontsize = <span class="hljs-number">20</span>)</span><br><span class="line">plt.xlabel(<span class="hljs-string">"Iteration"</span>,fontsize = <span class="hljs-number">20</span>)</span><br><span class="line">plt.ylabel(<span class="hljs-string">"Loss"</span>,fontsize = <span class="hljs-number">20</span>)</span><br><span class="line">plt.plot(range(<span class="hljs-number">100</span>),GMF_loss,label = <span class="hljs-string">"GMF"</span>)</span><br><span class="line">plt.plot(range(<span class="hljs-number">100</span>),MLP_loss,label = <span class="hljs-string">"MLP"</span>)</span><br><span class="line">plt.plot(range(<span class="hljs-number">100</span>),NeuMF_loss,label =<span class="hljs-string">"NeuMF"</span>)</span><br><span class="line">plt.legend()</span><br><span class="line">plt.grid(c =<span class="hljs-string">"w"</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+
+<img src="https://s2.ax1x.com/2019/08/03/esk0tP.png" alt border="0">
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/Skr-king.github.io/tags/AI/">AI</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+<div class="card">
+    <div class="card-content">
+        <h3 class="menu-label has-text-centered">Like this article? Support the author with</h3>
+        <div class="buttons is-centered">
+            
+                
+<a class="button is-info donate">
+    <span class="icon is-small">
+        <i class="fab fa-alipay"></i>
+    </span>
+    <span>Alipay</span>
+    <div class="qrcode"><img src="/Skr-king.github.io/images/1.jpg" alt="Alipay"></div>
+</a>
+
+                
+                
+<a class="button is-success donate">
+    <span class="icon is-small">
+        <i class="fab fa-weixin"></i>
+    </span>
+    <span>Wechat</span>
+    <div class="qrcode"><img src="/Skr-king.github.io/images/2.png" alt="Wechat"></div>
+</a>
+
+                
+        </div>
+    </div>
+</div>
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/Skr-king.github.io/post/88ee7a34.html">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">Appreciation of Novels(2)</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/Skr-king.github.io/post/dc87af69.html">
+                <span class="level-item">Gradient Descent</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+
+<div class="card">
+    <div class="card-content">
+        <h3 class="title is-5 has-text-weight-normal">Comments</h3>
+        
+<div id="valine-thread" class="content"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#valine-thread' ,
+        notify: false,
+        verify: false,
+        app_id: '0dNioPuDCFsscn6y58dczYiy-gzGzoHsz',
+        app_key: 'jbyn5TRGmiiAsYjo7PFFzrYJ',
+        placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!'
+    });
+</script>
+
+    </div>
+</div>
+</div>
+                
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-3-widescreen  has-order-1 column-left ">
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <nav class="level">
+            <div class="level-item has-text-centered" style="flex-shrink: 1">
+                <div>
+                    
+                        <figure class="image is-128x128 has-mb-6">
+                            <img class="is-rounded" src="/Skr-king.github.io/images/avatar.png" alt="Sky.H.N">
+                        </figure>
+                    
+                    
+                    <p class="is-size-4 is-block">
+                        Sky.H.N
+                    </p>
+                    
+                    
+                    <p class="is-size-6 is-block">
+                        情不知何所起，却一往情深
+                    </p>
+                    
+                    
+                    <p class="is-size-6 is-flex is-flex-center has-text-grey">
+                        <i class="fas fa-map-marker-alt has-mr-7"></i>
+                        <span>Hebei China</span>
+                    </p>
+                    
+                </div>
+            </div>
+        </nav>
+        <nav class="level is-mobile">
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        Posts
+                    </p>
+                    <p class="title has-text-weight-normal">
+                        38
+                    </p>
+                </div>
+            </div>
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        Categories
+                    </p>
+                    <p class="title has-text-weight-normal">
+                        11
+                    </p>
+                </div>
+            </div>
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        Tags
+                    </p>
+                    <p class="title has-text-weight-normal">
+                        16
+                    </p>
+                </div>
+            </div>
+        </nav>
+        <div class="level">
+            <a class="level-item button is-link is-rounded" href="https://github.com/AngelNI" target="_blank">
+                Follow</a>
+        </div>
+        
+        
+        <div class="level is-mobile">
+            
+            <a class="level-item button is-white is-marginless" target="_blank" title="Github" href="https://github.com/">
+                
+                <i class="fab fa-github"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank" title="Facebook" href="https://facebook.com">
+                
+                <i class="fab fa-facebook"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank" title="Twitter" href="https://twitter.com">
+                
+                <i class="fab fa-twitter"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank" title="Dribbble" href="https://dribbble.com">
+                
+                <i class="fab fa-dribbble"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank" title="RSS" href="/Skr-king.github.io/atom.xml">
+                
+                <i class="fas fa-rss"></i>
+                
+            </a>
+            
+        </div>
+        
+    </div>
+</div>
+    
+        
+    
+        
+
+<div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+        <h3 class="menu-label">
+            Links
+        </h3>
+        <ul class="menu-list">
+        
+            <li>
+                <a class="level is-mobile" href="https://blog.cndrew.cn/" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">Uncle_drew</span>
+                    </span>
+                    <span class="level-right">
+                        <span class="level-item tag">blog.cndrew.cn</span>
+                    </span>
+                </a>
+            </li>
+        
+            <li>
+                <a class="level is-mobile" href="https://blog.todest.cn/" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">亦往沧劫</span>
+                    </span>
+                    <span class="level-right">
+                        <span class="level-item tag">blog.todest.cn</span>
+                    </span>
+                </a>
+            </li>
+        
+            <li>
+                <a class="level is-mobile" href="http://www.sqdxwz.com/" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">赴京书生</span>
+                    </span>
+                    <span class="level-right">
+                        <span class="level-item tag">www.sqdxwz.com</span>
+                    </span>
+                </a>
+            </li>
+        
+            <li>
+                <a class="level is-mobile" href="https://uppez.github.io/" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">Uppez</span>
+                    </span>
+                    <span class="level-right">
+                        <span class="level-item tag">uppez.github.io</span>
+                    </span>
+                </a>
+            </li>
+        
+            <li>
+                <a class="level is-mobile" href="https://blog.csdn.net/hpuer_random" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">鸿杰的博客</span>
+                    </span>
+                    <span class="level-right">
+                        <span class="level-item tag">blog.csdn.net</span>
+                    </span>
+                </a>
+            </li>
+        
+            <li>
+                <a class="level is-mobile" href="https://boctorio.com/" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">Boctorio&#39;s Blog</span>
+                    </span>
+                    <span class="level-right">
+                        <span class="level-item tag">boctorio.com</span>
+                    </span>
+                </a>
+            </li>
+        
+            <li>
+                <a class="level is-mobile" href="https://www.laugh12321.cn/" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">Laugh</span>
+                    </span>
+                    <span class="level-right">
+                        <span class="level-item tag">www.laugh12321.cn</span>
+                    </span>
+                </a>
+            </li>
+        
+            <li>
+                <a class="level is-mobile" href="https://hpu-yz.github.io/" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">小志子</span>
+                    </span>
+                    <span class="level-right">
+                        <span class="level-item tag">hpu-yz.github.io</span>
+                    </span>
+                </a>
+            </li>
+        
+            <li>
+                <a class="level is-mobile" href="https://hpumengzhao.github.io" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">Meng Space</span>
+                    </span>
+                    <span class="level-right">
+                        <span class="level-item tag">hpumengzhao.github.io</span>
+                    </span>
+                </a>
+            </li>
+        
+            <li>
+                <a class="level is-mobile" href="https://www.cnblogs.com/maybe2030/" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">Poll(机器学习的大佬)</span>
+                    </span>
+                    <span class="level-right">
+                        <span class="level-item tag">www.cnblogs.com</span>
+                    </span>
+                </a>
+            </li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+
+
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Categories
+            </h3>
+            <ul class="menu-list">
+            <li>
+        <a class="level is-marginless" href="/Skr-king.github.io/categories/AI/">
+            <span class="level-start">
+                <span class="level-item">AI</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">11</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/Skr-king.github.io/categories/Algorithm/">
+            <span class="level-start">
+                <span class="level-item">Algorithm</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">9</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/Skr-king.github.io/categories/C/">
+            <span class="level-start">
+                <span class="level-item">C++</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">3</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/Skr-king.github.io/categories/Game/">
+            <span class="level-start">
+                <span class="level-item">Game</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">1</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/Skr-king.github.io/categories/Learning/">
+            <span class="level-start">
+                <span class="level-item">Learning</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">1</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/Skr-king.github.io/categories/Makedown/">
+            <span class="level-start">
+                <span class="level-item">Makedown</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">1</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/Skr-king.github.io/categories/hexo-github/">
+            <span class="level-start">
+                <span class="level-item">hexo+github</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">1</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/Skr-king.github.io/categories/life/">
+            <span class="level-start">
+                <span class="level-item">life</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">5</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/Skr-king.github.io/categories/literature/">
+            <span class="level-start">
+                <span class="level-item">literature</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">3</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/Skr-king.github.io/categories/python/">
+            <span class="level-start">
+                <span class="level-item">python</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">2</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/Skr-king.github.io/categories/sharing/">
+            <span class="level-start">
+                <span class="level-item">sharing</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">1</span>
+            </span>
+        </a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <h3 class="menu-label">
+            Tag Cloud
+        </h3>
+        <a href="/Skr-king.github.io/tags/literature/" style="font-size: 18px; color: #cc0080">literature</a> <a href="/Skr-king.github.io/tags/life/" style="font-size: 20.5px; color: #e60040">life</a> <a href="/Skr-king.github.io/tags/AI/" style="font-size: 15.5px; color: #b300bf">AI</a> <a href="/Skr-king.github.io/tags/C/" style="font-size: 18px; color: #cc0080">C++</a> <a href="/Skr-king.github.io/tags/Algorithm/" style="font-size: 23px; color: #f00">Algorithm</a> <a href="/Skr-king.github.io/tags/Learing/" style="font-size: 13px; color: #90f">Learing</a> <a href="/Skr-king.github.io/tags/Gradient-Descent/" style="font-size: 13px; color: #90f">Gradient Descent</a> <a href="/Skr-king.github.io/tags/KNN/" style="font-size: 15.5px; color: #b300bf">KNN</a> <a href="/Skr-king.github.io/tags/K-means/" style="font-size: 13px; color: #90f">K-means</a> <a href="/Skr-king.github.io/tags/MF/" style="font-size: 13px; color: #90f">MF</a> <a href="/Skr-king.github.io/tags/sharing/" style="font-size: 13px; color: #90f">sharing</a> <a href="/Skr-king.github.io/tags/Makedown/" style="font-size: 13px; color: #90f">Makedown</a> <a href="/Skr-king.github.io/tags/python/" style="font-size: 15.5px; color: #b300bf">python</a> <a href="/Skr-king.github.io/tags/hexo-github/" style="font-size: 13px; color: #90f">hexo+github</a> <a href="/Skr-king.github.io/tags/Game/" style="font-size: 15.5px; color: #b300bf">Game</a> <a href="/Skr-king.github.io/tags/NN/" style="font-size: 18px; color: #cc0080">NN</a>
+    </div>
+</div>
+
+    
+    
+        <div class="column-right-shadow is-hidden-widescreen ">
+        
+            
+<div class="card widget">
+    <div class="card-content">
+        <h3 class="menu-label">
+            Recent
+        </h3>
+        
+        <article class="media">
+            
+            <a href="/Skr-king.github.io/post/88ee7a34.html" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/Skr-king.github.io/gallary/44.jpg" alt="Appreciation of Novels(2)">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-08-04T02:18:50.000Z">2019-08-04</time></div>
+                    <a href="/Skr-king.github.io/post/88ee7a34.html" class="has-link-black-ter is-size-6">Appreciation of Novels(2)</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/Skr-king.github.io/categories/literature/">literature</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/Skr-king.github.io/post/84f33e3c.html" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/Skr-king.github.io/gallary/43.jpg" alt="NCF Data Processing">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-08-03T14:02:07.000Z">2019-08-03</time></div>
+                    <a href="/Skr-king.github.io/post/84f33e3c.html" class="has-link-black-ter is-size-6">NCF Data Processing</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/Skr-king.github.io/categories/AI/">AI</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/Skr-king.github.io/post/dc87af69.html" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/Skr-king.github.io/gallary/42.jpg" alt="Gradient Descent">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-31T06:17:56.000Z">2019-07-31</time></div>
+                    <a href="/Skr-king.github.io/post/dc87af69.html" class="has-link-black-ter is-size-6">Gradient Descent</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/Skr-king.github.io/categories/AI/">AI</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/Skr-king.github.io/post/766f9b60.html" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/Skr-king.github.io/gallary/38.png" alt="K-means">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-29T11:10:47.000Z">2019-07-29</time></div>
+                    <a href="/Skr-king.github.io/post/766f9b60.html" class="has-link-black-ter is-size-6">K-means</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/Skr-king.github.io/categories/AI/">AI</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/Skr-king.github.io/post/7e7110e.html" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/Skr-king.github.io/gallary/37.png" alt="Matrix Factorization For Recommendation System">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-26T14:11:46.000Z">2019-07-26</time></div>
+                    <a href="/Skr-king.github.io/post/7e7110e.html" class="has-link-black-ter is-size-6">Matrix Factorization For Recommendation System</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/Skr-king.github.io/categories/AI/">AI</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+    </div>
+</div>
+
+        
+            <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+        <h3 class="menu-label">
+            Archives
+        </h3>
+        <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/Skr-king.github.io/archives/2019/08/">
+                <span class="level-start">
+                    <span class="level-item">August 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">2</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/Skr-king.github.io/archives/2019/07/">
+                <span class="level-start">
+                    <span class="level-item">July 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">13</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/Skr-king.github.io/archives/2019/06/">
+                <span class="level-start">
+                    <span class="level-item">June 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">23</span>
+                </span>
+            </a>
+        </li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+        
+            <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Tags
+            </h3>
+            <div class="field is-grouped is-grouped-multiline">
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/Skr-king.github.io/tags/AI/">
+                        <span class="tag">AI</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/Skr-king.github.io/tags/Algorithm/">
+                        <span class="tag">Algorithm</span>
+                        <span class="tag is-grey">10</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/Skr-king.github.io/tags/C/">
+                        <span class="tag">C++</span>
+                        <span class="tag is-grey">3</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/Skr-king.github.io/tags/Game/">
+                        <span class="tag">Game</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/Skr-king.github.io/tags/Gradient-Descent/">
+                        <span class="tag">Gradient Descent</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/Skr-king.github.io/tags/K-means/">
+                        <span class="tag">K-means</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/Skr-king.github.io/tags/KNN/">
+                        <span class="tag">KNN</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/Skr-king.github.io/tags/Learing/">
+                        <span class="tag">Learing</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/Skr-king.github.io/tags/MF/">
+                        <span class="tag">MF</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/Skr-king.github.io/tags/Makedown/">
+                        <span class="tag">Makedown</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/Skr-king.github.io/tags/NN/">
+                        <span class="tag">NN</span>
+                        <span class="tag is-grey">3</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/Skr-king.github.io/tags/hexo-github/">
+                        <span class="tag">hexo+github</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/Skr-king.github.io/tags/life/">
+                        <span class="tag">life</span>
+                        <span class="tag is-grey">5</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/Skr-king.github.io/tags/literature/">
+                        <span class="tag">literature</span>
+                        <span class="tag is-grey">3</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/Skr-king.github.io/tags/python/">
+                        <span class="tag">python</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/Skr-king.github.io/tags/sharing/">
+                        <span class="tag">sharing</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+        
+        </div>
+    
+</div>
+
+                
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only has-order-3 column-right ">
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <h3 class="menu-label">
+            Recent
+        </h3>
+        
+        <article class="media">
+            
+            <a href="/Skr-king.github.io/post/88ee7a34.html" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/Skr-king.github.io/gallary/44.jpg" alt="Appreciation of Novels(2)">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-08-04T02:18:50.000Z">2019-08-04</time></div>
+                    <a href="/Skr-king.github.io/post/88ee7a34.html" class="has-link-black-ter is-size-6">Appreciation of Novels(2)</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/Skr-king.github.io/categories/literature/">literature</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/Skr-king.github.io/post/84f33e3c.html" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/Skr-king.github.io/gallary/43.jpg" alt="NCF Data Processing">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-08-03T14:02:07.000Z">2019-08-03</time></div>
+                    <a href="/Skr-king.github.io/post/84f33e3c.html" class="has-link-black-ter is-size-6">NCF Data Processing</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/Skr-king.github.io/categories/AI/">AI</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/Skr-king.github.io/post/dc87af69.html" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/Skr-king.github.io/gallary/42.jpg" alt="Gradient Descent">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-31T06:17:56.000Z">2019-07-31</time></div>
+                    <a href="/Skr-king.github.io/post/dc87af69.html" class="has-link-black-ter is-size-6">Gradient Descent</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/Skr-king.github.io/categories/AI/">AI</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/Skr-king.github.io/post/766f9b60.html" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/Skr-king.github.io/gallary/38.png" alt="K-means">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-29T11:10:47.000Z">2019-07-29</time></div>
+                    <a href="/Skr-king.github.io/post/766f9b60.html" class="has-link-black-ter is-size-6">K-means</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/Skr-king.github.io/categories/AI/">AI</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/Skr-king.github.io/post/7e7110e.html" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/Skr-king.github.io/gallary/37.png" alt="Matrix Factorization For Recommendation System">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-26T14:11:46.000Z">2019-07-26</time></div>
+                    <a href="/Skr-king.github.io/post/7e7110e.html" class="has-link-black-ter is-size-6">Matrix Factorization For Recommendation System</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/Skr-king.github.io/categories/AI/">AI</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+    </div>
+</div>
+
+    
+        <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+        <h3 class="menu-label">
+            Archives
+        </h3>
+        <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/Skr-king.github.io/archives/2019/08/">
+                <span class="level-start">
+                    <span class="level-item">August 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">2</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/Skr-king.github.io/archives/2019/07/">
+                <span class="level-start">
+                    <span class="level-item">July 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">13</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/Skr-king.github.io/archives/2019/06/">
+                <span class="level-start">
+                    <span class="level-item">June 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">23</span>
+                </span>
+            </a>
+        </li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+    
+        <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Tags
+            </h3>
+            <div class="field is-grouped is-grouped-multiline">
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/Skr-king.github.io/tags/AI/">
+                        <span class="tag">AI</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/Skr-king.github.io/tags/Algorithm/">
+                        <span class="tag">Algorithm</span>
+                        <span class="tag is-grey">10</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/Skr-king.github.io/tags/C/">
+                        <span class="tag">C++</span>
+                        <span class="tag is-grey">3</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/Skr-king.github.io/tags/Game/">
+                        <span class="tag">Game</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/Skr-king.github.io/tags/Gradient-Descent/">
+                        <span class="tag">Gradient Descent</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/Skr-king.github.io/tags/K-means/">
+                        <span class="tag">K-means</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/Skr-king.github.io/tags/KNN/">
+                        <span class="tag">KNN</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/Skr-king.github.io/tags/Learing/">
+                        <span class="tag">Learing</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/Skr-king.github.io/tags/MF/">
+                        <span class="tag">MF</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/Skr-king.github.io/tags/Makedown/">
+                        <span class="tag">Makedown</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/Skr-king.github.io/tags/NN/">
+                        <span class="tag">NN</span>
+                        <span class="tag is-grey">3</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/Skr-king.github.io/tags/hexo-github/">
+                        <span class="tag">hexo+github</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/Skr-king.github.io/tags/life/">
+                        <span class="tag">life</span>
+                        <span class="tag is-grey">5</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/Skr-king.github.io/tags/literature/">
+                        <span class="tag">literature</span>
+                        <span class="tag is-grey">3</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/Skr-king.github.io/tags/python/">
+                        <span class="tag">python</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/Skr-king.github.io/tags/sharing/">
+                        <span class="tag">sharing</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+</div>
+
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/Skr-king.github.io/">
+                
+                    <img src="/Skr-king.github.io/images/22.png" alt="NCF Data Processing" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 Sky_H_N&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                <br>
+                <span id="busuanzi_container_site_uv">
+                Visited by <span id="busuanzi_value_site_uv">0</span> users
+                </span>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus">
+                        
+                        <i class="fab fa-github"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+
+
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en");</script>
+
+
+    
+    
+    
+    <script src="/Skr-king.github.io/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    <script src="/Skr-king.github.io/js/gallery.js" defer></script>
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'flex'
+        });
+    });
+</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    MathJax.Hub.Config({
+        'HTML-CSS': {
+            matchFontHeight: false
+        },
+        SVG: {
+            matchFontHeight: false
+        },
+        CommonHTML: {
+            matchFontHeight: false
+        },
+        tex2jax: {
+            inlineMath: [
+                ['$','$'],
+                ['\\(','\\)']
+            ]
+        }
+    });
+});
+</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+<script src="/Skr-king.github.io/js/back-to-top.js" defer></script>
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    <script src="/Skr-king.github.io/js/clipboard.js" defer></script>
+    
+
+    
+    
+    
+
+    
+
+
+<script src="/Skr-king.github.io/js/main.js" defer></script>
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: 'Posts',
+                PAGES: 'Pages',
+                CATEGORIES: 'Categories',
+                TAGS: 'Tags',
+                UNTITLED: '(Untitled)',
+            },
+            CONTENT_URL: '/Skr-king.github.io/content.json',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script src="/Skr-king.github.io/js/insight.js" defer></script>
+<link rel="stylesheet" href="/Skr-king.github.io/css/search.css">
+<link rel="stylesheet" href="/Skr-king.github.io/css/insight.css">
+    
+<script id="ilt" src="https://music.toubiec.cn/player/js/player.js" key="c99cedb40849420a8ab95d5748a6df24"></script>
+	<!-- 雪花特效 -->
+<script type="text/javascript">
+var windowWidth = $(window).width();
+if (windowWidth > 480) {
+document.write('<script type="text/javascript" src="/js/src/snow.js"><\/script>');
+}
+</script>
+
+<script src="/js/src/baidupush.js"></script>
+</body>
+</html>
