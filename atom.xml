@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>SKY</title>
+  <title>Sky&#39;s Blog</title>
   
   <subtitle>Just Do it !!!</subtitle>
-  <link href="/Skr-king.github.io/atom.xml" rel="self"/>
+  <link href="/AngelNI.github.io/atom.xml" rel="self"/>
   
-  <link href="https://skr-king.github.io/"/>
-  <updated>2019-08-05T09:19:10.133Z</updated>
-  <id>https://skr-king.github.io/</id>
+  <link href="https://angelni.github.io/"/>
+  <updated>2019-08-05T09:19:12.000Z</updated>
+  <id>https://angelni.github.io/</id>
   
   <author>
     <name>Sky_H_N</name>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>Appreciation of Novels(2)</title>
-    <link href="https://skr-king.github.io/post/88ee7a34.html"/>
-    <id>https://skr-king.github.io/post/88ee7a34.html</id>
+    <link href="https://angelni.github.io/post/88ee7a34.html"/>
+    <id>https://angelni.github.io/post/88ee7a34.html</id>
     <published>2019-08-04T02:18:50.000Z</published>
-    <updated>2019-08-05T09:19:10.133Z</updated>
+    <updated>2019-08-05T09:19:12.000Z</updated>
     
     <summary type="html">
     
@@ -29,19 +29,19 @@
     
     </summary>
     
-      <category term="literature" scheme="https://skr-king.github.io/categories/literature/"/>
+      <category term="literature" scheme="https://angelni.github.io/categories/literature/"/>
     
     
-      <category term="literature" scheme="https://skr-king.github.io/tags/literature/"/>
+      <category term="literature" scheme="https://angelni.github.io/tags/literature/"/>
     
   </entry>
   
   <entry>
     <title>NCF Data Processing</title>
-    <link href="https://skr-king.github.io/post/84f33e3c.html"/>
-    <id>https://skr-king.github.io/post/84f33e3c.html</id>
+    <link href="https://angelni.github.io/post/84f33e3c.html"/>
+    <id>https://angelni.github.io/post/84f33e3c.html</id>
     <published>2019-08-03T14:02:07.000Z</published>
-    <updated>2019-08-05T09:19:10.149Z</updated>
+    <updated>2019-08-05T09:19:12.000Z</updated>
     
     <summary type="html">
     
@@ -49,19 +49,19 @@
     
     </summary>
     
-      <category term="AI" scheme="https://skr-king.github.io/categories/AI/"/>
+      <category term="AI" scheme="https://angelni.github.io/categories/AI/"/>
     
     
-      <category term="AI" scheme="https://skr-king.github.io/tags/AI/"/>
+      <category term="AI" scheme="https://angelni.github.io/tags/AI/"/>
     
   </entry>
   
   <entry>
     <title>Gradient Descent</title>
-    <link href="https://skr-king.github.io/post/dc87af69.html"/>
-    <id>https://skr-king.github.io/post/dc87af69.html</id>
+    <link href="https://angelni.github.io/post/dc87af69.html"/>
+    <id>https://angelni.github.io/post/dc87af69.html</id>
     <published>2019-07-31T06:17:56.000Z</published>
-    <updated>2019-08-05T09:19:10.142Z</updated>
+    <updated>2019-08-05T09:19:12.000Z</updated>
     
     <summary type="html">
     
@@ -69,19 +69,19 @@
     
     </summary>
     
-      <category term="AI" scheme="https://skr-king.github.io/categories/AI/"/>
+      <category term="AI" scheme="https://angelni.github.io/categories/AI/"/>
     
     
-      <category term="Gradient Descent" scheme="https://skr-king.github.io/tags/Gradient-Descent/"/>
+      <category term="Gradient Descent" scheme="https://angelni.github.io/tags/Gradient-Descent/"/>
     
   </entry>
   
   <entry>
     <title>K-means</title>
-    <link href="https://skr-king.github.io/post/766f9b60.html"/>
-    <id>https://skr-king.github.io/post/766f9b60.html</id>
+    <link href="https://angelni.github.io/post/766f9b60.html"/>
+    <id>https://angelni.github.io/post/766f9b60.html</id>
     <published>2019-07-29T11:10:47.000Z</published>
-    <updated>2019-08-05T09:19:10.144Z</updated>
+    <updated>2019-08-05T09:19:12.000Z</updated>
     
     <summary type="html">
     
@@ -89,19 +89,19 @@
     
     </summary>
     
-      <category term="AI" scheme="https://skr-king.github.io/categories/AI/"/>
+      <category term="AI" scheme="https://angelni.github.io/categories/AI/"/>
     
     
-      <category term="K-means" scheme="https://skr-king.github.io/tags/K-means/"/>
+      <category term="K-means" scheme="https://angelni.github.io/tags/K-means/"/>
     
   </entry>
   
   <entry>
     <title>Matrix Factorization For Recommendation System</title>
-    <link href="https://skr-king.github.io/post/7e7110e.html"/>
-    <id>https://skr-king.github.io/post/7e7110e.html</id>
+    <link href="https://angelni.github.io/post/7e7110e.html"/>
+    <id>https://angelni.github.io/post/7e7110e.html</id>
     <published>2019-07-26T14:11:46.000Z</published>
-    <updated>2019-08-05T09:19:10.145Z</updated>
+    <updated>2019-08-05T09:19:12.000Z</updated>
     
     <summary type="html">
     
@@ -109,19 +109,19 @@
     
     </summary>
     
-      <category term="AI" scheme="https://skr-king.github.io/categories/AI/"/>
+      <category term="AI" scheme="https://angelni.github.io/categories/AI/"/>
     
     
-      <category term="MF" scheme="https://skr-king.github.io/tags/MF/"/>
+      <category term="MF" scheme="https://angelni.github.io/tags/MF/"/>
     
   </entry>
   
   <entry>
     <title>Gobang？</title>
-    <link href="https://skr-king.github.io/post/803db72e.html"/>
-    <id>https://skr-king.github.io/post/803db72e.html</id>
+    <link href="https://angelni.github.io/post/803db72e.html"/>
+    <id>https://angelni.github.io/post/803db72e.html</id>
     <published>2019-07-23T15:50:43.000Z</published>
-    <updated>2019-08-05T09:19:10.167Z</updated>
+    <updated>2019-08-05T09:19:12.000Z</updated>
     
     <summary type="html">
     
@@ -129,19 +129,19 @@
     
     </summary>
     
-      <category term="AI" scheme="https://skr-king.github.io/categories/AI/"/>
+      <category term="AI" scheme="https://angelni.github.io/categories/AI/"/>
     
     
-      <category term="Game" scheme="https://skr-king.github.io/tags/Game/"/>
+      <category term="Game" scheme="https://angelni.github.io/tags/Game/"/>
     
   </entry>
   
   <entry>
     <title>CNN--tensorflow--code-learning</title>
-    <link href="https://skr-king.github.io/post/ef0fff20.html"/>
-    <id>https://skr-king.github.io/post/ef0fff20.html</id>
+    <link href="https://angelni.github.io/post/ef0fff20.html"/>
+    <id>https://angelni.github.io/post/ef0fff20.html</id>
     <published>2019-07-22T14:29:57.000Z</published>
-    <updated>2019-08-05T09:19:10.134Z</updated>
+    <updated>2019-08-05T09:19:12.000Z</updated>
     
     <summary type="html">
     
@@ -149,19 +149,19 @@
     
     </summary>
     
-      <category term="AI" scheme="https://skr-king.github.io/categories/AI/"/>
+      <category term="AI" scheme="https://angelni.github.io/categories/AI/"/>
     
     
-      <category term="AI" scheme="https://skr-king.github.io/tags/AI/"/>
+      <category term="AI" scheme="https://angelni.github.io/tags/AI/"/>
     
   </entry>
   
   <entry>
     <title>KNN-Self-practice</title>
-    <link href="https://skr-king.github.io/post/993f5535.html"/>
-    <id>https://skr-king.github.io/post/993f5535.html</id>
+    <link href="https://angelni.github.io/post/993f5535.html"/>
+    <id>https://angelni.github.io/post/993f5535.html</id>
     <published>2019-07-22T04:59:00.000Z</published>
-    <updated>2019-08-05T09:19:10.144Z</updated>
+    <updated>2019-08-05T09:19:12.000Z</updated>
     
     <summary type="html">
     
@@ -169,19 +169,19 @@
     
     </summary>
     
-      <category term="AI" scheme="https://skr-king.github.io/categories/AI/"/>
+      <category term="AI" scheme="https://angelni.github.io/categories/AI/"/>
     
     
-      <category term="KNN" scheme="https://skr-king.github.io/tags/KNN/"/>
+      <category term="KNN" scheme="https://angelni.github.io/tags/KNN/"/>
     
   </entry>
   
   <entry>
     <title>KNN——k-Nearest Neighbor</title>
-    <link href="https://skr-king.github.io/post/e8af2352.html"/>
-    <id>https://skr-king.github.io/post/e8af2352.html</id>
+    <link href="https://angelni.github.io/post/e8af2352.html"/>
+    <id>https://angelni.github.io/post/e8af2352.html</id>
     <published>2019-07-22T04:40:24.000Z</published>
-    <updated>2019-08-05T09:19:10.145Z</updated>
+    <updated>2019-08-05T09:19:12.000Z</updated>
     
     <summary type="html">
     
@@ -190,19 +190,19 @@
     
     </summary>
     
-      <category term="AI" scheme="https://skr-king.github.io/categories/AI/"/>
+      <category term="AI" scheme="https://angelni.github.io/categories/AI/"/>
     
     
-      <category term="KNN" scheme="https://skr-king.github.io/tags/KNN/"/>
+      <category term="KNN" scheme="https://angelni.github.io/tags/KNN/"/>
     
   </entry>
   
   <entry>
     <title>map函数的简单用法</title>
-    <link href="https://skr-king.github.io/post/b22e3643.html"/>
-    <id>https://skr-king.github.io/post/b22e3643.html</id>
+    <link href="https://angelni.github.io/post/b22e3643.html"/>
+    <id>https://angelni.github.io/post/b22e3643.html</id>
     <published>2019-07-21T02:19:50.000Z</published>
-    <updated>2019-08-05T09:19:10.163Z</updated>
+    <updated>2019-08-05T09:19:12.000Z</updated>
     
     <summary type="html">
     
@@ -210,19 +210,19 @@
     
     </summary>
     
-      <category term="C++" scheme="https://skr-king.github.io/categories/C/"/>
+      <category term="C++" scheme="https://angelni.github.io/categories/C/"/>
     
     
-      <category term="C++" scheme="https://skr-king.github.io/tags/C/"/>
+      <category term="C++" scheme="https://angelni.github.io/tags/C/"/>
     
   </entry>
   
   <entry>
     <title>My First Neural Network Construction</title>
-    <link href="https://skr-king.github.io/post/196fe8df.html"/>
-    <id>https://skr-king.github.io/post/196fe8df.html</id>
+    <link href="https://angelni.github.io/post/196fe8df.html"/>
+    <id>https://angelni.github.io/post/196fe8df.html</id>
     <published>2019-07-20T11:19:07.000Z</published>
-    <updated>2019-08-05T09:19:10.170Z</updated>
+    <updated>2019-08-05T09:19:12.000Z</updated>
     
     <summary type="html">
     
@@ -230,19 +230,19 @@
     
     </summary>
     
-      <category term="AI" scheme="https://skr-king.github.io/categories/AI/"/>
+      <category term="AI" scheme="https://angelni.github.io/categories/AI/"/>
     
     
-      <category term="NN" scheme="https://skr-king.github.io/tags/NN/"/>
+      <category term="NN" scheme="https://angelni.github.io/tags/NN/"/>
     
   </entry>
   
   <entry>
     <title>Artificial Neural Networks——Activation Funcation</title>
-    <link href="https://skr-king.github.io/post/50dcd40a.html"/>
-    <id>https://skr-king.github.io/post/50dcd40a.html</id>
+    <link href="https://angelni.github.io/post/50dcd40a.html"/>
+    <id>https://angelni.github.io/post/50dcd40a.html</id>
     <published>2019-07-19T14:27:39.000Z</published>
-    <updated>2019-08-05T09:19:10.171Z</updated>
+    <updated>2019-08-05T09:19:12.000Z</updated>
     
     <summary type="html">
     
@@ -250,19 +250,19 @@
     
     </summary>
     
-      <category term="AI" scheme="https://skr-king.github.io/categories/AI/"/>
+      <category term="AI" scheme="https://angelni.github.io/categories/AI/"/>
     
     
-      <category term="NN" scheme="https://skr-king.github.io/tags/NN/"/>
+      <category term="NN" scheme="https://angelni.github.io/tags/NN/"/>
     
   </entry>
   
   <entry>
     <title>Artificial Neural Networks</title>
-    <link href="https://skr-king.github.io/post/e5020f86.html"/>
-    <id>https://skr-king.github.io/post/e5020f86.html</id>
+    <link href="https://angelni.github.io/post/e5020f86.html"/>
+    <id>https://angelni.github.io/post/e5020f86.html</id>
     <published>2019-07-19T01:42:23.000Z</published>
-    <updated>2019-08-05T09:19:10.170Z</updated>
+    <updated>2019-08-05T09:19:12.000Z</updated>
     
     <summary type="html">
     
@@ -270,19 +270,19 @@
     
     </summary>
     
-      <category term="AI" scheme="https://skr-king.github.io/categories/AI/"/>
+      <category term="AI" scheme="https://angelni.github.io/categories/AI/"/>
     
     
-      <category term="NN" scheme="https://skr-king.github.io/tags/NN/"/>
+      <category term="NN" scheme="https://angelni.github.io/tags/NN/"/>
     
   </entry>
   
   <entry>
     <title>WordCloud——A Beautiful Cloud of Words</title>
-    <link href="https://skr-king.github.io/post/2a25e6b0.html"/>
-    <id>https://skr-king.github.io/post/2a25e6b0.html</id>
+    <link href="https://angelni.github.io/post/2a25e6b0.html"/>
+    <id>https://angelni.github.io/post/2a25e6b0.html</id>
     <published>2019-07-18T14:52:09.000Z</published>
-    <updated>2019-08-05T09:19:10.162Z</updated>
+    <updated>2019-08-05T09:19:12.000Z</updated>
     
     <summary type="html">
     
@@ -290,19 +290,19 @@
     
     </summary>
     
-      <category term="python" scheme="https://skr-king.github.io/categories/python/"/>
+      <category term="python" scheme="https://angelni.github.io/categories/python/"/>
     
     
-      <category term="python" scheme="https://skr-king.github.io/tags/python/"/>
+      <category term="python" scheme="https://angelni.github.io/tags/python/"/>
     
   </entry>
   
   <entry>
     <title>Just do it!</title>
-    <link href="https://skr-king.github.io/post/980b950.html"/>
-    <id>https://skr-king.github.io/post/980b950.html</id>
+    <link href="https://angelni.github.io/post/980b950.html"/>
+    <id>https://angelni.github.io/post/980b950.html</id>
     <published>2019-07-11T07:10:24.000Z</published>
-    <updated>2019-08-05T09:19:10.143Z</updated>
+    <updated>2019-08-05T09:19:12.000Z</updated>
     
     <summary type="html">
     
@@ -310,19 +310,19 @@
     
     </summary>
     
-      <category term="life" scheme="https://skr-king.github.io/categories/life/"/>
+      <category term="life" scheme="https://angelni.github.io/categories/life/"/>
     
     
-      <category term="life" scheme="https://skr-king.github.io/tags/life/"/>
+      <category term="life" scheme="https://angelni.github.io/tags/life/"/>
     
   </entry>
   
   <entry>
     <title>New blog</title>
-    <link href="https://skr-king.github.io/post/b60cf0d6.html"/>
-    <id>https://skr-king.github.io/post/b60cf0d6.html</id>
+    <link href="https://angelni.github.io/post/b60cf0d6.html"/>
+    <id>https://angelni.github.io/post/b60cf0d6.html</id>
     <published>2019-06-21T14:11:52.000Z</published>
-    <updated>2019-08-05T09:19:10.173Z</updated>
+    <updated>2019-08-05T09:19:12.000Z</updated>
     
     <summary type="html">
     
@@ -330,19 +330,19 @@
     
     </summary>
     
-      <category term="life" scheme="https://skr-king.github.io/categories/life/"/>
+      <category term="life" scheme="https://angelni.github.io/categories/life/"/>
     
     
-      <category term="life" scheme="https://skr-king.github.io/tags/life/"/>
+      <category term="life" scheme="https://angelni.github.io/tags/life/"/>
     
   </entry>
   
   <entry>
     <title>Learning makes me happy</title>
-    <link href="https://skr-king.github.io/post/fb20f2c2.html"/>
-    <id>https://skr-king.github.io/post/fb20f2c2.html</id>
+    <link href="https://angelni.github.io/post/fb20f2c2.html"/>
+    <id>https://angelni.github.io/post/fb20f2c2.html</id>
     <published>2019-06-20T11:37:57.000Z</published>
-    <updated>2019-08-05T09:19:10.146Z</updated>
+    <updated>2019-08-05T09:19:12.000Z</updated>
     
     <summary type="html">
     
@@ -351,19 +351,19 @@
     
     </summary>
     
-      <category term="sharing" scheme="https://skr-king.github.io/categories/sharing/"/>
+      <category term="sharing" scheme="https://angelni.github.io/categories/sharing/"/>
     
     
-      <category term="sharing" scheme="https://skr-king.github.io/tags/sharing/"/>
+      <category term="sharing" scheme="https://angelni.github.io/tags/sharing/"/>
     
   </entry>
   
   <entry>
     <title>CET4</title>
-    <link href="https://skr-king.github.io/post/21d70b01.html"/>
-    <id>https://skr-king.github.io/post/21d70b01.html</id>
+    <link href="https://angelni.github.io/post/21d70b01.html"/>
+    <id>https://angelni.github.io/post/21d70b01.html</id>
     <published>2019-06-20T11:37:29.000Z</published>
-    <updated>2019-08-05T09:19:10.134Z</updated>
+    <updated>2019-08-05T09:19:12.000Z</updated>
     
     <summary type="html">
     
@@ -371,19 +371,19 @@
     
     </summary>
     
-      <category term="life" scheme="https://skr-king.github.io/categories/life/"/>
+      <category term="life" scheme="https://angelni.github.io/categories/life/"/>
     
     
-      <category term="life" scheme="https://skr-king.github.io/tags/life/"/>
+      <category term="life" scheme="https://angelni.github.io/tags/life/"/>
     
   </entry>
   
   <entry>
     <title>俄罗斯方块</title>
-    <link href="https://skr-king.github.io/post/2e3de4da.html"/>
-    <id>https://skr-king.github.io/post/2e3de4da.html</id>
+    <link href="https://angelni.github.io/post/2e3de4da.html"/>
+    <id>https://angelni.github.io/post/2e3de4da.html</id>
     <published>2019-06-20T11:37:10.000Z</published>
-    <updated>2019-08-05T09:19:10.168Z</updated>
+    <updated>2019-08-05T09:19:12.000Z</updated>
     
     <summary type="html">
     
@@ -395,19 +395,19 @@
     
     </summary>
     
-      <category term="Game" scheme="https://skr-king.github.io/categories/Game/"/>
+      <category term="Game" scheme="https://angelni.github.io/categories/Game/"/>
     
     
-      <category term="Game" scheme="https://skr-king.github.io/tags/Game/"/>
+      <category term="Game" scheme="https://angelni.github.io/tags/Game/"/>
     
   </entry>
   
   <entry>
     <title>大数取模</title>
-    <link href="https://skr-king.github.io/post/288e7d26.html"/>
-    <id>https://skr-king.github.io/post/288e7d26.html</id>
+    <link href="https://angelni.github.io/post/288e7d26.html"/>
+    <id>https://angelni.github.io/post/288e7d26.html</id>
     <published>2019-06-20T11:36:36.000Z</published>
-    <updated>2019-08-05T09:19:10.167Z</updated>
+    <updated>2019-08-05T09:19:12.000Z</updated>
     
     <summary type="html">
     
@@ -415,10 +415,10 @@
     
     </summary>
     
-      <category term="Algorithm" scheme="https://skr-king.github.io/categories/Algorithm/"/>
+      <category term="Algorithm" scheme="https://angelni.github.io/categories/Algorithm/"/>
     
     
-      <category term="Algorithm" scheme="https://skr-king.github.io/tags/Algorithm/"/>
+      <category term="Algorithm" scheme="https://angelni.github.io/tags/Algorithm/"/>
     
   </entry>
   
