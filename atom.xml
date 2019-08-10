@@ -6,7 +6,7 @@
   <link href="/AngelNI.github.io/atom.xml" rel="self"/>
   
   <link href="https://angelni.github.io/"/>
-  <updated>2019-08-05T09:19:12.000Z</updated>
+  <updated>2019-08-10T09:44:39.959Z</updated>
   <id>https://angelni.github.io/</id>
   
   <author>
@@ -21,11 +21,18 @@
     <link href="https://angelni.github.io/Appreciation-of-Novels-2/"/>
     <id>https://angelni.github.io/Appreciation-of-Novels-2/</id>
     <published>2019-08-04T02:18:50.000Z</published>
-    <updated>2019-08-05T09:19:12.000Z</updated>
+    <updated>2019-08-10T09:44:39.959Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt; “不要忘记你曾经是怎样的小孩”，“不要忘记你曾希望变成怎样的大人”。&lt;/p&gt;
+      
+      
+        
+        
+          &lt;p&gt; “不要忘记你曾经是怎样的小孩”，“不要忘记你曾希望变成怎样的大人”。&lt;/p&gt;
+&lt;h1 id=&quot;1&quot;&gt;&lt;a href=&quot;#1&quot; class=&quot;headerlink&quot;
+        
+      
     
     </summary>
     
@@ -118,10 +125,30 @@
   
   <entry>
     <title>Gobang？</title>
+    <link href="https://angelni.github.io/Gobang%EF%BC%9F/"/>
+    <id>https://angelni.github.io/Gobang？/</id>
+    <published>2019-07-23T15:50:43.000Z</published>
+    <updated>2019-08-05T09:19:12.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt; 时间带着明显的恶意，缓缓在我的身上流逝&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="AI" scheme="https://angelni.github.io/categories/AI/"/>
+    
+    
+      <category term="Game" scheme="https://angelni.github.io/tags/Game/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Gobang？</title>
     <link href="https://angelni.github.io/%E4%BA%94%E5%AD%90%E6%A3%8B%EF%BC%9F/"/>
     <id>https://angelni.github.io/五子棋？/</id>
     <published>2019-07-23T15:50:43.000Z</published>
-    <updated>2019-08-05T09:19:12.000Z</updated>
+    <updated>2019-08-09T15:45:00.458Z</updated>
     
     <summary type="html">
     
@@ -158,8 +185,8 @@
   
   <entry>
     <title>KNN-Self-practice</title>
-    <link href="https://angelni.github.io/KNN-%E8%87%AA%E6%88%91%E7%BB%83%E4%B9%A0/"/>
-    <id>https://angelni.github.io/KNN-自我练习/</id>
+    <link href="https://angelni.github.io/KNN-Practice/"/>
+    <id>https://angelni.github.io/KNN-Practice/</id>
     <published>2019-07-22T04:59:00.000Z</published>
     <updated>2019-08-05T09:19:12.000Z</updated>
     
@@ -178,8 +205,8 @@
   
   <entry>
     <title>KNN——k-Nearest Neighbor</title>
-    <link href="https://angelni.github.io/KNN%E2%80%94%E2%80%94K%E4%B8%B4%E8%BF%91%E7%AE%97%E6%B3%95/"/>
-    <id>https://angelni.github.io/KNN——K临近算法/</id>
+    <link href="https://angelni.github.io/KNN%E2%80%94%E2%80%94k-Nearest-Neighbor/"/>
+    <id>https://angelni.github.io/KNN——k-Nearest-Neighbor/</id>
     <published>2019-07-22T04:40:24.000Z</published>
     <updated>2019-08-05T09:19:12.000Z</updated>
     
@@ -399,26 +426,6 @@
     
     
       <category term="Game" scheme="https://angelni.github.io/tags/Game/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>大数取模</title>
-    <link href="https://angelni.github.io/%E5%A4%A7%E6%95%B0%E5%8F%96%E6%A8%A1/"/>
-    <id>https://angelni.github.io/大数取模/</id>
-    <published>2019-06-20T11:36:36.000Z</published>
-    <updated>2019-08-05T09:19:12.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;THIS A SAD STORY…… 頑張って&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Algorithm" scheme="https://angelni.github.io/categories/Algorithm/"/>
-    
-    
-      <category term="Algorithm" scheme="https://angelni.github.io/tags/Algorithm/"/>
     
   </entry>
   
