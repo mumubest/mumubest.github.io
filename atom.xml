@@ -6,7 +6,7 @@
   <link href="/AngelNI.github.io/atom.xml" rel="self"/>
   
   <link href="https://angelni.github.io/"/>
-  <updated>2019-08-10T10:05:27.472Z</updated>
+  <updated>2019-08-11T10:49:12.872Z</updated>
   <id>https://angelni.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Network App Recommend</title>
+    <link href="https://angelni.github.io/Network-App-Recommend/"/>
+    <id>https://angelni.github.io/Network-App-Recommend/</id>
+    <published>2019-08-11T09:39:24.000Z</published>
+    <updated>2019-08-11T10:49:12.872Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt; 你知道吗，有些人，会以各种你情愿或不情愿的方式，留在你的记忆里，比如我。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="sharing" scheme="https://angelni.github.io/categories/sharing/"/>
+    
+    
+      <category term="recommend" scheme="https://angelni.github.io/tags/recommend/"/>
+    
+  </entry>
   
   <entry>
     <title>Appreciation of Novels(2)</title>
@@ -395,30 +415,6 @@
     
     
       <category term="life" scheme="https://angelni.github.io/tags/life/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>俄罗斯方块</title>
-    <link href="https://angelni.github.io/%E4%BF%84%E7%BD%97%E6%96%AF%E6%96%B9%E5%9D%97/"/>
-    <id>https://angelni.github.io/俄罗斯方块/</id>
-    <published>2019-06-20T11:37:10.000Z</published>
-    <updated>2019-08-05T09:19:12.000Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;嘿！小伙伴们，还记得俄罗斯方块吗？想必每个人都玩过这个简单刺激的小游戏吧！&lt;/p&gt;
-&lt;p&gt;在这里分享给大家一个在线的俄罗斯方块——&amp;gt;&amp;gt; &lt;a href=&quot;https://chvin.github.io/react-tetris/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;大爷！来玩呦&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;github项目地址 &lt;a href=&quot;https://github.com/AngelNI/react-tetris&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;点我呦&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;百度云源代码下载 &lt;a href=&quot;https://pan.baidu.com/s/1plTawhpPEVEIpvOvfNBS2A&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;点我呦&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;提取码：wb6q&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Game" scheme="https://angelni.github.io/categories/Game/"/>
-    
-    
-      <category term="Game" scheme="https://angelni.github.io/tags/Game/"/>
     
   </entry>
   
