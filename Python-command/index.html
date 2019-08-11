@@ -5,27 +5,27 @@
 <html lang="en">
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-<title>Python_Operation on Excel - Sky&#39;s Blog</title>
+<title>Python command - Sky&#39;s Blog</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="google-site-verification" content="JwzmnANXlpmQlhwaSORuqpEB6P3Sr-tRhw4R_XDRcEc">
 <meta name="baidu-site-verification" content="ztPAF2oDcw">
 
 
 
-    <meta name="description" content="====This my mood now====">
-<meta name="keywords" content="python">
+    <meta name="description" content="不是 ,有钱才善良，而是善良才富足。">
+<meta name="keywords" content="python command">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Python_Operation on Excel">
-<meta property="og:url" content="https://angelni.github.io/Python-Operation-on-Excel/index.html">
+<meta property="og:title" content="Python command">
+<meta property="og:url" content="https://angelni.github.io/Python-command/index.html">
 <meta property="og:site_name" content="Sky&#39;s Blog">
-<meta property="og:description" content="====This my mood now====">
+<meta property="og:description" content="不是 ,有钱才善良，而是善良才富足。">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="https://angelni.github.io/AngelNI.github.io/AngelNI.github.io/gallary/14.jpg">
-<meta property="og:updated_time" content="2019-08-11T11:16:58.906Z">
+<meta property="og:image" content="https://angelni.github.io/AngelNI.github.io/AngelNI.github.io/gallary/46.jpg">
+<meta property="og:updated_time" content="2019-08-11T11:13:52.199Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Python_Operation on Excel">
-<meta name="twitter:description" content="====This my mood now====">
-<meta name="twitter:image" content="https://angelni.github.io/AngelNI.github.io/AngelNI.github.io/gallary/14.jpg">
+<meta name="twitter:title" content="Python command">
+<meta name="twitter:description" content="不是 ,有钱才善良，而是善良才富足。">
+<meta name="twitter:image" content="https://angelni.github.io/AngelNI.github.io/AngelNI.github.io/gallary/46.jpg">
 
 
 
@@ -113,7 +113,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/AngelNI.github.io/">
             
-                <img src="/AngelNI.github.io/images/22.png" alt="Python_Operation on Excel" height="28">
+                <img src="/AngelNI.github.io/images/22.png" alt="Python command" height="28">
             
             </a>
         </div>
@@ -168,7 +168,7 @@
     
     <div class="card-image">
         <span class="image is-7by1">
-            <img class="thumbnail" src="/AngelNI.github.io/gallary/14.jpg" alt="Python_Operation on Excel">
+            <img class="thumbnail" src="/AngelNI.github.io/gallary/46.jpg" alt="Python command">
         </span>
     </div>
     
@@ -176,7 +176,7 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-06-20T11:31:37.000Z">2019-06-20</time>
+                <time class="level-item has-text-grey" datetime="2019-08-11T10:58:17.000Z">2019-08-11</time>
                 
                 <div class="level-item">
                 <a class="has-link-grey -link" href="/AngelNI.github.io/categories/python/">python</a>
@@ -186,7 +186,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    a minute read (About 199 words)
+                    4 minutes read (About 658 words)
                 </span>
                 
                 
@@ -200,24 +200,58 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                Python_Operation on Excel
+                Python command
             
         </h1>
         <div class="content">
-            <p>====This my mood now====</p>
+            <p> 不是 ,有钱才善良，而是善良才富足。</p>
 <a id="more"></a>
 
-<p><img src="/AngelNI.github.io/Python-Operation-on-Excel/1.jpg" alt></p>
-<p>I recently solve the problem of Excel ‘ data , it is hard to process Excel data because of huge amount of it.However, there is a better tool to process–Python.I simply write 34 lines to operation on Excel’s data to count th number of the key word.</p>
-<p>Just for recording.</p>
-<h2 id="code"><a href="#code" class="headerlink" title="code"></a>code</h2><figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">import</span> xlrd</span><br><span class="line"><span class="hljs-keyword">import</span> xlwt</span><br><span class="line"><span class="hljs-keyword">import</span> re</span><br><span class="line"><span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np</span><br><span class="line"><span class="hljs-keyword">import</span> pandas <span class="hljs-keyword">as</span> pd</span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">#import openpyxl</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">data = xlrd.open_workbook(<span class="hljs-string">'C:\\Users\\hp\\Desktop\\数据信息3.xlsx'</span>)</span><br><span class="line"></span><br><span class="line">table = data.sheets()[<span class="hljs-number">0</span>]</span><br><span class="line"></span><br><span class="line">ncols = table.col_values(<span class="hljs-number">12</span>)</span><br><span class="line">a = len(ncols)</span><br><span class="line">pattern = re.compile(<span class="hljs-string">r'\d+'</span>)</span><br><span class="line">d=[]</span><br><span class="line"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>,a):</span><br><span class="line">    <span class="hljs-comment">#print(pattern.findall(ncols[i]))</span></span><br><span class="line">   <span class="hljs-comment"># print("\n")</span></span><br><span class="line">    b = len(pattern.findall(ncols[i]))</span><br><span class="line">    c=[]</span><br><span class="line">    <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> range(<span class="hljs-number">0</span>,b):</span><br><span class="line">        <span class="hljs-keyword">if</span> eval(pattern.findall(ncols[i])[j] )&lt; <span class="hljs-number">10</span> :</span><br><span class="line">            c.append(pattern.findall(ncols[i])[j])</span><br><span class="line">    <span class="hljs-comment">#print(c)</span></span><br><span class="line">    d.append(len(c))</span><br><span class="line">    <span class="hljs-comment">#print(d)</span></span><br><span class="line">    f = xlwt.Workbook()               <span class="hljs-comment">#创建工作簿</span></span><br><span class="line">sheet1 = f.add_sheet(<span class="hljs-string">u'sheet1'</span>,cell_overwrite_ok=<span class="hljs-literal">True</span>) <span class="hljs-comment">#创建sheet</span></span><br><span class="line"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">0</span>,len(d)):</span><br><span class="line">    sheet1.write(i+<span class="hljs-number">1</span>,<span class="hljs-number">0</span>,d[i])</span><br><span class="line">f.save(<span class="hljs-string">"C:\\Users\\hp\\Desktop\\2.xls"</span>)</span><br><span class="line">print(<span class="hljs-string">"结束"</span>)</span><br></pre></td></tr></table></figure>
+<ol>
+<li><p>pip升级<br>pip show pip<br>python -m pip install –upgrade pip</p>
+</li>
+<li><p>列出已安装的包</p>
+<p>pip list</p>
+</li>
+<li><p>pip安装包<br>pip install 安装包名</p>
+</li>
+<li><p>pip查看是否已安装<br>pip show [–files] 安装包名</p>
+</li>
+<li><p>pip检查哪些包需要更新<br>pip list –outdated</p>
+</li>
+<li><p>pip升级包<br>pip install –upgrade 要升级的包名</p>
+</li>
+<li><p>pip卸载包<br>pip uninstall 要卸载的包名</p>
+</li>
+<li><p>pip搜索包</p>
+<p>pip search SomePackage</p>
+</li>
+<li><p>pip参数解释</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">pip --help</span><br><span class="line">Usage:</span><br><span class="line">  pip &lt;command&gt; [options]</span><br><span class="line">Commands:</span><br><span class="line">  install                     Install packages.</span><br><span class="line">  download                    Download packages.</span><br><span class="line">  uninstall                   Uninstall packages.</span><br><span class="line">  freeze                      Output installed packages in requirements format.</span><br><span class="line">  list                        List installed packages.</span><br><span class="line">  show                        Show information about installed packages.</span><br><span class="line">  check                       Verify installed packages have compatible dependencies.</span><br><span class="line">  config                      Manage local and global configuration.</span><br><span class="line">  search                      Search PyPI for packages.</span><br><span class="line">  wheel                       Build wheels from your requirements.</span><br><span class="line">  hash                        Compute hashes of package archives.</span><br><span class="line">  completion                  A helper command used for command completion.</span><br><span class="line">  help                        Show help for commands.</span><br><span class="line">General Options:</span><br><span class="line">  -h, --help                  Show help.</span><br><span class="line">  --isolated                  Run pip in an isolated mode, ignoring environment variables and user configuration.</span><br><span class="line">  -v, --verbose               Give more output. Option is additive, and can be used up to 3 times.</span><br><span class="line">  -V, --version               Show version and exit.</span><br><span class="line">  -q, --quiet                 Give less output. Option is additive, and can be used up to 3 times (corresponding to</span><br><span class="line">                              WARNING, ERROR, and CRITICAL logging levels).</span><br><span class="line">  --log &lt;path&gt;                Path to a verbose appending log.</span><br><span class="line">  --proxy &lt;proxy&gt;             Specify a proxy in the form [user:passwd@]proxy.server:port.</span><br><span class="line">  --retries &lt;retries&gt;         Maximum number of retries each connection should attempt (default 5 times).</span><br><span class="line">  --timeout &lt;sec&gt;             Set the socket timeout (default 15 seconds).</span><br><span class="line">  --exists-action &lt;action&gt;    Default action when a path already exists: (s)witch, (i)gnore, (w)ipe, (b)ackup,</span><br><span class="line">                              (a)bort.</span><br><span class="line">  --trusted-host &lt;hostname&gt;   Mark this host as trusted, even though it does not have valid or any HTTPS.</span><br><span class="line">  --cert &lt;path&gt;               Path to alternate CA bundle.</span><br><span class="line">  --client-cert &lt;path&gt;        Path to SSL client certificate, a single file containing the private key and the</span><br><span class="line">                              certificate in PEM format.</span><br><span class="line">  --cache-dir &lt;dir&gt;           Store the cache data in &lt;dir&gt;.</span><br><span class="line">  --no-cache-dir              Disable the cache.</span><br><span class="line">  --disable-pip-version-check</span><br><span class="line">                              Don&apos;t periodically check PyPI to determine whether a new version of pip is available for</span><br><span class="line">                              download. Implied with --no-index.</span><br><span class="line">  --no-color                  Suppress colored output</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ol>
+<ol start="10">
+<li><p>将pip源更换到国内镜像</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">常用的国内镜像包括：</span><br><span class="line">（1）阿里云 http://mirrors.aliyun.com/pypi/simple/</span><br><span class="line">（2）豆瓣http://pypi.douban.com/simple/</span><br><span class="line">（3）清华大学 https://pypi.tuna.tsinghua.edu.cn/simple/</span><br><span class="line">（4）中国科学技术大学 http://pypi.mirrors.ustc.edu.cn/simple/</span><br><span class="line">（5）华中科技大学http://pypi.hustunique.com/</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<p>(1)  临时使用：<br>可以在使用pip的时候，加上参数-i和镜像地址(如<a href="https://links.jianshu.com/go?to=https%3A%2F%2Fpypi.tuna.tsinghua.edu.cn%2Fsimple" target="_blank" rel="noopener">https://pypi.tuna.tsinghua.edu.cn/simple</a>)。<br>例如：pip install -i <a href="https://links.jianshu.com/go?to=https%3A%2F%2Fpypi.tuna.tsinghua.edu.cn%2Fsimple" target="_blank" rel="noopener">https://pypi.tuna.tsinghua.edu.cn/simple</a> pandas，这样就会从清华镜像安装pandas库。</p>
+<p>(2)  永久修改，一劳永逸：</p>
+<p>windows下，直接在user目录中创建一个pip目录，如：C:\Users\xx\pip，然后新建文件pip.ini，即 %HOMEPATH%\pip\pip.ini，在pip.ini文件中输入以下内容（以豆瓣镜像为例）：</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[global]</span><br><span class="line">index-url = http://pypi.douban.com/simple</span><br><span class="line">[install]</span><br><span class="line">trusted-host = pypi.douban.com</span><br></pre></td></tr></table></figure>
+
+
         </div>
         
         <div class="level is-size-7 is-uppercase">
             <div class="level-start">
                 <div class="level-item">
                     <span class="is-size-6 has-text-grey has-mr-7">#</span>
-                    <a class="has-link-grey -link" href="/AngelNI.github.io/tags/python/">python</a>
+                    <a class="has-link-grey -link" href="/AngelNI.github.io/tags/python-command/">python command</a>
                 </div>
             </div>
         </div>
@@ -263,17 +297,10 @@
 <div class="card card-transparent">
     <div class="level post-navigation is-flex-wrap is-mobile">
         
-        <div class="level-start">
-            <a class="level level-item has-link-grey  article-nav-prev" href="/AngelNI.github.io/Fermat-s-Last-Theorem/">
-                <i class="level-item fas fa-chevron-left"></i>
-                <span class="level-item">Fermat&#39;s Last Theorem</span>
-            </a>
-        </div>
-        
         
         <div class="level-end">
-            <a class="level level-item has-link-grey  article-nav-next" href="/AngelNI.github.io/A-New-Start/">
-                <span class="level-item">A New Start</span>
+            <a class="level level-item has-link-grey  article-nav-next" href="/AngelNI.github.io/Network-App-Recommend/">
+                <span class="level-item">Network App Recommend</span>
                 <i class="level-item fas fa-chevron-right"></i>
             </a>
         </div>
@@ -1277,7 +1304,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/AngelNI.github.io/">
                 
-                    <img src="/AngelNI.github.io/images/22.png" alt="Python_Operation on Excel" height="28">
+                    <img src="/AngelNI.github.io/images/22.png" alt="Python command" height="28">
                 
                 </a>
                 <p class="is-size-7">
