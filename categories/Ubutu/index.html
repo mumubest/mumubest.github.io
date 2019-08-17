@@ -208,57 +208,17 @@
             
         </h1>
         <div class="content">
-            <pre><code>可能我不是最优秀的，但我在努力做你眼中最棒的。&lt;!--more--&gt;</code></pre><h1 id="1-文件系统类型"><a href="#1-文件系统类型" class="headerlink" title="1.文件系统类型"></a>1.文件系统类型</h1><p>windows中常见的磁盘格式有fat16、fat32和ntfs。windows是一个封闭的系统。无法打开ext3或者mac 日志式。</p>
-<p>在ubuntu中其文件系统广泛使用ext3(ext4是ext3的扩展)的文件格式，从而实现了将整个硬盘的写入动作完整的记录在磁盘的某个区域上。而且在ubuntu中可以实现主动挂载windows的文件系统，并以只读的方式访问磁盘中windows系统上的文件。</p>
-<img src="https://s2.ax1x.com/2019/08/17/mu7sS0.png" alt border="0">
-
-<p>在ubuntu中磁盘文件系统、网络文件系统都可以非常方便的使用，而屏蔽了网络和本地之间的差异。在ubuntu中所有的文件都是基于目录的方式存储的。一切都是目录，一切都是文件。</p>
-<h1 id="2-文件系统结构"><a href="#2-文件系统结构" class="headerlink" title="2.文件系统结构"></a>2.文件系统结构</h1><p>/是一切目录的起点，如大树的主干。其它的所有目录都是基于树干的枝条或者枝叶。在ubuntu中硬件设备如光驱、软驱、usb设备都将挂载到这颗繁茂的枝干之下，作为文件来管理。</p>
-<img src="https://s2.ax1x.com/2019/08/17/mu72mF.png" alt border="0">
-
-<p>/bin: bin是Binary的缩写。存放系统中最常用的可执行文件（二进制）。</p>
-<p>/boot: 这里存放的是linux内核和系统启动文件，包括Grub、lilo启动器程序。</p>
-<p>/dev: dev是Device(设备)的缩写。该目录存放的是Linux的外部设备，如硬盘、分区、键盘、鼠标、usb等。</p>
-<p>/etc: 这个目录用来存放所有的系统管理所需要的配置文件和子目录，如passwd、hostname等。</p>
-<p>/home: 用户的主目录，在Linux中，每个用户都有一个自己的目录，一般该目录名是以用户的账号命名的。</p>
-<p>/lib: 存放共享的库文件，包含许多被/bin和/sbin中程序使用的库文件。</p>
-<p>/lost+found: 这个目录一般情况下是空的，当系统非法关机后，这里就存放了一些零散文件。</p>
-<p>/media: ubuntu系统自动挂载的光驱、usb设备，存放临时读入的文件。</p>
-<p>/mnt: 作为被挂载的文件系统得挂载点。</p>
-<p>/opt: 作为可选文件和程序的存放目录，主要被第三方开发者用来简易安装和卸载他们的软件。</p>
-<p>/proc: 这个目录是一个虚拟的目录，它是系统内存的映射，我们可以通过直接访问这个目录来获取系统信息。这里存放所有标志为文件的进程，比较cpuinfo存放cpu当前工作状态的数据。</p>
-<p>/root: 该目录为系统管理员，也称作超级权限者的用户主目录。</p>
-<p>/sbin: s就是Super User的意思，这里存放的是系统管理员使用的系统管理程序，如系统管理、目录查询等关键命令文件。</p>
-<p>/ srv: 存放系统所提供的服务数据。</p>
-<p>/sys: 系统设备和文件层次结构，并向用户程序提供详细的内核数据信息。</p>
-<p>/tmp: 这个目录是用来存放一些临时文件的，所有用户对此目录都有读写权限。</p>
-<p>/usr: 存放与系统用户有关的文件和目录。</p>
-<h2 id="usr"><a href="#usr" class="headerlink" title="/usr"></a>/usr</h2><img src="https://s2.ax1x.com/2019/08/17/mu7Tl6.png" alt border="0">
-
-<p><strong>/usr 目录具体来说：</strong></p>
-<p>/usr/X11R6: 存放X-Windows的目录；</p>
-<p>/usr/games: 存放着XteamLinux自带的小游戏；</p>
-<p>/usr/bin: 用户和管理员的标准命令；</p>
-<p>/usr/sbin: 存放root超级用户使用的管理程序；</p>
-<p>/usr/doc: Linux技术文档；</p>
-<p>/usr/include: 用来存放Linux下开发和编译应用程序所需要的头文件，for c 或者c++；</p>
-<p>/usr/lib: 应用程序和程序包的连接库；</p>
-<p>/usr/local: 系统管理员安装的应用程序目录；</p>
-<p>/usr/man: 帮助文档所在的目录；</p>
-<p>/usr/src: Linux开放的源代码；</p>
-<h2 id="var"><a href="#var" class="headerlink" title="/var:"></a>/var:</h2><img src="https://s2.ax1x.com/2019/08/17/mu7xfI.png" alt border="0">
-
-<p>/var: 长度可变的文件，尤其是些记录数据，如日志文件和打印机文件。</p>
-<p>/var/cache: 应用程序缓存目录；</p>
-<p>/var/crash: 系统错误信息；</p>
-<p>/var/games: 游戏数据；</p>
-<p>/var/log: 日志文件；</p>
-<p>/var/mail: 电子邮件；</p>
-<p>/var/tmp: 临时文件目录；</p>
-<p>注: ubuntu严格区分大小写和空格，所以Sun和sun是两个不同的文件。</p>
-
+            <p> 可能我不是最优秀的，但我在努力做你眼中最棒的。</p>
         </div>
         
+        
+        <div class="level is-mobile">
+            <div class="level-start">
+                <div class="level-item">
+                <a class="button is-size-7 is-light" href="/blog/Ubutu系统文件结构/#more">Read More</a>
+                </div>
+            </div>
+        </div>
         
         
     </div>
@@ -651,7 +611,7 @@
         <h3 class="menu-label">
             Tag Cloud
         </h3>
-        <a href="/blog/tags/life/" style="font-size: 20.5px; color: #e60040">life</a> <a href="/blog/tags/literature/" style="font-size: 18px; color: #cc0080">literature</a> <a href="/blog/tags/C/" style="font-size: 18px; color: #cc0080">C++</a> <a href="/blog/tags/Algorithm/" style="font-size: 23px; color: #f00">Algorithm</a> <a href="/blog/tags/AI/" style="font-size: 15.5px; color: #b300bf">AI</a> <a href="/blog/tags/Game/" style="font-size: 18px; color: #cc0080">Game</a> <a href="/blog/tags/Gradient-Descent/" style="font-size: 13px; color: #90f">Gradient Descent</a> <a href="/blog/tags/Learing/" style="font-size: 13px; color: #90f">Learing</a> <a href="/blog/tags/K-means/" style="font-size: 13px; color: #90f">K-means</a> <a href="/blog/tags/KNN/" style="font-size: 15.5px; color: #b300bf">KNN</a> <a href="/blog/tags/sharing/" style="font-size: 13px; color: #90f">sharing</a> <a href="/blog/tags/MF/" style="font-size: 13px; color: #90f">MF</a> <a href="/blog/tags/Makedown/" style="font-size: 13px; color: #90f">Makedown</a> <a href="/blog/tags/recommend/" style="font-size: 13px; color: #90f">recommend</a> <a href="/blog/tags/python-command/" style="font-size: 13px; color: #90f">python command</a> <a href="/blog/tags/python/" style="font-size: 15.5px; color: #b300bf">python</a> <a href="/blog/tags/Ubutu/" style="font-size: 13px; color: #90f">Ubutu</a> <a href="/blog/tags/hexo-github/" style="font-size: 13px; color: #90f">hexo+github</a> <a href="/blog/tags/NN/" style="font-size: 18px; color: #cc0080">NN</a>
+        <a href="/blog/tags/literature/" style="font-size: 18px; color: #cc0080">literature</a> <a href="/blog/tags/life/" style="font-size: 20.5px; color: #e60040">life</a> <a href="/blog/tags/C/" style="font-size: 18px; color: #cc0080">C++</a> <a href="/blog/tags/Algorithm/" style="font-size: 23px; color: #f00">Algorithm</a> <a href="/blog/tags/AI/" style="font-size: 15.5px; color: #b300bf">AI</a> <a href="/blog/tags/Game/" style="font-size: 18px; color: #cc0080">Game</a> <a href="/blog/tags/Gradient-Descent/" style="font-size: 13px; color: #90f">Gradient Descent</a> <a href="/blog/tags/Learing/" style="font-size: 13px; color: #90f">Learing</a> <a href="/blog/tags/K-means/" style="font-size: 13px; color: #90f">K-means</a> <a href="/blog/tags/KNN/" style="font-size: 15.5px; color: #b300bf">KNN</a> <a href="/blog/tags/MF/" style="font-size: 13px; color: #90f">MF</a> <a href="/blog/tags/sharing/" style="font-size: 13px; color: #90f">sharing</a> <a href="/blog/tags/Makedown/" style="font-size: 13px; color: #90f">Makedown</a> <a href="/blog/tags/python-command/" style="font-size: 13px; color: #90f">python command</a> <a href="/blog/tags/recommend/" style="font-size: 13px; color: #90f">recommend</a> <a href="/blog/tags/python/" style="font-size: 15.5px; color: #b300bf">python</a> <a href="/blog/tags/Ubutu/" style="font-size: 13px; color: #90f">Ubutu</a> <a href="/blog/tags/hexo-github/" style="font-size: 13px; color: #90f">hexo+github</a> <a href="/blog/tags/NN/" style="font-size: 18px; color: #cc0080">NN</a>
     </div>
 </div>
 
