@@ -1,0 +1,1627 @@
+<!DOCTYPE html>
+<script src="/js/src/click.js"></script>
+<script type="text/javascript" src="//libs.baidu.com/jquery/1.8.3/jquery.min.js"></script>
+
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+<title>Keras-learn-note(2) - Sky&#39;s Blog</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="google-site-verification" content="JwzmnANXlpmQlhwaSORuqpEB6P3Sr-tRhw4R_XDRcEc">
+<meta name="baidu-site-verification" content="ztPAF2oDcw">
+
+
+
+    <meta name="description" content="要么出众，要么出局，乾坤未定，你我都是黑马。">
+<meta name="keywords" content="Keras-note">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Keras-learn-note(2)">
+<meta property="og:url" content="https://angelni.github.io/blog/Keras-note-2/index.html">
+<meta property="og:site_name" content="Sky&#39;s Blog">
+<meta property="og:description" content="要么出众，要么出局，乾坤未定，你我都是黑马。">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="https://angelni.github.io/blog/blog/gallary/57.png">
+<meta property="og:updated_time" content="2019-08-19T23:48:46.305Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Keras-learn-note(2)">
+<meta name="twitter:description" content="要么出众，要么出局，乾坤未定，你我都是黑马。">
+<meta name="twitter:image" content="https://angelni.github.io/blog/blog/gallary/57.png">
+
+
+
+
+
+
+
+<link rel="icon" href="/blog/images/11.png">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+<link rel="stylesheet" href="/blog/css/back-to-top.css">
+
+
+    
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=144678502-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', '144678502-1');
+</script>
+
+
+    
+    
+    
+    
+
+    
+    
+<link rel="stylesheet" href="/blog/css/progressbar.css">
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+
+<link rel="stylesheet" href="/blog/css/style.css">
+</head>
+<body class="is-3-column">
+
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/blog/">
+            
+                <img src="/blog/images/22.png" alt="Keras-learn-note(2)" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/blog/">Home</a>
+                
+                <a class="navbar-item" href="/blog/about">About</a>
+                
+                <a class="navbar-item" href="/blog/archives">Archives</a>
+                
+                <a class="navbar-item" href="/blog/categories">Categories</a>
+                
+                <a class="navbar-item" href="/blog/tags">Tags</a>
+                
+                <a class="navbar-item" href="/blog/music">Music</a>
+                
+                <a class="navbar-item" href="/blog/sitemap.xml">Sitemap</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                    
+                    
+                    <a class="navbar-item" target="_blank" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus">
+                        
+                        <i class="fab fa-github"></i>
+                        
+                    </a>
+                    
+                
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="/blog/gallary/57.png" alt="Keras-learn-note(2)">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-08-19T23:09:24.000Z">2019-08-20</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/blog/categories/Keras-note/">Keras-note</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    14 minutes read (About 2129 words)
+                </span>
+                
+                
+                <span class="level-item has-text-grey" id="busuanzi_container_page_pv">
+                    <i class="far fa-eye"></i>
+                    <span id="busuanzi_value_page_pv">0</span> visits
+                </span>
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                Keras-learn-note(2)
+            
+        </h1>
+        <div class="content">
+            <p> 要么出众，要么出局，乾坤未定，你我都是黑马。<a id="more"></a></p>
+<h1 id="1-Keras后端😉"><a href="#1-Keras后端😉" class="headerlink" title="1  Keras后端😉"></a>1  Keras后端😉</h1><p>Keras是一个模型级的库，提供了快速构建深度学习网络的模块。Keras并不处理如张量乘法、卷积等底层操作。这些操作依赖于某种特定的、优化良好的张量操作库。Keras依赖于处理张量的库就称为“后端引擎”。Keras提供了三种后端引擎Theano/Tensorflow/CNTK，并将其函数统一封装，使得用户可以以同一个接口调用不同后端引擎的函数</p>
+<p>Theano是一个开源的符号主义张量操作框架，由蒙特利尔大学LISA/MILA实验室开发。</p>
+<p>TensorFlow是一个符号主义的张量操作框架，由Google开发。</p>
+<p>CNTK是一个由微软开发的商业级工具包。</p>
+<h2 id="1-1-切换后端"><a href="#1-1-切换后端" class="headerlink" title="1.1  切换后端"></a>1.1  切换后端</h2><p>如果你至少运行过一次Keras，你将在下面的目录下找到Keras的配置文件：</p>
+<p>c:/user/.keras/keras.json</p>
+<p>如果该目录下没有该文件，你可以手动创建一个</p>
+<p>文件的默认配置如下：</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;image_data_format&quot;: &quot;channels_last&quot;,</span><br><span class="line">    &quot;epsilon&quot;: 1e-07,</span><br><span class="line">    &quot;floatx&quot;: &quot;float32&quot;,</span><br><span class="line">    &quot;backend&quot;: &quot;tensorflow&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>将backend字段的值改写为你需要使用的后端：theano或tensorflow或者CNTK，即可完成后端的切换</p>
+<h1 id="2-第一个模型：全连接网络🤩"><a href="#2-第一个模型：全连接网络🤩" class="headerlink" title="2  第一个模型：全连接网络🤩"></a>2  第一个模型：全连接网络🤩</h1><figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">import</span> tensorflow <span class="hljs-keyword">as</span> tf</span><br><span class="line"><span class="hljs-keyword">from</span> keras.layers <span class="hljs-keyword">import</span> Input, Dense</span><br><span class="line"><span class="hljs-keyword">from</span> keras.models <span class="hljs-keyword">import</span> Model</span><br><span class="line"></span><br><span class="line"><span class="hljs-comment"># this returns a tensor</span></span><br><span class="line">inputs = Input(shape=(<span class="hljs-number">784</span>,))</span><br><span class="line"></span><br><span class="line"><span class="hljs-comment"># a layer instance is callable on a tensor, and returns a tensor</span></span><br><span class="line">x = Dense(<span class="hljs-number">64</span>, activation=<span class="hljs-string">'relu'</span>)(inputs)</span><br><span class="line">x = Dense(<span class="hljs-number">64</span>, activation=<span class="hljs-string">'relu'</span>)(x)</span><br><span class="line">predictions = Dense(<span class="hljs-number">10</span>, activation=softmax)(x)</span><br><span class="line"></span><br><span class="line"><span class="hljs-comment"># this creates a model that includes</span></span><br><span class="line"><span class="hljs-comment"># the Input layer and three Dense layers</span></span><br><span class="line">model = Model(input=inputs, output=predictions)</span><br><span class="line">model.compile(optimizer=<span class="hljs-string">'rmsprop'</span>,</span><br><span class="line">              loss=<span class="hljs-string">'categorical_crossentropy'</span>,</span><br><span class="line">              metrics=[<span class="hljs-string">'accuracy'</span>])</span><br><span class="line">model.fit(data, labels)  <span class="hljs-comment"># starts training</span></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">softmax</span><span class="hljs-params">(x, axis=<span class="hljs-number">-1</span>)</span>:</span></span><br><span class="line">    <span class="hljs-string">"""Softmax of a tensor.</span></span><br><span class="line"><span class="hljs-string"> </span></span><br><span class="line"><span class="hljs-string">    # Arguments</span></span><br><span class="line"><span class="hljs-string">        x: A tensor or variable.</span></span><br><span class="line"><span class="hljs-string">        axis: The dimension softmax would be performed on.</span></span><br><span class="line"><span class="hljs-string">            The default is -1 which indicates the last dimension.</span></span><br><span class="line"><span class="hljs-string"> </span></span><br><span class="line"><span class="hljs-string">    # Returns</span></span><br><span class="line"><span class="hljs-string">        A tensor.</span></span><br><span class="line"><span class="hljs-string">    """</span></span><br><span class="line">    <span class="hljs-keyword">return</span> tf.nn.softmax(x, dim=axis)</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-1-函数介绍"><a href="#2-1-函数介绍" class="headerlink" title="2.1  函数介绍"></a>2.1  函数介绍</h2><h3 id="2-1-1-Input"><a href="#2-1-1-Input" class="headerlink" title="2.1.1  Input"></a>2.1.1  Input</h3><p>nput(shape=None,batch_shape=None,name=None,dtype=K.floatx(),sparse=False,tensor=None)</p>
+<ol>
+<li>shape: 形状元组（整型）</li>
+<li>batch_shape: 形状元组（整型）</li>
+<li>name: 对于该层是可选的名字字符串</li>
+<li>dtype: 预期的输入数据类型</li>
+<li>sparse: 特定的布尔值，占位符是否为sparse</li>
+<li>tensor: 可选的存在的向量包装到Input层，如果设置了，该层将不会创建一个占位张量。</li>
+</ol>
+<p>返回值：一个张量</p>
+<h3 id="2-1-2-Dense"><a href="#2-1-2-Dense" class="headerlink" title="2.1.2  Dense"></a>2.1.2  Dense</h3><p>keras.layers.core.Dense(output_dim, init=’glorot_uniform’, activation=’linear’, weights=None, W_regularizer=None, b_regularizer=None, activity_regularizer=None, W_constraint=None, b_constraint=None, bias=True, input_dim=None)</p>
+<p>Dense层就是全链接层</p>
+<ol>
+<li>output_dim：大于0的整数，代表该层的输出维度。模型中非首层的全连接层其输入维度可以自动推断，因此非首层的全连接定义时不需要指定输入维度。</li>
+<li>init：初始化方法，为预定义初始化方法名的字符串，或用于初始化权重的Theano函数。该参数仅在不传递weights参数时才有意义。</li>
+<li>activation：激活函数，</li>
+<li>weights：权值，为numpy array的list。该list应含有一个形如（input_dim,output_dim）的权重矩阵和一个形如(output_dim,)的偏置向量</li>
+<li>W_regularizer：施加在权重上的正则项，为WeightRegularizer对象</li>
+<li>b_regularizer：施加在偏置向量上的正则项，为WeightRegularizer对象</li>
+<li>activity_regularizer：施加在输出上的正则项，为ActivityRegularizer对象</li>
+<li>W_constraints：施加在权重上的约束项，为Constraints对象</li>
+<li>b_constraints：施加在偏置上的约束项，为Constraints对象</li>
+<li>bias：布尔值，是否包含偏置向量（即层对输入做线性变换还是仿射变换）</li>
+<li>input_dim：整数，输入数据的维度。当Dense层作为网络的第一层时，必须指定该参数或input_shape参数。</li>
+</ol>
+<h3 id="2-1-3-Model"><a href="#2-1-3-Model" class="headerlink" title="2.1.3  Model"></a>2.1.3  Model</h3><p>函数式模型</p>
+<p><strong>常用Model属性</strong></p>
+<ol>
+<li>model.layers：组成模型图的各个层</li>
+<li>model.inputs：模型的输入张量列表</li>
+<li>model.outputs：模型的输出张量列表</li>
+</ol>
+<h3 id="2-1-4-Model模型方法"><a href="#2-1-4-Model模型方法" class="headerlink" title="2.1.4  Model模型方法"></a>2.1.4  Model模型方法</h3><p><strong>compile</strong></p>
+<p>compile(self, optimizer, loss, metrics=None, loss_weights=None, sample_weight_mode=None, weighted_metrics=None, target_tensors=None)</p>
+<ol>
+<li>loss=’目标函数’</li>
+<li>optimizer：优化器</li>
+<li>metrics=[‘accuracy’])metrics: 列表，包含评估模型在训练和测试时的性能的指标</li>
+</ol>
+<p>其他，我这个菜鸡用的的比较少，这里不一一列举</p>
+<p><strong>fit</strong></p>
+<p>fit(self, x=None, y=None, batch_size=None, epochs=1, verbose=1, callbacks=None, validation_split=0.0, validation_data=None, shuffle=True, class_weight=None, sample_weight=None, initial_epoch=0, steps_per_epoch=None, validation_steps=None)</p>
+<p>model.fit（）向模型中输入训练集，验证集，迭代次数</p>
+<p>fit()用于使用给定输入训练模型.</p>
+<p><strong>evaluate</strong></p>
+<p>evaluate(self, x, y, batch_size=32, verbose=1, sample_weight=None)</p>
+<p>model.evaluate():就像他的名字一样，主要对模型进行评估</p>
+<p>Keras中model.evaluate（）返回的是 损失值和你选定的指标值（例如，精度accuracy）</p>
+<p><strong>predict</strong></p>
+<p>predict(self, x, batch_size=32, verbose=0)</p>
+<p>predict()用于实际预测.它为输入样本生成输出预测.</p>
+<p><strong>Embedding</strong></p>
+<p>Embedding(input_dim, output_dim, embeddings_initializer=’uniform’, embeddings_regularizer=None, activity_regularizer=None, embeddings_constraint=None, mask_zero=False, input_length=None)</p>
+<p>嵌入层将正整数（下标）转换为具有固定大小的向量，如[[4],[20]]-&gt;[[0.25,0.1],[0.6,-0.2]]</p>
+<p>Embedding层只能作为模型的第一层</p>
+<ol>
+<li>input_dim：大或等于0的整数，字典长度，即输入数据最大下标+1</li>
+<li>output_dim：大于0的整数，代表全连接嵌入的维度</li>
+<li>embeddings_initializer: 嵌入矩阵的初始化方法，为预定义初始化方法名的字符串，或用于初始化权重的初始化器。参考initializers</li>
+<li>embeddings_regularizer: 嵌入矩阵的正则项，为Regularizer对象</li>
+<li>embeddings_constraint: 嵌入矩阵的约束项，为Constraints对象</li>
+<li>mask_zero：布尔值，确定是否将输入中的‘0’看作是应该被忽略的‘填充’（padding）值，该参数在使用递归层处理变长输入时有用。设置为True的话，模型中后续的层必须都支持masking，否则会抛出异常。如果该值为True，则下标0在字典中不可用，input_dim应设置为|vocabulary| + 1。</li>
+<li>input_length：当输入序列的长度固定时，该值为其长度。如果要在该层后接Flatten层，然后接Dense层，则必须指定该参数，否则Dense层的输出维度无法自动推断。</li>
+</ol>
+<h1 id="3-Keras-实现手写数字识别🤪"><a href="#3-Keras-实现手写数字识别🤪" class="headerlink" title="3  Keras 实现手写数字识别🤪"></a>3  Keras 实现手写数字识别🤪</h1><p>下载数据.外网，要翻墙，下载速度快赶上蜗牛了</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">import</span> keras</span><br><span class="line"><span class="hljs-keyword">from</span> keras.datasets <span class="hljs-keyword">import</span> mnist</span><br><span class="line"><span class="hljs-keyword">import</span> matplotlib.pyplot <span class="hljs-keyword">as</span> plt </span><br><span class="line">%matplotlib inline</span><br><span class="line">(train_images,train_labels),(test_images,test_labels) = mnist.load_data()</span><br></pre></td></tr></table></figure>
+
+<p>查看一下数据集大小</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="hljs-string">"shape og train images is "</span>,train_images.shape)</span><br><span class="line">print(<span class="hljs-string">"shape of train label is "</span>,train_labels.shape)</span><br><span class="line">print(<span class="hljs-string">"train labels is "</span>,train_labels)</span><br><span class="line">print(<span class="hljs-string">'shape of test images is '</span>,test_labels.shape)</span><br><span class="line">print(<span class="hljs-string">'shape of test labels is '</span>,test_labels.shape)</span><br><span class="line">print(<span class="hljs-string">"test labels is "</span>,test_labels)</span><br></pre></td></tr></table></figure>
+
+<img src="https://s2.ax1x.com/2019/08/20/mJK3Dg.png" alt border="0">
+
+<p>想不想看看手写数字长啥样？？几行代码轻松搞定。</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">plt.figure()</span><br><span class="line">plt.imshow(train_images[<span class="hljs-number">0</span>])</span><br><span class="line">plt.colorbar()</span><br><span class="line">plt.grid(<span class="hljs-literal">False</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+
+<img src="https://s2.ax1x.com/2019/08/20/mJK7ad.png" alt border="0">
+
+<p>为什么会有颜色呢？让我们变为灰度图片再看看</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">train_images= train_images / <span class="hljs-number">255.0</span></span><br><span class="line">test_images= test_images / <span class="hljs-number">255.0</span></span><br><span class="line">plt.figure(figsize=(<span class="hljs-number">10</span>,<span class="hljs-number">10</span>))</span><br><span class="line"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">25</span>):</span><br><span class="line">    plt.subplot(<span class="hljs-number">5</span>,<span class="hljs-number">5</span>,i+<span class="hljs-number">1</span>)</span><br><span class="line">    plt.xticks([])</span><br><span class="line">    plt.yticks([])</span><br><span class="line">    plt.grid(<span class="hljs-literal">False</span>)</span><br><span class="line">    plt.imshow(train_images[i], cmap=plt.cm.binary)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+
+<img src="https://s2.ax1x.com/2019/08/20/mJMUdH.png" alt border="0">
+
+<p>好了数据大小也有了，手写数字也看了，接下来就让我们建立神经网络模型了。</p>
+<p><strong>建立模型</strong></p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">softmax</span><span class="hljs-params">(x, axis=<span class="hljs-number">-1</span>)</span>:</span></span><br><span class="line">    <span class="hljs-string">"""Softmax of a tensor.</span></span><br><span class="line"><span class="hljs-string"> </span></span><br><span class="line"><span class="hljs-string">    # Arguments</span></span><br><span class="line"><span class="hljs-string">        x: A tensor or variable.</span></span><br><span class="line"><span class="hljs-string">        axis: The dimension softmax would be performed on.</span></span><br><span class="line"><span class="hljs-string">            The default is -1 which indicates the last dimension.</span></span><br><span class="line"><span class="hljs-string"> </span></span><br><span class="line"><span class="hljs-string">    # Returns</span></span><br><span class="line"><span class="hljs-string">        A tensor.</span></span><br><span class="line"><span class="hljs-string">    """</span></span><br><span class="line">    <span class="hljs-keyword">return</span> tf.nn.softmax(x, dim=axis)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment"># 设计网络</span></span><br><span class="line"><span class="hljs-keyword">from</span> keras <span class="hljs-keyword">import</span> models</span><br><span class="line"><span class="hljs-keyword">from</span> keras.layers <span class="hljs-keyword">import</span> Dense</span><br><span class="line"><span class="hljs-keyword">import</span> tensorflow <span class="hljs-keyword">as</span> tf</span><br><span class="line"></span><br><span class="line">network = models.Sequential()</span><br><span class="line">network.add(Dense(<span class="hljs-number">512</span>,activation = <span class="hljs-string">"relu"</span>,input_shape=(<span class="hljs-number">28</span>*<span class="hljs-number">28</span>,)))</span><br><span class="line">network.add(Dense(<span class="hljs-number">10</span>,activation = softmax))</span><br></pre></td></tr></table></figure>
+
+<p><strong>训练模型</strong></p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">#编译网络</span></span><br><span class="line">network.compile( </span><br><span class="line">    optimizer = <span class="hljs-string">'rmsprop'</span>,loss=<span class="hljs-string">'categorical_crossentropy'</span>,metrics = [<span class="hljs-string">'accuracy'</span>])</span><br><span class="line"><span class="hljs-comment">#数据处理</span></span><br><span class="line">train_images = train_images.reshape((<span class="hljs-number">60000</span>,<span class="hljs-number">28</span>*<span class="hljs-number">28</span>))</span><br><span class="line">train_images = train_images.astype(<span class="hljs-string">'float32'</span>)/<span class="hljs-number">255</span></span><br><span class="line"></span><br><span class="line">test_images = test_images.reshape((<span class="hljs-number">10000</span>,<span class="hljs-number">28</span>*<span class="hljs-number">28</span>))</span><br><span class="line">test_images = test_images.astype(<span class="hljs-string">'float32'</span>)/<span class="hljs-number">255</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">#处理标签</span></span><br><span class="line"><span class="hljs-keyword">from</span> keras.utils <span class="hljs-keyword">import</span> to_categorical</span><br><span class="line">train_labels = to_categorical(train_labels)</span><br><span class="line">test_labels = to_categorical(test_labels)</span><br><span class="line"><span class="hljs-comment">#训练模型</span></span><br><span class="line">network.fit(train_images,train_labels,epochs = <span class="hljs-number">5</span>,batch_size = <span class="hljs-number">10</span>)</span><br></pre></td></tr></table></figure>
+
+<img src="https://s2.ax1x.com/2019/08/20/mJQ074.png" alt border="0">
+
+<p><strong>测试模型</strong></p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">test_loss,test_acc = network.evaluate(test_images,test_labels)</span><br><span class="line">print(<span class="hljs-string">f'test_loss : <span class="hljs-subst">&#123;test_loss&#125;</span>'</span>)</span><br><span class="line">print(<span class="hljs-string">f'test_acc :<span class="hljs-subst">&#123;test_acc&#125;</span>'</span>)</span><br></pre></td></tr></table></figure>
+
+<img src="https://s2.ax1x.com/2019/08/20/mJQ2jK.png" alt border="0">
+
+<h1 id="4-总结💪"><a href="#4-总结💪" class="headerlink" title="4.总结💪"></a>4.总结💪</h1><p>以上就简单的实现了用keras实现手写数据的识别，代码简短，但老记不住，忘记该用啥，该怎么拼写😅😅😅，理论基础还是要背牢的，还要多多使用啊，熟能生巧</p>
+
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/blog/tags/Keras-note/">Keras-note</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+<div class="card">
+    <div class="card-content">
+        <h3 class="menu-label has-text-centered">Like this article? Support the author with</h3>
+        <div class="buttons is-centered">
+            
+                
+<a class="button is-info donate">
+    <span class="icon is-small">
+        <i class="fab fa-alipay"></i>
+    </span>
+    <span>Alipay</span>
+    <div class="qrcode"><img src="/blog/images/1.jpg" alt="Alipay"></div>
+</a>
+
+                
+                
+<a class="button is-success donate">
+    <span class="icon is-small">
+        <i class="fab fa-weixin"></i>
+    </span>
+    <span>Wechat</span>
+    <div class="qrcode"><img src="/blog/images/2.png" alt="Wechat"></div>
+</a>
+
+                
+        </div>
+    </div>
+</div>
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/blog/Keras-note-1/">
+                <span class="level-item">Keras-learn-note(1)</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+
+<div class="card">
+    <div class="card-content">
+        <h3 class="title is-5 has-text-weight-normal">Comments</h3>
+        
+<div id="valine-thread" class="content"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#valine-thread' ,
+        notify: false,
+        verify: false,
+        app_id: '0dNioPuDCFsscn6y58dczYiy-gzGzoHsz',
+        app_key: 'jbyn5TRGmiiAsYjo7PFFzrYJ',
+        placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!'
+    });
+</script>
+
+    </div>
+</div>
+</div>
+                
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-3-widescreen  has-order-1 column-left ">
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <nav class="level">
+            <div class="level-item has-text-centered" style="flex-shrink: 1">
+                <div>
+                    
+                        <figure class="image is-128x128 has-mb-6">
+                            <img class="is-rounded" src="/blog/images/avatar.png" alt="Sky.H.N">
+                        </figure>
+                    
+                    
+                    <p class="is-size-4 is-block">
+                        Sky.H.N
+                    </p>
+                    
+                    
+                    <p class="is-size-6 is-block">
+                        情不知何所起，却一而情深
+                    </p>
+                    
+                    
+                    <p class="is-size-6 is-flex is-flex-center has-text-grey">
+                        <i class="fas fa-map-marker-alt has-mr-7"></i>
+                        <span>Hebei China</span>
+                    </p>
+                    
+                </div>
+            </div>
+        </nav>
+        <nav class="level is-mobile">
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        Posts
+                    </p>
+                    <p class="title has-text-weight-normal">
+                        44
+                    </p>
+                </div>
+            </div>
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        Categories
+                    </p>
+                    <p class="title has-text-weight-normal">
+                        13
+                    </p>
+                </div>
+            </div>
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        Tags
+                    </p>
+                    <p class="title has-text-weight-normal">
+                        20
+                    </p>
+                </div>
+            </div>
+        </nav>
+        <div class="level">
+            <a class="level-item button is-link is-rounded" href="https://github.com/AngelNI" target="_blank">
+                Follow</a>
+        </div>
+        
+        
+        <div class="level is-mobile">
+            
+            <a class="level-item button is-white is-marginless" target="_blank" title="Github" href="https://github.com/">
+                
+                <i class="fab fa-github"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank" title="Facebook" href="https://facebook.com">
+                
+                <i class="fab fa-facebook"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank" title="Twitter" href="https://twitter.com">
+                
+                <i class="fab fa-twitter"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank" title="Dribbble" href="https://dribbble.com">
+                
+                <i class="fab fa-dribbble"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank" title="RSS" href="/blog/atom.xml">
+                
+                <i class="fas fa-rss"></i>
+                
+            </a>
+            
+        </div>
+        
+    </div>
+</div>
+    
+        
+    
+        
+
+<div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+        <h3 class="menu-label">
+            Links
+        </h3>
+        <ul class="menu-list">
+        
+            <li>
+                <a class="level is-mobile" href="https://cndrew.cn/" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">Uncle_drew</span>
+                    </span>
+                    <span class="level-right">
+                        <span class="level-item tag">cndrew.cn</span>
+                    </span>
+                </a>
+            </li>
+        
+            <li>
+                <a class="level is-mobile" href="https://blog.todest.cn/" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">亦往沧劫</span>
+                    </span>
+                    <span class="level-right">
+                        <span class="level-item tag">blog.todest.cn</span>
+                    </span>
+                </a>
+            </li>
+        
+            <li>
+                <a class="level is-mobile" href="http://sqdxwz.com/" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">赴京书生</span>
+                    </span>
+                    <span class="level-right">
+                        <span class="level-item tag">sqdxwz.com</span>
+                    </span>
+                </a>
+            </li>
+        
+            <li>
+                <a class="level is-mobile" href="https://uppez.github.io/" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">Uppez</span>
+                    </span>
+                    <span class="level-right">
+                        <span class="level-item tag">uppez.github.io</span>
+                    </span>
+                </a>
+            </li>
+        
+            <li>
+                <a class="level is-mobile" href="https://blog.csdn.net/weixin_43872728" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">Wait</span>
+                    </span>
+                    <span class="level-right">
+                        <span class="level-item tag">blog.csdn.net</span>
+                    </span>
+                </a>
+            </li>
+        
+            <li>
+                <a class="level is-mobile" href="https://blog.csdn.net/hpuer_random" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">鸿杰的博客</span>
+                    </span>
+                    <span class="level-right">
+                        <span class="level-item tag">blog.csdn.net</span>
+                    </span>
+                </a>
+            </li>
+        
+            <li>
+                <a class="level is-mobile" href="https://boctorio.com/" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">Boctorio&#39;s Blog</span>
+                    </span>
+                    <span class="level-right">
+                        <span class="level-item tag">boctorio.com</span>
+                    </span>
+                </a>
+            </li>
+        
+            <li>
+                <a class="level is-mobile" href="https://www.laugh12321.cn/" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">Laugh</span>
+                    </span>
+                    <span class="level-right">
+                        <span class="level-item tag">www.laugh12321.cn</span>
+                    </span>
+                </a>
+            </li>
+        
+            <li>
+                <a class="level is-mobile" href="https://hpu-yz.github.io/" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">小志子</span>
+                    </span>
+                    <span class="level-right">
+                        <span class="level-item tag">hpu-yz.github.io</span>
+                    </span>
+                </a>
+            </li>
+        
+            <li>
+                <a class="level is-mobile" href="https://dyingdown.github.io" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">o_oyao</span>
+                    </span>
+                    <span class="level-right">
+                        <span class="level-item tag">dyingdown.github.io</span>
+                    </span>
+                </a>
+            </li>
+        
+            <li>
+                <a class="level is-mobile" href="https://hpumengzhao.github.io" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">Meng Space</span>
+                    </span>
+                    <span class="level-right">
+                        <span class="level-item tag">hpumengzhao.github.io</span>
+                    </span>
+                </a>
+            </li>
+        
+            <li>
+                <a class="level is-mobile" href="https://www.cnblogs.com/maybe2030/" target="_blank">
+                    <span class="level-left">
+                        <span class="level-item">Poll(机器学习的大佬)</span>
+                    </span>
+                    <span class="level-right">
+                        <span class="level-item tag">www.cnblogs.com</span>
+                    </span>
+                </a>
+            </li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+
+
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Categories
+            </h3>
+            <ul class="menu-list">
+            <li>
+        <a class="level is-marginless" href="/blog/categories/AI/">
+            <span class="level-start">
+                <span class="level-item">AI</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">12</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/blog/categories/Algorithm/">
+            <span class="level-start">
+                <span class="level-item">Algorithm</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">9</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/blog/categories/C/">
+            <span class="level-start">
+                <span class="level-item">C++</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">3</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/blog/categories/Game/">
+            <span class="level-start">
+                <span class="level-item">Game</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">1</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/blog/categories/Keras-note/">
+            <span class="level-start">
+                <span class="level-item">Keras-note</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">2</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/blog/categories/Learning/">
+            <span class="level-start">
+                <span class="level-item">Learning</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">1</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/blog/categories/Makedown/">
+            <span class="level-start">
+                <span class="level-item">Makedown</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">1</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/blog/categories/Ubutu/">
+            <span class="level-start">
+                <span class="level-item">Ubutu</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">1</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/blog/categories/hexo-github/">
+            <span class="level-start">
+                <span class="level-item">hexo+github</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">1</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/blog/categories/life/">
+            <span class="level-start">
+                <span class="level-item">life</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">5</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/blog/categories/literature/">
+            <span class="level-start">
+                <span class="level-item">literature</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">3</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/blog/categories/python/">
+            <span class="level-start">
+                <span class="level-item">python</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">3</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/blog/categories/sharing/">
+            <span class="level-start">
+                <span class="level-item">sharing</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">2</span>
+            </span>
+        </a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <h3 class="menu-label">
+            Tag Cloud
+        </h3>
+        <a href="/blog/tags/life/" style="font-size: 20.5px; color: #e60040">life</a> <a href="/blog/tags/literature/" style="font-size: 18px; color: #cc0080">literature</a> <a href="/blog/tags/C/" style="font-size: 18px; color: #cc0080">C++</a> <a href="/blog/tags/Algorithm/" style="font-size: 23px; color: #f00">Algorithm</a> <a href="/blog/tags/AI/" style="font-size: 15.5px; color: #b300bf">AI</a> <a href="/blog/tags/Game/" style="font-size: 18px; color: #cc0080">Game</a> <a href="/blog/tags/Gradient-Descent/" style="font-size: 13px; color: #90f">Gradient Descent</a> <a href="/blog/tags/Learing/" style="font-size: 13px; color: #90f">Learing</a> <a href="/blog/tags/K-means/" style="font-size: 13px; color: #90f">K-means</a> <a href="/blog/tags/KNN/" style="font-size: 15.5px; color: #b300bf">KNN</a> <a href="/blog/tags/Keras-note/" style="font-size: 15.5px; color: #b300bf">Keras-note</a> <a href="/blog/tags/sharing/" style="font-size: 13px; color: #90f">sharing</a> <a href="/blog/tags/MF/" style="font-size: 13px; color: #90f">MF</a> <a href="/blog/tags/Makedown/" style="font-size: 13px; color: #90f">Makedown</a> <a href="/blog/tags/recommend/" style="font-size: 13px; color: #90f">recommend</a> <a href="/blog/tags/python-command/" style="font-size: 13px; color: #90f">python command</a> <a href="/blog/tags/python/" style="font-size: 15.5px; color: #b300bf">python</a> <a href="/blog/tags/Ubutu/" style="font-size: 13px; color: #90f">Ubutu</a> <a href="/blog/tags/hexo-github/" style="font-size: 13px; color: #90f">hexo+github</a> <a href="/blog/tags/NN/" style="font-size: 18px; color: #cc0080">NN</a>
+    </div>
+</div>
+
+    
+    
+        <div class="column-right-shadow is-hidden-widescreen ">
+        
+            
+<div class="card widget">
+    <div class="card-content">
+        <h3 class="menu-label">
+            Recent
+        </h3>
+        
+        <article class="media">
+            
+            <a href="/blog/Keras-note-2/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/blog/gallary/57.png" alt="Keras-learn-note(2)">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-08-19T23:09:24.000Z">2019-08-20</time></div>
+                    <a href="/blog/Keras-note-2/" class="has-link-black-ter is-size-6">Keras-learn-note(2)</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/blog/categories/Keras-note/">Keras-note</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/blog/Keras-note-1/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/blog/gallary/37.jpg" alt="Keras-learn-note(1)">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-08-19T13:46:23.000Z">2019-08-19</time></div>
+                    <a href="/blog/Keras-note-1/" class="has-link-black-ter is-size-6">Keras-learn-note(1)</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/blog/categories/Keras-note/">Keras-note</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/blog/Ubutu系统文件结构/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/blog/gallary/47.jpg" alt="Ubutu系统文件结构">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-08-17T03:47:20.000Z">2019-08-17</time></div>
+                    <a href="/blog/Ubutu系统文件结构/" class="has-link-black-ter is-size-6">Ubutu系统文件结构</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/blog/categories/Ubutu/">Ubutu</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/blog/Pip-command/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/blog/gallary/46.jpg" alt="Python command">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-08-11T10:58:17.000Z">2019-08-11</time></div>
+                    <a href="/blog/Pip-command/" class="has-link-black-ter is-size-6">Python command</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/blog/categories/python/">python</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/blog/Network-App-Recommend/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/blog/gallary/45.jpg" alt="Network App Recommend">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-08-11T09:39:24.000Z">2019-08-11</time></div>
+                    <a href="/blog/Network-App-Recommend/" class="has-link-black-ter is-size-6">Network App Recommend</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/blog/categories/sharing/">sharing</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+    </div>
+</div>
+
+        
+            <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+        <h3 class="menu-label">
+            Archives
+        </h3>
+        <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/blog/archives/2019/08/">
+                <span class="level-start">
+                    <span class="level-item">August 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">7</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/blog/archives/2019/07/">
+                <span class="level-start">
+                    <span class="level-item">July 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">14</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/blog/archives/2019/06/">
+                <span class="level-start">
+                    <span class="level-item">June 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">23</span>
+                </span>
+            </a>
+        </li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+        
+            <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Tags
+            </h3>
+            <div class="field is-grouped is-grouped-multiline">
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/blog/tags/AI/">
+                        <span class="tag">AI</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/blog/tags/Algorithm/">
+                        <span class="tag">Algorithm</span>
+                        <span class="tag is-grey">10</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/blog/tags/C/">
+                        <span class="tag">C++</span>
+                        <span class="tag is-grey">3</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/blog/tags/Game/">
+                        <span class="tag">Game</span>
+                        <span class="tag is-grey">3</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/blog/tags/Gradient-Descent/">
+                        <span class="tag">Gradient Descent</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/blog/tags/K-means/">
+                        <span class="tag">K-means</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/blog/tags/KNN/">
+                        <span class="tag">KNN</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/blog/tags/Keras-note/">
+                        <span class="tag">Keras-note</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/blog/tags/Learing/">
+                        <span class="tag">Learing</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/blog/tags/MF/">
+                        <span class="tag">MF</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/blog/tags/Makedown/">
+                        <span class="tag">Makedown</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/blog/tags/NN/">
+                        <span class="tag">NN</span>
+                        <span class="tag is-grey">3</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/blog/tags/Ubutu/">
+                        <span class="tag">Ubutu</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/blog/tags/hexo-github/">
+                        <span class="tag">hexo+github</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/blog/tags/life/">
+                        <span class="tag">life</span>
+                        <span class="tag is-grey">5</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/blog/tags/literature/">
+                        <span class="tag">literature</span>
+                        <span class="tag is-grey">3</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/blog/tags/python/">
+                        <span class="tag">python</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/blog/tags/python-command/">
+                        <span class="tag">python command</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/blog/tags/recommend/">
+                        <span class="tag">recommend</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/blog/tags/sharing/">
+                        <span class="tag">sharing</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+        
+        </div>
+    
+</div>
+
+                
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only has-order-3 column-right ">
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <h3 class="menu-label">
+            Recent
+        </h3>
+        
+        <article class="media">
+            
+            <a href="/blog/Keras-note-2/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/blog/gallary/57.png" alt="Keras-learn-note(2)">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-08-19T23:09:24.000Z">2019-08-20</time></div>
+                    <a href="/blog/Keras-note-2/" class="has-link-black-ter is-size-6">Keras-learn-note(2)</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/blog/categories/Keras-note/">Keras-note</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/blog/Keras-note-1/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/blog/gallary/37.jpg" alt="Keras-learn-note(1)">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-08-19T13:46:23.000Z">2019-08-19</time></div>
+                    <a href="/blog/Keras-note-1/" class="has-link-black-ter is-size-6">Keras-learn-note(1)</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/blog/categories/Keras-note/">Keras-note</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/blog/Ubutu系统文件结构/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/blog/gallary/47.jpg" alt="Ubutu系统文件结构">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-08-17T03:47:20.000Z">2019-08-17</time></div>
+                    <a href="/blog/Ubutu系统文件结构/" class="has-link-black-ter is-size-6">Ubutu系统文件结构</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/blog/categories/Ubutu/">Ubutu</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/blog/Pip-command/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/blog/gallary/46.jpg" alt="Python command">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-08-11T10:58:17.000Z">2019-08-11</time></div>
+                    <a href="/blog/Pip-command/" class="has-link-black-ter is-size-6">Python command</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/blog/categories/python/">python</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/blog/Network-App-Recommend/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/blog/gallary/45.jpg" alt="Network App Recommend">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-08-11T09:39:24.000Z">2019-08-11</time></div>
+                    <a href="/blog/Network-App-Recommend/" class="has-link-black-ter is-size-6">Network App Recommend</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/blog/categories/sharing/">sharing</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+    </div>
+</div>
+
+    
+        <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+        <h3 class="menu-label">
+            Archives
+        </h3>
+        <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/blog/archives/2019/08/">
+                <span class="level-start">
+                    <span class="level-item">August 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">7</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/blog/archives/2019/07/">
+                <span class="level-start">
+                    <span class="level-item">July 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">14</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/blog/archives/2019/06/">
+                <span class="level-start">
+                    <span class="level-item">June 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">23</span>
+                </span>
+            </a>
+        </li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+    
+        <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Tags
+            </h3>
+            <div class="field is-grouped is-grouped-multiline">
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/blog/tags/AI/">
+                        <span class="tag">AI</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/blog/tags/Algorithm/">
+                        <span class="tag">Algorithm</span>
+                        <span class="tag is-grey">10</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/blog/tags/C/">
+                        <span class="tag">C++</span>
+                        <span class="tag is-grey">3</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/blog/tags/Game/">
+                        <span class="tag">Game</span>
+                        <span class="tag is-grey">3</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/blog/tags/Gradient-Descent/">
+                        <span class="tag">Gradient Descent</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/blog/tags/K-means/">
+                        <span class="tag">K-means</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/blog/tags/KNN/">
+                        <span class="tag">KNN</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/blog/tags/Keras-note/">
+                        <span class="tag">Keras-note</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/blog/tags/Learing/">
+                        <span class="tag">Learing</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/blog/tags/MF/">
+                        <span class="tag">MF</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/blog/tags/Makedown/">
+                        <span class="tag">Makedown</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/blog/tags/NN/">
+                        <span class="tag">NN</span>
+                        <span class="tag is-grey">3</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/blog/tags/Ubutu/">
+                        <span class="tag">Ubutu</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/blog/tags/hexo-github/">
+                        <span class="tag">hexo+github</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/blog/tags/life/">
+                        <span class="tag">life</span>
+                        <span class="tag is-grey">5</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/blog/tags/literature/">
+                        <span class="tag">literature</span>
+                        <span class="tag is-grey">3</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/blog/tags/python/">
+                        <span class="tag">python</span>
+                        <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/blog/tags/python-command/">
+                        <span class="tag">python command</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/blog/tags/recommend/">
+                        <span class="tag">recommend</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/blog/tags/sharing/">
+                        <span class="tag">sharing</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+</div>
+
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/blog/">
+                
+                    <img src="/blog/images/22.png" alt="Keras-learn-note(2)" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 Sky_H_N&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                <br>
+                <span id="busuanzi_container_site_uv">
+                Visited by <span id="busuanzi_value_site_uv">0</span> users
+                </span>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus">
+                        
+                        <i class="fab fa-github"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+
+
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en");</script>
+
+
+    
+    
+    
+    <script src="/blog/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    <script src="/blog/js/gallery.js" defer></script>
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'flex'
+        });
+    });
+</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    MathJax.Hub.Config({
+        'HTML-CSS': {
+            matchFontHeight: false
+        },
+        SVG: {
+            matchFontHeight: false
+        },
+        CommonHTML: {
+            matchFontHeight: false
+        },
+        tex2jax: {
+            inlineMath: [
+                ['$','$'],
+                ['\\(','\\)']
+            ]
+        }
+    });
+});
+</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+<script src="/blog/js/back-to-top.js" defer></script>
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    <script src="/blog/js/clipboard.js" defer></script>
+    
+
+    
+    
+    
+
+    
+
+
+<script src="/blog/js/main.js" defer></script>
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: 'Posts',
+                PAGES: 'Pages',
+                CATEGORIES: 'Categories',
+                TAGS: 'Tags',
+                UNTITLED: '(Untitled)',
+            },
+            CONTENT_URL: '/blog/content.json',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script src="/blog/js/insight.js" defer></script>
+<link rel="stylesheet" href="/blog/css/search.css">
+<link rel="stylesheet" href="/blog/css/insight.css">
+    
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script id="ilt" src="https://music.toubiec.cn/player/js/player.js" key="c99cedb40849420a8ab95d5748a6df24"></script>
+	<!-- 雪花特效 -->
+<script type="text/javascript">
+var windowWidth = $(window).width();
+if (windowWidth > 480) {
+document.write('<script type="text/javascript" src="/js/src/snow.js"><\/script>');
+}
+</script>
+
+<script src="/js/src/baidupush.js"></script>
+</body>
+</html>
