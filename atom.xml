@@ -6,7 +6,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="https://angelni.github.io/blog/"/>
-  <updated>2019-08-17T12:26:28.702Z</updated>
+  <updated>2019-08-19T14:11:35.292Z</updated>
   <id>https://angelni.github.io/blog/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Keras-learn-note(1)</title>
+    <link href="https://angelni.github.io/blog/Keras-note-1/"/>
+    <id>https://angelni.github.io/blog/Keras-note-1/</id>
+    <published>2019-08-19T13:46:23.000Z</published>
+    <updated>2019-08-19T14:11:35.292Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt; 越努力，越幸运。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Keras-note" scheme="https://angelni.github.io/blog/categories/Keras-note/"/>
+    
+    
+      <category term="Keras-note" scheme="https://angelni.github.io/blog/tags/Keras-note/"/>
+    
+  </entry>
   
   <entry>
     <title>Ubutu系统文件结构</title>
@@ -387,26 +407,6 @@
     <summary type="html">
     
       &lt;p&gt;放假了哈，啊哈哈哈啊哈哈~🤣🤣&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="life" scheme="https://angelni.github.io/blog/categories/life/"/>
-    
-    
-      <category term="life" scheme="https://angelni.github.io/blog/tags/life/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>New blog</title>
-    <link href="https://angelni.github.io/blog/%E7%BA%A6%E6%95%B0%E4%B8%AA%E6%95%B0%E5%AE%9A%E7%90%86/amazing/"/>
-    <id>https://angelni.github.io/blog/约数个数定理/amazing/</id>
-    <published>2019-06-21T14:11:52.000Z</published>
-    <updated>2019-08-11T11:18:56.739Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;This  a  sad  story！！  😐😐😐 &lt;/p&gt;
     
     </summary>
     
