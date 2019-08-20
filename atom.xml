@@ -6,7 +6,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="https://angelni.github.io/blog/"/>
-  <updated>2019-08-19T23:49:47.270Z</updated>
+  <updated>2019-08-20T03:45:18.372Z</updated>
   <id>https://angelni.github.io/blog/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Stanford-Machine-Learning-camp</title>
+    <link href="https://angelni.github.io/blog/Stanford-Machine-Learning-camp/"/>
+    <id>https://angelni.github.io/blog/Stanford-Machine-Learning-camp/</id>
+    <published>2019-08-20T03:33:29.000Z</published>
+    <updated>2019-08-20T03:45:18.372Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt; 曾经沧海难为水，却见巫山不是云。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Machine-learn" scheme="https://angelni.github.io/blog/categories/Machine-learn/"/>
+    
+    
+      <category term="Machine-learn" scheme="https://angelni.github.io/blog/tags/Machine-learn/"/>
+    
+  </entry>
   
   <entry>
     <title>Keras-learn-note(2)</title>
@@ -394,26 +414,6 @@
     
     
       <category term="NN" scheme="https://angelni.github.io/blog/tags/NN/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>WordCloud——A Beautiful Cloud of Words</title>
-    <link href="https://angelni.github.io/blog/WordCloud%E2%80%94%E2%80%94%E7%BE%8E%E4%B8%BD%E7%9A%84%E8%AF%8D%E4%BA%91%E5%9B%BE/"/>
-    <id>https://angelni.github.io/blog/WordCloud——美丽的词云图/</id>
-    <published>2019-07-18T14:52:09.000Z</published>
-    <updated>2019-08-11T11:18:56.723Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;I  miss  you。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="python" scheme="https://angelni.github.io/blog/categories/python/"/>
-    
-    
-      <category term="python" scheme="https://angelni.github.io/blog/tags/python/"/>
     
   </entry>
   

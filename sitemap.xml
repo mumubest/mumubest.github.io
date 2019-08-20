@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://angelni.github.io/blog/about/index.html</loc>
+    
+    <lastmod>2019-08-20T08:08:23.981Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://angelni.github.io/blog/Stanford-Machine-Learning-camp/</loc>
+    
+    <lastmod>2019-08-20T03:45:18.372Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://angelni.github.io/blog/Keras-note-2/</loc>
     
     <lastmod>2019-08-19T23:49:47.270Z</lastmod>
@@ -51,14 +65,14 @@
   </url>
   
   <url>
-    <loc>https://angelni.github.io/blog/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E6%90%AD%E5%BB%BA/</loc>
+    <loc>https://angelni.github.io/blog/%E5%A4%A9%E7%94%9F%E6%A3%8B%E5%B1%80/</loc>
     
     <lastmod>2019-08-11T11:18:56.739Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://angelni.github.io/blog/%E5%A4%A9%E7%94%9F%E6%A3%8B%E5%B1%80/</loc>
+    <loc>https://angelni.github.io/blog/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E6%90%AD%E5%BB%BA/</loc>
     
     <lastmod>2019-08-11T11:18:56.739Z</lastmod>
     
@@ -93,13 +107,6 @@
   </url>
   
   <url>
-    <loc>https://angelni.github.io/blog/DFS/</loc>
-    
-    <lastmod>2019-08-11T11:18:56.723Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://angelni.github.io/blog/Fermat-s-Last-Theorem/</loc>
     
     <lastmod>2019-08-11T11:18:56.723Z</lastmod>
@@ -107,7 +114,7 @@
   </url>
   
   <url>
-    <loc>https://angelni.github.io/blog/Gobang%EF%BC%9F/</loc>
+    <loc>https://angelni.github.io/blog/DFS/</loc>
     
     <lastmod>2019-08-11T11:18:56.723Z</lastmod>
     
@@ -115,6 +122,13 @@
   
   <url>
     <loc>https://angelni.github.io/blog/Fleury-%E7%AE%97%E6%B3%95/</loc>
+    
+    <lastmod>2019-08-11T11:18:56.723Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://angelni.github.io/blog/Gobang%EF%BC%9F/</loc>
     
     <lastmod>2019-08-11T11:18:56.723Z</lastmod>
     
@@ -135,13 +149,6 @@
   </url>
   
   <url>
-    <loc>https://angelni.github.io/blog/K-means/</loc>
-    
-    <lastmod>2019-08-11T11:18:56.723Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://angelni.github.io/blog/Hello-world-0/</loc>
     
     <lastmod>2019-08-11T11:18:56.723Z</lastmod>
@@ -156,6 +163,13 @@
   </url>
   
   <url>
+    <loc>https://angelni.github.io/blog/K-means/</loc>
+    
+    <lastmod>2019-08-11T11:18:56.723Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://angelni.github.io/blog/KNN%E2%80%94%E2%80%94k-Nearest-Neighbor/</loc>
     
     <lastmod>2019-08-11T11:18:56.723Z</lastmod>
@@ -163,14 +177,14 @@
   </url>
   
   <url>
-    <loc>https://angelni.github.io/blog/Makedown/</loc>
+    <loc>https://angelni.github.io/blog/Learning-makes-me-happy/</loc>
     
     <lastmod>2019-08-11T11:18:56.723Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://angelni.github.io/blog/Learning-makes-me-happy/</loc>
+    <loc>https://angelni.github.io/blog/Makedown/</loc>
     
     <lastmod>2019-08-11T11:18:56.723Z</lastmod>
     
@@ -205,14 +219,14 @@
   </url>
   
   <url>
-    <loc>https://angelni.github.io/blog/hexo-github/</loc>
+    <loc>https://angelni.github.io/blog/WordCloud%E2%80%94%E2%80%94%E7%BE%8E%E4%B8%BD%E7%9A%84%E8%AF%8D%E4%BA%91%E5%9B%BE/</loc>
     
     <lastmod>2019-08-11T11:18:56.723Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://angelni.github.io/blog/WordCloud%E2%80%94%E2%80%94%E7%BE%8E%E4%B8%BD%E7%9A%84%E8%AF%8D%E4%BA%91%E5%9B%BE/</loc>
+    <loc>https://angelni.github.io/blog/hexo-github/</loc>
     
     <lastmod>2019-08-11T11:18:56.723Z</lastmod>
     
@@ -226,14 +240,14 @@
   </url>
   
   <url>
-    <loc>https://angelni.github.io/blog/%E4%BA%8C%E5%88%86%E6%B3%95%E6%9F%A5%E6%89%BE/</loc>
+    <loc>https://angelni.github.io/blog/sort-%E5%87%BD%E6%95%B0/</loc>
     
     <lastmod>2019-08-11T11:18:56.723Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://angelni.github.io/blog/sort-%E5%87%BD%E6%95%B0/</loc>
+    <loc>https://angelni.github.io/blog/%E4%BA%8C%E5%88%86%E6%B3%95%E6%9F%A5%E6%89%BE/</loc>
     
     <lastmod>2019-08-11T11:18:56.723Z</lastmod>
     
@@ -268,13 +282,6 @@
   </url>
   
   <url>
-    <loc>https://angelni.github.io/blog/Appreciation-of-Novels-2/</loc>
-    
-    <lastmod>2019-08-11T11:18:56.708Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://angelni.github.io/blog/A-New-Start/</loc>
     
     <lastmod>2019-08-11T11:18:56.708Z</lastmod>
@@ -282,7 +289,7 @@
   </url>
   
   <url>
-    <loc>https://angelni.github.io/blog/CET4/</loc>
+    <loc>https://angelni.github.io/blog/Appreciation-of-Novels-2/</loc>
     
     <lastmod>2019-08-11T11:18:56.708Z</lastmod>
     
@@ -290,6 +297,13 @@
   
   <url>
     <loc>https://angelni.github.io/blog/C-%E5%88%9D%E5%AD%A6/</loc>
+    
+    <lastmod>2019-08-11T11:18:56.708Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://angelni.github.io/blog/CET4/</loc>
     
     <lastmod>2019-08-11T11:18:56.708Z</lastmod>
     
@@ -306,13 +320,6 @@
     <loc>https://angelni.github.io/blog/DFS-%E8%87%AA%E6%88%91%E7%BB%83%E4%B9%A0/</loc>
     
     <lastmod>2019-08-11T11:18:56.708Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://angelni.github.io/blog/about/index.html</loc>
-    
-    <lastmod>2019-07-21T10:51:32.000Z</lastmod>
     
   </url>
   
