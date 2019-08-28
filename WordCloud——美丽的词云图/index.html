@@ -21,7 +21,7 @@
 <meta property="og:description" content="I  miss  you。">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://angelni.github.io/blog/blog/gallary/34.jpg">
-<meta property="og:updated_time" content="2019-08-11T11:18:56.723Z">
+<meta property="og:updated_time" content="2019-08-28T14:58:51.634Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="WordCloud——A Beautiful Cloud of Words">
 <meta name="twitter:description" content="I  miss  you。">
@@ -182,7 +182,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    3 minutes read (About 501 words)
+                    3 minutes read (About 492 words)
                 </span>
                 
                 
@@ -209,13 +209,13 @@
 <figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">from</span> os <span class="hljs-keyword">import</span> path</span><br><span class="line"><span class="hljs-keyword">from</span> wordcloud <span class="hljs-keyword">import</span> WordCloud</span><br><span class="line"><span class="hljs-keyword">import</span> matplotlib.pyplot <span class="hljs-keyword">as</span> plt</span><br><span class="line"></span><br><span class="line"><span class="hljs-comment"># Read the whole text.</span></span><br><span class="line">text = open(<span class="hljs-string">'file.txt'</span>).read()</span><br><span class="line"></span><br><span class="line"><span class="hljs-comment"># Generate a word cloud image</span></span><br><span class="line">wordcloud = WordCloud().generate(text)</span><br><span class="line"></span><br><span class="line"><span class="hljs-comment"># Display the generated image:</span></span><br><span class="line"><span class="hljs-comment"># the matplotlib way:</span></span><br><span class="line">plt.imshow(wordcloud, interpolation=<span class="hljs-string">'bilinear'</span>)</span><br><span class="line">plt.axis(<span class="hljs-string">"off"</span>)</span><br></pre></td></tr></table></figure>
 
 <p>效果如图</p>
-<p><img src="/blog/blog/WordCloud——美丽的词云图/1.png" alt></p>
+<p><img src="https://s2.ax1x.com/2019/08/28/mHsdXT.png" alt></p>
 <h2 id="自定义形状"><a href="#自定义形状" class="headerlink" title="自定义形状"></a>自定义形状</h2><p>上面的词云图又丑有难看对不对，不要着急，这里可以自定义词云图的形状，自定义颜色。</p>
 <p>在这里我的图片是一张心形</p>
-<p><img src="/blog/blog/WordCloud——美丽的词云图/2.jpg" alt></p>
+<p><img src="https://s2.ax1x.com/2019/08/28/mHsBBF.jpg" alt></p>
 <figure class="highlight py hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">from</span> os <span class="hljs-keyword">import</span> path</span><br><span class="line"><span class="hljs-keyword">from</span> PIL <span class="hljs-keyword">import</span> Image</span><br><span class="line"><span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np</span><br><span class="line"><span class="hljs-keyword">from</span> wordcloud <span class="hljs-keyword">import</span> WordCloud</span><br><span class="line"><span class="hljs-keyword">import</span> matplotlib.pyplot <span class="hljs-keyword">as</span> plt</span><br><span class="line"></span><br><span class="line">d=path.dirname(<span class="hljs-string">'E:\\study\\jupyter notebook'</span>)</span><br><span class="line">text=open(path.join(d,<span class="hljs-string">"constitution.txt"</span>)).read()</span><br><span class="line">alice_mask = np.array(Image.open(path.join(d, <span class="hljs-string">"2.jpg"</span>)))</span><br><span class="line"></span><br><span class="line">wordcloud=WordCloud(background_color=<span class="hljs-string">"white"</span>,max_words=<span class="hljs-number">2000</span>,mask=alice_mask)</span><br><span class="line">wordcloud.generate(text)</span><br><span class="line"></span><br><span class="line">wordcloud.to_file(path.join(d,<span class="hljs-string">"3.jpg"</span>))</span><br><span class="line"><span class="hljs-comment"># 步骤4-1：创建一个图表画布</span></span><br><span class="line">plt.figure(<span class="hljs-number">10</span>)</span><br><span class="line"><span class="hljs-comment"># 步骤4-2：设置图片</span></span><br><span class="line">plt.imshow(wordcloud, interpolation=<span class="hljs-string">"bilinear"</span>)</span><br><span class="line"><span class="hljs-comment"># 步骤4-3：取消图表x、y轴</span></span><br><span class="line">plt.axis(<span class="hljs-string">"off"</span>)</span><br><span class="line"><span class="hljs-comment"># 显示图片</span></span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
 
-<p><img src="/blog/blog/WordCloud——美丽的词云图/3.jpg" alt></p>
+<p><img src="https://s2.ax1x.com/2019/08/28/mHssAJ.jpg" alt></p>
 <p>是不是很有趣呀！</p>
 <p>还有很多有趣的东西等你发现呢</p>
 
@@ -356,7 +356,7 @@
                         Posts
                     </p>
                     <p class="title has-text-weight-normal">
-                        47
+                        46
                     </p>
                 </div>
             </div>
@@ -366,7 +366,7 @@
                         Categories
                     </p>
                     <p class="title has-text-weight-normal">
-                        15
+                        14
                     </p>
                 </div>
             </div>
@@ -376,7 +376,7 @@
                         Tags
                     </p>
                     <p class="title has-text-weight-normal">
-                        22
+                        21
                     </p>
                 </div>
             </div>
@@ -683,14 +683,6 @@
                 <span class="level-item tag">1</span>
             </span>
         </a></li><li>
-        <a class="level is-marginless" href="/blog/categories/life/">
-            <span class="level-start">
-                <span class="level-item">life</span>
-            </span>
-            <span class="level-end">
-                <span class="level-item tag">1</span>
-            </span>
-        </a></li><li>
         <a class="level is-marginless" href="/blog/categories/literature/">
             <span class="level-start">
                 <span class="level-item">literature</span>
@@ -726,7 +718,7 @@
         <h3 class="menu-label">
             Tag Cloud
         </h3>
-        <a href="/blog/tags/literature/" style="font-size: 18px; color: #cc0080">literature</a> <a href="/blog/tags/C/" style="font-size: 18px; color: #cc0080">C++</a> <a href="/blog/tags/Algorithm/" style="font-size: 23px; color: #f00">Algorithm</a> <a href="/blog/tags/Life-essay/" style="font-size: 20.5px; color: #e60040">Life essay</a> <a href="/blog/tags/AI/" style="font-size: 15.5px; color: #b300bf">AI</a> <a href="/blog/tags/Game/" style="font-size: 18px; color: #cc0080">Game</a> <a href="/blog/tags/Learing/" style="font-size: 13px; color: #90f">Learing</a> <a href="/blog/tags/Gradient-Descent/" style="font-size: 13px; color: #90f">Gradient Descent</a> <a href="/blog/tags/KNN/" style="font-size: 15.5px; color: #b300bf">KNN</a> <a href="/blog/tags/K-means/" style="font-size: 13px; color: #90f">K-means</a> <a href="/blog/tags/Keras-note/" style="font-size: 18px; color: #cc0080">Keras-note</a> <a href="/blog/tags/MF/" style="font-size: 13px; color: #90f">MF</a> <a href="/blog/tags/sharing/" style="font-size: 13px; color: #90f">sharing</a> <a href="/blog/tags/Makedown/" style="font-size: 13px; color: #90f">Makedown</a> <a href="/blog/tags/recommend/" style="font-size: 13px; color: #90f">recommend</a> <a href="/blog/tags/python-command/" style="font-size: 13px; color: #90f">python command</a> <a href="/blog/tags/python/" style="font-size: 15.5px; color: #b300bf">python</a> <a href="/blog/tags/Ubutu/" style="font-size: 13px; color: #90f">Ubutu</a> <a href="/blog/tags/Machine-learn/" style="font-size: 13px; color: #90f">Machine-learn</a> <a href="/blog/tags/hexo-github/" style="font-size: 13px; color: #90f">hexo+github</a> <a href="/blog/tags/NN/" style="font-size: 18px; color: #cc0080">NN</a> <a href="/blog/tags/life/" style="font-size: 13px; color: #90f">life</a>
+        <a href="/blog/tags/Life-essay/" style="font-size: 20.5px; color: #e60040">Life essay</a> <a href="/blog/tags/literature/" style="font-size: 18px; color: #cc0080">literature</a> <a href="/blog/tags/Algorithm/" style="font-size: 23px; color: #f00">Algorithm</a> <a href="/blog/tags/C/" style="font-size: 18px; color: #cc0080">C++</a> <a href="/blog/tags/AI/" style="font-size: 15.5px; color: #b300bf">AI</a> <a href="/blog/tags/Game/" style="font-size: 18px; color: #cc0080">Game</a> <a href="/blog/tags/Gradient-Descent/" style="font-size: 13px; color: #90f">Gradient Descent</a> <a href="/blog/tags/Learing/" style="font-size: 13px; color: #90f">Learing</a> <a href="/blog/tags/Keras-note/" style="font-size: 18px; color: #cc0080">Keras-note</a> <a href="/blog/tags/KNN/" style="font-size: 15.5px; color: #b300bf">KNN</a> <a href="/blog/tags/sharing/" style="font-size: 13px; color: #90f">sharing</a> <a href="/blog/tags/Makedown/" style="font-size: 13px; color: #90f">Makedown</a> <a href="/blog/tags/MF/" style="font-size: 13px; color: #90f">MF</a> <a href="/blog/tags/recommend/" style="font-size: 13px; color: #90f">recommend</a> <a href="/blog/tags/python/" style="font-size: 15.5px; color: #b300bf">python</a> <a href="/blog/tags/python-command/" style="font-size: 13px; color: #90f">python command</a> <a href="/blog/tags/K-means/" style="font-size: 13px; color: #90f">K-means</a> <a href="/blog/tags/hexo-github/" style="font-size: 13px; color: #90f">hexo+github</a> <a href="/blog/tags/NN/" style="font-size: 18px; color: #cc0080">NN</a> <a href="/blog/tags/Ubutu/" style="font-size: 13px; color: #90f">Ubutu</a> <a href="/blog/tags/Machine-learn/" style="font-size: 13px; color: #90f">Machine-learn</a>
     </div>
 </div>
 
@@ -876,7 +868,7 @@
                     <span class="level-item">June 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">23</span>
+                    <span class="level-item tag">22</span>
                 </span>
             </a>
         </li>
@@ -1002,13 +994,6 @@
                 <div class="control">
                     <a class="tags has-addons" href="/blog/tags/hexo-github/">
                         <span class="tag">hexo+github</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/blog/tags/life/">
-                        <span class="tag">life</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>
@@ -1206,7 +1191,7 @@
                     <span class="level-item">June 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">23</span>
+                    <span class="level-item tag">22</span>
                 </span>
             </a>
         </li>
@@ -1332,13 +1317,6 @@
                 <div class="control">
                     <a class="tags has-addons" href="/blog/tags/hexo-github/">
                         <span class="tag">hexo+github</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/blog/tags/life/">
-                        <span class="tag">life</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>

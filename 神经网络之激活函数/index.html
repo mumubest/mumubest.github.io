@@ -21,7 +21,7 @@
 <meta property="og:description" content="有时候不敢去拥有，因为害怕失去，所以非常努力地去奋斗，让自己累，让自己不去想。">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://angelni.github.io/blog/blog/gallary/32.jpg">
-<meta property="og:updated_time" content="2019-08-11T11:18:56.739Z">
+<meta property="og:updated_time" content="2019-08-28T15:30:19.635Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Artificial Neural Networks——Activation Funcation">
 <meta name="twitter:description" content="有时候不敢去拥有，因为害怕失去，所以非常努力地去奋斗，让自己累，让自己不去想。">
@@ -182,7 +182,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    6 minutes read (About 915 words)
+                    6 minutes read (About 897 words)
                 </span>
                 
                 
@@ -212,18 +212,18 @@
 <p>4.ELU</p>
 <p>5.PReLU</p>
 <p>这里简单的对前三个进行介绍</p>
-<h2 id="1-sigmoid"><a href="#1-sigmoid" class="headerlink" title="1.sigmoid"></a>1.sigmoid</h2><p><img src="/blog/blog/神经网络之激活函数/1.png" alt></p>
+<h2 id="1-sigmoid"><a href="#1-sigmoid" class="headerlink" title="1.sigmoid"></a>1.sigmoid</h2><p><img src="https://s2.ax1x.com/2019/08/28/mHhk0x.png" alt></p>
 <p>Sigmoid 函数的取值范围在 (0,1) 之间，单调连续，求导容易，一般用于二分类神经网络的输出层。</p>
 <p>sigmoid函数图像如图</p>
-<p><img src="/blog/blog/神经网络之激活函数/9.png" alt></p>
+<p><img src="https://s2.ax1x.com/2019/08/28/mHh1Bt.png" alt></p>
 <p>sigmoid函数求导</p>
-<p><img src="/blog/blog/神经网络之激活函数/2.jpg" alt></p>
+<p><img src="https://s2.ax1x.com/2019/08/28/mHhGAf.jpg" alt></p>
 <p>缺点：</p>
 <figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1.Sigmoid 函数饱和区范围广，容易造成梯度消失</span><br><span class="line"></span><br><span class="line">2.参数矩阵 W 的每个元素都会朝着同一个方向变化，同为正或同为负。这对于神经网络训练是不利的，所有的 W 都朝着同一符号方向变化会减小训练速度，增加模型训练时间。</span><br><span class="line"></span><br><span class="line">3.Sigmoid 函数包含 exp 指数运算，运算成本也比较大</span><br></pre></td></tr></table></figure>
 
-<h2 id="2-tanh"><a href="#2-tanh" class="headerlink" title="2.tanh"></a>2.tanh</h2><p><img src="/blog/blog/神经网络之激活函数/3.png" alt></p>
+<h2 id="2-tanh"><a href="#2-tanh" class="headerlink" title="2.tanh"></a>2.tanh</h2><p><img src="https://s2.ax1x.com/2019/08/28/mHhdjs.png" alt></p>
 <p>图像如图</p>
-<p><img src="/blog/blog/神经网络之激活函数/4.png" alt></p>
+<p><img src="https://s2.ax1x.com/2019/08/28/mHh0un.png" alt></p>
 <p>tanh 函数的取值范围在 (-1,1) 之间，单调连续，求导容易。</p>
 <p>相比于 Sigmoid 函数，tanh 函数的优点主要有两个：</p>
 <figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1.其一，收敛速度更快，如下图所示，tanh 函数线性区斜率较 Sigmoid 更大一些。在此区域内训练速度会更快。</span><br><span class="line">2.其二，tanh 函数输出均值为零，也就不存在 Sigmoid 函数中 dW 恒为正或者恒为负，从而影响训练速度的问题。</span><br></pre></td></tr></table></figure>
@@ -231,8 +231,8 @@
 <p>缺点：</p>
 <figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tanh 函数与 Sigmoid 函数一样，也存在饱和区梯度消失问题。其饱和区甚至比 Sigmoid 还要大一些，但不明显。</span><br></pre></td></tr></table></figure>
 
-<h2 id="3-ReLu"><a href="#3-ReLu" class="headerlink" title="3.ReLu"></a>3.ReLu</h2><p><img src="/blog/blog/神经网络之激活函数/5.png" alt></p>
-<p><img src="/blog/blog/神经网络之激活函数/6.png" alt></p>
+<h2 id="3-ReLu"><a href="#3-ReLu" class="headerlink" title="3.ReLu"></a>3.ReLu</h2><p><img src="https://s2.ax1x.com/2019/08/28/mHhsEV.png" alt></p>
+<p><img src="https://s2.ax1x.com/2019/08/28/mHhyNT.png" alt></p>
 <p>优点：</p>
 <figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">1.没有饱和区，不存在梯度消失问题。</span><br><span class="line"></span><br><span class="line">2.没有复杂的指数运算，计算简单、效率提高。</span><br><span class="line"></span><br><span class="line">3.实际收敛速度较快，大约是 Sigmoid/tanh 的 6 倍。</span><br><span class="line"></span><br><span class="line">4.比 Sigmoid 更符合生物学神经激活机制。</span><br></pre></td></tr></table></figure>
 
@@ -379,7 +379,7 @@
                         Posts
                     </p>
                     <p class="title has-text-weight-normal">
-                        47
+                        46
                     </p>
                 </div>
             </div>
@@ -389,7 +389,7 @@
                         Categories
                     </p>
                     <p class="title has-text-weight-normal">
-                        15
+                        14
                     </p>
                 </div>
             </div>
@@ -399,7 +399,7 @@
                         Tags
                     </p>
                     <p class="title has-text-weight-normal">
-                        22
+                        21
                     </p>
                 </div>
             </div>
@@ -706,14 +706,6 @@
                 <span class="level-item tag">1</span>
             </span>
         </a></li><li>
-        <a class="level is-marginless" href="/blog/categories/life/">
-            <span class="level-start">
-                <span class="level-item">life</span>
-            </span>
-            <span class="level-end">
-                <span class="level-item tag">1</span>
-            </span>
-        </a></li><li>
         <a class="level is-marginless" href="/blog/categories/literature/">
             <span class="level-start">
                 <span class="level-item">literature</span>
@@ -749,7 +741,7 @@
         <h3 class="menu-label">
             Tag Cloud
         </h3>
-        <a href="/blog/tags/literature/" style="font-size: 18px; color: #cc0080">literature</a> <a href="/blog/tags/C/" style="font-size: 18px; color: #cc0080">C++</a> <a href="/blog/tags/Algorithm/" style="font-size: 23px; color: #f00">Algorithm</a> <a href="/blog/tags/Life-essay/" style="font-size: 20.5px; color: #e60040">Life essay</a> <a href="/blog/tags/AI/" style="font-size: 15.5px; color: #b300bf">AI</a> <a href="/blog/tags/Game/" style="font-size: 18px; color: #cc0080">Game</a> <a href="/blog/tags/Learing/" style="font-size: 13px; color: #90f">Learing</a> <a href="/blog/tags/Gradient-Descent/" style="font-size: 13px; color: #90f">Gradient Descent</a> <a href="/blog/tags/KNN/" style="font-size: 15.5px; color: #b300bf">KNN</a> <a href="/blog/tags/K-means/" style="font-size: 13px; color: #90f">K-means</a> <a href="/blog/tags/Keras-note/" style="font-size: 18px; color: #cc0080">Keras-note</a> <a href="/blog/tags/MF/" style="font-size: 13px; color: #90f">MF</a> <a href="/blog/tags/sharing/" style="font-size: 13px; color: #90f">sharing</a> <a href="/blog/tags/Makedown/" style="font-size: 13px; color: #90f">Makedown</a> <a href="/blog/tags/recommend/" style="font-size: 13px; color: #90f">recommend</a> <a href="/blog/tags/python-command/" style="font-size: 13px; color: #90f">python command</a> <a href="/blog/tags/python/" style="font-size: 15.5px; color: #b300bf">python</a> <a href="/blog/tags/Ubutu/" style="font-size: 13px; color: #90f">Ubutu</a> <a href="/blog/tags/Machine-learn/" style="font-size: 13px; color: #90f">Machine-learn</a> <a href="/blog/tags/hexo-github/" style="font-size: 13px; color: #90f">hexo+github</a> <a href="/blog/tags/NN/" style="font-size: 18px; color: #cc0080">NN</a> <a href="/blog/tags/life/" style="font-size: 13px; color: #90f">life</a>
+        <a href="/blog/tags/Life-essay/" style="font-size: 20.5px; color: #e60040">Life essay</a> <a href="/blog/tags/literature/" style="font-size: 18px; color: #cc0080">literature</a> <a href="/blog/tags/Algorithm/" style="font-size: 23px; color: #f00">Algorithm</a> <a href="/blog/tags/C/" style="font-size: 18px; color: #cc0080">C++</a> <a href="/blog/tags/AI/" style="font-size: 15.5px; color: #b300bf">AI</a> <a href="/blog/tags/Game/" style="font-size: 18px; color: #cc0080">Game</a> <a href="/blog/tags/Gradient-Descent/" style="font-size: 13px; color: #90f">Gradient Descent</a> <a href="/blog/tags/Learing/" style="font-size: 13px; color: #90f">Learing</a> <a href="/blog/tags/Keras-note/" style="font-size: 18px; color: #cc0080">Keras-note</a> <a href="/blog/tags/KNN/" style="font-size: 15.5px; color: #b300bf">KNN</a> <a href="/blog/tags/sharing/" style="font-size: 13px; color: #90f">sharing</a> <a href="/blog/tags/Makedown/" style="font-size: 13px; color: #90f">Makedown</a> <a href="/blog/tags/MF/" style="font-size: 13px; color: #90f">MF</a> <a href="/blog/tags/recommend/" style="font-size: 13px; color: #90f">recommend</a> <a href="/blog/tags/python/" style="font-size: 15.5px; color: #b300bf">python</a> <a href="/blog/tags/python-command/" style="font-size: 13px; color: #90f">python command</a> <a href="/blog/tags/K-means/" style="font-size: 13px; color: #90f">K-means</a> <a href="/blog/tags/hexo-github/" style="font-size: 13px; color: #90f">hexo+github</a> <a href="/blog/tags/NN/" style="font-size: 18px; color: #cc0080">NN</a> <a href="/blog/tags/Ubutu/" style="font-size: 13px; color: #90f">Ubutu</a> <a href="/blog/tags/Machine-learn/" style="font-size: 13px; color: #90f">Machine-learn</a>
     </div>
 </div>
 
@@ -899,7 +891,7 @@
                     <span class="level-item">June 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">23</span>
+                    <span class="level-item tag">22</span>
                 </span>
             </a>
         </li>
@@ -1025,13 +1017,6 @@
                 <div class="control">
                     <a class="tags has-addons" href="/blog/tags/hexo-github/">
                         <span class="tag">hexo+github</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/blog/tags/life/">
-                        <span class="tag">life</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>
@@ -1229,7 +1214,7 @@
                     <span class="level-item">June 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">23</span>
+                    <span class="level-item tag">22</span>
                 </span>
             </a>
         </li>
@@ -1355,13 +1340,6 @@
                 <div class="control">
                     <a class="tags has-addons" href="/blog/tags/hexo-github/">
                         <span class="tag">hexo+github</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/blog/tags/life/">
-                        <span class="tag">life</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>

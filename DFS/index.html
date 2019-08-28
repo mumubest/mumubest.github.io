@@ -21,7 +21,7 @@
 <meta property="og:description" content="DFS深度优先搜索算法（Depth-First-Search），是搜索算法的一种。是沿着树的深度遍历树的节点，尽可能深的搜索树的分支。当节点v的所有边都己被探寻过，搜索将回溯到发现节点v的那条边的起始节点。这一过程一直进行到已发现从源节点可达的所有节点为止。如果还存在未被发现的节点，则选择其中一个作为源节点并重复以上过程，整个进程反复进行直到所有节点都被访问为止（属于盲目搜索）。">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://angelni.github.io/blog/images/og_image.png">
-<meta property="og:updated_time" content="2019-08-11T11:18:56.723Z">
+<meta property="og:updated_time" content="2019-08-28T15:08:27.766Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="DFS">
 <meta name="twitter:description" content="DFS深度优先搜索算法（Depth-First-Search），是搜索算法的一种。是沿着树的深度遍历树的节点，尽可能深的搜索树的分支。当节点v的所有边都己被探寻过，搜索将回溯到发现节点v的那条边的起始节点。这一过程一直进行到已发现从源节点可达的所有节点为止。如果还存在未被发现的节点，则选择其中一个作为源节点并重复以上过程，整个进程反复进行直到所有节点都被访问为止（属于盲目搜索）。">
@@ -176,7 +176,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    6 minutes read (About 970 words)
+                    6 minutes read (About 861 words)
                 </span>
                 
                 
@@ -195,20 +195,20 @@
         </h1>
         <div class="content">
             <h2 id="DFS"><a href="#DFS" class="headerlink" title="DFS"></a>DFS</h2><p>深度优先搜索算法（Depth-First-Search），是搜索算法的一种。是沿着树的深度遍历树的节点，尽可能深的搜索树的分支。当节点v的所有边都己被探寻过，搜索将回溯到发现节点v的那条边的起始节点。这一过程一直进行到已发现从源节点可达的所有节点为止。如果还存在未被发现的节点，则选择其中一个作为源节点并重复以上过程，整个进程反复进行直到所有节点都被访问为止（属于盲目搜索）。</p>
-<p><img src="https://angelni.github.io/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2-DFS/7.jpg" alt="img"></p>
+<p><img src="https://s2.ax1x.com/2019/08/28/mHg94H.jpg" alt></p>
 <a id="more"></a>
 
 <p>“一路走到头，不撞墙不回头”</p>
 <p> 深度优先搜索属于图算法的一种，是一个针对图和树的遍历算法，英文缩写为DFS即Depth First Search。深度优先搜索是图论中的经典算法，利用深度优先搜索算法可以产生目标图的相应拓扑排序表，利用拓扑排序表可以方便的解决很多相关的图论问题，如最大路径问题等等。一般用堆数据结构来辅助实现DFS算法。其过程简要来说是对每一个可能的分支路径深入到不能再深入为止，而且每个节点只能访问一次。</p>
 <h2 id="树状图图解"><a href="#树状图图解" class="headerlink" title="树状图图解"></a>树状图图解</h2><p>例如，想要从1到9，每到一个岔路口你有两种选择，你可以选择左枝，或者右枝，共两种可能，但是当你走到死胡同时，你只能原路返回，走到这个死胡同的上一个路口，走另一条路，依次类推，直到走到终点，也就是九。你可能会问，这不明摆着呢吗，直接从1经过8到9不就行了。没错，这是最直接的办法，但计算机傻啊，没有你聪明啊，它只会，一次一次的尝试，直到最终结果。</p>
 <p>下面是图解</p>
-<p><img src="https://angelni.github.io/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2-DFS/2.jpg" alt="img"></p>
-<p><img src="https://angelni.github.io/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2-DFS/1.png" alt="img"></p>
-<p><img src="https://angelni.github.io/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2-DFS/2.png" alt="img"></p>
-<p><img src="https://angelni.github.io/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2-DFS/3.png" alt="img"></p>
-<p><img src="https://angelni.github.io/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2-DFS/4.png" alt="img"></p>
-<p><img src="https://angelni.github.io/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2-DFS/5.png" alt="img"></p>
-<p><img src="https://angelni.github.io/%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2-DFS/6.png" alt="img"></p>
+<p><img src="https://s2.ax1x.com/2019/08/28/mHgFgI.png" alt></p>
+<p><img src="https://s2.ax1x.com/2019/08/28/mHgVDf.png" alt></p>
+<p><img src="https://s2.ax1x.com/2019/08/28/mHgMCj.png" alt></p>
+<p><img src="https://s2.ax1x.com/2019/08/28/mHgQ8s.png" alt></p>
+<p><img src="https://s2.ax1x.com/2019/08/28/mHg8K0.png" alt></p>
+<p><img src="https://s2.ax1x.com/2019/08/28/mHgU54.png" alt></p>
+<p><img src="https://s2.ax1x.com/2019/08/28/mHgwG9.jpg" alt></p>
 <h2 id="例题"><a href="#例题" class="headerlink" title="例题"></a>例题</h2><p>给定整数a1、a2、…….an，判断是否可以从中选出若干数，使它们的和恰好为K。</p>
 <p>输入</p>
 <p>首先，n和k，n表示数的个数，k表示数的和。<br>接着一行n个数。<br>（1&lt;=n&lt;=20,保证不超int范围）</p>
@@ -361,7 +361,7 @@
                         Posts
                     </p>
                     <p class="title has-text-weight-normal">
-                        47
+                        46
                     </p>
                 </div>
             </div>
@@ -371,7 +371,7 @@
                         Categories
                     </p>
                     <p class="title has-text-weight-normal">
-                        15
+                        14
                     </p>
                 </div>
             </div>
@@ -381,7 +381,7 @@
                         Tags
                     </p>
                     <p class="title has-text-weight-normal">
-                        22
+                        21
                     </p>
                 </div>
             </div>
@@ -688,14 +688,6 @@
                 <span class="level-item tag">1</span>
             </span>
         </a></li><li>
-        <a class="level is-marginless" href="/blog/categories/life/">
-            <span class="level-start">
-                <span class="level-item">life</span>
-            </span>
-            <span class="level-end">
-                <span class="level-item tag">1</span>
-            </span>
-        </a></li><li>
         <a class="level is-marginless" href="/blog/categories/literature/">
             <span class="level-start">
                 <span class="level-item">literature</span>
@@ -731,7 +723,7 @@
         <h3 class="menu-label">
             Tag Cloud
         </h3>
-        <a href="/blog/tags/literature/" style="font-size: 18px; color: #cc0080">literature</a> <a href="/blog/tags/C/" style="font-size: 18px; color: #cc0080">C++</a> <a href="/blog/tags/Algorithm/" style="font-size: 23px; color: #f00">Algorithm</a> <a href="/blog/tags/Life-essay/" style="font-size: 20.5px; color: #e60040">Life essay</a> <a href="/blog/tags/AI/" style="font-size: 15.5px; color: #b300bf">AI</a> <a href="/blog/tags/Game/" style="font-size: 18px; color: #cc0080">Game</a> <a href="/blog/tags/Learing/" style="font-size: 13px; color: #90f">Learing</a> <a href="/blog/tags/Gradient-Descent/" style="font-size: 13px; color: #90f">Gradient Descent</a> <a href="/blog/tags/KNN/" style="font-size: 15.5px; color: #b300bf">KNN</a> <a href="/blog/tags/K-means/" style="font-size: 13px; color: #90f">K-means</a> <a href="/blog/tags/Keras-note/" style="font-size: 18px; color: #cc0080">Keras-note</a> <a href="/blog/tags/MF/" style="font-size: 13px; color: #90f">MF</a> <a href="/blog/tags/sharing/" style="font-size: 13px; color: #90f">sharing</a> <a href="/blog/tags/Makedown/" style="font-size: 13px; color: #90f">Makedown</a> <a href="/blog/tags/recommend/" style="font-size: 13px; color: #90f">recommend</a> <a href="/blog/tags/python-command/" style="font-size: 13px; color: #90f">python command</a> <a href="/blog/tags/python/" style="font-size: 15.5px; color: #b300bf">python</a> <a href="/blog/tags/Ubutu/" style="font-size: 13px; color: #90f">Ubutu</a> <a href="/blog/tags/Machine-learn/" style="font-size: 13px; color: #90f">Machine-learn</a> <a href="/blog/tags/hexo-github/" style="font-size: 13px; color: #90f">hexo+github</a> <a href="/blog/tags/NN/" style="font-size: 18px; color: #cc0080">NN</a> <a href="/blog/tags/life/" style="font-size: 13px; color: #90f">life</a>
+        <a href="/blog/tags/Life-essay/" style="font-size: 20.5px; color: #e60040">Life essay</a> <a href="/blog/tags/literature/" style="font-size: 18px; color: #cc0080">literature</a> <a href="/blog/tags/Algorithm/" style="font-size: 23px; color: #f00">Algorithm</a> <a href="/blog/tags/C/" style="font-size: 18px; color: #cc0080">C++</a> <a href="/blog/tags/AI/" style="font-size: 15.5px; color: #b300bf">AI</a> <a href="/blog/tags/Game/" style="font-size: 18px; color: #cc0080">Game</a> <a href="/blog/tags/Gradient-Descent/" style="font-size: 13px; color: #90f">Gradient Descent</a> <a href="/blog/tags/Learing/" style="font-size: 13px; color: #90f">Learing</a> <a href="/blog/tags/Keras-note/" style="font-size: 18px; color: #cc0080">Keras-note</a> <a href="/blog/tags/KNN/" style="font-size: 15.5px; color: #b300bf">KNN</a> <a href="/blog/tags/sharing/" style="font-size: 13px; color: #90f">sharing</a> <a href="/blog/tags/Makedown/" style="font-size: 13px; color: #90f">Makedown</a> <a href="/blog/tags/MF/" style="font-size: 13px; color: #90f">MF</a> <a href="/blog/tags/recommend/" style="font-size: 13px; color: #90f">recommend</a> <a href="/blog/tags/python/" style="font-size: 15.5px; color: #b300bf">python</a> <a href="/blog/tags/python-command/" style="font-size: 13px; color: #90f">python command</a> <a href="/blog/tags/K-means/" style="font-size: 13px; color: #90f">K-means</a> <a href="/blog/tags/hexo-github/" style="font-size: 13px; color: #90f">hexo+github</a> <a href="/blog/tags/NN/" style="font-size: 18px; color: #cc0080">NN</a> <a href="/blog/tags/Ubutu/" style="font-size: 13px; color: #90f">Ubutu</a> <a href="/blog/tags/Machine-learn/" style="font-size: 13px; color: #90f">Machine-learn</a>
     </div>
 </div>
 
@@ -881,7 +873,7 @@
                     <span class="level-item">June 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">23</span>
+                    <span class="level-item tag">22</span>
                 </span>
             </a>
         </li>
@@ -1007,13 +999,6 @@
                 <div class="control">
                     <a class="tags has-addons" href="/blog/tags/hexo-github/">
                         <span class="tag">hexo+github</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/blog/tags/life/">
-                        <span class="tag">life</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>
@@ -1211,7 +1196,7 @@
                     <span class="level-item">June 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">23</span>
+                    <span class="level-item tag">22</span>
                 </span>
             </a>
         </li>
@@ -1337,13 +1322,6 @@
                 <div class="control">
                     <a class="tags has-addons" href="/blog/tags/hexo-github/">
                         <span class="tag">hexo+github</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/blog/tags/life/">
-                        <span class="tag">life</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>

@@ -21,7 +21,7 @@
 <meta property="og:description" content="不知道未来如何变化，总有人相信童话。">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://angelni.github.io/blog/blog/gallary/9.jpg">
-<meta property="og:updated_time" content="2019-08-11T11:18:56.708Z">
+<meta property="og:updated_time" content="2019-08-28T14:36:00.516Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CNN--tensorflow--code-learning">
 <meta name="twitter:description" content="不知道未来如何变化，总有人相信童话。">
@@ -207,7 +207,7 @@
 <p>发到博客上，也很方便看，啊哈哈哈。</p>
 <figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="hljs-keyword">import</span> tensorflow <span class="hljs-keyword">as</span> tf </span><br><span class="line"><span class="hljs-keyword">import</span> tensorflow.examples.tutorials.mnist.input_data <span class="hljs-keyword">as</span> input_data</span><br><span class="line">mnist = input_data.read_data_sets(<span class="hljs-string">"MNIST_data/"</span>, one_hot=<span class="hljs-literal">True</span>)     <span class="hljs-comment">#下载并加载mnist数据</span></span><br><span class="line">x = tf.placeholder(tf.float32, [<span class="hljs-literal">None</span>, <span class="hljs-number">784</span>])                        <span class="hljs-comment">#输入的数据占位符</span></span><br><span class="line">y_actual = tf.placeholder(tf.float32, shape=[<span class="hljs-literal">None</span>, <span class="hljs-number">10</span>])            <span class="hljs-comment">#输入的标签占位符</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">#定义一个函数，用于初始化所有的权值 W</span></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">weight_variable</span><span class="hljs-params">(shape)</span>:</span></span><br><span class="line">  initial = tf.truncated_normal(shape, stddev=<span class="hljs-number">0.1</span>)</span><br><span class="line">  <span class="hljs-keyword">return</span> tf.Variable(initial)</span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">#定义一个函数，用于初始化所有的偏置项 b</span></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">bias_variable</span><span class="hljs-params">(shape)</span>:</span></span><br><span class="line">  initial = tf.constant(<span class="hljs-number">0.1</span>, shape=shape)</span><br><span class="line">  <span class="hljs-keyword">return</span> tf.Variable(initial)</span><br><span class="line">  </span><br><span class="line"><span class="hljs-comment">#定义一个函数，用于构建卷积层</span></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">conv2d</span><span class="hljs-params">(x, W)</span>:</span></span><br><span class="line">  <span class="hljs-keyword">return</span> tf.nn.conv2d(x, W, strides=[<span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>], padding=<span class="hljs-string">'SAME'</span>)</span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">#定义一个函数，用于构建池化层</span></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">max_pool</span><span class="hljs-params">(x)</span>:</span></span><br><span class="line">  <span class="hljs-keyword">return</span> tf.nn.max_pool(x, ksize=[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">2</span>, <span class="hljs-number">1</span>],strides=[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">2</span>, <span class="hljs-number">1</span>], padding=<span class="hljs-string">'SAME'</span>)</span><br><span class="line"><span class="hljs-comment">#定义一个函数，用于初始化所有的权值 W</span></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">weight_variable</span><span class="hljs-params">(shape)</span>:</span></span><br><span class="line">  initial = tf.truncated_normal(shape, stddev=<span class="hljs-number">0.1</span>)</span><br><span class="line">  <span class="hljs-keyword">return</span> tf.Variable(initial)</span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">#定义一个函数，用于初始化所有的偏置项 b</span></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">bias_variable</span><span class="hljs-params">(shape)</span>:</span></span><br><span class="line">  initial = tf.constant(<span class="hljs-number">0.1</span>, shape=shape)</span><br><span class="line">  <span class="hljs-keyword">return</span> tf.Variable(initial)</span><br><span class="line">  </span><br><span class="line"><span class="hljs-comment">#定义一个函数，用于构建卷积层</span></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">conv2d</span><span class="hljs-params">(x, W)</span>:</span></span><br><span class="line">  <span class="hljs-keyword">return</span> tf.nn.conv2d(x, W, strides=[<span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>], padding=<span class="hljs-string">'SAME'</span>)</span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">#定义一个函数，用于构建池化层</span></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">max_pool</span><span class="hljs-params">(x)</span>:</span></span><br><span class="line">  <span class="hljs-keyword">return</span> tf.nn.max_pool(x, ksize=[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">2</span>, <span class="hljs-number">1</span>],strides=[<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">2</span>, <span class="hljs-number">1</span>], padding=<span class="hljs-string">'SAME'</span>)</span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">#构建网络</span></span><br><span class="line">x_image = tf.reshape(x, [<span class="hljs-number">-1</span>,<span class="hljs-number">28</span>,<span class="hljs-number">28</span>,<span class="hljs-number">1</span>])         <span class="hljs-comment">#转换输入数据shape,以便于用于网络中</span></span><br><span class="line">W_conv1 = weight_variable([<span class="hljs-number">5</span>, <span class="hljs-number">5</span>, <span class="hljs-number">1</span>, <span class="hljs-number">32</span>])      </span><br><span class="line">b_conv1 = bias_variable([<span class="hljs-number">32</span>])       </span><br><span class="line">h_conv1 = tf.nn.relu(conv2d(x_image, W_conv1) + b_conv1)     <span class="hljs-comment">#第一个卷积层</span></span><br><span class="line">h_pool1 = max_pool(h_conv1)                                  <span class="hljs-comment">#第一个池化层</span></span><br><span class="line"></span><br><span class="line">W_conv2 = weight_variable([<span class="hljs-number">5</span>, <span class="hljs-number">5</span>, <span class="hljs-number">32</span>, <span class="hljs-number">64</span>])</span><br><span class="line">b_conv2 = bias_variable([<span class="hljs-number">64</span>])</span><br><span class="line">h_conv2 = tf.nn.relu(conv2d(h_pool1, W_conv2) + b_conv2)      <span class="hljs-comment">#第二个卷积层</span></span><br><span class="line">h_pool2 = max_pool(h_conv2)                                   <span class="hljs-comment">#第二个池化层</span></span><br><span class="line"></span><br><span class="line">W_fc1 = weight_variable([<span class="hljs-number">7</span> * <span class="hljs-number">7</span> * <span class="hljs-number">64</span>, <span class="hljs-number">1024</span>])</span><br><span class="line">b_fc1 = bias_variable([<span class="hljs-number">1024</span>])</span><br><span class="line">h_pool2_flat = tf.reshape(h_pool2, [<span class="hljs-number">-1</span>, <span class="hljs-number">7</span>*<span class="hljs-number">7</span>*<span class="hljs-number">64</span>])              <span class="hljs-comment">#reshape成向量</span></span><br><span class="line">h_fc1 = tf.nn.relu(tf.matmul(h_pool2_flat, W_fc1) + b_fc1)    <span class="hljs-comment">#第一个全连接层</span></span><br><span class="line"></span><br><span class="line">keep_prob = tf.placeholder(<span class="hljs-string">"float"</span>) </span><br><span class="line">h_fc1_drop = tf.nn.dropout(h_fc1, keep_prob)                  <span class="hljs-comment">#dropout层</span></span><br><span class="line"></span><br><span class="line">W_fc2 = weight_variable([<span class="hljs-number">1024</span>, <span class="hljs-number">10</span>])</span><br><span class="line">b_fc2 = bias_variable([<span class="hljs-number">10</span>])</span><br><span class="line">y_predict=tf.nn.softmax(tf.matmul(h_fc1_drop, W_fc2) + b_fc2)   <span class="hljs-comment">#softmax层</span></span><br><span class="line">cross_entropy = -tf.reduce_sum(y_actual*tf.log(y_predict))     <span class="hljs-comment">#交叉熵</span></span><br><span class="line"></span><br><span class="line">train_step = tf.train.GradientDescentOptimizer(<span class="hljs-number">1e-3</span>).minimize(cross_entropy)    <span class="hljs-comment">#梯度下降法</span></span><br><span class="line">correct_prediction = tf.equal(tf.argmax(y_predict,<span class="hljs-number">1</span>), tf.argmax(y_actual,<span class="hljs-number">1</span>))    </span><br><span class="line"></span><br><span class="line">accuracy = tf.reduce_mean(tf.cast(correct_prediction, <span class="hljs-string">"float"</span>))                 <span class="hljs-comment">#精确度计算</span></span><br><span class="line">sess=tf.InteractiveSession()                          </span><br><span class="line">sess.run(tf.initialize_all_variables())</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">20000</span>):</span><br><span class="line">  batch = mnist.train.next_batch(<span class="hljs-number">50</span>)</span><br><span class="line">  <span class="hljs-keyword">if</span> i%<span class="hljs-number">100</span> == <span class="hljs-number">0</span>:                  <span class="hljs-comment">#训练100次，验证一次</span></span><br><span class="line">    train_acc = accuracy.eval(feed_dict=&#123;x:batch[<span class="hljs-number">0</span>], y_actual: batch[<span class="hljs-number">1</span>], keep_prob: <span class="hljs-number">1.0</span>&#125;)</span><br><span class="line">    print(<span class="hljs-string">'step %d, training accuracy %g'</span>%(i,train_acc))</span><br><span class="line">    train_step.run(feed_dict=&#123;x: batch[<span class="hljs-number">0</span>], y_actual: batch[<span class="hljs-number">1</span>], keep_prob: <span class="hljs-number">0.5</span>&#125;)</span><br><span class="line"></span><br><span class="line">test_acc=accuracy.eval(feed_dict=&#123;x: mnist.test.images, y_actual: mnist.test.labels, keep_prob: <span class="hljs-number">1.0</span>&#125;)</span><br><span class="line">print(<span class="hljs-string">"test accuracy %g"</span>%test_acc)</span><br></pre></td></tr></table></figure>
 
-<p><img src="/blog/blog/CNN--tensorflow-code-learn/1.png" alt></p>
+<p><img src="http://pwxyaiwx0.bkt.clouddn.com/tensorflow.png" alt></p>
 <p>博文参考：<a href="https://morvanzhou.github.io/tutorials/machine-learning/tensorflow/5-03-CNN1/" target="_blank" rel="noopener">https://morvanzhou.github.io/tutorials/machine-learning/tensorflow/5-03-CNN1/</a></p>
 
         </div>
@@ -347,7 +347,7 @@
                         Posts
                     </p>
                     <p class="title has-text-weight-normal">
-                        47
+                        46
                     </p>
                 </div>
             </div>
@@ -357,7 +357,7 @@
                         Categories
                     </p>
                     <p class="title has-text-weight-normal">
-                        15
+                        14
                     </p>
                 </div>
             </div>
@@ -367,7 +367,7 @@
                         Tags
                     </p>
                     <p class="title has-text-weight-normal">
-                        22
+                        21
                     </p>
                 </div>
             </div>
@@ -674,14 +674,6 @@
                 <span class="level-item tag">1</span>
             </span>
         </a></li><li>
-        <a class="level is-marginless" href="/blog/categories/life/">
-            <span class="level-start">
-                <span class="level-item">life</span>
-            </span>
-            <span class="level-end">
-                <span class="level-item tag">1</span>
-            </span>
-        </a></li><li>
         <a class="level is-marginless" href="/blog/categories/literature/">
             <span class="level-start">
                 <span class="level-item">literature</span>
@@ -717,7 +709,7 @@
         <h3 class="menu-label">
             Tag Cloud
         </h3>
-        <a href="/blog/tags/literature/" style="font-size: 18px; color: #cc0080">literature</a> <a href="/blog/tags/C/" style="font-size: 18px; color: #cc0080">C++</a> <a href="/blog/tags/Algorithm/" style="font-size: 23px; color: #f00">Algorithm</a> <a href="/blog/tags/Life-essay/" style="font-size: 20.5px; color: #e60040">Life essay</a> <a href="/blog/tags/AI/" style="font-size: 15.5px; color: #b300bf">AI</a> <a href="/blog/tags/Game/" style="font-size: 18px; color: #cc0080">Game</a> <a href="/blog/tags/Learing/" style="font-size: 13px; color: #90f">Learing</a> <a href="/blog/tags/Gradient-Descent/" style="font-size: 13px; color: #90f">Gradient Descent</a> <a href="/blog/tags/KNN/" style="font-size: 15.5px; color: #b300bf">KNN</a> <a href="/blog/tags/K-means/" style="font-size: 13px; color: #90f">K-means</a> <a href="/blog/tags/Keras-note/" style="font-size: 18px; color: #cc0080">Keras-note</a> <a href="/blog/tags/MF/" style="font-size: 13px; color: #90f">MF</a> <a href="/blog/tags/sharing/" style="font-size: 13px; color: #90f">sharing</a> <a href="/blog/tags/Makedown/" style="font-size: 13px; color: #90f">Makedown</a> <a href="/blog/tags/recommend/" style="font-size: 13px; color: #90f">recommend</a> <a href="/blog/tags/python-command/" style="font-size: 13px; color: #90f">python command</a> <a href="/blog/tags/python/" style="font-size: 15.5px; color: #b300bf">python</a> <a href="/blog/tags/Ubutu/" style="font-size: 13px; color: #90f">Ubutu</a> <a href="/blog/tags/Machine-learn/" style="font-size: 13px; color: #90f">Machine-learn</a> <a href="/blog/tags/hexo-github/" style="font-size: 13px; color: #90f">hexo+github</a> <a href="/blog/tags/NN/" style="font-size: 18px; color: #cc0080">NN</a> <a href="/blog/tags/life/" style="font-size: 13px; color: #90f">life</a>
+        <a href="/blog/tags/Life-essay/" style="font-size: 20.5px; color: #e60040">Life essay</a> <a href="/blog/tags/literature/" style="font-size: 18px; color: #cc0080">literature</a> <a href="/blog/tags/Algorithm/" style="font-size: 23px; color: #f00">Algorithm</a> <a href="/blog/tags/C/" style="font-size: 18px; color: #cc0080">C++</a> <a href="/blog/tags/AI/" style="font-size: 15.5px; color: #b300bf">AI</a> <a href="/blog/tags/Game/" style="font-size: 18px; color: #cc0080">Game</a> <a href="/blog/tags/Gradient-Descent/" style="font-size: 13px; color: #90f">Gradient Descent</a> <a href="/blog/tags/Learing/" style="font-size: 13px; color: #90f">Learing</a> <a href="/blog/tags/Keras-note/" style="font-size: 18px; color: #cc0080">Keras-note</a> <a href="/blog/tags/KNN/" style="font-size: 15.5px; color: #b300bf">KNN</a> <a href="/blog/tags/sharing/" style="font-size: 13px; color: #90f">sharing</a> <a href="/blog/tags/Makedown/" style="font-size: 13px; color: #90f">Makedown</a> <a href="/blog/tags/MF/" style="font-size: 13px; color: #90f">MF</a> <a href="/blog/tags/recommend/" style="font-size: 13px; color: #90f">recommend</a> <a href="/blog/tags/python/" style="font-size: 15.5px; color: #b300bf">python</a> <a href="/blog/tags/python-command/" style="font-size: 13px; color: #90f">python command</a> <a href="/blog/tags/K-means/" style="font-size: 13px; color: #90f">K-means</a> <a href="/blog/tags/hexo-github/" style="font-size: 13px; color: #90f">hexo+github</a> <a href="/blog/tags/NN/" style="font-size: 18px; color: #cc0080">NN</a> <a href="/blog/tags/Ubutu/" style="font-size: 13px; color: #90f">Ubutu</a> <a href="/blog/tags/Machine-learn/" style="font-size: 13px; color: #90f">Machine-learn</a>
     </div>
 </div>
 
@@ -867,7 +859,7 @@
                     <span class="level-item">June 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">23</span>
+                    <span class="level-item tag">22</span>
                 </span>
             </a>
         </li>
@@ -993,13 +985,6 @@
                 <div class="control">
                     <a class="tags has-addons" href="/blog/tags/hexo-github/">
                         <span class="tag">hexo+github</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/blog/tags/life/">
-                        <span class="tag">life</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>
@@ -1197,7 +1182,7 @@
                     <span class="level-item">June 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">23</span>
+                    <span class="level-item tag">22</span>
                 </span>
             </a>
         </li>
@@ -1323,13 +1308,6 @@
                 <div class="control">
                     <a class="tags has-addons" href="/blog/tags/hexo-github/">
                         <span class="tag">hexo+github</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/blog/tags/life/">
-                        <span class="tag">life</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>

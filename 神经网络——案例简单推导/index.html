@@ -21,7 +21,7 @@
 <meta property="og:description" content="现在终于理解我们高中数学老师说的话了，计算不行，说明数学不行，数学不行能力不行，数学好才是真正的好！！！哈哈哈。">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://angelni.github.io/blog/blog/gallary/36.jpg">
-<meta property="og:updated_time" content="2019-08-11T11:18:56.739Z">
+<meta property="og:updated_time" content="2019-08-28T15:21:45.121Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Artificial Neural Networks">
 <meta name="twitter:description" content="现在终于理解我们高中数学老师说的话了，计算不行，说明数学不行，数学不行能力不行，数学好才是真正的好！！！哈哈哈。">
@@ -182,7 +182,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    7 minutes read (About 1010 words)
+                    6 minutes read (About 892 words)
                 </span>
                 
                 
@@ -203,38 +203,39 @@
             <p>   现在终于理解我们高中数学老师说的话了，计算不行，说明数学不行，数学不行能力不行，数学好才是真正的好！！！哈哈哈。</p>
 <a id="more"></a>
 
-<p><img src="/blog/blog/神经网络——案例简单推导/2.png" alt></p>
+<p><img src="https://s2.ax1x.com/2019/08/28/mHgbdS.png" alt></p>
 <p>　这是典型的三层神经网络的基本构成，Layer L1是输入层，Layer L2是隐含层，Layer L3是隐含层，我们现在手里有一堆数据{x1,x2,x3,…,xn},输出也是一堆数据{y1,y2,y3,…,yn},现在要他们在隐含层做某种变换，让你把数据灌进去后得到你期望的输出。</p>
-<p><img src="/blog/blog/神经网络——案例简单推导/1.png" alt></p>
+<p><img src="https://s2.ax1x.com/2019/08/28/mHgXGj.png" alt></p>
 <p>　　在这里，通过对上图简单的案例进行数学推导,激活函数默认为sigmoid函数（注：神经网络的基础知识可以参考Poll的笔记：<a href="http://www.cnblogs.com/maybe2030/p/5597716.html" target="_blank" rel="noopener">[Mechine Learning &amp; Algorithm] 神经网络基础</a>）</p>
-<p><img src="/blog/blog/神经网络——案例简单推导/3.png" alt></p>
+<p><img src="https://s2.ax1x.com/2019/08/28/mHgjRs.png" alt></p>
 <h1 id="一、前向传播"><a href="#一、前向传播" class="headerlink" title="一、前向传播"></a>一、前向传播</h1><h2 id="1-输入层—-gt-隐含层"><a href="#1-输入层—-gt-隐含层" class="headerlink" title="1.输入层—-&gt;隐含层"></a>1.输入层—-&gt;隐含层</h2><p><strong>计算神经元的输入加权和</strong></p>
-<p><img src="/blog/blog/神经网络——案例简单推导/4.png" alt></p>
-<p><img src="/blog/blog/神经网络——案例简单推导/5.png" alt></p>
+<p><img src="https://s2.ax1x.com/2019/08/28/mHgvzn.png" alt></p>
+<p><img src="https://s2.ax1x.com/2019/08/28/mHRYh4.png" alt></p>
 <p><strong>计算神经元 h1、h2 的输出</strong></p>
-<p><img src="/blog/blog/神经网络——案例简单推导/6.png" alt></p>
-<p><img src="/blog/blog/神经网络——案例简单推导/7.png" alt></p>
+<p><img src="https://s2.ax1x.com/2019/08/28/mHRN9J.png" alt></p>
+<p><img src="https://s2.ax1x.com/2019/08/28/mHRU39.png" alt></p>
 <h2 id="2-隐含层—-gt-输出层"><a href="#2-隐含层—-gt-输出层" class="headerlink" title="2.隐含层—-&gt;输出层"></a>2.隐含层—-&gt;输出层</h2><p><strong>计算输出神经元o1、o2的值</strong></p>
-<p><img src="/blog/blog/神经网络——案例简单推导/8.png" alt></p>
-<p><img src="/blog/blog/神经网络——案例简单推导/9.png" alt></p>
-<p><img src="/blog/blog/神经网络——案例简单推导/10.png" alt></p>
-<p><img src="/blog/blog/神经网络——案例简单推导/11.png" alt></p>
+<p><img src="https://s2.ax1x.com/2019/08/28/mHRacR.png" alt></p>
+<p><img src="https://s2.ax1x.com/2019/08/28/mHRdj1.png" alt></p>
+<p><img src="https://s2.ax1x.com/2019/08/28/mHRBB6.png" alt></p>
+<p><img src="https://s2.ax1x.com/2019/08/28/mHRsAO.png" alt></p>
 <p>至此，前向传导传播结束。</p>
-<h1 id="二、反向传播"><a href="#二、反向传播" class="headerlink" title="二、反向传播"></a>二、反向传播</h1><h2 id="1-计算总误差"><a href="#1-计算总误差" class="headerlink" title="1.计算总误差"></a>1.计算总误差</h2><p><img src="/blog/blog/神经网络——案例简单推导/0.JPG" alt></p>
-<h2 id="2-隐藏层—–-gt-输出层权值更新"><a href="#2-隐藏层—–-gt-输出层权值更新" class="headerlink" title="2.隐藏层—–&gt;输出层权值更新"></a>2.隐藏层—–&gt;输出层权值更新</h2><p><img src="/blog/blog/神经网络——案例简单推导/1.jpg" alt></p>
+<h1 id="二、反向传播"><a href="#二、反向传播" class="headerlink" title="二、反向传播"></a>二、反向传播</h1><h2 id="1-计算总误差"><a href="#1-计算总误差" class="headerlink" title="1.计算总误差"></a>1.计算总误差</h2><p><img src="https://s2.ax1x.com/2019/08/28/mHRWjI.jpg" alt></p>
+<h2 id="2-隐藏层—–-gt-输出层权值更新"><a href="#2-隐藏层—–-gt-输出层权值更新" class="headerlink" title="2.隐藏层—–&gt;输出层权值更新"></a>2.隐藏层—–&gt;输出层权值更新</h2><p><img src="https://s2.ax1x.com/2019/08/28/mHfSsI.jpg" alt></p>
 <p>同理可求</p>
-<p><img src="/blog/blog/神经网络——案例简单推导/3.jpg" alt></p>
+<p><img src="https://s2.ax1x.com/2019/08/28/mHW4z9.jpg" alt></p>
 <p>权值跟新</p>
-<p><img src="/blog/blog/神经网络——案例简单推导/4.jpg" alt></p>
-<h2 id="3-隐藏层—-gt-输出层权值更新"><a href="#3-隐藏层—-gt-输出层权值更新" class="headerlink" title="3.隐藏层—-&gt;输出层权值更新"></a>3.隐藏层—-&gt;输出层权值更新</h2><p><img src="/blog/blog/神经网络——案例简单推导/5.jpg" alt></p>
-<p><img src="/blog/blog/神经网络——案例简单推导/6.jpg" alt><img src="/blog/blog/神经网络——案例简单推导/7.jpg" alt></p>
+<p><img src="https://s2.ax1x.com/2019/08/28/mHfpLt.jpg" alt></p>
+<h2 id="3-隐藏层—-gt-输出层权值更新"><a href="#3-隐藏层—-gt-输出层权值更新" class="headerlink" title="3.隐藏层—-&gt;输出层权值更新"></a>3.隐藏层—-&gt;输出层权值更新</h2><p><img src="https://s2.ax1x.com/2019/08/28/mHfCeP.jpg" alt></p>
+<p><img src="https://s2.ax1x.com/2019/08/28/mHfMwV.jpg" alt></p>
+<p><img src="https://s2.ax1x.com/2019/08/28/mHfdw6.jpg" alt></p>
 <p>权值跟新</p>
-<p><img src="/blog/blog/神经网络——案例简单推导/8.jpg" alt></p>
+<p><img src="https://s2.ax1x.com/2019/08/28/mHfDYD.jpg" alt></p>
 <p>权值更新后测试数据，会发现数据误差变小许多</p>
 <h1 id="三、栗子"><a href="#三、栗子" class="headerlink" title="三、栗子"></a>三、栗子</h1><figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np</span><br><span class="line"><span class="hljs-comment">#激励函数与其偏导数</span></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">tanh</span><span class="hljs-params">(x)</span>:</span></span><br><span class="line">    <span class="hljs-keyword">return</span> np.tanh(x)</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">tanh_derivative</span><span class="hljs-params">(x)</span>:</span></span><br><span class="line">    <span class="hljs-keyword">return</span> <span class="hljs-number">1.0</span> - np.tanh(x) * np.tanh(x)</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">logistic</span><span class="hljs-params">(x)</span>:</span></span><br><span class="line">    <span class="hljs-keyword">return</span> <span class="hljs-number">1</span> / (<span class="hljs-number">1</span> + np.exp(-x))</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">logistic_derivative</span><span class="hljs-params">(x)</span>:</span></span><br><span class="line">    <span class="hljs-keyword">return</span> logistic(x) * (<span class="hljs-number">1</span> - logistic(x) )</span><br><span class="line"><span class="hljs-comment">#神经网络模型</span></span><br><span class="line"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">NeuralNetwork</span>:</span></span><br><span class="line">    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, layers, activation=<span class="hljs-string">'tanh'</span>)</span>:</span></span><br><span class="line">        <span class="hljs-keyword">if</span> activation == <span class="hljs-string">'Logistic'</span>:</span><br><span class="line">            self.activation = logistic</span><br><span class="line">            self.activation_deriv = logistic_derivative</span><br><span class="line">        <span class="hljs-keyword">elif</span> activation == <span class="hljs-string">'tanh'</span>:</span><br><span class="line">            self.activation = tanh</span><br><span class="line">            self.activation_deriv = tanh_derivative</span><br><span class="line"></span><br><span class="line">        self.weights = []</span><br><span class="line">        <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>, len(layers)<span class="hljs-number">-1</span>):</span><br><span class="line">            <span class="hljs-comment"># [0,1) * 2 - 1 =&gt; [-1,1) =&gt; * 0.25 =&gt; [-0.25,0.25)  随机权值</span></span><br><span class="line">            self.weights.append( (<span class="hljs-number">2</span>*np.random.random((layers[i<span class="hljs-number">-1</span>] + <span class="hljs-number">1</span>, layers[i] + <span class="hljs-number">1</span> ))<span class="hljs-number">-1</span> ) * <span class="hljs-number">0.25</span> )</span><br><span class="line">            self.weights.append( (<span class="hljs-number">2</span>*np.random.random((layers[i] + <span class="hljs-number">1</span>, layers[i+<span class="hljs-number">1</span>] ))<span class="hljs-number">-1</span> ) * <span class="hljs-number">0.25</span> )</span><br><span class="line">        <span class="hljs-comment"># for i in range(0, len(layers)-1):</span></span><br><span class="line">        <span class="hljs-comment">#     m = layers[i]  # 第i层节点数</span></span><br><span class="line">        <span class="hljs-comment">#     n = layers[i+1]  # 第i+1层节点数</span></span><br><span class="line">        <span class="hljs-comment">#     wm = m + 1</span></span><br><span class="line">        <span class="hljs-comment">#     wn = n + 1</span></span><br><span class="line">        <span class="hljs-comment">#     if i == len(layers)-2:</span></span><br><span class="line">        <span class="hljs-comment">#         wn = n</span></span><br><span class="line">        <span class="hljs-comment">#     weight = np.random.random((wm, wn)) * 2 - 1</span></span><br><span class="line">        <span class="hljs-comment">#     self.weights.append(0.25 * weight)</span></span><br><span class="line"></span><br><span class="line">    <span class="hljs-comment">#类比梯度下降</span></span><br><span class="line">    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">fit</span><span class="hljs-params">(self, X, y, learning_rate=<span class="hljs-number">0.2</span>, epochs = <span class="hljs-number">10000</span>)</span>:</span></span><br><span class="line">        X = np.atleast_2d(X)</span><br><span class="line">        <span class="hljs-comment"># temp = np.ones([X.shape[0], X.shape[1]+1])</span></span><br><span class="line">        <span class="hljs-comment"># temp[:,0:-1] = X</span></span><br><span class="line">        <span class="hljs-comment"># X = temp</span></span><br><span class="line">        X = np.column_stack((X, np.ones(len(X))))</span><br><span class="line">        y = np.array(y)</span><br><span class="line"></span><br><span class="line">        <span class="hljs-keyword">for</span> k <span class="hljs-keyword">in</span> range(epochs):</span><br><span class="line">            i = np.random.randint(X.shape[<span class="hljs-number">0</span>])</span><br><span class="line">            a = [X[i]]</span><br><span class="line">            <span class="hljs-comment"># 正向计算</span></span><br><span class="line">            <span class="hljs-keyword">for</span> l <span class="hljs-keyword">in</span> range(len(self.weights)):</span><br><span class="line">                a.append(self.activation( np.dot(a[l], self.weights[l])) )</span><br><span class="line">            <span class="hljs-comment"># 反向传播</span></span><br><span class="line">            error = y[i] - a[<span class="hljs-number">-1</span>]</span><br><span class="line">            deltas = [error * self.activation_deriv(a[<span class="hljs-number">-1</span>])]</span><br><span class="line"></span><br><span class="line">            <span class="hljs-comment"># starting backprobagation</span></span><br><span class="line">            layerNum = len(a) - <span class="hljs-number">2</span></span><br><span class="line">            <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> range(layerNum, <span class="hljs-number">0</span>, <span class="hljs-number">-1</span>): <span class="hljs-comment"># 倒数第二层开始</span></span><br><span class="line">                deltas.append(deltas[<span class="hljs-number">-1</span>].dot(self.weights[j].T) * self.activation_deriv(a[j]))</span><br><span class="line">                <span class="hljs-comment"># deltas.append(deltas[-(layerNum+1-j)].dot(self.weights[j].T) * self.activation_deriv(a[j]))</span></span><br><span class="line">            deltas.reverse()</span><br><span class="line">            <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(len(self.weights)):</span><br><span class="line">                layer = np.atleast_2d(a[i])</span><br><span class="line">                delta = np.atleast_2d(deltas[i])</span><br><span class="line">                self.weights[i] += learning_rate * layer.T.dot(delta)</span><br><span class="line"></span><br><span class="line">    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">predict</span><span class="hljs-params">(self, x)</span>:</span></span><br><span class="line">        x = np.array(x)</span><br><span class="line">        temp = np.ones(x.shape[<span class="hljs-number">0</span>] + <span class="hljs-number">1</span>)</span><br><span class="line">        temp[<span class="hljs-number">0</span>:<span class="hljs-number">-1</span>] = x</span><br><span class="line">        a = temp</span><br><span class="line">        <span class="hljs-keyword">for</span> l <span class="hljs-keyword">in</span> range(<span class="hljs-number">0</span>, len(self.weights)):</span><br><span class="line">            a = self.activation(np.dot(a, self.weights[l]))</span><br><span class="line">        <span class="hljs-keyword">return</span> a</span><br><span class="line">nn = NeuralNetwork([<span class="hljs-number">2</span>, <span class="hljs-number">2</span>, <span class="hljs-number">1</span>], <span class="hljs-string">'tanh'</span>)</span><br><span class="line">x = np.array([[<span class="hljs-number">0</span>,<span class="hljs-number">0</span>],[<span class="hljs-number">0</span>,<span class="hljs-number">1</span>],[<span class="hljs-number">1</span>,<span class="hljs-number">0</span>],[<span class="hljs-number">1</span>,<span class="hljs-number">1</span>]])</span><br><span class="line">y = np.array([<span class="hljs-number">0</span>,<span class="hljs-number">1</span>,<span class="hljs-number">1</span>,<span class="hljs-number">0</span>])</span><br><span class="line">nn.fit(x, y)</span><br><span class="line"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> [[<span class="hljs-number">0</span>,<span class="hljs-number">0</span>],[<span class="hljs-number">0</span>,<span class="hljs-number">1</span>],[<span class="hljs-number">1</span>,<span class="hljs-number">0</span>],[<span class="hljs-number">1</span>,<span class="hljs-number">1</span>]]:</span><br><span class="line">    <span class="hljs-keyword">print</span> (i, nn.predict(i))</span><br></pre></td></tr></table></figure>
 
 <p>这是我的运行结果</p>
-<p><img src="/blog/blog/神经网络——案例简单推导/0.png" alt></p>
+<p><img src="https://s2.ax1x.com/2019/08/28/mHfrfe.png" alt></p>
 
         </div>
         
@@ -373,7 +374,7 @@
                         Posts
                     </p>
                     <p class="title has-text-weight-normal">
-                        47
+                        46
                     </p>
                 </div>
             </div>
@@ -383,7 +384,7 @@
                         Categories
                     </p>
                     <p class="title has-text-weight-normal">
-                        15
+                        14
                     </p>
                 </div>
             </div>
@@ -393,7 +394,7 @@
                         Tags
                     </p>
                     <p class="title has-text-weight-normal">
-                        22
+                        21
                     </p>
                 </div>
             </div>
@@ -700,14 +701,6 @@
                 <span class="level-item tag">1</span>
             </span>
         </a></li><li>
-        <a class="level is-marginless" href="/blog/categories/life/">
-            <span class="level-start">
-                <span class="level-item">life</span>
-            </span>
-            <span class="level-end">
-                <span class="level-item tag">1</span>
-            </span>
-        </a></li><li>
         <a class="level is-marginless" href="/blog/categories/literature/">
             <span class="level-start">
                 <span class="level-item">literature</span>
@@ -743,7 +736,7 @@
         <h3 class="menu-label">
             Tag Cloud
         </h3>
-        <a href="/blog/tags/literature/" style="font-size: 18px; color: #cc0080">literature</a> <a href="/blog/tags/C/" style="font-size: 18px; color: #cc0080">C++</a> <a href="/blog/tags/Algorithm/" style="font-size: 23px; color: #f00">Algorithm</a> <a href="/blog/tags/Life-essay/" style="font-size: 20.5px; color: #e60040">Life essay</a> <a href="/blog/tags/AI/" style="font-size: 15.5px; color: #b300bf">AI</a> <a href="/blog/tags/Game/" style="font-size: 18px; color: #cc0080">Game</a> <a href="/blog/tags/Learing/" style="font-size: 13px; color: #90f">Learing</a> <a href="/blog/tags/Gradient-Descent/" style="font-size: 13px; color: #90f">Gradient Descent</a> <a href="/blog/tags/KNN/" style="font-size: 15.5px; color: #b300bf">KNN</a> <a href="/blog/tags/K-means/" style="font-size: 13px; color: #90f">K-means</a> <a href="/blog/tags/Keras-note/" style="font-size: 18px; color: #cc0080">Keras-note</a> <a href="/blog/tags/MF/" style="font-size: 13px; color: #90f">MF</a> <a href="/blog/tags/sharing/" style="font-size: 13px; color: #90f">sharing</a> <a href="/blog/tags/Makedown/" style="font-size: 13px; color: #90f">Makedown</a> <a href="/blog/tags/recommend/" style="font-size: 13px; color: #90f">recommend</a> <a href="/blog/tags/python-command/" style="font-size: 13px; color: #90f">python command</a> <a href="/blog/tags/python/" style="font-size: 15.5px; color: #b300bf">python</a> <a href="/blog/tags/Ubutu/" style="font-size: 13px; color: #90f">Ubutu</a> <a href="/blog/tags/Machine-learn/" style="font-size: 13px; color: #90f">Machine-learn</a> <a href="/blog/tags/hexo-github/" style="font-size: 13px; color: #90f">hexo+github</a> <a href="/blog/tags/NN/" style="font-size: 18px; color: #cc0080">NN</a> <a href="/blog/tags/life/" style="font-size: 13px; color: #90f">life</a>
+        <a href="/blog/tags/Life-essay/" style="font-size: 20.5px; color: #e60040">Life essay</a> <a href="/blog/tags/literature/" style="font-size: 18px; color: #cc0080">literature</a> <a href="/blog/tags/Algorithm/" style="font-size: 23px; color: #f00">Algorithm</a> <a href="/blog/tags/C/" style="font-size: 18px; color: #cc0080">C++</a> <a href="/blog/tags/AI/" style="font-size: 15.5px; color: #b300bf">AI</a> <a href="/blog/tags/Game/" style="font-size: 18px; color: #cc0080">Game</a> <a href="/blog/tags/Gradient-Descent/" style="font-size: 13px; color: #90f">Gradient Descent</a> <a href="/blog/tags/Learing/" style="font-size: 13px; color: #90f">Learing</a> <a href="/blog/tags/Keras-note/" style="font-size: 18px; color: #cc0080">Keras-note</a> <a href="/blog/tags/KNN/" style="font-size: 15.5px; color: #b300bf">KNN</a> <a href="/blog/tags/sharing/" style="font-size: 13px; color: #90f">sharing</a> <a href="/blog/tags/Makedown/" style="font-size: 13px; color: #90f">Makedown</a> <a href="/blog/tags/MF/" style="font-size: 13px; color: #90f">MF</a> <a href="/blog/tags/recommend/" style="font-size: 13px; color: #90f">recommend</a> <a href="/blog/tags/python/" style="font-size: 15.5px; color: #b300bf">python</a> <a href="/blog/tags/python-command/" style="font-size: 13px; color: #90f">python command</a> <a href="/blog/tags/K-means/" style="font-size: 13px; color: #90f">K-means</a> <a href="/blog/tags/hexo-github/" style="font-size: 13px; color: #90f">hexo+github</a> <a href="/blog/tags/NN/" style="font-size: 18px; color: #cc0080">NN</a> <a href="/blog/tags/Ubutu/" style="font-size: 13px; color: #90f">Ubutu</a> <a href="/blog/tags/Machine-learn/" style="font-size: 13px; color: #90f">Machine-learn</a>
     </div>
 </div>
 
@@ -893,7 +886,7 @@
                     <span class="level-item">June 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">23</span>
+                    <span class="level-item tag">22</span>
                 </span>
             </a>
         </li>
@@ -1019,13 +1012,6 @@
                 <div class="control">
                     <a class="tags has-addons" href="/blog/tags/hexo-github/">
                         <span class="tag">hexo+github</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/blog/tags/life/">
-                        <span class="tag">life</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>
@@ -1223,7 +1209,7 @@
                     <span class="level-item">June 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">23</span>
+                    <span class="level-item tag">22</span>
                 </span>
             </a>
         </li>
@@ -1349,13 +1335,6 @@
                 <div class="control">
                     <a class="tags has-addons" href="/blog/tags/hexo-github/">
                         <span class="tag">hexo+github</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/blog/tags/life/">
-                        <span class="tag">life</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>

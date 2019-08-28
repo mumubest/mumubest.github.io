@@ -21,7 +21,7 @@
 <meta property="og:description" content="啊啊啊Ｏ(≧口≦)Ｏ！！！我的第一个神经网络竟然是算出来的。">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://angelni.github.io/blog/blog/gallary/33.jpg">
-<meta property="og:updated_time" content="2019-08-11T11:18:56.739Z">
+<meta property="og:updated_time" content="2019-08-28T15:23:47.973Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="My First Neural Network Construction">
 <meta name="twitter:description" content="啊啊啊Ｏ(≧口≦)Ｏ！！！我的第一个神经网络竟然是算出来的。">
@@ -182,7 +182,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    4 minutes read (About 600 words)
+                    4 minutes read (About 595 words)
                 </span>
                 
                 
@@ -206,7 +206,7 @@
 <figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np</span><br><span class="line"><span class="hljs-keyword">import</span> matplotlib.pyplot <span class="hljs-keyword">as</span> plt</span><br><span class="line">%matplotlib inline</span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">#激活函数及导数</span></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">sigmoid</span><span class="hljs-params">(x)</span>:</span></span><br><span class="line">     <span class="hljs-keyword">return</span> <span class="hljs-number">1</span> / (<span class="hljs-number">1</span> + np.exp(-x))</span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">d_sigmoid</span><span class="hljs-params">(x)</span>:</span></span><br><span class="line">    <span class="hljs-keyword">return</span> x * (<span class="hljs-number">1</span> - x)</span><br><span class="line">    </span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">tanh</span><span class="hljs-params">(x)</span>:</span></span><br><span class="line">    <span class="hljs-keyword">return</span> np.tanh(x)</span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">d_tanh</span><span class="hljs-params">(x)</span>:</span></span><br><span class="line">    <span class="hljs-keyword">return</span> <span class="hljs-number">1.0</span> - np.tanh(x) * np.tanh(x)</span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">##参数设置</span></span><br><span class="line">alph = <span class="hljs-number">0.5</span></span><br><span class="line">esp = <span class="hljs-number">0.01</span></span><br><span class="line">step = <span class="hljs-number">5000</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">#前向传播</span></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">qianxiangchuanbo</span><span class="hljs-params">(init,weight,b)</span>:</span></span><br><span class="line">    <span class="hljs-comment">#输入层——&gt;隐含层</span></span><br><span class="line">    neth=[]<span class="hljs-comment">#神经元输入加权和</span></span><br><span class="line">    outh=[]<span class="hljs-comment">#神经元输出</span></span><br><span class="line">    <span class="hljs-comment">#隐含层---&gt;输出层</span></span><br><span class="line">    neto=[]<span class="hljs-comment">#输出神经元</span></span><br><span class="line">    outo=[]<span class="hljs-comment">#神经元输出</span></span><br><span class="line">    neth.append(weight[<span class="hljs-number">0</span>]*init[<span class="hljs-number">0</span>]+weight[<span class="hljs-number">1</span>]*init[<span class="hljs-number">1</span>]+b[<span class="hljs-number">0</span>])</span><br><span class="line">    neth.append(weight[<span class="hljs-number">2</span>]*init[<span class="hljs-number">0</span>]+weight[<span class="hljs-number">3</span>]*init[<span class="hljs-number">1</span>]+b[<span class="hljs-number">0</span>])</span><br><span class="line">    outh.append(sigmoid(neth[<span class="hljs-number">0</span>]))</span><br><span class="line">    outh.append(sigmoid(neth[<span class="hljs-number">1</span>]))</span><br><span class="line">    neto.append(weight[<span class="hljs-number">4</span>]*outh[<span class="hljs-number">0</span>]+weight[<span class="hljs-number">5</span>]*outh[<span class="hljs-number">1</span>]+b[<span class="hljs-number">1</span>])</span><br><span class="line">    neto.append(weight[<span class="hljs-number">6</span>]*outh[<span class="hljs-number">0</span>]+weight[<span class="hljs-number">7</span>]*outh[<span class="hljs-number">1</span>]+b[<span class="hljs-number">1</span>])</span><br><span class="line">    outo.append(sigmoid(neto[<span class="hljs-number">0</span>]))</span><br><span class="line">    outo.append(sigmoid(neto[<span class="hljs-number">1</span>]))</span><br><span class="line">    <span class="hljs-keyword">return</span> neth,outh,neto,outo</span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">fanxiangchuanbo</span><span class="hljs-params">(out,outo,outh)</span>:</span></span><br><span class="line">    </span><br><span class="line">    new_weight=[]</span><br><span class="line">    q=[]</span><br><span class="line">    <span class="hljs-comment">#输如层——&gt;隐藏层</span></span><br><span class="line">    a1=(-(init[<span class="hljs-number">0</span>]-outo[<span class="hljs-number">0</span>])*outo[<span class="hljs-number">0</span>]*(<span class="hljs-number">1</span>-outo[<span class="hljs-number">0</span>]))</span><br><span class="line">    a2=(-(init[<span class="hljs-number">1</span>]-outo[<span class="hljs-number">1</span>])*outo[<span class="hljs-number">1</span>]*(<span class="hljs-number">1</span>-outo[<span class="hljs-number">1</span>]))</span><br><span class="line">    q.append(a1)</span><br><span class="line">    q.append(a2)</span><br><span class="line">    w1 = q[<span class="hljs-number">0</span>]*weight[<span class="hljs-number">4</span>]+q[<span class="hljs-number">1</span>]*weight[<span class="hljs-number">6</span>]*outh[<span class="hljs-number">0</span>]*(<span class="hljs-number">1</span>-outh[<span class="hljs-number">0</span>])*init[<span class="hljs-number">0</span>]</span><br><span class="line">    w2 = q[<span class="hljs-number">0</span>]*weight[<span class="hljs-number">4</span>]+q[<span class="hljs-number">1</span>]*weight[<span class="hljs-number">6</span>]*outh[<span class="hljs-number">0</span>]*(<span class="hljs-number">1</span>-outh[<span class="hljs-number">0</span>])*init[<span class="hljs-number">1</span>]</span><br><span class="line">    w3 = q[<span class="hljs-number">0</span>]*weight[<span class="hljs-number">5</span>]+q[<span class="hljs-number">1</span>]*weight[<span class="hljs-number">7</span>]*outh[<span class="hljs-number">1</span>]*(<span class="hljs-number">1</span>-outh[<span class="hljs-number">1</span>])*init[<span class="hljs-number">0</span>]</span><br><span class="line">    w4 = q[<span class="hljs-number">0</span>]*weight[<span class="hljs-number">5</span>]+q[<span class="hljs-number">1</span>]*weight[<span class="hljs-number">7</span>]*outh[<span class="hljs-number">1</span>]*(<span class="hljs-number">1</span>-outh[<span class="hljs-number">1</span>])*init[<span class="hljs-number">1</span>]</span><br><span class="line">    new_weight.append(w1)</span><br><span class="line">    new_weight.append(w2)</span><br><span class="line">    new_weight.append(w3)</span><br><span class="line">    new_weight.append(w4)</span><br><span class="line">    <span class="hljs-comment">#输出层——&gt;隐藏层</span></span><br><span class="line">    w5 = -(out[<span class="hljs-number">0</span>]-outo[<span class="hljs-number">0</span>])*outo[<span class="hljs-number">0</span>]*(<span class="hljs-number">1</span>-outo[<span class="hljs-number">0</span>])*outh[<span class="hljs-number">0</span>]</span><br><span class="line">    w6 = -(out[<span class="hljs-number">0</span>]-outo[<span class="hljs-number">0</span>])*outo[<span class="hljs-number">0</span>]*(<span class="hljs-number">1</span>-outo[<span class="hljs-number">0</span>])*outh[<span class="hljs-number">1</span>]</span><br><span class="line">    w7 = -(out[<span class="hljs-number">1</span>]-outo[<span class="hljs-number">1</span>])*outo[<span class="hljs-number">1</span>]*(<span class="hljs-number">1</span>-outo[<span class="hljs-number">1</span>])*outh[<span class="hljs-number">0</span>]</span><br><span class="line">    w8 = -(out[<span class="hljs-number">1</span>]-outo[<span class="hljs-number">1</span>])*outo[<span class="hljs-number">1</span>]*(<span class="hljs-number">1</span>-outo[<span class="hljs-number">1</span>])*outh[<span class="hljs-number">1</span>]</span><br><span class="line">    new_weight.append(w5)</span><br><span class="line">    new_weight.append(w6)</span><br><span class="line">    new_weight.append(w7)</span><br><span class="line">    new_weight.append(w8)</span><br><span class="line">    <span class="hljs-keyword">return</span> new_weight</span><br><span class="line"><span class="hljs-comment">#输入集</span></span><br><span class="line">init = [<span class="hljs-number">0.05</span>,<span class="hljs-number">0.10</span>]</span><br><span class="line"><span class="hljs-comment">#真实输出集</span></span><br><span class="line">out = [<span class="hljs-number">0.01</span>,<span class="hljs-number">0.99</span>]</span><br><span class="line"><span class="hljs-comment">#权重</span></span><br><span class="line">weight = [<span class="hljs-number">0.15</span>,<span class="hljs-number">0.20</span>,<span class="hljs-number">0.25</span>,<span class="hljs-number">0.30</span>,<span class="hljs-number">0.40</span>,<span class="hljs-number">0.45</span>,<span class="hljs-number">0.50</span>,<span class="hljs-number">0.55</span>]</span><br><span class="line"><span class="hljs-comment">#偏置项</span></span><br><span class="line">b=[<span class="hljs-number">0.35</span>,<span class="hljs-number">0.60</span>]</span><br><span class="line"></span><br><span class="line">count=<span class="hljs-number">0</span></span><br><span class="line">result = []</span><br><span class="line"><span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:</span><br><span class="line">    count=count+<span class="hljs-number">1</span></span><br><span class="line">    </span><br><span class="line">    neth,outh,neto,outo = qianxiangchuanbo(init,weight,b)</span><br><span class="line">    e=(abs(out[<span class="hljs-number">0</span>]-outo[<span class="hljs-number">0</span>])+abs(out[<span class="hljs-number">1</span>]-outo[<span class="hljs-number">1</span>]))</span><br><span class="line">    result.append(e)</span><br><span class="line">    gd_weight = fanxiangchuanbo(out,outo,outh)</span><br><span class="line">    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(len(weight)):</span><br><span class="line">        weight[i]=weight[i]-alph*gd_weight[i]</span><br><span class="line"></span><br><span class="line">   <span class="hljs-comment"># if e&lt;esp:</span></span><br><span class="line">    <span class="hljs-comment">#    break</span></span><br><span class="line">    </span><br><span class="line">    <span class="hljs-keyword">if</span> count &gt; step:</span><br><span class="line">        <span class="hljs-keyword">break</span></span><br><span class="line"><span class="hljs-keyword">for</span> k <span class="hljs-keyword">in</span> range(len(result)):</span><br><span class="line">  plt.scatter(k,result[k])</span><br><span class="line">plt.show()</span><br><span class="line">print(weight)</span><br><span class="line">print(out)</span><br><span class="line">print(outo)</span><br></pre></td></tr></table></figure>
 
 <p>最后的运行结果如图</p>
-<p><img src="/blog/blog/我的第一个神经网络搭建/1.png" alt></p>
+<p><img src="https://s2.ax1x.com/2019/08/28/mHfgOI.png" alt></p>
 <p>由于此代码只运行了5000次，可以看出与实际的差距还是很大的，如果感兴趣，你可以试试增大迭代次数，或者控制精度。</p>
 
         </div>
@@ -346,7 +346,7 @@
                         Posts
                     </p>
                     <p class="title has-text-weight-normal">
-                        47
+                        46
                     </p>
                 </div>
             </div>
@@ -356,7 +356,7 @@
                         Categories
                     </p>
                     <p class="title has-text-weight-normal">
-                        15
+                        14
                     </p>
                 </div>
             </div>
@@ -366,7 +366,7 @@
                         Tags
                     </p>
                     <p class="title has-text-weight-normal">
-                        22
+                        21
                     </p>
                 </div>
             </div>
@@ -673,14 +673,6 @@
                 <span class="level-item tag">1</span>
             </span>
         </a></li><li>
-        <a class="level is-marginless" href="/blog/categories/life/">
-            <span class="level-start">
-                <span class="level-item">life</span>
-            </span>
-            <span class="level-end">
-                <span class="level-item tag">1</span>
-            </span>
-        </a></li><li>
         <a class="level is-marginless" href="/blog/categories/literature/">
             <span class="level-start">
                 <span class="level-item">literature</span>
@@ -716,7 +708,7 @@
         <h3 class="menu-label">
             Tag Cloud
         </h3>
-        <a href="/blog/tags/literature/" style="font-size: 18px; color: #cc0080">literature</a> <a href="/blog/tags/C/" style="font-size: 18px; color: #cc0080">C++</a> <a href="/blog/tags/Algorithm/" style="font-size: 23px; color: #f00">Algorithm</a> <a href="/blog/tags/Life-essay/" style="font-size: 20.5px; color: #e60040">Life essay</a> <a href="/blog/tags/AI/" style="font-size: 15.5px; color: #b300bf">AI</a> <a href="/blog/tags/Game/" style="font-size: 18px; color: #cc0080">Game</a> <a href="/blog/tags/Learing/" style="font-size: 13px; color: #90f">Learing</a> <a href="/blog/tags/Gradient-Descent/" style="font-size: 13px; color: #90f">Gradient Descent</a> <a href="/blog/tags/KNN/" style="font-size: 15.5px; color: #b300bf">KNN</a> <a href="/blog/tags/K-means/" style="font-size: 13px; color: #90f">K-means</a> <a href="/blog/tags/Keras-note/" style="font-size: 18px; color: #cc0080">Keras-note</a> <a href="/blog/tags/MF/" style="font-size: 13px; color: #90f">MF</a> <a href="/blog/tags/sharing/" style="font-size: 13px; color: #90f">sharing</a> <a href="/blog/tags/Makedown/" style="font-size: 13px; color: #90f">Makedown</a> <a href="/blog/tags/recommend/" style="font-size: 13px; color: #90f">recommend</a> <a href="/blog/tags/python-command/" style="font-size: 13px; color: #90f">python command</a> <a href="/blog/tags/python/" style="font-size: 15.5px; color: #b300bf">python</a> <a href="/blog/tags/Ubutu/" style="font-size: 13px; color: #90f">Ubutu</a> <a href="/blog/tags/Machine-learn/" style="font-size: 13px; color: #90f">Machine-learn</a> <a href="/blog/tags/hexo-github/" style="font-size: 13px; color: #90f">hexo+github</a> <a href="/blog/tags/NN/" style="font-size: 18px; color: #cc0080">NN</a> <a href="/blog/tags/life/" style="font-size: 13px; color: #90f">life</a>
+        <a href="/blog/tags/Life-essay/" style="font-size: 20.5px; color: #e60040">Life essay</a> <a href="/blog/tags/literature/" style="font-size: 18px; color: #cc0080">literature</a> <a href="/blog/tags/Algorithm/" style="font-size: 23px; color: #f00">Algorithm</a> <a href="/blog/tags/C/" style="font-size: 18px; color: #cc0080">C++</a> <a href="/blog/tags/AI/" style="font-size: 15.5px; color: #b300bf">AI</a> <a href="/blog/tags/Game/" style="font-size: 18px; color: #cc0080">Game</a> <a href="/blog/tags/Gradient-Descent/" style="font-size: 13px; color: #90f">Gradient Descent</a> <a href="/blog/tags/Learing/" style="font-size: 13px; color: #90f">Learing</a> <a href="/blog/tags/Keras-note/" style="font-size: 18px; color: #cc0080">Keras-note</a> <a href="/blog/tags/KNN/" style="font-size: 15.5px; color: #b300bf">KNN</a> <a href="/blog/tags/sharing/" style="font-size: 13px; color: #90f">sharing</a> <a href="/blog/tags/Makedown/" style="font-size: 13px; color: #90f">Makedown</a> <a href="/blog/tags/MF/" style="font-size: 13px; color: #90f">MF</a> <a href="/blog/tags/recommend/" style="font-size: 13px; color: #90f">recommend</a> <a href="/blog/tags/python/" style="font-size: 15.5px; color: #b300bf">python</a> <a href="/blog/tags/python-command/" style="font-size: 13px; color: #90f">python command</a> <a href="/blog/tags/K-means/" style="font-size: 13px; color: #90f">K-means</a> <a href="/blog/tags/hexo-github/" style="font-size: 13px; color: #90f">hexo+github</a> <a href="/blog/tags/NN/" style="font-size: 18px; color: #cc0080">NN</a> <a href="/blog/tags/Ubutu/" style="font-size: 13px; color: #90f">Ubutu</a> <a href="/blog/tags/Machine-learn/" style="font-size: 13px; color: #90f">Machine-learn</a>
     </div>
 </div>
 
@@ -866,7 +858,7 @@
                     <span class="level-item">June 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">23</span>
+                    <span class="level-item tag">22</span>
                 </span>
             </a>
         </li>
@@ -992,13 +984,6 @@
                 <div class="control">
                     <a class="tags has-addons" href="/blog/tags/hexo-github/">
                         <span class="tag">hexo+github</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/blog/tags/life/">
-                        <span class="tag">life</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>
@@ -1196,7 +1181,7 @@
                     <span class="level-item">June 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">23</span>
+                    <span class="level-item tag">22</span>
                 </span>
             </a>
         </li>
@@ -1322,13 +1307,6 @@
                 <div class="control">
                     <a class="tags has-addons" href="/blog/tags/hexo-github/">
                         <span class="tag">hexo+github</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/blog/tags/life/">
-                        <span class="tag">life</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>
