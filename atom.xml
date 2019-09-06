@@ -6,7 +6,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="https://angelni.github.io/blog/"/>
-  <updated>2019-08-29T03:50:51.552Z</updated>
+  <updated>2019-09-06T14:23:27.497Z</updated>
   <id>https://angelni.github.io/blog/</id>
   
   <author>
@@ -15,6 +15,46 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>matplotlib 常用图绘制</title>
+    <link href="https://angelni.github.io/blog/matplotlib/"/>
+    <id>https://angelni.github.io/blog/matplotlib/</id>
+    <published>2019-09-06T13:53:59.000Z</published>
+    <updated>2019-09-06T14:23:27.497Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;我的冷漠里藏着一半的害羞，一半的自卑。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="python" scheme="https://angelni.github.io/blog/categories/python/"/>
+    
+    
+      <category term="matplotlib" scheme="https://angelni.github.io/blog/tags/matplotlib/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>生活随笔</title>
+    <link href="https://angelni.github.io/blog/Essay/"/>
+    <id>https://angelni.github.io/blog/Essay/</id>
+    <published>2019-08-29T13:54:17.000Z</published>
+    <updated>2019-09-06T14:23:12.782Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;不妨先做出点成绩，然后再去强调你的感受，否则，生命中只有唧唧歪歪，怎么看都是矫情。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="life" scheme="https://angelni.github.io/blog/categories/life/"/>
+    
+    
+      <category term="life" scheme="https://angelni.github.io/blog/tags/life/"/>
+    
+  </entry>
   
   <entry>
     <title>仰望，仰望？</title>
@@ -374,46 +414,6 @@
     
     
       <category term="KNN" scheme="https://angelni.github.io/blog/tags/KNN/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>map函数的简单用法</title>
-    <link href="https://angelni.github.io/blog/map%E5%87%BD%E6%95%B0%E7%9A%84%E7%AE%80%E5%8D%95%E7%94%A8%E6%B3%95/"/>
-    <id>https://angelni.github.io/blog/map函数的简单用法/</id>
-    <published>2019-07-21T02:19:50.000Z</published>
-    <updated>2019-08-29T03:51:14.945Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt; 你要开心，你要快乐，因为你是大哥，不可以难过。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="C++" scheme="https://angelni.github.io/blog/categories/C/"/>
-    
-    
-      <category term="C++" scheme="https://angelni.github.io/blog/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>My First Neural Network Construction</title>
-    <link href="https://angelni.github.io/blog/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E6%90%AD%E5%BB%BA/"/>
-    <id>https://angelni.github.io/blog/我的第一个神经网络搭建/</id>
-    <published>2019-07-20T11:19:07.000Z</published>
-    <updated>2019-08-29T03:56:23.598Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt; 啊啊啊Ｏ(≧口≦)Ｏ！！！我的第一个神经网络竟然是算出来的。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="AI" scheme="https://angelni.github.io/blog/categories/AI/"/>
-    
-    
-      <category term="NN" scheme="https://angelni.github.io/blog/tags/NN/"/>
     
   </entry>
   
