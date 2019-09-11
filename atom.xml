@@ -6,7 +6,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="https://angelni.github.io/blog/"/>
-  <updated>2019-09-09T11:53:42.255Z</updated>
+  <updated>2019-09-11T07:47:19.807Z</updated>
   <id>https://angelni.github.io/blog/</id>
   
   <author>
@@ -17,11 +17,31 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>暑假补题-1</title>
+    <title>暑假（补）-2</title>
+    <link href="https://angelni.github.io/blog/learn-2/"/>
+    <id>https://angelni.github.io/blog/learn-2/</id>
+    <published>2019-09-11T05:56:29.000Z</published>
+    <updated>2019-09-11T07:47:19.807Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;围在城里的人想逃出来，城外的人想冲进去。–《围城》&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="algorithm" scheme="https://angelni.github.io/blog/categories/algorithm/"/>
+    
+    
+      <category term="algorithm" scheme="https://angelni.github.io/blog/tags/algorithm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>暑假（补）-1</title>
     <link href="https://angelni.github.io/blog/learn-1/"/>
     <id>https://angelni.github.io/blog/learn-1/</id>
     <published>2019-09-09T02:23:56.000Z</published>
-    <updated>2019-09-09T11:53:42.255Z</updated>
+    <updated>2019-09-11T07:47:12.199Z</updated>
     
     <summary type="html">
     
@@ -391,26 +411,6 @@
     
     
       <category term="AI" scheme="https://angelni.github.io/blog/tags/AI/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>KNN-Self-practice</title>
-    <link href="https://angelni.github.io/blog/KNN-Practice/"/>
-    <id>https://angelni.github.io/blog/KNN-Practice/</id>
-    <published>2019-07-22T04:59:00.000Z</published>
-    <updated>2019-08-29T03:49:35.797Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt; 有一天我结婚了，你一定要来哦，因为没有新娘，那该有多尴尬.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="AI" scheme="https://angelni.github.io/blog/categories/AI/"/>
-    
-    
-      <category term="KNN" scheme="https://angelni.github.io/blog/tags/KNN/"/>
     
   </entry>
   
