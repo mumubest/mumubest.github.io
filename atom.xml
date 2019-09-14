@@ -6,7 +6,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="https://angelni.github.io/blog/"/>
-  <updated>2019-09-11T07:48:47.341Z</updated>
+  <updated>2019-09-14T05:17:56.830Z</updated>
   <id>https://angelni.github.io/blog/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>暑假（补）-3</title>
+    <link href="https://angelni.github.io/blog/Learn-3/"/>
+    <id>https://angelni.github.io/blog/Learn-3/</id>
+    <published>2019-09-14T02:34:55.000Z</published>
+    <updated>2019-09-14T05:17:56.830Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt; 不疯不魔，难以成佛。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="algorithm" scheme="https://angelni.github.io/blog/categories/algorithm/"/>
+    
+    
+      <category term="algorithm" scheme="https://angelni.github.io/blog/tags/algorithm/"/>
+    
+  </entry>
   
   <entry>
     <title>暑假（补）-2</title>
@@ -391,26 +411,6 @@
     
     
       <category term="Game" scheme="https://angelni.github.io/blog/tags/Game/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CNN--tensorflow--code-learning</title>
-    <link href="https://angelni.github.io/blog/CNN--tensorflow-code-learn/"/>
-    <id>https://angelni.github.io/blog/CNN--tensorflow-code-learn/</id>
-    <published>2019-07-22T14:29:57.000Z</published>
-    <updated>2019-08-29T03:33:30.563Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt; 不知道未来如何变化，总有人相信童话。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="AI" scheme="https://angelni.github.io/blog/categories/AI/"/>
-    
-    
-      <category term="AI" scheme="https://angelni.github.io/blog/tags/AI/"/>
     
   </entry>
   
