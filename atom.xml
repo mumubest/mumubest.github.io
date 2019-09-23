@@ -6,7 +6,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="https://angelni.github.io/blog/"/>
-  <updated>2019-09-20T12:56:18.348Z</updated>
+  <updated>2019-09-23T11:33:58.551Z</updated>
   <id>https://angelni.github.io/blog/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>暑假（补）-5</title>
+    <link href="https://angelni.github.io/blog/learn-5/"/>
+    <id>https://angelni.github.io/blog/learn-5/</id>
+    <published>2019-09-22T02:54:37.000Z</published>
+    <updated>2019-09-23T11:33:58.551Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;遇见你我花光了所有的运气，以至于现在厄运连连。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="https://angelni.github.io/blog/categories/Algorithm/"/>
+    
+    
+      <category term="Algorithm" scheme="https://angelni.github.io/blog/tags/Algorithm/"/>
+    
+  </entry>
   
   <entry>
     <title>Link list achieve Phone_Contacts</title>
@@ -41,7 +61,7 @@
     <link href="https://angelni.github.io/blog/learn-4/"/>
     <id>https://angelni.github.io/blog/learn-4/</id>
     <published>2019-09-15T10:09:58.000Z</published>
-    <updated>2019-09-21T15:02:32.056Z</updated>
+    <updated>2019-09-22T02:56:09.613Z</updated>
     
     <summary type="html">
     
@@ -49,10 +69,10 @@
     
     </summary>
     
-      <category term="algorithm" scheme="https://angelni.github.io/blog/categories/algorithm/"/>
+      <category term="Algorithm" scheme="https://angelni.github.io/blog/categories/Algorithm/"/>
     
     
-      <category term="algorithm" scheme="https://angelni.github.io/blog/tags/algorithm/"/>
+      <category term="Algorithm" scheme="https://angelni.github.io/blog/tags/Algorithm/"/>
     
   </entry>
   
@@ -61,7 +81,7 @@
     <link href="https://angelni.github.io/blog/Learn-3/"/>
     <id>https://angelni.github.io/blog/Learn-3/</id>
     <published>2019-09-14T02:34:55.000Z</published>
-    <updated>2019-09-14T05:18:48.195Z</updated>
+    <updated>2019-09-22T02:55:29.843Z</updated>
     
     <summary type="html">
     
@@ -69,10 +89,10 @@
     
     </summary>
     
-      <category term="algorithm" scheme="https://angelni.github.io/blog/categories/algorithm/"/>
+      <category term="Algorithm" scheme="https://angelni.github.io/blog/categories/Algorithm/"/>
     
     
-      <category term="algorithm" scheme="https://angelni.github.io/blog/tags/algorithm/"/>
+      <category term="Algorithm" scheme="https://angelni.github.io/blog/tags/Algorithm/"/>
     
   </entry>
   
@@ -81,7 +101,7 @@
     <link href="https://angelni.github.io/blog/learn-2/"/>
     <id>https://angelni.github.io/blog/learn-2/</id>
     <published>2019-09-11T05:56:29.000Z</published>
-    <updated>2019-09-11T07:48:47.341Z</updated>
+    <updated>2019-09-22T02:55:58.861Z</updated>
     
     <summary type="html">
     
@@ -89,10 +109,10 @@
     
     </summary>
     
-      <category term="algorithm" scheme="https://angelni.github.io/blog/categories/algorithm/"/>
+      <category term="Algorithm" scheme="https://angelni.github.io/blog/categories/Algorithm/"/>
     
     
-      <category term="algorithm" scheme="https://angelni.github.io/blog/tags/algorithm/"/>
+      <category term="Algorithm" scheme="https://angelni.github.io/blog/tags/Algorithm/"/>
     
   </entry>
   
@@ -101,7 +121,7 @@
     <link href="https://angelni.github.io/blog/learn-1/"/>
     <id>https://angelni.github.io/blog/learn-1/</id>
     <published>2019-09-09T02:23:56.000Z</published>
-    <updated>2019-09-11T07:47:12.199Z</updated>
+    <updated>2019-09-22T02:55:48.029Z</updated>
     
     <summary type="html">
     
@@ -110,7 +130,7 @@
     </summary>
     
     
-      <category term="algorithm" scheme="https://angelni.github.io/blog/tags/algorithm/"/>
+      <category term="Algorithm" scheme="https://angelni.github.io/blog/tags/Algorithm/"/>
     
   </entry>
   
@@ -391,26 +411,6 @@
     
     
       <category term="K-means" scheme="https://angelni.github.io/blog/tags/K-means/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Matrix Factorization For Recommendation System</title>
-    <link href="https://angelni.github.io/blog/MF/"/>
-    <id>https://angelni.github.io/blog/MF/</id>
-    <published>2019-07-26T14:11:46.000Z</published>
-    <updated>2019-08-29T03:51:36.127Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt; 云是雨的梦，雨是云的前生。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="AI" scheme="https://angelni.github.io/blog/categories/AI/"/>
-    
-    
-      <category term="MF" scheme="https://angelni.github.io/blog/tags/MF/"/>
     
   </entry>
   
