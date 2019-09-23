@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://angelni.github.io/blog/hanoi/</loc>
+    
+    <lastmod>2019-09-23T23:31:21.444Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://angelni.github.io/blog/learn-5/</loc>
     
     <lastmod>2019-09-23T11:33:58.551Z</lastmod>
@@ -373,14 +380,14 @@
   </url>
   
   <url>
-    <loc>https://angelni.github.io/blog/C-%E5%88%9D%E5%AD%A6/</loc>
+    <loc>https://angelni.github.io/blog/DFS-%E8%87%AA%E6%88%91%E7%BB%83%E4%B9%A0/</loc>
     
     <lastmod>2019-08-11T11:18:56.708Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://angelni.github.io/blog/DFS-%E8%87%AA%E6%88%91%E7%BB%83%E4%B9%A0/</loc>
+    <loc>https://angelni.github.io/blog/C-%E5%88%9D%E5%AD%A6/</loc>
     
     <lastmod>2019-08-11T11:18:56.708Z</lastmod>
     

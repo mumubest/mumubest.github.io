@@ -6,7 +6,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="https://angelni.github.io/blog/"/>
-  <updated>2019-09-23T11:33:58.551Z</updated>
+  <updated>2019-09-23T23:31:21.444Z</updated>
   <id>https://angelni.github.io/blog/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>python实现汉诺塔移动可视化</title>
+    <link href="https://angelni.github.io/blog/hanoi/"/>
+    <id>https://angelni.github.io/blog/hanoi/</id>
+    <published>2019-09-23T23:16:40.000Z</published>
+    <updated>2019-09-23T23:31:21.444Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;想来一趟说走就走的旅行，没有手机，没有联系方式，独身一人，目标——你在的地方。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Game" scheme="https://angelni.github.io/blog/categories/Game/"/>
+    
+    
+      <category term="Game" scheme="https://angelni.github.io/blog/tags/Game/"/>
+    
+  </entry>
   
   <entry>
     <title>暑假（补）-5</title>
@@ -391,26 +411,6 @@
     
     
       <category term="Gradient Descent" scheme="https://angelni.github.io/blog/tags/Gradient-Descent/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>K-means</title>
-    <link href="https://angelni.github.io/blog/K-means/"/>
-    <id>https://angelni.github.io/blog/K-means/</id>
-    <published>2019-07-29T11:10:47.000Z</published>
-    <updated>2019-08-29T03:48:09.335Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt; 天空在高又怎样，抬起脚尖就可以离太阳就更近一点。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="AI" scheme="https://angelni.github.io/blog/categories/AI/"/>
-    
-    
-      <category term="K-means" scheme="https://angelni.github.io/blog/tags/K-means/"/>
     
   </entry>
   
