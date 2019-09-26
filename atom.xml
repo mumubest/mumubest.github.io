@@ -6,7 +6,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="https://angelni.github.io/blog/"/>
-  <updated>2019-09-23T23:31:46.481Z</updated>
+  <updated>2019-09-26T14:37:52.807Z</updated>
   <id>https://angelni.github.io/blog/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>无题</title>
+    <link href="https://angelni.github.io/blog/untitled/"/>
+    <id>https://angelni.github.io/blog/untitled/</id>
+    <published>2019-09-26T13:56:06.000Z</published>
+    <updated>2019-09-26T14:37:52.807Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;如果我在勇敢点，结果会不会比想象中的要好。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Life essay" scheme="https://angelni.github.io/blog/categories/Life-essay/"/>
+    
+    
+      <category term="Life essay" scheme="https://angelni.github.io/blog/tags/Life-essay/"/>
+    
+  </entry>
   
   <entry>
     <title>python实现汉诺塔移动可视化</title>
@@ -391,26 +411,6 @@
     
     
       <category term="AI" scheme="https://angelni.github.io/blog/tags/AI/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Gradient Descent</title>
-    <link href="https://angelni.github.io/blog/Gradient-Descent/"/>
-    <id>https://angelni.github.io/blog/Gradient-Descent/</id>
-    <published>2019-07-31T06:17:56.000Z</published>
-    <updated>2019-08-29T03:43:36.623Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;  最美的等待是，我们——未来可期。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="AI" scheme="https://angelni.github.io/blog/categories/AI/"/>
-    
-    
-      <category term="Gradient Descent" scheme="https://angelni.github.io/blog/tags/Gradient-Descent/"/>
     
   </entry>
   
