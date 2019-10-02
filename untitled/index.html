@@ -5,7 +5,7 @@
 <html lang="en">
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-<title>无题 - Sky&#39;s Blog</title>
+<title>git远程操作仓库 - Sky&#39;s Blog</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="google-site-verification" content="JwzmnANXlpmQlhwaSORuqpEB6P3Sr-tRhw4R_XDRcEc">
 <meta name="baidu-site-verification" content="ztPAF2oDcw">
@@ -13,17 +13,17 @@
 
 
     <meta name="description" content="如果我在勇敢点，结果会不会比想象中的要好。">
-<meta name="keywords" content="Life essay">
+<meta name="keywords" content="Git">
 <meta property="og:type" content="article">
-<meta property="og:title" content="无题">
+<meta property="og:title" content="git远程操作仓库">
 <meta property="og:url" content="https://angelni.github.io/blog/untitled/index.html">
 <meta property="og:site_name" content="Sky&#39;s Blog">
 <meta property="og:description" content="如果我在勇敢点，结果会不会比想象中的要好。">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://s2.ax1x.com/2019/09/26/un5y9I.jpg">
-<meta property="og:updated_time" content="2019-09-26T14:38:26.856Z">
+<meta property="og:updated_time" content="2019-10-02T01:27:13.418Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="无题">
+<meta name="twitter:title" content="git远程操作仓库">
 <meta name="twitter:description" content="如果我在勇敢点，结果会不会比想象中的要好。">
 <meta name="twitter:image" content="https://s2.ax1x.com/2019/09/26/un5y9I.jpg">
 
@@ -113,7 +113,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/blog/">
             
-                <img src="/blog/images/22.png" alt="无题" height="28">
+                <img src="/blog/images/22.png" alt="git远程操作仓库" height="28">
             
             </a>
         </div>
@@ -164,7 +164,7 @@
     
     <div class="card-image">
         <span class="image is-7by1">
-            <img class="thumbnail" src="https://s2.ax1x.com/2019/09/26/un5y9I.jpg" alt="无题">
+            <img class="thumbnail" src="https://s2.ax1x.com/2019/09/26/un5y9I.jpg" alt="git远程操作仓库">
         </span>
     </div>
     
@@ -175,14 +175,14 @@
                 <time class="level-item has-text-grey" datetime="2019-09-26T13:56:06.000Z">2019-09-26</time>
                 
                 <div class="level-item">
-                <a class="has-link-grey -link" href="/blog/categories/Life-essay/">Life essay</a>
+                <a class="has-link-grey -link" href="/blog/categories/Git/">Git</a>
                 </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    a minute read (About 174 words)
+                    2 minutes read (About 336 words)
                 </span>
                 
                 
@@ -196,20 +196,31 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                无题
+                git远程操作仓库
             
         </h1>
         <div class="content">
             <p>如果我在勇敢点，结果会不会比想象中的要好。<a id="more"></a></p>
-<h1 id="无题"><a href="#无题" class="headerlink" title="无题"></a>无题</h1><p>释，清心以忘乎所以然；道，超然物外而独立遗世。</p>
-<p>一生二，二生三，三生万物，万物皆有心；</p>
-<p>一连二，二连三，百恼交织，唯释迦摩尼；</p>
-<p>释然，自然；</p>
-<p>佛、道本两家，参半参半，解东坡之恼，妙哉。</p>
-<p>何也？</p>
-<p>品之，无味；历之，不可言尔。</p>
-<p>浮浮沉沉，变之莫测，不可；随缘自适，淡泊名志，非也；</p>
-<p>应与路飞同路，寻址宝藏，征服大海，onepiese。</p>
+<p>Git是一个开源的分布式版本控制系统，分布式相比集中式的最大区别是Git没有“中央服务器”，每位开发者都可以通过克隆（git clone）远程库，在本地机器上存储一个完整的Git仓库，还可以把代码的修改提交到本地库。当然了，本地库修改完成后也可以上传到远程仓库，操作方便。</p>
+<p>在学习git的操作方法，总是偶然的上传成功。这次不一样了，向大家介绍每一步的操作流程和成功案例。</p>
+<ul>
+<li>git clone + “要克隆的仓库地址链接”</li>
+</ul>
+<img src="https://s2.ax1x.com/2019/10/02/uaQlmd.png" alt="uaQlmd.png" border="0">
+
+<ul>
+<li>进入以克隆的文件夹，并执行 git init初始化</li>
+</ul>
+<img src="https://s2.ax1x.com/2019/10/02/uaQskq.png" alt="uaQskq.png" border="0">
+
+<ul>
+<li>git add * 将所有文件添加到缓存</li>
+<li>git pull + “文件储存的绝对路径”</li>
+<li>git commit -m +”备注”</li>
+<li>git remote add “备注” +”仓库链接（也是克隆的链接地址）”</li>
+<li>最后，git push 静静等待，操作成功。</li>
+</ul>
+<p>如果你顺利完成了以上步骤，那么就要恭喜你了，已经成功上传到github仓库。其他储存仓库操作步骤类似。</p>
 
         </div>
         
@@ -217,7 +228,7 @@
             <div class="level-start">
                 <div class="level-item">
                     <span class="is-size-6 has-text-grey has-mr-7">#</span>
-                    <a class="has-link-grey -link" href="/blog/tags/Life-essay/">Life essay</a>
+                    <a class="has-link-grey -link" href="/blog/tags/Git/">Git</a>
                 </div>
             </div>
         </div>
@@ -312,12 +323,12 @@
                 <div>
                     
                         <figure class="image is-128x128 has-mb-6">
-                            <img class="is-rounded" src="/blog/images/avatar.png" alt="Sky.H.N">
+                            <img class="is-rounded" src="/blog/images/avatar.png" alt="Hui Ning">
                         </figure>
                     
                     
                     <p class="is-size-4 is-block">
-                        Sky.H.N
+                        Hui Ning
                     </p>
                     
                     
@@ -351,7 +362,7 @@
                         Categories
                     </p>
                     <p class="title has-text-weight-normal">
-                        15
+                        16
                     </p>
                 </div>
             </div>
@@ -361,7 +372,7 @@
                         Tags
                     </p>
                     <p class="title has-text-weight-normal">
-                        23
+                        24
                     </p>
                 </div>
             </div>
@@ -620,6 +631,14 @@
                 <span class="level-item tag">2</span>
             </span>
         </a></li><li>
+        <a class="level is-marginless" href="/blog/categories/Git/">
+            <span class="level-start">
+                <span class="level-item">Git</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">1</span>
+            </span>
+        </a></li><li>
         <a class="level is-marginless" href="/blog/categories/Keras-note/">
             <span class="level-start">
                 <span class="level-item">Keras-note</span>
@@ -641,7 +660,7 @@
                 <span class="level-item">Life essay</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">7</span>
+                <span class="level-item tag">6</span>
             </span>
         </a></li><li>
         <a class="level is-marginless" href="/blog/categories/Machine-learn/">
@@ -711,7 +730,7 @@
         <h3 class="menu-label">
             Tag Cloud
         </h3>
-        <a href="/blog/tags/Life-essay/" style="font-size: 21px; color: #eb0033">Life essay</a> <a href="/blog/tags/literature/" style="font-size: 17px; color: #c20099">literature</a> <a href="/blog/tags/AI/" style="font-size: 15px; color: #ad00cc">AI</a> <a href="/blog/tags/Algorithm/" style="font-size: 23px; color: #f00">Algorithm</a> <a href="/blog/tags/Game/" style="font-size: 19px; color: #d60066">Game</a> <a href="/blog/tags/C/" style="font-size: 17px; color: #c20099">C++</a> <a href="/blog/tags/Learing/" style="font-size: 13px; color: #90f">Learing</a> <a href="/blog/tags/Gradient-Descent/" style="font-size: 13px; color: #90f">Gradient Descent</a> <a href="/blog/tags/K-means/" style="font-size: 13px; color: #90f">K-means</a> <a href="/blog/tags/KNN/" style="font-size: 15px; color: #ad00cc">KNN</a> <a href="/blog/tags/Keras-note/" style="font-size: 17px; color: #c20099">Keras-note</a> <a href="/blog/tags/sharing/" style="font-size: 13px; color: #90f">sharing</a> <a href="/blog/tags/MF/" style="font-size: 13px; color: #90f">MF</a> <a href="/blog/tags/Makedown/" style="font-size: 13px; color: #90f">Makedown</a> <a href="/blog/tags/recommend/" style="font-size: 13px; color: #90f">recommend</a> <a href="/blog/tags/python-command/" style="font-size: 13px; color: #90f">python command</a> <a href="/blog/tags/python/" style="font-size: 15px; color: #ad00cc">python</a> <a href="/blog/tags/Machine-learn/" style="font-size: 13px; color: #90f">Machine-learn</a> <a href="/blog/tags/Ubutu/" style="font-size: 13px; color: #90f">Ubutu</a> <a href="/blog/tags/Linked-list/" style="font-size: 13px; color: #90f">Linked list</a> <a href="/blog/tags/hexo-github/" style="font-size: 13px; color: #90f">hexo+github</a> <a href="/blog/tags/matplotlib/" style="font-size: 13px; color: #90f">matplotlib</a> <a href="/blog/tags/NN/" style="font-size: 17px; color: #c20099">NN</a>
+        <a href="/blog/tags/Life-essay/" style="font-size: 21px; color: #eb0033">Life essay</a> <a href="/blog/tags/literature/" style="font-size: 17px; color: #c20099">literature</a> <a href="/blog/tags/AI/" style="font-size: 15px; color: #ad00cc">AI</a> <a href="/blog/tags/Algorithm/" style="font-size: 23px; color: #f00">Algorithm</a> <a href="/blog/tags/C/" style="font-size: 17px; color: #c20099">C++</a> <a href="/blog/tags/Gradient-Descent/" style="font-size: 13px; color: #90f">Gradient Descent</a> <a href="/blog/tags/Learing/" style="font-size: 13px; color: #90f">Learing</a> <a href="/blog/tags/Game/" style="font-size: 19px; color: #d60066">Game</a> <a href="/blog/tags/KNN/" style="font-size: 15px; color: #ad00cc">KNN</a> <a href="/blog/tags/Keras-note/" style="font-size: 17px; color: #c20099">Keras-note</a> <a href="/blog/tags/Makedown/" style="font-size: 13px; color: #90f">Makedown</a> <a href="/blog/tags/K-means/" style="font-size: 13px; color: #90f">K-means</a> <a href="/blog/tags/python/" style="font-size: 15px; color: #ad00cc">python</a> <a href="/blog/tags/Ubutu/" style="font-size: 13px; color: #90f">Ubutu</a> <a href="/blog/tags/MF/" style="font-size: 13px; color: #90f">MF</a> <a href="/blog/tags/recommend/" style="font-size: 13px; color: #90f">recommend</a> <a href="/blog/tags/Linked-list/" style="font-size: 13px; color: #90f">Linked list</a> <a href="/blog/tags/hexo-github/" style="font-size: 13px; color: #90f">hexo+github</a> <a href="/blog/tags/Machine-learn/" style="font-size: 13px; color: #90f">Machine-learn</a> <a href="/blog/tags/python-command/" style="font-size: 13px; color: #90f">python command</a> <a href="/blog/tags/sharing/" style="font-size: 13px; color: #90f">sharing</a> <a href="/blog/tags/Git/" style="font-size: 13px; color: #90f">Git</a> <a href="/blog/tags/NN/" style="font-size: 17px; color: #c20099">NN</a> <a href="/blog/tags/matplotlib/" style="font-size: 13px; color: #90f">matplotlib</a>
     </div>
 </div>
 
@@ -730,16 +749,16 @@
             
             <a href="/blog/untitled/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="https://s2.ax1x.com/2019/09/26/un5y9I.jpg" alt="无题">
+                    <img class="thumbnail" src="https://s2.ax1x.com/2019/09/26/un5y9I.jpg" alt="git远程操作仓库">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-09-26T13:56:06.000Z">2019-09-26</time></div>
-                    <a href="/blog/untitled/" class="has-link-black-ter is-size-6">无题</a>
+                    <a href="/blog/untitled/" class="has-link-black-ter is-size-6">git远程操作仓库</a>
                     <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/blog/categories/Life-essay/">Life essay</a>
+                        <a class="has-link-grey -link" href="/blog/categories/Git/">Git</a>
                     </p>
                 </div>
             </div>
@@ -919,6 +938,13 @@
                 </div>
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/blog/tags/Git/">
+                        <span class="tag">Git</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/blog/tags/Gradient-Descent/">
                         <span class="tag">Gradient Descent</span>
                         <span class="tag is-grey">1</span>
@@ -956,7 +982,7 @@
                 <div class="control">
                     <a class="tags has-addons" href="/blog/tags/Life-essay/">
                         <span class="tag">Life essay</span>
-                        <span class="tag is-grey">7</span>
+                        <span class="tag is-grey">6</span>
                     </a>
                 </div>
                 
@@ -1078,16 +1104,16 @@
             
             <a href="/blog/untitled/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="https://s2.ax1x.com/2019/09/26/un5y9I.jpg" alt="无题">
+                    <img class="thumbnail" src="https://s2.ax1x.com/2019/09/26/un5y9I.jpg" alt="git远程操作仓库">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-09-26T13:56:06.000Z">2019-09-26</time></div>
-                    <a href="/blog/untitled/" class="has-link-black-ter is-size-6">无题</a>
+                    <a href="/blog/untitled/" class="has-link-black-ter is-size-6">git远程操作仓库</a>
                     <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/blog/categories/Life-essay/">Life essay</a>
+                        <a class="has-link-grey -link" href="/blog/categories/Git/">Git</a>
                     </p>
                 </div>
             </div>
@@ -1267,6 +1293,13 @@
                 </div>
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/blog/tags/Git/">
+                        <span class="tag">Git</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/blog/tags/Gradient-Descent/">
                         <span class="tag">Gradient Descent</span>
                         <span class="tag is-grey">1</span>
@@ -1304,7 +1337,7 @@
                 <div class="control">
                     <a class="tags has-addons" href="/blog/tags/Life-essay/">
                         <span class="tag">Life essay</span>
-                        <span class="tag is-grey">7</span>
+                        <span class="tag is-grey">6</span>
                     </a>
                 </div>
                 
@@ -1416,7 +1449,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/blog/">
                 
-                    <img src="/blog/images/22.png" alt="无题" height="28">
+                    <img src="/blog/images/22.png" alt="git远程操作仓库" height="28">
                 
                 </a>
                 <p class="is-size-7">

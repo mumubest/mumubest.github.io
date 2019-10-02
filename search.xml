@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[无题]]></title>
+    <title><![CDATA[git远程操作仓库]]></title>
     <url>%2Fblog%2Funtitled%2F</url>
-    <content type="text"><![CDATA[如果我在勇敢点，结果会不会比想象中的要好。 无题释，清心以忘乎所以然；道，超然物外而独立遗世。 一生二，二生三，三生万物，万物皆有心； 一连二，二连三，百恼交织，唯释迦摩尼； 释然，自然； 佛、道本两家，参半参半，解东坡之恼，妙哉。 何也？ 品之，无味；历之，不可言尔。 浮浮沉沉，变之莫测，不可；随缘自适，淡泊名志，非也； 应与路飞同路，寻址宝藏，征服大海，onepiese。]]></content>
+    <content type="text"><![CDATA[如果我在勇敢点，结果会不会比想象中的要好。 Git是一个开源的分布式版本控制系统，分布式相比集中式的最大区别是Git没有“中央服务器”，每位开发者都可以通过克隆（git clone）远程库，在本地机器上存储一个完整的Git仓库，还可以把代码的修改提交到本地库。当然了，本地库修改完成后也可以上传到远程仓库，操作方便。 在学习git的操作方法，总是偶然的上传成功。这次不一样了，向大家介绍每一步的操作流程和成功案例。 git clone + “要克隆的仓库地址链接” 进入以克隆的文件夹，并执行 git init初始化 git add * 将所有文件添加到缓存 git pull + “文件储存的绝对路径” git commit -m +”备注” git remote add “备注” +”仓库链接（也是克隆的链接地址）” 最后，git push 静静等待，操作成功。 如果你顺利完成了以上步骤，那么就要恭喜你了，已经成功上传到github仓库。其他储存仓库操作步骤类似。]]></content>
       <categories>
-        <category>Life essay</category>
+        <category>Git</category>
       </categories>
       <tags>
-        <tag>Life essay</tag>
+        <tag>Git</tag>
       </tags>
   </entry>
   <entry>
