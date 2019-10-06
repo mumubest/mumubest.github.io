@@ -6,7 +6,7 @@
   <link href="/AngelNI.github.io/atom.xml" rel="self"/>
   
   <link href="https://angelni.github.io/"/>
-  <updated>2019-10-02T06:47:08.740Z</updated>
+  <updated>2019-10-06T13:26:53.080Z</updated>
   <id>https://angelni.github.io/</id>
   
   <author>
@@ -15,6 +15,66 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>jsDelivr+Github建立免费CDN</title>
+    <link href="https://angelni.github.io/jsDelivr-Github/"/>
+    <id>https://angelni.github.io/jsDelivr-Github/</id>
+    <published>2019-10-06T13:15:29.000Z</published>
+    <updated>2019-10-06T13:26:53.080Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;我喜欢你。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="jsDelivr+Github" scheme="https://angelni.github.io/categories/jsDelivr-Github/"/>
+    
+    
+      <category term="CDN" scheme="https://angelni.github.io/tags/CDN/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>My-World</title>
+    <link href="https://angelni.github.io/My-World/"/>
+    <id>https://angelni.github.io/My-World/</id>
+    <published>2019-10-06T13:13:38.000Z</published>
+    <updated>2019-10-06T14:08:59.016Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;我叫MC~~&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Game" scheme="https://angelni.github.io/categories/Game/"/>
+    
+    
+      <category term="MC" scheme="https://angelni.github.io/tags/MC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>termux</title>
+    <link href="https://angelni.github.io/termux/"/>
+    <id>https://angelni.github.io/termux/</id>
+    <published>2019-10-06T12:42:33.000Z</published>
+    <updated>2019-10-06T13:51:01.888Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;快到我的碗里来，不，是怀里。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="sharing" scheme="https://angelni.github.io/categories/sharing/"/>
+    
+    
+      <category term="termux" scheme="https://angelni.github.io/tags/termux/"/>
+    
+  </entry>
   
   <entry>
     <title>git远程操作仓库</title>
@@ -351,66 +411,6 @@
     
     
       <category term="python command" scheme="https://angelni.github.io/tags/python-command/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Network App Recommend</title>
-    <link href="https://angelni.github.io/Network-App-Recommend/"/>
-    <id>https://angelni.github.io/Network-App-Recommend/</id>
-    <published>2019-08-11T09:39:24.000Z</published>
-    <updated>2019-08-29T03:52:17.276Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt; 你知道吗，有些人，会以各种你情愿或不情愿的方式，留在你的记忆里，比如我。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="sharing" scheme="https://angelni.github.io/categories/sharing/"/>
-    
-    
-      <category term="recommend" scheme="https://angelni.github.io/tags/recommend/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Appreciation of Novels(2)</title>
-    <link href="https://angelni.github.io/Appreciation-of-Novels-2/"/>
-    <id>https://angelni.github.io/Appreciation-of-Novels-2/</id>
-    <published>2019-08-04T02:18:50.000Z</published>
-    <updated>2019-08-29T03:27:48.029Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt; “不要忘记你曾经是怎样的小孩”，“不要忘记你曾希望变成怎样的大人”。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="literature" scheme="https://angelni.github.io/categories/literature/"/>
-    
-    
-      <category term="literature" scheme="https://angelni.github.io/tags/literature/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>NCF Data Processing</title>
-    <link href="https://angelni.github.io/NCF-Data-Processing/"/>
-    <id>https://angelni.github.io/NCF-Data-Processing/</id>
-    <published>2019-08-03T14:02:07.000Z</published>
-    <updated>2019-08-29T03:51:56.107Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;  左眼永远见不到右眼，只能陪她一起哭泣。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="AI" scheme="https://angelni.github.io/categories/AI/"/>
-    
-    
-      <category term="AI" scheme="https://angelni.github.io/tags/AI/"/>
     
   </entry>
   
