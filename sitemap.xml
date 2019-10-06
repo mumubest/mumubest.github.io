@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://angelni.github.io/My-World/</loc>
+    
+    <lastmod>2019-10-06T14:38:50.939Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://angelni.github.io/jsDelivr-Github/</loc>
     
     <lastmod>2019-10-06T14:09:54.502Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>https://angelni.github.io/termux/</loc>
     
     <lastmod>2019-10-06T14:09:54.501Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://angelni.github.io/My-World/</loc>
-    
-    <lastmod>2019-10-06T14:09:54.500Z</lastmod>
     
   </url>
   
