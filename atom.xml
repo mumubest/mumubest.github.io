@@ -6,7 +6,7 @@
   <link href="/AngelNI.github.io/atom.xml" rel="self"/>
   
   <link href="https://angelni.github.io/"/>
-  <updated>2019-10-06T14:09:54.502Z</updated>
+  <updated>2019-10-07T12:35:47.406Z</updated>
   <id>https://angelni.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>双栈实现计算器</title>
+    <link href="https://angelni.github.io/data-structure/"/>
+    <id>https://angelni.github.io/data-structure/</id>
+    <published>2019-10-07T12:26:36.000Z</published>
+    <updated>2019-10-07T12:35:47.406Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;愿我们能与最好的自己相遇。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Data-Structure" scheme="https://angelni.github.io/categories/Data-Structure/"/>
+    
+    
+      <category term="stack" scheme="https://angelni.github.io/tags/stack/"/>
+    
+  </entry>
   
   <entry>
     <title>jsDelivr+Github建立免费CDN</title>
@@ -391,26 +411,6 @@
     
     
       <category term="Ubutu" scheme="https://angelni.github.io/tags/Ubutu/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python command</title>
-    <link href="https://angelni.github.io/Pip-command/"/>
-    <id>https://angelni.github.io/Pip-command/</id>
-    <published>2019-08-11T10:58:17.000Z</published>
-    <updated>2019-08-29T03:52:36.117Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt; 不是 ,有钱才善良，而是善良才富足。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="python" scheme="https://angelni.github.io/categories/python/"/>
-    
-    
-      <category term="python command" scheme="https://angelni.github.io/tags/python-command/"/>
     
   </entry>
   

@@ -5,26 +5,27 @@
 <html lang="en">
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-<title>Archives: 2019/10 - Sky&#39;s Blog</title>
+<title>双栈实现计算器 - Sky&#39;s Blog</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="google-site-verification" content="JwzmnANXlpmQlhwaSORuqpEB6P3Sr-tRhw4R_XDRcEc">
 <meta name="baidu-site-verification" content="ztPAF2oDcw">
 
 
 
-    <meta name="description" content="This is a simple record of learning bits and pieces, so that each step of learning into an unforgettable memory.">
-<meta name="keywords" content="learning note">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Sky&#39;s Blog">
-<meta property="og:url" content="https://angelni.github.io/archives/2019/10/index.html">
+    <meta name="description" content="愿我们能与最好的自己相遇。">
+<meta name="keywords" content="stack">
+<meta property="og:type" content="article">
+<meta property="og:title" content="双栈实现计算器">
+<meta property="og:url" content="https://angelni.github.io/data-structure/index.html">
 <meta property="og:site_name" content="Sky&#39;s Blog">
-<meta property="og:description" content="This is a simple record of learning bits and pieces, so that each step of learning into an unforgettable memory.">
+<meta property="og:description" content="愿我们能与最好的自己相遇。">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="https://angelni.github.io/AngelNI.github.io/images/og_image.png">
+<meta property="og:image" content="https://s2.ax1x.com/2019/10/03/uwfnmT.png">
+<meta property="og:updated_time" content="2019-10-07T12:35:47.406Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Sky&#39;s Blog">
-<meta name="twitter:description" content="This is a simple record of learning bits and pieces, so that each step of learning into an unforgettable memory.">
-<meta name="twitter:image" content="https://angelni.github.io/AngelNI.github.io/images/og_image.png">
+<meta name="twitter:title" content="双栈实现计算器">
+<meta name="twitter:description" content="愿我们能与最好的自己相遇。">
+<meta name="twitter:image" content="https://s2.ax1x.com/2019/10/03/uwfnmT.png">
 
 
 
@@ -112,7 +113,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/AngelNI.github.io/">
             
-                <img src="/AngelNI.github.io/images/22.png" alt="Sky&#39;s Blog" height="28">
+                <img src="/AngelNI.github.io/images/22.png" alt="双栈实现计算器" height="28">
             
             </a>
         </div>
@@ -159,120 +160,139 @@
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
+                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://s2.ax1x.com/2019/10/03/uwfnmT.png" alt="双栈实现计算器">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-10-07T12:26:36.000Z">2019-10-07</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/AngelNI.github.io/categories/Data-Structure/">Data-Structure</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    2 minutes read (About 270 words)
+                </span>
+                
+                
+                <span class="level-item has-text-grey" id="busuanzi_container_page_pv">
+                    <i class="far fa-eye"></i>
+                    <span id="busuanzi_value_page_pv">0</span> visits
+                </span>
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                双栈实现计算器
+            
+        </h1>
+        <div class="content">
+            <p>愿我们能与最好的自己相遇。<a id="more"></a></p>
+<h1 id="双栈实现计算器"><a href="#双栈实现计算器" class="headerlink" title="双栈实现计算器"></a>双栈实现计算器</h1><figure class="highlight c++ hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;stack&gt;</span></span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;</span><br><span class="line"><span class="hljs-built_in">stack</span>&lt;<span class="hljs-keyword">int</span>&gt; OPND;</span><br><span class="line"><span class="hljs-built_in">stack</span>&lt;<span class="hljs-keyword">char</span>&gt; OPRT;</span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">precede</span><span class="hljs-params">(<span class="hljs-keyword">char</span> x)</span></span>;</span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">operate</span><span class="hljs-params">()</span></span>;</span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">calculate</span><span class="hljs-params">(<span class="hljs-built_in">string</span> s)</span></span>;</span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">    <span class="hljs-built_in">string</span> str;</span><br><span class="line">    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"\t\t--------------------------------------------\n"</span>);</span><br><span class="line">    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"\t\t--------------双栈实现简易计算器------------\n"</span>);</span><br><span class="line">    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"\t\t------------------欢迎您使用----------------\n"</span>);</span><br><span class="line">    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"\t\t|                  计算器                  |\n"</span>);</span><br><span class="line">    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"\t\t|              ----------------            |\n"</span>);</span><br><span class="line">    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"\t\t|              |              |            |\n"</span>);</span><br><span class="line">    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"\t\t|              ----------------            |\n"</span>);</span><br><span class="line">    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"\t\t|              1    2    3   +             |\n"</span>);</span><br><span class="line">    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"\t\t|              4    5    6   -             |\n"</span>);</span><br><span class="line">    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"\t\t|              7    8    9   *             |\n"</span>);</span><br><span class="line">    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"\t\t|              0   （    ）  /             |\n"</span>);</span><br><span class="line">    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"\t\t--------------------------------------------\n"</span>);</span><br><span class="line">    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"\t\t 请输入一个用#开头和结尾的表达式：\n"</span>);</span><br><span class="line">    <span class="hljs-built_in">cin</span>&gt;&gt;str;</span><br><span class="line">    calculate(str);</span><br><span class="line">    getchar();</span><br><span class="line">    getchar();</span><br><span class="line">    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="hljs-comment">//运算符优先级判断 </span></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">precede</span><span class="hljs-params">(<span class="hljs-keyword">char</span> x)</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">	<span class="hljs-keyword">if</span> (x == <span class="hljs-string">'+'</span> || x == <span class="hljs-string">'-'</span>)  </span><br><span class="line">        <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;  </span><br><span class="line">    <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (x == <span class="hljs-string">'*'</span> || x == <span class="hljs-string">'/'</span>)  </span><br><span class="line">        <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;  </span><br><span class="line">    <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (x == <span class="hljs-string">'('</span> || x == <span class="hljs-string">')'</span>)  </span><br><span class="line">        <span class="hljs-keyword">return</span> <span class="hljs-number">-1</span>;  </span><br><span class="line">    <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (x == <span class="hljs-string">'#'</span>)  </span><br><span class="line">        <span class="hljs-keyword">return</span> <span class="hljs-number">-2</span>;  </span><br><span class="line">&#125;</span><br><span class="line"><span class="hljs-comment">//二元运算 </span></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">inline</span> <span class="hljs-keyword">void</span> <span class="hljs-title">operate</span><span class="hljs-params">(<span class="hljs-keyword">char</span> top)</span></span></span><br><span class="line"><span class="hljs-function"> </span>&#123;</span><br><span class="line"> 	<span class="hljs-keyword">int</span> a = OPND.top(); </span><br><span class="line">    OPND.pop();</span><br><span class="line">    <span class="hljs-keyword">int</span> b = OPND.top(); </span><br><span class="line">	OPND.pop();</span><br><span class="line">	<span class="hljs-keyword">int</span> c;</span><br><span class="line">	</span><br><span class="line"> 	<span class="hljs-keyword">if</span> (top == <span class="hljs-string">'+'</span>) </span><br><span class="line">	 &#123;  </span><br><span class="line">        b += a;  </span><br><span class="line">        OPND.push(b);  </span><br><span class="line">    &#125;  </span><br><span class="line">    <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (top == <span class="hljs-string">'-'</span>)</span><br><span class="line">	&#123;  </span><br><span class="line">        b -= a;  </span><br><span class="line">        OPND.push(b);  </span><br><span class="line">    &#125;  </span><br><span class="line">    <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (top == <span class="hljs-string">'*'</span>) </span><br><span class="line">	&#123;  </span><br><span class="line">        b *= a;  </span><br><span class="line">        OPND.push(b);  </span><br><span class="line">    &#125;  </span><br><span class="line">    <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (top == <span class="hljs-string">'/'</span>) </span><br><span class="line">	&#123;  </span><br><span class="line">        b /= a;  </span><br><span class="line">        OPND.push(b);  </span><br><span class="line">    &#125;   </span><br><span class="line"> &#125;</span><br><span class="line"><span class="hljs-comment">//读取表达式 </span></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">calculate</span><span class="hljs-params">(<span class="hljs-built_in">string</span> s)</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">    <span class="hljs-keyword">int</span> a,b;</span><br><span class="line">    <span class="hljs-keyword">char</span> top;</span><br><span class="line">    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>;i&lt;s.size();++i)</span><br><span class="line">    &#123;</span><br><span class="line">    	<span class="hljs-comment">//判断是否为数字 </span></span><br><span class="line">        <span class="hljs-keyword">if</span>(<span class="hljs-built_in">isdigit</span>(s[i]))</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="hljs-keyword">int</span> num = <span class="hljs-number">0</span>;</span><br><span class="line">            <span class="hljs-built_in">string</span> number;</span><br><span class="line">            number += s[i];</span><br><span class="line">            <span class="hljs-keyword">while</span>(<span class="hljs-built_in">isdigit</span>(s[++i]))</span><br><span class="line">            &#123;</span><br><span class="line">                number += s[i];</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="hljs-keyword">for</span>( <span class="hljs-keyword">int</span> j=<span class="hljs-number">0</span>;j&lt;number.size();j++)</span><br><span class="line">            &#123;</span><br><span class="line">                    num = num*<span class="hljs-number">10</span> +number[j] - <span class="hljs-number">48</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            OPND.push(num);</span><br><span class="line">            number.clear();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="hljs-comment">//对操作符的操作 </span></span><br><span class="line">        <span class="hljs-keyword">if</span>(!<span class="hljs-built_in">isdigit</span>(s[i]))</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="hljs-keyword">if</span>(OPRT.empty())</span><br><span class="line">            &#123;</span><br><span class="line">                OPRT.push(s[i]);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="hljs-keyword">else</span></span><br><span class="line">            &#123;</span><br><span class="line">                top = OPRT.top();</span><br><span class="line">                <span class="hljs-keyword">if</span>(precede(s[i])&gt;precede(top) || s[i] == <span class="hljs-string">'('</span>)</span><br><span class="line">                &#123;</span><br><span class="line">                    OPRT.push(s[i]);</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="hljs-keyword">else</span></span><br><span class="line">                &#123;	</span><br><span class="line">                    <span class="hljs-keyword">while</span>(precede(s[i])&lt;=precede(top))</span><br><span class="line">                    &#123;</span><br><span class="line">                        <span class="hljs-keyword">if</span>(top==<span class="hljs-string">'#'</span>&amp;&amp;s[i]==<span class="hljs-string">'#'</span>)</span><br><span class="line">                        &#123;</span><br><span class="line">                            OPRT.pop();</span><br><span class="line">                            <span class="hljs-keyword">int</span> ans = OPND.top();</span><br><span class="line">                            <span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-string">"The answer is :"</span>&lt;&lt;ans&lt;&lt;<span class="hljs-built_in">endl</span>;</span><br><span class="line">                            OPND.pop();</span><br><span class="line">                            <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;</span><br><span class="line">                        &#125;</span><br><span class="line">                        <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(top==<span class="hljs-string">'('</span>&amp;&amp;s[i]==<span class="hljs-string">')'</span>)</span><br><span class="line">                        &#123;</span><br><span class="line">                            ++i;</span><br><span class="line">                        &#125;</span><br><span class="line">                        <span class="hljs-keyword">else</span></span><br><span class="line">                        &#123;</span><br><span class="line">							operate(top);</span><br><span class="line">                        &#125; </span><br><span class="line">						 OPRT.pop(); </span><br><span class="line">                         top = OPRT.top();              </span><br><span class="line">                    &#125;</span><br><span class="line">                    OPRT.push(s[i]);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<div class="card widget">
+<img src="https://s2.ax1x.com/2019/10/07/uR2CLQ.png" alt="uR2CLQ.png" border="0">
+
+<img src="https://s2.ax1x.com/2019/10/07/uR2iZj.png" alt="uR2iZj.png" border="0">
+
+<img src="https://s2.ax1x.com/2019/10/07/uR29sg.png" alt="uR29sg.png" border="0">
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/AngelNI.github.io/tags/stack/">stack</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+<div class="card">
     <div class="card-content">
-        <h3 class="tag is-link">
-        October 2019
-        </h3>
-        <div class="timeline">
-        
-            <article class="media">
+        <h3 class="menu-label has-text-centered">Like this article? Support the author with</h3>
+        <div class="buttons is-centered">
+            
                 
-                <a href="/AngelNI.github.io/data-structure/" class="media-left">
-                    <p class="image is-64x64">
-                        <img class="thumbnail" src="https://s2.ax1x.com/2019/10/03/uwfnmT.png" alt="双栈实现计算器">
-                    </p>
-                </a>
+<a class="button is-info donate">
+    <span class="icon is-small">
+        <i class="fab fa-alipay"></i>
+    </span>
+    <span>Alipay</span>
+    <div class="qrcode"><img src="/AngelNI.github.io/images/1.jpg" alt="Alipay"></div>
+</a>
+
                 
-                <div class="media-content">
-                    <div class="content">
-                        <time class="has-text-grey is-size-7 is-block is-uppercase" datetime="2019-10-07T12:26:36.000Z">2019-10-07</time>
-                        <a href="/AngelNI.github.io/data-structure/" class="has-link-black-ter is-size-6">双栈实现计算器</a>
-                        <div class="level article-meta is-mobile">
-                            <div class="level-left">
-                                
-                                <div class="level-item is-size-7 is-uppercase">
-                                <a class="has-link-grey -link" href="/AngelNI.github.io/categories/Data-Structure/">Data-Structure</a>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        
-            <article class="media">
                 
-                <a href="/AngelNI.github.io/jsDelivr-Github/" class="media-left">
-                    <p class="image is-64x64">
-                        <img class="thumbnail" src="https://s2.ax1x.com/2019/10/03/u09EOf.jpg" alt="jsDelivr+Github建立免费CDN">
-                    </p>
-                </a>
+<a class="button is-success donate">
+    <span class="icon is-small">
+        <i class="fab fa-weixin"></i>
+    </span>
+    <span>Wechat</span>
+    <div class="qrcode"><img src="/AngelNI.github.io/images/2.png" alt="Wechat"></div>
+</a>
+
                 
-                <div class="media-content">
-                    <div class="content">
-                        <time class="has-text-grey is-size-7 is-block is-uppercase" datetime="2019-10-06T13:15:29.000Z">2019-10-06</time>
-                        <a href="/AngelNI.github.io/jsDelivr-Github/" class="has-link-black-ter is-size-6">jsDelivr+Github建立免费CDN</a>
-                        <div class="level article-meta is-mobile">
-                            <div class="level-left">
-                                
-                                <div class="level-item is-size-7 is-uppercase">
-                                <a class="has-link-grey -link" href="/AngelNI.github.io/categories/jsDelivr-Github/">jsDelivr+Github</a>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        
-            <article class="media">
-                
-                <a href="/AngelNI.github.io/My-World/" class="media-left">
-                    <p class="image is-64x64">
-                        <img class="thumbnail" src="https://s2.ax1x.com/2019/10/06/ugrmRJ.jpg" alt="My-World">
-                    </p>
-                </a>
-                
-                <div class="media-content">
-                    <div class="content">
-                        <time class="has-text-grey is-size-7 is-block is-uppercase" datetime="2019-10-06T13:13:38.000Z">2019-10-06</time>
-                        <a href="/AngelNI.github.io/My-World/" class="has-link-black-ter is-size-6">My-World</a>
-                        <div class="level article-meta is-mobile">
-                            <div class="level-left">
-                                
-                                <div class="level-item is-size-7 is-uppercase">
-                                <a class="has-link-grey -link" href="/AngelNI.github.io/categories/Game/">Game</a>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        
-            <article class="media">
-                
-                <a href="/AngelNI.github.io/termux/" class="media-left">
-                    <p class="image is-64x64">
-                        <img class="thumbnail" src="https://s2.ax1x.com/2019/09/22/uSXeN8.jpg" alt="termux">
-                    </p>
-                </a>
-                
-                <div class="media-content">
-                    <div class="content">
-                        <time class="has-text-grey is-size-7 is-block is-uppercase" datetime="2019-10-06T12:42:33.000Z">2019-10-06</time>
-                        <a href="/AngelNI.github.io/termux/" class="has-link-black-ter is-size-6">termux</a>
-                        <div class="level article-meta is-mobile">
-                            <div class="level-left">
-                                
-                                <div class="level-item is-size-7 is-uppercase">
-                                <a class="has-link-grey -link" href="/AngelNI.github.io/categories/sharing/">sharing</a>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        
         </div>
     </div>
 </div>
 
 
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/AngelNI.github.io/jsDelivr-Github/">
+                <span class="level-item">jsDelivr+Github建立免费CDN</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+
+<div class="card">
+    <div class="card-content">
+        <h3 class="title is-5 has-text-weight-normal">Comments</h3>
+        
+<div id="valine-thread" class="content"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#valine-thread' ,
+        notify: false,
+        verify: false,
+        app_id: '0dNioPuDCFsscn6y58dczYiy-gzGzoHsz',
+        app_key: 'jbyn5TRGmiiAsYjo7PFFzrYJ',
+        placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!'
+    });
+</script>
+
+    </div>
+</div>
 </div>
                 
 
@@ -1501,7 +1521,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/AngelNI.github.io/">
                 
-                    <img src="/AngelNI.github.io/images/22.png" alt="Sky&#39;s Blog" height="28">
+                    <img src="/AngelNI.github.io/images/22.png" alt="双栈实现计算器" height="28">
                 
                 </a>
                 <p class="is-size-7">
