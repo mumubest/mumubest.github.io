@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Ubuntu_基础应用篇]]></title>
+    <url>%2FAngelNI.github.io%2Fubuntu-beauty%2F</url>
+    <content type="text"><![CDATA[【转载】分享给那些喜欢Linux ，喜欢Ubuntu的小伙伴。 此文章为转载文章，转载请著名出处 @http://blog.csdn.net/gatieme非常感谢原作者的分享和AderStep对这些美味食物的整理。 链接 链接 安装Ubuntu后必须要做的几件事(一)–基础应用篇 安装Ubuntu后必须要做的几件事（二）–开发工具篇 终端的乐趣–Linux下有趣的终端命令或者工具 Ubuntu使用apt-file解决库或者文件缺失依赖 Ubuntu切换默认sh为bash或者dash Linux下几款C++程序中的内存泄露检查工具 解决ubuntu无法调整和保存屏幕亮度的问题 Ubuntu安装Microsoft Windows Fonts微软字体库 解决Windows与Ubuntu双系统时间同步问题 Ubuntu安装图片处理工具GIMP及其插件 21款最佳Linux命令行终端工具 两台Linux系统之间传输文件的几种方法 使用gdb调试程序完全教程 linux下man手册的安装和使用 Linux下查看并下载命令源码包（根据命令/应用程序逆向获取并且安装其所属源码包） 如何参与linux内核开发 linux 如何显示一个文件的某几行(中间几行) Git中的AutoCRLF与SafeCRLF换行符问题 linux环境中英文切换配置以及乱码问题 linux下使用ccat让你的cat高亮显示 怎么判断你的linux系统是不是运行在虚拟机器上面 Linux下管理用户的命令大全 Linux软连接和硬链接 Linux性能测试工具-UnixBench–安装以及结果分析 CodeBlocks最全官方配色方案 C/C++log日志库比较 Centos5.x/Linux下升级python到python2.7版本教程 几款xshell绝佳配色方案 VS2012插件推荐 linux下的终端利器—-tmux Ubuntu下Sublime Text 3解决无法输入中文的方法 使用trash-cli避免误删文件–为rm增加回收站功能 Ubuntu安装Python的包管理工具Pip Ubuntu安装配置串口通讯工具minicom&amp;&amp;cutecom Ubuntu编译安装llvm-clang 搜索引擎收录大全 Ubuntu安装深度音乐&amp;&amp;深度影音 Vimium-Geek是这样上网的[Chrome–插件] 几款好的markdown编辑器 Windows&amp;&amp;Linux双系统引导项修复问题汇总 安装CentOS时误将将引导项写入U盘后的修复 Linux操作系统中，.zip、.tar、.tar.gz、.tar.bz2、.tar.xz、.jar、*.7z等格式的压缩与解压 Chrome浏览器护眼插件 Google搜索技巧终极收集 世界上最神奇的网站收录–不是最无聊就是最有意思 Python模块之命令行解析工具-argparse GNOME下设置应用程序图标 git 删除右键菜单项 个性化您的Ubuntu Linux终端 Python判断当前操作系统类型以及os/sys/platform模块简介 Python实现设置终端显示颜色、粗体、下划线等效果 Python程序在Windows终端乱码解决方法 发现的更强大的vim配置信息 Ubuntu禁止mysql开机启动 Ubuntu下使用sysv-rc-conf管理服务 使用Vundle管理Vim插件 Vim的安装与配置 push到github时，每次都要输入用户名和密码的问题 Ubuntu安装配置mysql 盘点Linux下的开源云平台&amp;&amp;云存储服务 Ubuntu下安装GTK库 Linux下查看系统信息命令 Ubuntu更新软件源 linux命令行界面（CLI）浏览器 Linux下使用unzip解压缩中文乱码问题 Linux下的下载工具介绍—-aria2 vim 树形目录插件NERDTree安装 urllib2模块之异常处理 Python第三方库 Sublime text 3设置用用空格替换tab键 几款好的C/C++编译器（编译器而非IDE） Sublime Text 3配置Windows下C/C++编译环境 Sublime Text[崇高文本]—-最性感的编辑器（程序员必备） WingIDE安装和破解（Python开发利器） Linux设置nfs共享目录 让你的python程序开机自启动 Linux环境设置 喜欢linux的小伙伴快来，加入这个有趣的生态圈。]]></content>
+      <categories>
+        <category>Ubuntu</category>
+      </categories>
+      <tags>
+        <tag>ubuntu</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[双栈实现计算器]]></title>
     <url>%2FAngelNI.github.io%2Fdata-structure%2F</url>
     <content type="text"><![CDATA[愿我们能与最好的自己相遇。 双栈实现计算器123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102103104105106107108109110111112113114115116117118119120121122123124125126127128129130131132133134135136137138139140#include&lt;iostream&gt;#include&lt;stack&gt;#include&lt;cstring&gt;using namespace std;stack&lt;int&gt; OPND;stack&lt;char&gt; OPRT;int precede(char x);void operate();int calculate(string s);int main()&#123; string str; printf("\t\t--------------------------------------------\n"); printf("\t\t--------------双栈实现简易计算器------------\n"); printf("\t\t------------------欢迎您使用----------------\n"); printf("\t\t| 计算器 |\n"); printf("\t\t| ---------------- |\n"); printf("\t\t| | | |\n"); printf("\t\t| ---------------- |\n"); printf("\t\t| 1 2 3 + |\n"); printf("\t\t| 4 5 6 - |\n"); printf("\t\t| 7 8 9 * |\n"); printf("\t\t| 0 （ ） / |\n"); printf("\t\t--------------------------------------------\n"); printf("\t\t 请输入一个用#开头和结尾的表达式：\n"); cin&gt;&gt;str; calculate(str); getchar(); getchar(); return 0;&#125;//运算符优先级判断 int precede(char x)&#123; if (x == '+' || x == '-') return 0; else if (x == '*' || x == '/') return 1; else if (x == '(' || x == ')') return -1; else if (x == '#') return -2; &#125;//二元运算 inline void operate(char top) &#123; int a = OPND.top(); OPND.pop(); int b = OPND.top(); OPND.pop(); int c; if (top == '+') &#123; b += a; OPND.push(b); &#125; else if (top == '-') &#123; b -= a; OPND.push(b); &#125; else if (top == '*') &#123; b *= a; OPND.push(b); &#125; else if (top == '/') &#123; b /= a; OPND.push(b); &#125; &#125;//读取表达式 int calculate(string s)&#123; int a,b; char top; for(int i = 0;i&lt;s.size();++i) &#123; //判断是否为数字 if(isdigit(s[i])) &#123; int num = 0; string number; number += s[i]; while(isdigit(s[++i])) &#123; number += s[i]; &#125; for( int j=0;j&lt;number.size();j++) &#123; num = num*10 +number[j] - 48; &#125; OPND.push(num); number.clear(); &#125; //对操作符的操作 if(!isdigit(s[i])) &#123; if(OPRT.empty()) &#123; OPRT.push(s[i]); &#125; else &#123; top = OPRT.top(); if(precede(s[i])&gt;precede(top) || s[i] == '(') &#123; OPRT.push(s[i]); &#125; else &#123; while(precede(s[i])&lt;=precede(top)) &#123; if(top=='#'&amp;&amp;s[i]=='#') &#123; OPRT.pop(); int ans = OPND.top(); cout&lt;&lt;"The answer is :"&lt;&lt;ans&lt;&lt;endl; OPND.pop(); return 0; &#125; else if(top=='('&amp;&amp;s[i]==')') &#123; ++i; &#125; else &#123; operate(top); &#125; OPRT.pop(); top = OPRT.top(); &#125; OPRT.push(s[i]); &#125; &#125; &#125; &#125;&#125;]]></content>
@@ -599,8 +610,8 @@
         <category>C++</category>
       </categories>
       <tags>
-        <tag>C++</tag>
         <tag>Algorithm</tag>
+        <tag>C++</tag>
       </tags>
   </entry>
   <entry>
