@@ -6,7 +6,7 @@
   <link href="/AngelNI.github.io/atom.xml" rel="self"/>
   
   <link href="https://angelni.github.io/"/>
-  <updated>2019-10-10T23:12:35.777Z</updated>
+  <updated>2019-10-11T13:13:22.909Z</updated>
   <id>https://angelni.github.io/</id>
   
   <author>
@@ -17,11 +17,31 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>2048 Game</title>
+    <link href="https://angelni.github.io/problem-1/"/>
+    <id>https://angelni.github.io/problem-1/</id>
+    <published>2019-10-11T12:34:56.000Z</published>
+    <updated>2019-10-11T13:13:22.909Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;间接性划水，持续性自闭。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="C++" scheme="https://angelni.github.io/categories/C/"/>
+    
+    
+      <category term="C++" scheme="https://angelni.github.io/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
     <title>生活随笔</title>
     <link href="https://angelni.github.io/life-essay/"/>
     <id>https://angelni.github.io/life-essay/</id>
     <published>2019-10-10T22:54:12.000Z</published>
-    <updated>2019-10-10T23:12:35.777Z</updated>
+    <updated>2019-10-10T23:16:35.155Z</updated>
     
     <summary type="html">
     
@@ -391,26 +411,6 @@
     
     
       <category term="Keras-note" scheme="https://angelni.github.io/tags/Keras-note/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Stanford-Machine-Learning-camp</title>
-    <link href="https://angelni.github.io/Stanford-Machine-Learning-camp/"/>
-    <id>https://angelni.github.io/Stanford-Machine-Learning-camp/</id>
-    <published>2019-08-20T03:33:29.000Z</published>
-    <updated>2019-08-29T03:53:54.706Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt; 曾经沧海难为水，却见巫山不是云。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Machine-learn" scheme="https://angelni.github.io/categories/Machine-learn/"/>
-    
-    
-      <category term="Machine-learn" scheme="https://angelni.github.io/tags/Machine-learn/"/>
     
   </entry>
   
