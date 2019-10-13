@@ -1,11 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[宝塔+Kodcloud搭建个人网盘]]></title>
+    <url>%2FAngelNI.github.io%2Fkodcloud%2F</url>
+    <content type="text"><![CDATA[月圆思故人。 KodExplorer可道云简介：KodExplorer可道云，原名芒果云，是基于Web技术的私有云和在线文件管理系统，由上海岱牧网络有限公司开发，发布于2012年6月。致力于为用户提供安全可控、可靠易用、高扩展性的私有云解决方案。用户只需通过简单环境搭建，即可使用KodExplorer快速完成私有云/私有网盘/在线文档管理系统的部署和搭建。可道云提供了类windows经典用户界面，延续了windows平台的用户界面、操作逻辑和使用习惯，支持100余种文件格式的在线预览，解决了文件在线存储与管理、共享和跨平台访问、在线办公影音娱乐等一系列问题，使得用户的私有云产品可以拥有本地操作一样方便、快捷、安全的体验。官网地址：http://www.kodcloud.com 成功安装后就可登陆正常使用了]]></content>
+      <categories>
+        <category>sharing</category>
+      </categories>
+      <tags>
+        <tag>Kodcloud</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[服务器终于备案好了]]></title>
+    <url>%2FAngelNI.github.io%2Fsever%2F</url>
+    <content type="text"><![CDATA[已成功搭建个人网盘，个人图床，开源OJ平台。 从备案申请到备案成功，等的我好烦人啊，还好是成功备案下来。 这不正赶上周末，当然要好好造作一番了。 宝塔面板+kodexplorer搭建的个人网盘。参考 Chevereto搭建私人图床关于Chevereto的配置可以参考我们翻译的中文文档 青岛大学OJ还在探索中ing]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>serve</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[2048 Game]]></title>
     <url>%2FAngelNI.github.io%2Fproblem-1%2F</url>
     <content type="text"><![CDATA[间接性划水，持续性自闭。 2048 Game题目链接 A. 2048 Game time limit per test 1 second memory limit per test 256 megabytes input standard input output standard output You are playing a variation of game 2048. Initially you have a multiset ss of nn integers. Every integer in this multiset is a power of two. You may perform any number (possibly, zero) operations with this multiset. During each operation you choose two equal integers from ss, remove them from ss and insert the number equal to their sum into ss. For example, if s={1,2,1,1,4,2,2}s={1,2,1,1,4,2,2} and you choose integers 22 and 22, then the multiset becomes {1,1,1,4,4,2}{1,1,1,4,4,2}. You win if the number 20482048 belongs to your multiset. For example, if s={1024,512,512,4}s={1024,512,512,4} you can win as follows: choose 512512 and 512512, your multiset turns into {1024,1024,4}{1024,1024,4}. Then choose 10241024 and 10241024, your multiset turns into {2048,4}{2048,4} and you win. You have to determine if you can win this game. You have to answer qq independent queries. Input The first line contains one integer qq (1≤q≤1001≤q≤100) – the number of queries. The first line of each query contains one integer nn (1≤n≤1001≤n≤100) — the number of elements in multiset. The second line of each query contains nn integers s1,s2,…,sns1,s2,…,sn (1≤si≤2291≤si≤229) — the description of the multiset. It is guaranteed that all elements of the multiset are powers of two. Output For each query print YES if it is possible to obtain the number 20482048 in your multiset, and NO otherwise. You may print every letter in any case you want (so, for example, the strings yEs, yes, Yes and YES will all be recognized as positive answer). Example input 12345678910111213641024 512 64 51212048364 512 224096 472048 2 2048 2048 2048 2048 204822048 4096 output 123456YESYESNONOYESYES Note In the first query you can win as follows: choose 512512 and 512512, and ss turns into {1024,64,1024}{1024,64,1024}. Then choose 10241024 and 10241024, and ssturns into {2048,64}{2048,64} and you win. In the second query ss contains 20482048 initially. 这道题和我们玩得游戏2048一样，只要你能够凑出2048，you win！！！ 一开始，没有想那多,就是想直接模拟一下。 AC_112345678910111213141516171819202122232425262728293031323334353637383940414243#include&lt;stdio.h&gt;#include&lt;algorithm&gt;using namespace std;int a[1010];bool cmp(int a,int b)&#123; return a&gt;b; &#125; int main()&#123; int n; scanf("%d",&amp;n); while(n--) &#123; int m,flag=0; scanf("%d",&amp;m); for(int i=0;i&lt;m;++i) &#123; scanf("%d",&amp;a[i]); &#125; sort(a,a+m,cmp); int k =2048; int sum=0; for(int i =0;i&lt;m;++i) &#123; if(k&gt;=a[i]&amp;&amp;k%a[i]==0) &#123; sum += a[i]; &#125; if(k == sum) &#123; flag = 1; break; &#125; &#125; if(flag==1) printf("YES\n"); else printf("NO\n"); &#125; return 0; &#125; AC_2之后有人跟我说，这是分治，我也没听懂他在说什么，就去了CSDN，找了教程。 分治：原来就是把问题划分为相互独立的子问题进行处理。（必然联系到递归） 比如，你想找是否有没有2048，此时把2048分成1024 1024，你可以找1024，然后看看集合中有几个1024，是否满足条件。 1234567891011121314151617181920212223242526272829303132333435#include&lt;iostream&gt;#include&lt;map&gt;#include&lt;algorithm&gt;using namespace std;//int a[100005];map&lt;int,int&gt; mp;int dfs(int x,int n)&#123; if(x&lt;1) return 0; if(mp[x] &gt;= n) return 1; return dfs(x/2,n*2-2*mp[x]);&#125;int main()&#123; int n; cin&gt;&gt;n; while(n--) &#123; mp.clear(); int m; cin&gt;&gt;m; for(int i =0;i&lt;m;++i) &#123; int s; cin&gt;&gt;s; mp[s]++; &#125; int flag = dfs(2048,1); if(flag) printf("YES\n"); else printf("NO\n"); &#125; &#125;]]></content>
       <categories>
-        <category>C++</category>
+        <category>Algorithm</category>
       </categories>
       <tags>
         <tag>C++</tag>

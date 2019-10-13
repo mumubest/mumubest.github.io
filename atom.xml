@@ -6,7 +6,7 @@
   <link href="/AngelNI.github.io/atom.xml" rel="self"/>
   
   <link href="https://angelni.github.io/"/>
-  <updated>2019-10-11T13:13:22.909Z</updated>
+  <updated>2019-10-13T06:44:58.559Z</updated>
   <id>https://angelni.github.io/</id>
   
   <author>
@@ -17,11 +17,51 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>宝塔+Kodcloud搭建个人网盘</title>
+    <link href="https://angelni.github.io/kodcloud/"/>
+    <id>https://angelni.github.io/kodcloud/</id>
+    <published>2019-10-13T06:33:08.000Z</published>
+    <updated>2019-10-13T06:44:58.559Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;月圆思故人。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="sharing" scheme="https://angelni.github.io/categories/sharing/"/>
+    
+    
+      <category term="Kodcloud" scheme="https://angelni.github.io/tags/Kodcloud/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>服务器终于备案好了</title>
+    <link href="https://angelni.github.io/sever/"/>
+    <id>https://angelni.github.io/sever/</id>
+    <published>2019-10-13T06:24:34.000Z</published>
+    <updated>2019-10-13T06:49:25.219Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;已成功搭建个人网盘，个人图床，开源OJ平台。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Linux" scheme="https://angelni.github.io/categories/Linux/"/>
+    
+    
+      <category term="serve" scheme="https://angelni.github.io/tags/serve/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2048 Game</title>
     <link href="https://angelni.github.io/problem-1/"/>
     <id>https://angelni.github.io/problem-1/</id>
     <published>2019-10-11T12:34:56.000Z</published>
-    <updated>2019-10-11T13:13:22.909Z</updated>
+    <updated>2019-10-11T14:56:14.966Z</updated>
     
     <summary type="html">
     
@@ -29,7 +69,7 @@
     
     </summary>
     
-      <category term="C++" scheme="https://angelni.github.io/categories/C/"/>
+      <category term="Algorithm" scheme="https://angelni.github.io/categories/Algorithm/"/>
     
     
       <category term="C++" scheme="https://angelni.github.io/tags/C/"/>
@@ -371,46 +411,6 @@
     
     
       <category term="Life essay" scheme="https://angelni.github.io/tags/Life-essay/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>仰望，仰望？</title>
-    <link href="https://angelni.github.io/Looking-at-the-stars/"/>
-    <id>https://angelni.github.io/Looking-at-the-stars/</id>
-    <published>2019-08-28T09:41:07.000Z</published>
-    <updated>2019-08-29T03:50:51.552Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Live a good life meet slowly.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Life essay" scheme="https://angelni.github.io/categories/Life-essay/"/>
-    
-    
-      <category term="Life essay" scheme="https://angelni.github.io/tags/Life-essay/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Keras-learn-note(3)</title>
-    <link href="https://angelni.github.io/Keras-note-3/"/>
-    <id>https://angelni.github.io/Keras-note-3/</id>
-    <published>2019-08-21T02:41:36.000Z</published>
-    <updated>2019-08-29T03:49:15.359Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt; May you be faithful to yourself, live earnestly and laugh freel.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Keras-note" scheme="https://angelni.github.io/categories/Keras-note/"/>
-    
-    
-      <category term="Keras-note" scheme="https://angelni.github.io/tags/Keras-note/"/>
     
   </entry>
   
