@@ -6,7 +6,7 @@
   <link href="/AngelNI.github.io/atom.xml" rel="self"/>
   
   <link href="https://angelni.github.io/"/>
-  <updated>2019-10-13T06:59:28.620Z</updated>
+  <updated>2019-10-14T10:57:17.209Z</updated>
   <id>https://angelni.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PC开启上帝模式</title>
+    <link href="https://angelni.github.io/skill/"/>
+    <id>https://angelni.github.io/skill/</id>
+    <published>2019-10-14T10:10:05.000Z</published>
+    <updated>2019-10-14T10:57:17.209Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;不要让一句在等等错过了最好的机遇。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="sharing" scheme="https://angelni.github.io/categories/sharing/"/>
+    
+    
+      <category term="Skill" scheme="https://angelni.github.io/tags/Skill/"/>
+    
+  </entry>
   
   <entry>
     <title>宝塔+Kodcloud搭建个人网盘</title>
@@ -391,26 +411,6 @@
     
     
       <category term="matplotlib" scheme="https://angelni.github.io/tags/matplotlib/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>生活随笔</title>
-    <link href="https://angelni.github.io/Essay/"/>
-    <id>https://angelni.github.io/Essay/</id>
-    <published>2019-08-29T13:54:17.000Z</published>
-    <updated>2019-09-06T14:31:56.098Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;不妨先做出点成绩，然后再去强调你的感受，否则，生命中只有唧唧歪歪，怎么看都是矫情。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Life essay" scheme="https://angelni.github.io/categories/Life-essay/"/>
-    
-    
-      <category term="Life essay" scheme="https://angelni.github.io/tags/Life-essay/"/>
     
   </entry>
   
