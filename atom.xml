@@ -6,7 +6,7 @@
   <link href="/AngelNI.github.io/atom.xml" rel="self"/>
   
   <link href="https://angelni.github.io/"/>
-  <updated>2019-10-16T10:04:45.946Z</updated>
+  <updated>2019-10-16T12:36:30.788Z</updated>
   <id>https://angelni.github.io/</id>
   
   <author>
@@ -17,11 +17,31 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>异构信息网</title>
+    <link href="https://angelni.github.io/HIN/"/>
+    <id>https://angelni.github.io/HIN/</id>
+    <published>2019-10-16T11:14:40.000Z</published>
+    <updated>2019-10-16T12:36:30.788Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;攒下所有梦见你的瞬间，够不够换见你一面。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="AI" scheme="https://angelni.github.io/categories/AI/"/>
+    
+    
+      <category term="HIN" scheme="https://angelni.github.io/tags/HIN/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Markov-Chain</title>
     <link href="https://angelni.github.io/Markov-Chain/"/>
     <id>https://angelni.github.io/Markov-Chain/</id>
     <published>2019-10-16T09:28:03.000Z</published>
-    <updated>2019-10-16T10:04:45.946Z</updated>
+    <updated>2019-10-16T10:06:22.895Z</updated>
     
     <summary type="html">
     
@@ -41,7 +61,7 @@
     <link href="https://angelni.github.io/java/"/>
     <id>https://angelni.github.io/java/</id>
     <published>2019-10-14T14:22:06.000Z</published>
-    <updated>2019-10-16T09:46:27.494Z</updated>
+    <updated>2019-10-16T10:06:22.897Z</updated>
     
     <summary type="html">
     
@@ -386,26 +406,6 @@
     <summary type="html">
     
       &lt;p&gt; 不疯不魔，难以成佛。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Algorithm" scheme="https://angelni.github.io/categories/Algorithm/"/>
-    
-    
-      <category term="Algorithm" scheme="https://angelni.github.io/tags/Algorithm/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>暑假（补）-2</title>
-    <link href="https://angelni.github.io/learn-2/"/>
-    <id>https://angelni.github.io/learn-2/</id>
-    <published>2019-09-11T05:56:29.000Z</published>
-    <updated>2019-09-22T02:55:58.861Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;围在城里的人想逃出来，城外的人想冲进去。–《围城》&lt;/p&gt;
     
     </summary>
     
