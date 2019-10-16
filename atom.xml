@@ -6,7 +6,7 @@
   <link href="/AngelNI.github.io/atom.xml" rel="self"/>
   
   <link href="https://angelni.github.io/"/>
-  <updated>2019-10-14T10:57:17.209Z</updated>
+  <updated>2019-10-16T10:04:45.946Z</updated>
   <id>https://angelni.github.io/</id>
   
   <author>
@@ -17,11 +17,51 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Markov-Chain</title>
+    <link href="https://angelni.github.io/Markov-Chain/"/>
+    <id>https://angelni.github.io/Markov-Chain/</id>
+    <published>2019-10-16T09:28:03.000Z</published>
+    <updated>2019-10-16T10:04:45.946Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;世界让我遍体鳞伤，但伤口长出的却是翅膀。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="AI" scheme="https://angelni.github.io/categories/AI/"/>
+    
+    
+      <category term="Markov Chain" scheme="https://angelni.github.io/tags/Markov-Chain/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello Java</title>
+    <link href="https://angelni.github.io/java/"/>
+    <id>https://angelni.github.io/java/</id>
+    <published>2019-10-14T14:22:06.000Z</published>
+    <updated>2019-10-16T09:46:27.494Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;就想写个A+B，我容易吗。。。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="java" scheme="https://angelni.github.io/categories/java/"/>
+    
+    
+      <category term="java" scheme="https://angelni.github.io/tags/java/"/>
+    
+  </entry>
+  
+  <entry>
     <title>PC开启上帝模式</title>
     <link href="https://angelni.github.io/skill/"/>
     <id>https://angelni.github.io/skill/</id>
     <published>2019-10-14T10:10:05.000Z</published>
-    <updated>2019-10-14T10:57:17.209Z</updated>
+    <updated>2019-10-16T10:05:42.481Z</updated>
     
     <summary type="html">
     
@@ -373,44 +413,6 @@
     
     
       <category term="Algorithm" scheme="https://angelni.github.io/tags/Algorithm/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>暑假（补）-1</title>
-    <link href="https://angelni.github.io/learn-1/"/>
-    <id>https://angelni.github.io/learn-1/</id>
-    <published>2019-09-09T02:23:56.000Z</published>
-    <updated>2019-09-22T02:55:48.029Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;乱花渐欲迷人眼，浅草才能建马蹄。最爱湖东行不足，绿杨阴里白沙堤。自己领会去吧！！！&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Algorithm" scheme="https://angelni.github.io/tags/Algorithm/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>matplotlib 常用图绘制</title>
-    <link href="https://angelni.github.io/matplotlib/"/>
-    <id>https://angelni.github.io/matplotlib/</id>
-    <published>2019-09-06T13:53:59.000Z</published>
-    <updated>2019-09-06T14:23:58.926Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;我的冷漠里藏着一半的害羞，一半的自卑。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="python" scheme="https://angelni.github.io/categories/python/"/>
-    
-    
-      <category term="matplotlib" scheme="https://angelni.github.io/tags/matplotlib/"/>
     
   </entry>
   
