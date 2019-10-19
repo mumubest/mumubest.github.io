@@ -6,7 +6,7 @@
   <link href="/AngelNI.github.io/atom.xml" rel="self"/>
   
   <link href="https://angelni.github.io/"/>
-  <updated>2019-10-16T12:36:30.788Z</updated>
+  <updated>2019-10-19T03:45:25.451Z</updated>
   <id>https://angelni.github.io/</id>
   
   <author>
@@ -17,11 +17,51 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>非递归遍历树</title>
+    <link href="https://angelni.github.io/travel-tree-1/"/>
+    <id>https://angelni.github.io/travel-tree-1/</id>
+    <published>2019-10-19T02:20:50.000Z</published>
+    <updated>2019-10-19T03:45:25.451Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;先序非递归遍历二叉树，中序非递归遍历二叉树，后序非递归遍历二叉树及双栈法。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Data-Structure" scheme="https://angelni.github.io/categories/Data-Structure/"/>
+    
+    
+      <category term="travel-tree" scheme="https://angelni.github.io/tags/travel-tree/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>树——构造遍历二叉树</title>
+    <link href="https://angelni.github.io/travel-tree/"/>
+    <id>https://angelni.github.io/travel-tree/</id>
+    <published>2019-10-18T14:57:50.000Z</published>
+    <updated>2019-10-19T02:21:02.021Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;构造二叉树，遍历二叉树，先序+中序构造二叉树后序遍历，中序+后序构造二叉树先序遍历。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Data-Structure" scheme="https://angelni.github.io/categories/Data-Structure/"/>
+    
+    
+      <category term="travel-tree" scheme="https://angelni.github.io/tags/travel-tree/"/>
+    
+  </entry>
+  
+  <entry>
     <title>异构信息网</title>
     <link href="https://angelni.github.io/HIN/"/>
     <id>https://angelni.github.io/HIN/</id>
     <published>2019-10-16T11:14:40.000Z</published>
-    <updated>2019-10-16T12:36:30.788Z</updated>
+    <updated>2019-10-16T12:37:04.699Z</updated>
     
     <summary type="html">
     
@@ -373,46 +413,6 @@
     
     
       <category term="Linked list" scheme="https://angelni.github.io/tags/Linked-list/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>暑假（补）-4</title>
-    <link href="https://angelni.github.io/learn-4/"/>
-    <id>https://angelni.github.io/learn-4/</id>
-    <published>2019-09-15T10:09:58.000Z</published>
-    <updated>2019-09-22T02:56:09.613Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;想和你一起聊我的秘密，可发现你就是我的秘密。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Algorithm" scheme="https://angelni.github.io/categories/Algorithm/"/>
-    
-    
-      <category term="Algorithm" scheme="https://angelni.github.io/tags/Algorithm/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>暑假（补）-3</title>
-    <link href="https://angelni.github.io/Learn-3/"/>
-    <id>https://angelni.github.io/Learn-3/</id>
-    <published>2019-09-14T02:34:55.000Z</published>
-    <updated>2019-09-22T02:55:29.843Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt; 不疯不魔，难以成佛。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Algorithm" scheme="https://angelni.github.io/categories/Algorithm/"/>
-    
-    
-      <category term="Algorithm" scheme="https://angelni.github.io/tags/Algorithm/"/>
     
   </entry>
   
