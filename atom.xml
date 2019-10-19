@@ -6,7 +6,7 @@
   <link href="/AngelNI.github.io/atom.xml" rel="self"/>
   
   <link href="https://angelni.github.io/"/>
-  <updated>2019-10-19T03:45:56.753Z</updated>
+  <updated>2019-10-19T04:35:28.426Z</updated>
   <id>https://angelni.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>哈夫曼编码</title>
+    <link href="https://angelni.github.io/haffman/"/>
+    <id>https://angelni.github.io/haffman/</id>
+    <published>2019-10-19T04:29:44.000Z</published>
+    <updated>2019-10-19T04:35:28.426Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;我很笨，又笨又傻。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="https://angelni.github.io/categories/Algorithm/"/>
+    
+    
+      <category term="huffman" scheme="https://angelni.github.io/tags/huffman/"/>
+    
+  </entry>
   
   <entry>
     <title>非递归遍历树</title>
@@ -393,26 +413,6 @@
     
     
       <category term="Algorithm" scheme="https://angelni.github.io/tags/Algorithm/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Link list achieve Phone_Contacts</title>
-    <link href="https://angelni.github.io/datastruct-1/"/>
-    <id>https://angelni.github.io/datastruct-1/</id>
-    <published>2019-09-20T12:29:30.000Z</published>
-    <updated>2019-09-20T12:56:18.348Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;你是我听过最美的童话。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Data-Structure" scheme="https://angelni.github.io/categories/Data-Structure/"/>
-    
-    
-      <category term="Linked list" scheme="https://angelni.github.io/tags/Linked-list/"/>
     
   </entry>
   
