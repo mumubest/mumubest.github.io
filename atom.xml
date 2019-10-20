@@ -6,7 +6,7 @@
   <link href="/AngelNI.github.io/atom.xml" rel="self"/>
   
   <link href="https://angelni.github.io/"/>
-  <updated>2019-10-20T07:23:30.631Z</updated>
+  <updated>2019-10-20T07:36:09.716Z</updated>
   <id>https://angelni.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://angelni.github.io/tree-calculate/"/>
     <id>https://angelni.github.io/tree-calculate/</id>
     <published>2019-10-20T07:02:36.000Z</published>
-    <updated>2019-10-20T07:23:30.631Z</updated>
+    <updated>2019-10-20T07:36:09.716Z</updated>
     
     <summary type="html">
     
@@ -29,7 +29,7 @@
     
     </summary>
     
-      <category term="Data-Stucture" scheme="https://angelni.github.io/categories/Data-Stucture/"/>
+      <category term="Data-Structure" scheme="https://angelni.github.io/categories/Data-Structure/"/>
     
     
       <category term="Binary_tree_calculate" scheme="https://angelni.github.io/tags/Binary-tree-calculate/"/>
