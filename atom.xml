@@ -6,7 +6,7 @@
   <link href="/AngelNI.github.io/atom.xml" rel="self"/>
   
   <link href="https://angelni.github.io/"/>
-  <updated>2019-10-24T11:02:54.833Z</updated>
+  <updated>2019-10-26T13:50:15.978Z</updated>
   <id>https://angelni.github.io/</id>
   
   <author>
@@ -17,11 +17,31 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>最短路问题</title>
+    <link href="https://angelni.github.io/minpath/"/>
+    <id>https://angelni.github.io/minpath/</id>
+    <published>2019-10-26T10:11:59.000Z</published>
+    <updated>2019-10-26T13:50:15.978Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;咳咳咳~，我是板子的搬运工。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Data-Structure" scheme="https://angelni.github.io/categories/Data-Structure/"/>
+    
+    
+      <category term="min_path" scheme="https://angelni.github.io/tags/min-path/"/>
+    
+  </entry>
+  
+  <entry>
     <title>暑假（补）-6</title>
     <link href="https://angelni.github.io/priority-queue/"/>
     <id>https://angelni.github.io/priority-queue/</id>
     <published>2019-10-23T09:31:45.000Z</published>
-    <updated>2019-10-24T11:02:54.833Z</updated>
+    <updated>2019-10-24T11:03:48.174Z</updated>
     
     <summary type="html">
     
@@ -393,26 +413,6 @@
     
     
       <category term="termux" scheme="https://angelni.github.io/tags/termux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>git远程操作仓库</title>
-    <link href="https://angelni.github.io/untitled/"/>
-    <id>https://angelni.github.io/untitled/</id>
-    <published>2019-09-26T13:56:06.000Z</published>
-    <updated>2019-10-02T06:47:08.740Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;如果我在勇敢点，结果会不会比想象中的要好。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Git" scheme="https://angelni.github.io/categories/Git/"/>
-    
-    
-      <category term="Git" scheme="https://angelni.github.io/tags/Git/"/>
     
   </entry>
   
