@@ -6,7 +6,7 @@
   <link href="/AngelNI.github.io/atom.xml" rel="self"/>
   
   <link href="https://angelni.github.io/"/>
-  <updated>2019-10-28T09:24:36.038Z</updated>
+  <updated>2019-10-28T09:25:12.990Z</updated>
   <id>https://angelni.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://angelni.github.io/snake-game/"/>
     <id>https://angelni.github.io/snake-game/</id>
     <published>2019-10-28T09:02:56.000Z</published>
-    <updated>2019-10-28T09:24:36.038Z</updated>
+    <updated>2019-10-28T09:25:12.990Z</updated>
     
     <summary type="html">
     
@@ -37,16 +37,22 @@
   </entry>
   
   <entry>
-    <title>sort_1</title>
+    <title>排序算法(初级)</title>
     <link href="https://angelni.github.io/sort-1/"/>
     <id>https://angelni.github.io/sort-1/</id>
     <published>2019-10-27T07:52:19.000Z</published>
-    <updated>2019-10-28T07:02:45.165Z</updated>
+    <updated>2019-10-28T09:46:50.344Z</updated>
     
     <summary type="html">
     
+      &lt;p&gt;冒泡排序，选择排序，计数排序。&lt;/p&gt;
+    
     </summary>
     
+      <category term="Algorithm" scheme="https://angelni.github.io/categories/Algorithm/"/>
+    
+    
+      <category term="sort" scheme="https://angelni.github.io/tags/sort/"/>
     
   </entry>
   

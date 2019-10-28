@@ -5,27 +5,27 @@
 <html lang="en">
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-<title>sort_1 - AngelNI&#39;s Blog</title>
+<title>排序算法(初级) - AngelNI&#39;s Blog</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="google-site-verification" content="JwzmnANXlpmQlhwaSORuqpEB6P3Sr-tRhw4R_XDRcEc">
 <meta name="baidu-site-verification" content="ztPAF2oDcw">
 
 
 
-    <meta name="description" content="This is a simple record of learning bits and pieces, so that each step of learning into an unforgettable memory.">
-<meta name="keywords" content="learning note">
+    <meta name="description" content="冒泡排序，选择排序，计数排序。">
+<meta name="keywords" content="sort">
 <meta property="og:type" content="article">
-<meta property="og:title" content="sort_1">
+<meta property="og:title" content="排序算法(初级)">
 <meta property="og:url" content="https://angelni.github.io/sort-1/index.html">
 <meta property="og:site_name" content="AngelNI&#39;s Blog">
-<meta property="og:description" content="This is a simple record of learning bits and pieces, so that each step of learning into an unforgettable memory.">
+<meta property="og:description" content="冒泡排序，选择排序，计数排序。">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="https://angelni.github.io/AngelNI.github.io/images/og_image.png">
-<meta property="og:updated_time" content="2019-10-28T07:02:45.165Z">
+<meta property="og:image" content="https://s2.ax1x.com/2019/10/28/KcadeA.jpg">
+<meta property="og:updated_time" content="2019-10-28T09:46:50.344Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="sort_1">
-<meta name="twitter:description" content="This is a simple record of learning bits and pieces, so that each step of learning into an unforgettable memory.">
-<meta name="twitter:image" content="https://angelni.github.io/AngelNI.github.io/images/og_image.png">
+<meta name="twitter:title" content="排序算法(初级)">
+<meta name="twitter:description" content="冒泡排序，选择排序，计数排序。">
+<meta name="twitter:image" content="https://s2.ax1x.com/2019/10/28/KcadeA.jpg">
 
 
 
@@ -113,7 +113,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/AngelNI.github.io/">
             
-                <img src="/AngelNI.github.io/images/22.png" alt="sort_1" height="28">
+                <img src="/AngelNI.github.io/images/22.png" alt="排序算法(初级)" height="28">
             
             </a>
         </div>
@@ -162,17 +162,27 @@
             <div class="columns">
                 <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
     
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://s2.ax1x.com/2019/10/28/KcadeA.jpg" alt="排序算法(初级)">
+        </span>
+    </div>
+    
     <div class="card-content article ">
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
                 <time class="level-item has-text-grey" datetime="2019-10-27T07:52:19.000Z">2019-10-27</time>
                 
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/AngelNI.github.io/categories/Algorithm/">Algorithm</a>
+                </div>
+                
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    a few seconds read (About 0 words)
+                    3 minutes read (About 402 words)
                 </span>
                 
                 
@@ -186,11 +196,30 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                sort_1
+                排序算法(初级)
             
         </h1>
         <div class="content">
-            
+            <p>冒泡排序，选择排序，计数排序。<a id="more"></a></p>
+<p>排序一共有十种排序算法，虽然都没有Algorithm的sort简单好用，但多学无害。</p>
+<p>如果你对代码理解起来比较难，你可以参考这篇博文，介绍了十种排序算法排序的动画演示GIF.<a href="https://uppez.github.io/2019/10/21/%E6%8E%92%E5%BA%8F%E5%8A%A8%E7%94%BB%E6%BC%94%E7%A4%BA/" target="_blank" rel="noopener">排序动画演示</a></p>
+<p>下面就看是介绍比较简单的三种排序算法，分别是冒泡排序，选择排序（C语言书上有的），计数排序，话不多说，上代码。</p>
+<h1 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h1><figure class="highlight c++ hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;iostream&gt; </span></span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;time.h&gt;</span></span></span><br><span class="line"><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;</span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">getarray</span><span class="hljs-params">(<span class="hljs-keyword">int</span> *a,<span class="hljs-keyword">int</span> n)</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">	<span class="hljs-comment">//unsigned sr = time(NULL);</span></span><br><span class="line">	<span class="hljs-keyword">int</span> t=<span class="hljs-number">1000</span>; srand(time(<span class="hljs-literal">NULL</span>));</span><br><span class="line">	<span class="hljs-keyword">while</span>(t&lt;<span class="hljs-number">1</span>||t&gt;<span class="hljs-number">100</span>) </span><br><span class="line">	&#123;</span><br><span class="line">		<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">0</span>;i&lt;n;++i)</span><br><span class="line">		&#123;</span><br><span class="line"> 			t=rand()%<span class="hljs-number">100</span>;</span><br><span class="line"> 			a[i] = t;</span><br><span class="line">		&#125;	</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-string">"Random array is: "</span>&lt;&lt;<span class="hljs-built_in">endl</span>;</span><br><span class="line">	<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i =<span class="hljs-number">0</span>;i&lt;n;++i)	</span><br><span class="line">		<span class="hljs-built_in">cout</span>&lt;&lt;a[i]&lt;&lt;<span class="hljs-string">" "</span>;</span><br><span class="line">	<span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-built_in">endl</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">bubble_sort</span><span class="hljs-params">(<span class="hljs-keyword">int</span> *a, <span class="hljs-keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">	<span class="hljs-keyword">int</span> t;</span><br><span class="line">	<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i =<span class="hljs-number">1</span>;i&lt;=n<span class="hljs-number">-1</span>;++i)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> j =<span class="hljs-number">0</span>;j&lt;=n-i<span class="hljs-number">-1</span>;++j)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="hljs-keyword">if</span>(a[j]&gt;a[j+<span class="hljs-number">1</span>])</span><br><span class="line">			&#123;</span><br><span class="line">				t = a[j];</span><br><span class="line">				a[j] = a[j+<span class="hljs-number">1</span>];</span><br><span class="line">				a[j+<span class="hljs-number">1</span>] = t; </span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">	<span class="hljs-keyword">int</span> a[<span class="hljs-number">50</span>];</span><br><span class="line">	<span class="hljs-keyword">int</span> t,n;</span><br><span class="line">	<span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-string">"请输入要排序的数量：\n"</span>;</span><br><span class="line">	<span class="hljs-built_in">cin</span>&gt;&gt;n;</span><br><span class="line">	getarray(a,n);</span><br><span class="line">	bubble_sort(a, n); </span><br><span class="line">	<span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-string">"排序后的结果为:"</span>&lt;&lt;<span class="hljs-built_in">endl</span>;</span><br><span class="line">	<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i =<span class="hljs-number">0</span>;i&lt;n;++i)	</span><br><span class="line">		<span class="hljs-built_in">cout</span>&lt;&lt;a[i]&lt;&lt;<span class="hljs-string">" "</span>;</span><br><span class="line">	<span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-built_in">endl</span>;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="选择排序"><a href="#选择排序" class="headerlink" title="选择排序"></a>选择排序</h1><figure class="highlight c++ hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;time.h&gt;</span></span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;</span><br><span class="line"><span class="hljs-keyword">int</span> a[<span class="hljs-number">1000</span>];</span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">getarray</span><span class="hljs-params">(<span class="hljs-keyword">int</span> *a,<span class="hljs-keyword">int</span> n)</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">	<span class="hljs-comment">//unsigned sr = time(NULL);</span></span><br><span class="line">	<span class="hljs-keyword">int</span> t=<span class="hljs-number">1000</span>; srand(time(<span class="hljs-literal">NULL</span>));</span><br><span class="line">	<span class="hljs-keyword">while</span>(t&lt;<span class="hljs-number">1</span>||t&gt;<span class="hljs-number">100</span>) </span><br><span class="line">	&#123;</span><br><span class="line">		<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">0</span>;i&lt;n;++i)</span><br><span class="line">		&#123;</span><br><span class="line"> 			t=rand()%<span class="hljs-number">100</span>;</span><br><span class="line"> 			a[i] = t;</span><br><span class="line">		&#125;	</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-string">"Random array is: "</span>&lt;&lt;<span class="hljs-built_in">endl</span>;</span><br><span class="line">	<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i =<span class="hljs-number">0</span>;i&lt;n;++i)	</span><br><span class="line">		<span class="hljs-built_in">cout</span>&lt;&lt;a[i]&lt;&lt;<span class="hljs-string">" "</span>;</span><br><span class="line">	<span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-built_in">endl</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="hljs-comment">//默认从大到小 </span></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">select_sort</span><span class="hljs-params">(<span class="hljs-keyword">int</span> *a,<span class="hljs-keyword">int</span> n)</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">	<span class="hljs-keyword">int</span> i ,j,k,t;</span><br><span class="line">	<span class="hljs-keyword">for</span>(i =<span class="hljs-number">0</span>;i&lt;n<span class="hljs-number">-1</span>;++i)</span><br><span class="line">	&#123;</span><br><span class="line">		k = i;</span><br><span class="line">		<span class="hljs-keyword">for</span>(j = i+<span class="hljs-number">1</span>;j&lt;n;++j)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="hljs-keyword">if</span>(a[j]&gt;a[k])</span><br><span class="line">			&#123;</span><br><span class="line">				k = j;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="hljs-keyword">if</span>(k!=i)</span><br><span class="line">		&#123;</span><br><span class="line">			t = a[k];</span><br><span class="line">			a[k] = a[i];</span><br><span class="line">			a[i] = t;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">&#125;</span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">	<span class="hljs-keyword">int</span> n;</span><br><span class="line">	<span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-string">"请输入数量"</span>&lt;&lt;<span class="hljs-built_in">endl</span>;</span><br><span class="line">	<span class="hljs-keyword">while</span>(<span class="hljs-built_in">cin</span>&gt;&gt;n)</span><br><span class="line">	&#123;</span><br><span class="line">		getarray(a,n);</span><br><span class="line">		select_sort(a,n);</span><br><span class="line">		<span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-string">"排序结果为：\n"</span>;</span><br><span class="line">		<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i =<span class="hljs-number">0</span>;i&lt;n;++i)</span><br><span class="line">			<span class="hljs-built_in">cout</span>&lt;&lt;a[i]&lt;&lt;<span class="hljs-string">" "</span>;</span><br><span class="line">		<span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-built_in">endl</span>; </span><br><span class="line">		<span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-string">"请输入数量"</span>&lt;&lt;<span class="hljs-built_in">endl</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="计数排序"><a href="#计数排序" class="headerlink" title="计数排序"></a>计数排序</h1><figure class="highlight c++ hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;time.h&gt;</span></span></span><br><span class="line"><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;</span><br><span class="line"><span class="hljs-comment">//bilibili</span></span><br><span class="line"><span class="hljs-comment">//https://www.bilibili.com/video/av54557540/?spm_id_from=333.788.videocard.1</span></span><br><span class="line"><span class="hljs-keyword">int</span> a[<span class="hljs-number">10000</span>]; </span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">getarray</span><span class="hljs-params">(<span class="hljs-keyword">int</span> *a,<span class="hljs-keyword">int</span> n)</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">	<span class="hljs-comment">//unsigned sr = time(NULL);</span></span><br><span class="line">	<span class="hljs-keyword">int</span> t=<span class="hljs-number">1000</span>; srand(time(<span class="hljs-literal">NULL</span>));</span><br><span class="line">	<span class="hljs-keyword">while</span>(t&lt;<span class="hljs-number">1</span>||t&gt;<span class="hljs-number">100</span>) </span><br><span class="line">	&#123;</span><br><span class="line">		<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">0</span>;i&lt;n;++i)</span><br><span class="line">		&#123;</span><br><span class="line"> 			t=rand()%<span class="hljs-number">100</span>;</span><br><span class="line"> 			a[i] = t;</span><br><span class="line">		&#125;	</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-string">"Random array is: "</span>&lt;&lt;<span class="hljs-built_in">endl</span>;</span><br><span class="line">	<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i =<span class="hljs-number">0</span>;i&lt;n;++i)	</span><br><span class="line">		<span class="hljs-built_in">cout</span>&lt;&lt;a[i]&lt;&lt;<span class="hljs-string">" "</span>;</span><br><span class="line">	<span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-built_in">endl</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">countsort</span><span class="hljs-params">(<span class="hljs-keyword">int</span> *A,<span class="hljs-keyword">int</span> *Aux,<span class="hljs-keyword">int</span> *sortedA,<span class="hljs-keyword">int</span> n)</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">	<span class="hljs-keyword">int</span> k =<span class="hljs-number">0</span>;</span><br><span class="line">	<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">0</span>;i&lt;n;++i)</span><br><span class="line">	&#123;</span><br><span class="line">		k = max(k,A[i]);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">0</span>;i&lt;k;++i)</span><br><span class="line">	&#123;</span><br><span class="line">		Aux[i] = <span class="hljs-number">0</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">0</span>;i&lt;n;++i)</span><br><span class="line">	&#123;</span><br><span class="line">		Aux[A[i]]++;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="hljs-keyword">int</span> j =<span class="hljs-number">0</span>;</span><br><span class="line">	<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">0</span>;i&lt;=k;++i)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="hljs-keyword">int</span> t = Aux[i];</span><br><span class="line">		<span class="hljs-keyword">while</span>(t--)</span><br><span class="line">		&#123;</span><br><span class="line">			sortedA[j] = i;</span><br><span class="line">			j++;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">	<span class="hljs-keyword">int</span> n;</span><br><span class="line">	<span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-string">"请输入数量"</span>&lt;&lt;<span class="hljs-built_in">endl</span>;</span><br><span class="line">	<span class="hljs-keyword">while</span>(<span class="hljs-built_in">cin</span>&gt;&gt;n)</span><br><span class="line">	&#123;</span><br><span class="line">		getarray(a,n);</span><br><span class="line">		<span class="hljs-keyword">int</span> b[<span class="hljs-number">10000</span>],c[<span class="hljs-number">1000</span>];</span><br><span class="line">		countsort(a,b,c,n);</span><br><span class="line">		<span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-string">"排序结果为：\n"</span>;</span><br><span class="line">		<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i =<span class="hljs-number">0</span>;i&lt;n;++i)</span><br><span class="line">			<span class="hljs-built_in">cout</span>&lt;&lt;c[i]&lt;&lt;<span class="hljs-string">" "</span>;</span><br><span class="line">		<span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-built_in">endl</span>; </span><br><span class="line">		<span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-string">"请输入数量"</span>&lt;&lt;<span class="hljs-built_in">endl</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/AngelNI.github.io/tags/sort/">sort</a>
+                </div>
+            </div>
         </div>
         
         
@@ -339,7 +368,7 @@
                         Tags
                     </p>
                     <p class="title has-text-weight-normal">
-                        42
+                        43
                     </p>
                 </div>
             </div>
@@ -626,7 +655,7 @@
                 <span class="level-item">Algorithm</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">16</span>
+                <span class="level-item tag">17</span>
             </span>
         </a></li><li>
         <a class="level is-marginless" href="/AngelNI.github.io/categories/C/">
@@ -784,7 +813,7 @@
         <h3 class="menu-label">
             Tag Cloud
         </h3>
-        <a href="/AngelNI.github.io/tags/Life-essay/" style="font-size: 21px; color: #eb0033">Life essay</a> <a href="/AngelNI.github.io/tags/literature/" style="font-size: 17px; color: #c20099">literature</a> <a href="/AngelNI.github.io/tags/Algorithm/" style="font-size: 23px; color: #f00">Algorithm</a> <a href="/AngelNI.github.io/tags/Game/" style="font-size: 19px; color: #d60066">Game</a> <a href="/AngelNI.github.io/tags/HIN/" style="font-size: 13px; color: #90f">HIN</a> <a href="/AngelNI.github.io/tags/Gradient-Descent/" style="font-size: 13px; color: #90f">Gradient Descent</a> <a href="/AngelNI.github.io/tags/Learing/" style="font-size: 13px; color: #90f">Learing</a> <a href="/AngelNI.github.io/tags/AI/" style="font-size: 15px; color: #ad00cc">AI</a> <a href="/AngelNI.github.io/tags/KNN/" style="font-size: 15px; color: #ad00cc">KNN</a> <a href="/AngelNI.github.io/tags/Keras-note/" style="font-size: 17px; color: #c20099">Keras-note</a> <a href="/AngelNI.github.io/tags/C/" style="font-size: 19px; color: #d60066">C++</a> <a href="/AngelNI.github.io/tags/sharing/" style="font-size: 13px; color: #90f">sharing</a> <a href="/AngelNI.github.io/tags/K-means/" style="font-size: 13px; color: #90f">K-means</a> <a href="/AngelNI.github.io/tags/Makedown/" style="font-size: 13px; color: #90f">Makedown</a> <a href="/AngelNI.github.io/tags/MC/" style="font-size: 13px; color: #90f">MC</a> <a href="/AngelNI.github.io/tags/MF/" style="font-size: 13px; color: #90f">MF</a> <a href="/AngelNI.github.io/tags/recommend/" style="font-size: 13px; color: #90f">recommend</a> <a href="/AngelNI.github.io/tags/python/" style="font-size: 15px; color: #ad00cc">python</a> <a href="/AngelNI.github.io/tags/Machine-learn/" style="font-size: 13px; color: #90f">Machine-learn</a> <a href="/AngelNI.github.io/tags/Markov-Chain/" style="font-size: 13px; color: #90f">Markov Chain</a> <a href="/AngelNI.github.io/tags/python-command/" style="font-size: 13px; color: #90f">python command</a> <a href="/AngelNI.github.io/tags/stack/" style="font-size: 13px; color: #90f">stack</a> <a href="/AngelNI.github.io/tags/huffman/" style="font-size: 13px; color: #90f">huffman</a> <a href="/AngelNI.github.io/tags/hexo-github/" style="font-size: 13px; color: #90f">hexo+github</a> <a href="/AngelNI.github.io/tags/java/" style="font-size: 13px; color: #90f">java</a> <a href="/AngelNI.github.io/tags/Kodcloud/" style="font-size: 13px; color: #90f">Kodcloud</a> <a href="/AngelNI.github.io/tags/CDN/" style="font-size: 13px; color: #90f">CDN</a> <a href="/AngelNI.github.io/tags/Linked-list/" style="font-size: 13px; color: #90f">Linked list</a> <a href="/AngelNI.github.io/tags/Ubutu/" style="font-size: 13px; color: #90f">Ubutu</a> <a href="/AngelNI.github.io/tags/min-path/" style="font-size: 13px; color: #90f">min_path</a> <a href="/AngelNI.github.io/tags/priority-queue/" style="font-size: 13px; color: #90f">priority_queue</a> <a href="/AngelNI.github.io/tags/Skill/" style="font-size: 13px; color: #90f">Skill</a> <a href="/AngelNI.github.io/tags/serve/" style="font-size: 13px; color: #90f">serve</a> <a href="/AngelNI.github.io/tags/snake-game/" style="font-size: 13px; color: #90f">snake_game</a> <a href="/AngelNI.github.io/tags/termux/" style="font-size: 13px; color: #90f">termux</a> <a href="/AngelNI.github.io/tags/Linux/" style="font-size: 13px; color: #90f">Linux</a> <a href="/AngelNI.github.io/tags/matplotlib/" style="font-size: 13px; color: #90f">matplotlib</a> <a href="/AngelNI.github.io/tags/travel-tree/" style="font-size: 15px; color: #ad00cc">travel-tree</a> <a href="/AngelNI.github.io/tags/Git/" style="font-size: 13px; color: #90f">Git</a> <a href="/AngelNI.github.io/tags/Binary-tree-calculate/" style="font-size: 13px; color: #90f">Binary_tree_calculate</a> <a href="/AngelNI.github.io/tags/NN/" style="font-size: 17px; color: #c20099">NN</a> <a href="/AngelNI.github.io/tags/ubuntu/" style="font-size: 13px; color: #90f">ubuntu</a>
+        <a href="/AngelNI.github.io/tags/Life-essay/" style="font-size: 21px; color: #eb0033">Life essay</a> <a href="/AngelNI.github.io/tags/literature/" style="font-size: 17px; color: #c20099">literature</a> <a href="/AngelNI.github.io/tags/C/" style="font-size: 19px; color: #d60066">C++</a> <a href="/AngelNI.github.io/tags/Algorithm/" style="font-size: 23px; color: #f00">Algorithm</a> <a href="/AngelNI.github.io/tags/AI/" style="font-size: 15px; color: #ad00cc">AI</a> <a href="/AngelNI.github.io/tags/Game/" style="font-size: 19px; color: #d60066">Game</a> <a href="/AngelNI.github.io/tags/Gradient-Descent/" style="font-size: 13px; color: #90f">Gradient Descent</a> <a href="/AngelNI.github.io/tags/HIN/" style="font-size: 13px; color: #90f">HIN</a> <a href="/AngelNI.github.io/tags/Learing/" style="font-size: 13px; color: #90f">Learing</a> <a href="/AngelNI.github.io/tags/K-means/" style="font-size: 13px; color: #90f">K-means</a> <a href="/AngelNI.github.io/tags/KNN/" style="font-size: 15px; color: #ad00cc">KNN</a> <a href="/AngelNI.github.io/tags/Keras-note/" style="font-size: 17px; color: #c20099">Keras-note</a> <a href="/AngelNI.github.io/tags/sharing/" style="font-size: 13px; color: #90f">sharing</a> <a href="/AngelNI.github.io/tags/MF/" style="font-size: 13px; color: #90f">MF</a> <a href="/AngelNI.github.io/tags/Makedown/" style="font-size: 13px; color: #90f">Makedown</a> <a href="/AngelNI.github.io/tags/Markov-Chain/" style="font-size: 13px; color: #90f">Markov Chain</a> <a href="/AngelNI.github.io/tags/MC/" style="font-size: 13px; color: #90f">MC</a> <a href="/AngelNI.github.io/tags/recommend/" style="font-size: 13px; color: #90f">recommend</a> <a href="/AngelNI.github.io/tags/python-command/" style="font-size: 13px; color: #90f">python command</a> <a href="/AngelNI.github.io/tags/python/" style="font-size: 15px; color: #ad00cc">python</a> <a href="/AngelNI.github.io/tags/Ubutu/" style="font-size: 13px; color: #90f">Ubutu</a> <a href="/AngelNI.github.io/tags/Machine-learn/" style="font-size: 13px; color: #90f">Machine-learn</a> <a href="/AngelNI.github.io/tags/Linked-list/" style="font-size: 13px; color: #90f">Linked list</a> <a href="/AngelNI.github.io/tags/stack/" style="font-size: 13px; color: #90f">stack</a> <a href="/AngelNI.github.io/tags/huffman/" style="font-size: 13px; color: #90f">huffman</a> <a href="/AngelNI.github.io/tags/hexo-github/" style="font-size: 13px; color: #90f">hexo+github</a> <a href="/AngelNI.github.io/tags/java/" style="font-size: 13px; color: #90f">java</a> <a href="/AngelNI.github.io/tags/CDN/" style="font-size: 13px; color: #90f">CDN</a> <a href="/AngelNI.github.io/tags/Kodcloud/" style="font-size: 13px; color: #90f">Kodcloud</a> <a href="/AngelNI.github.io/tags/Linux/" style="font-size: 13px; color: #90f">Linux</a> <a href="/AngelNI.github.io/tags/matplotlib/" style="font-size: 13px; color: #90f">matplotlib</a> <a href="/AngelNI.github.io/tags/priority-queue/" style="font-size: 13px; color: #90f">priority_queue</a> <a href="/AngelNI.github.io/tags/min-path/" style="font-size: 13px; color: #90f">min_path</a> <a href="/AngelNI.github.io/tags/serve/" style="font-size: 13px; color: #90f">serve</a> <a href="/AngelNI.github.io/tags/Skill/" style="font-size: 13px; color: #90f">Skill</a> <a href="/AngelNI.github.io/tags/snake-game/" style="font-size: 13px; color: #90f">snake_game</a> <a href="/AngelNI.github.io/tags/sort/" style="font-size: 13px; color: #90f">sort</a> <a href="/AngelNI.github.io/tags/termux/" style="font-size: 13px; color: #90f">termux</a> <a href="/AngelNI.github.io/tags/travel-tree/" style="font-size: 15px; color: #ad00cc">travel-tree</a> <a href="/AngelNI.github.io/tags/Binary-tree-calculate/" style="font-size: 13px; color: #90f">Binary_tree_calculate</a> <a href="/AngelNI.github.io/tags/Git/" style="font-size: 13px; color: #90f">Git</a> <a href="/AngelNI.github.io/tags/ubuntu/" style="font-size: 13px; color: #90f">ubuntu</a> <a href="/AngelNI.github.io/tags/NN/" style="font-size: 17px; color: #c20099">NN</a>
     </div>
 </div>
 
@@ -822,16 +851,16 @@
             
             <a href="/AngelNI.github.io/sort-1/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/AngelNI.github.io/images/thumbnail.svg" alt="sort_1">
+                    <img class="thumbnail" src="https://s2.ax1x.com/2019/10/28/KcadeA.jpg" alt="排序算法(初级)">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-27T07:52:19.000Z">2019-10-27</time></div>
-                    <a href="/AngelNI.github.io/sort-1/" class="has-link-black-ter is-size-6">sort_1</a>
+                    <a href="/AngelNI.github.io/sort-1/" class="has-link-black-ter is-size-6">排序算法(初级)</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/AngelNI.github.io/categories/Algorithm/">Algorithm</a>
                     </p>
                 </div>
             </div>
@@ -1236,6 +1265,13 @@
                 <div class="control">
                     <a class="tags has-addons" href="/AngelNI.github.io/tags/snake-game/">
                         <span class="tag">snake_game</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/AngelNI.github.io/tags/sort/">
+                        <span class="tag">sort</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>
@@ -1314,16 +1350,16 @@
             
             <a href="/AngelNI.github.io/sort-1/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/AngelNI.github.io/images/thumbnail.svg" alt="sort_1">
+                    <img class="thumbnail" src="https://s2.ax1x.com/2019/10/28/KcadeA.jpg" alt="排序算法(初级)">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-27T07:52:19.000Z">2019-10-27</time></div>
-                    <a href="/AngelNI.github.io/sort-1/" class="has-link-black-ter is-size-6">sort_1</a>
+                    <a href="/AngelNI.github.io/sort-1/" class="has-link-black-ter is-size-6">排序算法(初级)</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/AngelNI.github.io/categories/Algorithm/">Algorithm</a>
                     </p>
                 </div>
             </div>
@@ -1733,6 +1769,13 @@
                 </div>
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/AngelNI.github.io/tags/sort/">
+                        <span class="tag">sort</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/AngelNI.github.io/tags/stack/">
                         <span class="tag">stack</span>
                         <span class="tag is-grey">1</span>
@@ -1777,7 +1820,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/AngelNI.github.io/">
                 
-                    <img src="/AngelNI.github.io/images/22.png" alt="sort_1" height="28">
+                    <img src="/AngelNI.github.io/images/22.png" alt="排序算法(初级)" height="28">
                 
                 </a>
                 <p class="is-size-7">
