@@ -6,7 +6,7 @@
   <link href="/AngelNI.github.io/atom.xml" rel="self"/>
   
   <link href="https://angelni.github.io/"/>
-  <updated>2019-10-26T14:02:50.281Z</updated>
+  <updated>2019-10-27T07:52:19.526Z</updated>
   <id>https://angelni.github.io/</id>
   
   <author>
@@ -17,11 +17,25 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>sort_1</title>
+    <link href="https://angelni.github.io/sort-1/"/>
+    <id>https://angelni.github.io/sort-1/</id>
+    <published>2019-10-27T07:52:19.000Z</published>
+    <updated>2019-10-27T07:52:19.526Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>最短路问题</title>
     <link href="https://angelni.github.io/minpath/"/>
     <id>https://angelni.github.io/minpath/</id>
     <published>2019-10-26T10:11:59.000Z</published>
-    <updated>2019-10-26T14:02:50.281Z</updated>
+    <updated>2019-10-27T07:51:10.951Z</updated>
     
     <summary type="html">
     
@@ -393,26 +407,6 @@
     
     
       <category term="MC" scheme="https://angelni.github.io/tags/MC/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>termux</title>
-    <link href="https://angelni.github.io/termux/"/>
-    <id>https://angelni.github.io/termux/</id>
-    <published>2019-10-06T12:42:33.000Z</published>
-    <updated>2019-10-06T14:09:54.501Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;快到我的碗里来，不，是怀里。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="sharing" scheme="https://angelni.github.io/categories/sharing/"/>
-    
-    
-      <category term="termux" scheme="https://angelni.github.io/tags/termux/"/>
     
   </entry>
   
