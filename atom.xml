@@ -6,7 +6,7 @@
   <link href="/AngelNI.github.io/atom.xml" rel="self"/>
   
   <link href="https://angelni.github.io/"/>
-  <updated>2019-10-28T07:02:45.165Z</updated>
+  <updated>2019-10-28T09:24:36.038Z</updated>
   <id>https://angelni.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>python实现贪吃蛇小游戏</title>
+    <link href="https://angelni.github.io/snake-game/"/>
+    <id>https://angelni.github.io/snake-game/</id>
+    <published>2019-10-28T09:02:56.000Z</published>
+    <updated>2019-10-28T09:24:36.038Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;一起来玩游戏？&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="python" scheme="https://angelni.github.io/categories/python/"/>
+    
+    
+      <category term="snake_game" scheme="https://angelni.github.io/tags/snake-game/"/>
+    
+  </entry>
   
   <entry>
     <title>sort_1</title>
@@ -387,26 +407,6 @@
     
     
       <category term="CDN" scheme="https://angelni.github.io/tags/CDN/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>My-World</title>
-    <link href="https://angelni.github.io/My-World/"/>
-    <id>https://angelni.github.io/My-World/</id>
-    <published>2019-10-06T13:13:38.000Z</published>
-    <updated>2019-10-06T14:38:50.939Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;我叫MC~~&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Game" scheme="https://angelni.github.io/categories/Game/"/>
-    
-    
-      <category term="MC" scheme="https://angelni.github.io/tags/MC/"/>
     
   </entry>
   
