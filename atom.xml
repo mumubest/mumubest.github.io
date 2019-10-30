@@ -6,7 +6,7 @@
   <link href="/AngelNI.github.io/atom.xml" rel="self"/>
   
   <link href="https://angelni.github.io/"/>
-  <updated>2019-10-28T09:25:12.990Z</updated>
+  <updated>2019-10-30T10:14:17.397Z</updated>
   <id>https://angelni.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>暑假（补） -6</title>
+    <link href="https://angelni.github.io/DSU/"/>
+    <id>https://angelni.github.io/DSU/</id>
+    <published>2019-10-30T09:45:19.000Z</published>
+    <updated>2019-10-30T10:14:17.397Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;期待已久的并查集如期到来。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="https://angelni.github.io/categories/Algorithm/"/>
+    
+    
+      <category term="DSU" scheme="https://angelni.github.io/tags/DSU/"/>
+    
+  </entry>
   
   <entry>
     <title>python实现贪吃蛇小游戏</title>
@@ -393,26 +413,6 @@
     
     
       <category term="stack" scheme="https://angelni.github.io/tags/stack/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>jsDelivr+Github建立免费CDN</title>
-    <link href="https://angelni.github.io/jsDelivr-Github/"/>
-    <id>https://angelni.github.io/jsDelivr-Github/</id>
-    <published>2019-10-06T13:15:29.000Z</published>
-    <updated>2019-10-06T14:09:54.502Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;我喜欢你。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="jsDelivr+Github" scheme="https://angelni.github.io/categories/jsDelivr-Github/"/>
-    
-    
-      <category term="CDN" scheme="https://angelni.github.io/tags/CDN/"/>
     
   </entry>
   
