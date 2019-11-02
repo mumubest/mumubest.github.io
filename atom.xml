@@ -6,7 +6,7 @@
   <link href="/AngelNI.github.io/atom.xml" rel="self"/>
   
   <link href="https://angelni.github.io/"/>
-  <updated>2019-10-30T10:28:28.494Z</updated>
+  <updated>2019-11-02T00:58:41.730Z</updated>
   <id>https://angelni.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>critical-path</title>
+    <link href="https://angelni.github.io/critical-path/"/>
+    <id>https://angelni.github.io/critical-path/</id>
+    <published>2019-11-01T23:47:32.000Z</published>
+    <updated>2019-11-02T00:58:41.730Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;褪去一切繁华，虚无的外表，不知你还有多少真。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="https://angelni.github.io/categories/Algorithm/"/>
+    
+    
+      <category term="critical-path" scheme="https://angelni.github.io/tags/critical-path/"/>
+    
+  </entry>
   
   <entry>
     <title>暑假（补） -7</title>
@@ -393,26 +413,6 @@
     
     
       <category term="ubuntu" scheme="https://angelni.github.io/tags/ubuntu/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>双栈实现计算器</title>
-    <link href="https://angelni.github.io/data-structure/"/>
-    <id>https://angelni.github.io/data-structure/</id>
-    <published>2019-10-07T12:26:36.000Z</published>
-    <updated>2019-10-07T12:36:21.708Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;愿我们能与最好的自己相遇。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Data-Structure" scheme="https://angelni.github.io/categories/Data-Structure/"/>
-    
-    
-      <category term="stack" scheme="https://angelni.github.io/tags/stack/"/>
     
   </entry>
   
