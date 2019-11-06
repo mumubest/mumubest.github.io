@@ -6,7 +6,7 @@
   <link href="/AngelNI.github.io/atom.xml" rel="self"/>
   
   <link href="https://angelni.github.io/"/>
-  <updated>2019-11-02T01:01:58.181Z</updated>
+  <updated>2019-11-06T09:41:23.849Z</updated>
   <id>https://angelni.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>RKGE_论文阅读笔记</title>
+    <link href="https://angelni.github.io/RKGE/"/>
+    <id>https://angelni.github.io/RKGE/</id>
+    <published>2019-11-06T04:33:04.000Z</published>
+    <updated>2019-11-06T09:41:23.849Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;while(1) {   cout&amp;lt;&amp;lt;”Never Give Up”&amp;lt;&amp;lt;endl;   }&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="AI" scheme="https://angelni.github.io/categories/AI/"/>
+    
+    
+      <category term="RKGE" scheme="https://angelni.github.io/tags/RKGE/"/>
+    
+  </entry>
   
   <entry>
     <title>关键路径</title>
@@ -393,26 +413,6 @@
     
     
       <category term="Linux" scheme="https://angelni.github.io/tags/Linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Ubuntu_基础应用篇</title>
-    <link href="https://angelni.github.io/ubuntu-beauty/"/>
-    <id>https://angelni.github.io/ubuntu-beauty/</id>
-    <published>2019-10-08T03:26:57.000Z</published>
-    <updated>2019-10-08T03:56:18.411Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;【转载】分享给那些喜欢Linux ，喜欢Ubuntu的小伙伴。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Ubuntu" scheme="https://angelni.github.io/categories/Ubuntu/"/>
-    
-    
-      <category term="ubuntu" scheme="https://angelni.github.io/tags/ubuntu/"/>
     
   </entry>
   
