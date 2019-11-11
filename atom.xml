@@ -6,7 +6,7 @@
   <link href="/AngelNI.github.io/atom.xml" rel="self"/>
   
   <link href="https://angelni.github.io/"/>
-  <updated>2019-11-06T10:05:02.132Z</updated>
+  <updated>2019-11-11T09:07:20.462Z</updated>
   <id>https://angelni.github.io/</id>
   
   <author>
@@ -17,11 +17,31 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>周练19.11.03/10</title>
+    <link href="https://angelni.github.io/1/"/>
+    <id>https://angelni.github.io/1/</id>
+    <published>2019-11-11T08:28:07.000Z</published>
+    <updated>2019-11-11T09:07:20.462Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;花于无声处绽放最美，人于宁静中沉淀愈浓。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="https://angelni.github.io/categories/Algorithm/"/>
+    
+    
+      <category term="Algorithm" scheme="https://angelni.github.io/tags/Algorithm/"/>
+    
+  </entry>
+  
+  <entry>
     <title>RKGE_论文阅读笔记</title>
     <link href="https://angelni.github.io/RKGE/"/>
     <id>https://angelni.github.io/RKGE/</id>
     <published>2019-11-06T04:33:04.000Z</published>
-    <updated>2019-11-06T10:05:02.132Z</updated>
+    <updated>2019-11-06T10:06:39.138Z</updated>
     
     <summary type="html">
     
@@ -393,26 +413,6 @@
     
     
       <category term="Life essay" scheme="https://angelni.github.io/tags/Life-essay/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Linux 操作命令总结</title>
-    <link href="https://angelni.github.io/linux-1/"/>
-    <id>https://angelni.github.io/linux-1/</id>
-    <published>2019-10-09T06:55:21.000Z</published>
-    <updated>2019-10-09T08:17:55.161Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;前进的时候千万不要忘记自我反思 ，它会让你走的更远。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Linux" scheme="https://angelni.github.io/categories/Linux/"/>
-    
-    
-      <category term="Linux" scheme="https://angelni.github.io/tags/Linux/"/>
     
   </entry>
   
