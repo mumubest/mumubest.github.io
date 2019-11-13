@@ -6,7 +6,7 @@
   <link href="/AngelNI.github.io/atom.xml" rel="self"/>
   
   <link href="https://angelni.github.io/"/>
-  <updated>2019-11-11T09:08:01.459Z</updated>
+  <updated>2019-11-13T14:12:42.019Z</updated>
   <id>https://angelni.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>查找（上）</title>
+    <link href="https://angelni.github.io/find-1/"/>
+    <id>https://angelni.github.io/find-1/</id>
+    <published>2019-11-13T13:39:25.000Z</published>
+    <updated>2019-11-13T14:12:42.019Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;我该如何是好~&lt;/p&gt;
+&lt;p&gt;插入查找？斐波那契查找？&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="https://angelni.github.io/categories/Algorithm/"/>
+    
+    
+      <category term="Find" scheme="https://angelni.github.io/tags/Find/"/>
+    
+  </entry>
   
   <entry>
     <title>周练19.11.03/10</title>
@@ -393,26 +414,6 @@
     
     
       <category term="C++" scheme="https://angelni.github.io/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>生活随笔</title>
-    <link href="https://angelni.github.io/life-essay/"/>
-    <id>https://angelni.github.io/life-essay/</id>
-    <published>2019-10-10T22:54:12.000Z</published>
-    <updated>2019-10-10T23:16:35.155Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;这是你自己的选择，别谢我。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Life essay" scheme="https://angelni.github.io/categories/Life-essay/"/>
-    
-    
-      <category term="Life essay" scheme="https://angelni.github.io/tags/Life-essay/"/>
     
   </entry>
   
