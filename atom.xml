@@ -6,7 +6,7 @@
   <link href="/AngelNI.github.io/atom.xml" rel="self"/>
   
   <link href="https://angelni.github.io/"/>
-  <updated>2019-11-13T14:13:10.147Z</updated>
+  <updated>2019-11-13T14:41:01.128Z</updated>
   <id>https://angelni.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>查找（下）</title>
+    <link href="https://angelni.github.io/Find-2/"/>
+    <id>https://angelni.github.io/Find-2/</id>
+    <published>2019-11-13T14:17:15.000Z</published>
+    <updated>2019-11-13T14:41:01.128Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;可倒一定连续，连续不一定可倒&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="https://angelni.github.io/categories/Algorithm/"/>
+    
+    
+      <category term="Find" scheme="https://angelni.github.io/tags/Find/"/>
+    
+  </entry>
   
   <entry>
     <title>查找（上）</title>
@@ -394,26 +414,6 @@
     
     
       <category term="serve" scheme="https://angelni.github.io/tags/serve/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2048 Game</title>
-    <link href="https://angelni.github.io/problem-1/"/>
-    <id>https://angelni.github.io/problem-1/</id>
-    <published>2019-10-11T12:34:56.000Z</published>
-    <updated>2019-10-11T14:56:14.966Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;间接性划水，持续性自闭。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Algorithm" scheme="https://angelni.github.io/categories/Algorithm/"/>
-    
-    
-      <category term="C++" scheme="https://angelni.github.io/tags/C/"/>
     
   </entry>
   
