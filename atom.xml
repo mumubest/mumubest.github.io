@@ -6,7 +6,7 @@
   <link href="/AngelNI.github.io/atom.xml" rel="self"/>
   
   <link href="https://angelni.github.io/"/>
-  <updated>2019-11-16T14:05:40.527Z</updated>
+  <updated>2019-11-18T14:36:25.983Z</updated>
   <id>https://angelni.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>周练19.11.17</title>
+    <link href="https://angelni.github.io/2/"/>
+    <id>https://angelni.github.io/2/</id>
+    <published>2019-11-18T13:28:07.000Z</published>
+    <updated>2019-11-18T14:36:25.983Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;愿能把握当下，珍惜每一段追逐的时光，铭记每一次美好的相遇，不给人生留下遗憾。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="https://angelni.github.io/categories/Algorithm/"/>
+    
+    
+      <category term="Algorithm" scheme="https://angelni.github.io/tags/Algorithm/"/>
+    
+  </entry>
   
   <entry>
     <title>查找（下）</title>
@@ -394,26 +414,6 @@
     
     
       <category term="Kodcloud" scheme="https://angelni.github.io/tags/Kodcloud/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>服务器终于备案好了</title>
-    <link href="https://angelni.github.io/sever/"/>
-    <id>https://angelni.github.io/sever/</id>
-    <published>2019-10-13T06:24:34.000Z</published>
-    <updated>2019-10-13T06:58:30.594Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;已成功搭建个人网盘，个人图床，开源OJ平台。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Linux" scheme="https://angelni.github.io/categories/Linux/"/>
-    
-    
-      <category term="serve" scheme="https://angelni.github.io/tags/serve/"/>
     
   </entry>
   
