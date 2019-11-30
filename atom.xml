@@ -6,7 +6,7 @@
   <link href="/AngelNI.github.io/atom.xml" rel="self"/>
   
   <link href="https://angelni.github.io/"/>
-  <updated>2019-11-18T14:36:55.160Z</updated>
+  <updated>2019-11-30T03:35:58.732Z</updated>
   <id>https://angelni.github.io/</id>
   
   <author>
@@ -15,6 +15,52 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>排序算法</title>
+    <link href="https://angelni.github.io/sort-1/"/>
+    <id>https://angelni.github.io/sort-1/</id>
+    <published>2019-11-27T07:52:19.000Z</published>
+    <updated>2019-11-30T03:35:58.732Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;记住一切都会好起来。给他一点时间。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="https://angelni.github.io/categories/Algorithm/"/>
+    
+    
+      <category term="sort" scheme="https://angelni.github.io/tags/sort/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>周练19.11.24</title>
+    <link href="https://angelni.github.io/3/"/>
+    <id>https://angelni.github.io/3/</id>
+    <published>2019-11-25T03:25:11.000Z</published>
+    <updated>2019-11-30T03:34:19.214Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;CodeForces-1180A&quot;&gt;&lt;a href=&quot;#CodeForces-1180A&quot; class=&quot;headerlink&quot; title=&quot;CodeForces - 1180A &quot;&gt;&lt;/a&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="https://angelni.github.io/categories/Algorithm/"/>
+    
+    
+      <category term="Algorithm" scheme="https://angelni.github.io/tags/Algorithm/"/>
+    
+  </entry>
   
   <entry>
     <title>周练19.11.17</title>
@@ -174,26 +220,6 @@
     
     
       <category term="snake_game" scheme="https://angelni.github.io/tags/snake-game/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>排序算法(初级)</title>
-    <link href="https://angelni.github.io/sort-1/"/>
-    <id>https://angelni.github.io/sort-1/</id>
-    <published>2019-10-27T07:52:19.000Z</published>
-    <updated>2019-10-28T09:46:50.344Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;冒泡排序，选择排序，计数排序。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Algorithm" scheme="https://angelni.github.io/categories/Algorithm/"/>
-    
-    
-      <category term="sort" scheme="https://angelni.github.io/tags/sort/"/>
     
   </entry>
   
@@ -394,26 +420,6 @@
     
     
       <category term="Skill" scheme="https://angelni.github.io/tags/Skill/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>宝塔+Kodcloud搭建个人网盘</title>
-    <link href="https://angelni.github.io/kodcloud/"/>
-    <id>https://angelni.github.io/kodcloud/</id>
-    <published>2019-10-13T06:33:08.000Z</published>
-    <updated>2019-10-13T06:59:28.620Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;月圆思故人。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="sharing" scheme="https://angelni.github.io/categories/sharing/"/>
-    
-    
-      <category term="Kodcloud" scheme="https://angelni.github.io/tags/Kodcloud/"/>
     
   </entry>
   
