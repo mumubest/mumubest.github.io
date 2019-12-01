@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://angelni.github.io/talk/index.html</loc>
+    
+    <lastmod>2019-12-01T01:57:24.413Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://angelni.github.io/prefix-sum/</loc>
     
-    <lastmod>2019-11-30T14:09:23.956Z</lastmod>
+    <lastmod>2019-11-30T14:09:58.818Z</lastmod>
     
   </url>
   
@@ -89,13 +96,6 @@
     <loc>https://angelni.github.io/snake-game/</loc>
     
     <lastmod>2019-10-28T09:25:12.990Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://angelni.github.io/talk/index.html</loc>
-    
-    <lastmod>2019-10-28T08:30:08.700Z</lastmod>
     
   </url>
   
