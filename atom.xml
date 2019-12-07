@@ -6,7 +6,7 @@
   <link href="/AngelNI.github.io/atom.xml" rel="self"/>
   
   <link href="https://angelni.github.io/"/>
-  <updated>2019-12-01T13:37:40.706Z</updated>
+  <updated>2019-12-07T10:19:31.217Z</updated>
   <id>https://angelni.github.io/</id>
   
   <author>
@@ -17,11 +17,51 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>C++的快读</title>
+    <link href="https://angelni.github.io/qread/"/>
+    <id>https://angelni.github.io/qread/</id>
+    <published>2019-12-07T10:13:08.000Z</published>
+    <updated>2019-12-07T10:19:31.217Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;快读，快读，快速读入&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="https://angelni.github.io/categories/Algorithm/"/>
+    
+    
+      <category term="Algorithm" scheme="https://angelni.github.io/tags/Algorithm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>排序算法-2</title>
+    <link href="https://angelni.github.io/sort-2/"/>
+    <id>https://angelni.github.io/sort-2/</id>
+    <published>2019-12-07T10:02:56.000Z</published>
+    <updated>2019-12-07T10:12:22.026Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;桶排序，又简单，又快速，适合处理大量数据&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Algoritm" scheme="https://angelni.github.io/categories/Algoritm/"/>
+    
+    
+      <category term="Algorithm" scheme="https://angelni.github.io/tags/Algorithm/"/>
+    
+  </entry>
+  
+  <entry>
     <title>陌上花开</title>
     <link href="https://angelni.github.io/record/"/>
     <id>https://angelni.github.io/record/</id>
     <published>2019-12-01T11:46:45.000Z</published>
-    <updated>2019-12-01T13:37:40.706Z</updated>
+    <updated>2019-12-01T13:37:57.107Z</updated>
     
     <summary type="html">
     
@@ -57,11 +97,11 @@
   </entry>
   
   <entry>
-    <title>排序算法</title>
+    <title>排序算法-1</title>
     <link href="https://angelni.github.io/sort-1/"/>
     <id>https://angelni.github.io/sort-1/</id>
     <published>2019-11-27T07:52:19.000Z</published>
-    <updated>2019-11-30T03:35:58.732Z</updated>
+    <updated>2019-12-07T10:02:46.466Z</updated>
     
     <summary type="html">
     
@@ -374,46 +414,6 @@
     
     
       <category term="travel-tree" scheme="https://angelni.github.io/tags/travel-tree/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>异构信息网</title>
-    <link href="https://angelni.github.io/HIN/"/>
-    <id>https://angelni.github.io/HIN/</id>
-    <published>2019-10-16T11:14:40.000Z</published>
-    <updated>2019-10-16T12:37:04.699Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;攒下所有梦见你的瞬间，够不够换见你一面。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="AI" scheme="https://angelni.github.io/categories/AI/"/>
-    
-    
-      <category term="HIN" scheme="https://angelni.github.io/tags/HIN/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Markov-Chain</title>
-    <link href="https://angelni.github.io/Markov-Chain/"/>
-    <id>https://angelni.github.io/Markov-Chain/</id>
-    <published>2019-10-16T09:28:03.000Z</published>
-    <updated>2019-10-16T10:06:22.895Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;世界让我遍体鳞伤，但伤口长出的却是翅膀。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="AI" scheme="https://angelni.github.io/categories/AI/"/>
-    
-    
-      <category term="Markov Chain" scheme="https://angelni.github.io/tags/Markov-Chain/"/>
     
   </entry>
   
