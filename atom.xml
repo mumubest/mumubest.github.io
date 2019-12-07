@@ -6,7 +6,7 @@
   <link href="/AngelNI.github.io/atom.xml" rel="self"/>
   
   <link href="https://angelni.github.io/"/>
-  <updated>2019-12-07T13:13:24.602Z</updated>
+  <updated>2019-12-07T14:56:03.819Z</updated>
   <id>https://angelni.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>最小生成树</title>
+    <link href="https://angelni.github.io/minitree/"/>
+    <id>https://angelni.github.io/minitree/</id>
+    <published>2019-12-07T13:19:35.000Z</published>
+    <updated>2019-12-07T14:56:03.819Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;加油！活成自己喜欢的样子，干嘛要在意别人的眼光。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="https://angelni.github.io/categories/Algorithm/"/>
+    
+    
+      <category term="MST" scheme="https://angelni.github.io/tags/MST/"/>
+    
+  </entry>
   
   <entry>
     <title>C++的快读+快写</title>
@@ -387,26 +407,6 @@
     <summary type="html">
     
       &lt;p&gt;先序非递归遍历二叉树，中序非递归遍历二叉树，后序非递归遍历二叉树及双栈法。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Data-Structure" scheme="https://angelni.github.io/categories/Data-Structure/"/>
-    
-    
-      <category term="travel-tree" scheme="https://angelni.github.io/tags/travel-tree/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>树——构造遍历二叉树</title>
-    <link href="https://angelni.github.io/travel-tree/"/>
-    <id>https://angelni.github.io/travel-tree/</id>
-    <published>2019-10-18T14:57:50.000Z</published>
-    <updated>2019-10-19T03:45:56.753Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;构造二叉树，遍历二叉树，先序+中序构造二叉树后序遍历，中序+后序构造二叉树先序遍历。&lt;/p&gt;
     
     </summary>
     
