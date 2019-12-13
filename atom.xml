@@ -6,7 +6,7 @@
   <link href="/AngelNI.github.io/atom.xml" rel="self"/>
   
   <link href="https://angelni.github.io/"/>
-  <updated>2019-12-07T14:56:03.819Z</updated>
+  <updated>2019-12-13T12:00:29.183Z</updated>
   <id>https://angelni.github.io/</id>
   
   <author>
@@ -17,11 +17,31 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>JUST YOU</title>
+    <link href="https://angelni.github.io/life/"/>
+    <id>https://angelni.github.io/life/</id>
+    <published>2019-12-13T11:17:41.000Z</published>
+    <updated>2019-12-13T12:00:29.183Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;A person ‘s  strength is often their biggest weakness and that also means that weakness can be their strength&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Life essay" scheme="https://angelni.github.io/categories/Life-essay/"/>
+    
+    
+      <category term="Life essay" scheme="https://angelni.github.io/tags/Life-essay/"/>
+    
+  </entry>
+  
+  <entry>
     <title>最小生成树</title>
     <link href="https://angelni.github.io/minitree/"/>
     <id>https://angelni.github.io/minitree/</id>
     <published>2019-12-07T13:19:35.000Z</published>
-    <updated>2019-12-07T14:56:03.819Z</updated>
+    <updated>2019-12-07T14:59:19.537Z</updated>
     
     <summary type="html">
     
@@ -394,26 +414,6 @@
     
     
       <category term="huffman" scheme="https://angelni.github.io/tags/huffman/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>非递归遍历树</title>
-    <link href="https://angelni.github.io/travel-tree-1/"/>
-    <id>https://angelni.github.io/travel-tree-1/</id>
-    <published>2019-10-19T02:20:50.000Z</published>
-    <updated>2019-10-19T03:45:56.753Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;先序非递归遍历二叉树，中序非递归遍历二叉树，后序非递归遍历二叉树及双栈法。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Data-Structure" scheme="https://angelni.github.io/categories/Data-Structure/"/>
-    
-    
-      <category term="travel-tree" scheme="https://angelni.github.io/tags/travel-tree/"/>
     
   </entry>
   

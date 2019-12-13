@@ -21,7 +21,7 @@
 <meta property="og:description" content="加油！活成自己喜欢的样子，干嘛要在意别人的眼光。">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://s2.ax1x.com/2019/12/07/QN6Ol4.jpg">
-<meta property="og:updated_time" content="2019-12-07T14:56:03.819Z">
+<meta property="og:updated_time" content="2019-12-07T14:59:19.537Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="最小生成树">
 <meta name="twitter:description" content="加油！活成自己喜欢的样子，干嘛要在意别人的眼光。">
@@ -188,7 +188,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    3 minutes read (About 375 words)
+                    3 minutes read (About 376 words)
                 </span>
                 
                 
@@ -213,7 +213,7 @@
 <p>最小生成树——水题<a href="http://acm.hdu.edu.cn/showproblem.php?pid=1233" target="_blank" rel="noopener">HDU1233</a></p>
 <h1 id="Kruskal"><a href="#Kruskal" class="headerlink" title="Kruskal"></a>Kruskal</h1><figure class="highlight c++ hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;</span><br><span class="line"><span class="hljs-keyword">int</span> n;</span><br><span class="line"><span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">node</span></span></span><br><span class="line"><span class="hljs-class">&#123;</span></span><br><span class="line">    <span class="hljs-keyword">int</span> x,y;</span><br><span class="line">    <span class="hljs-keyword">int</span> w;</span><br><span class="line">&#125;mp[<span class="hljs-number">10000</span>];</span><br><span class="line"><span class="hljs-keyword">int</span> pre[<span class="hljs-number">10000</span>];</span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">bool</span> <span class="hljs-title">cmp</span><span class="hljs-params">(node a,node b)</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">    <span class="hljs-keyword">return</span> a.w&lt;b.w;</span><br><span class="line">&#125;</span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">find</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x)</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">    <span class="hljs-keyword">if</span>(pre[x]==x)</span><br><span class="line">        <span class="hljs-keyword">return</span> x;</span><br><span class="line">    <span class="hljs-keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="hljs-keyword">return</span> pre[x] = find(pre[x]);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">join</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x,<span class="hljs-keyword">int</span> y)</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">    <span class="hljs-keyword">int</span> fx = find(x),fy = find(y);</span><br><span class="line">    <span class="hljs-keyword">if</span>(x!=fy)</span><br><span class="line">    &#123;</span><br><span class="line">        pre[fx] = fy;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">    <span class="hljs-keyword">while</span>(<span class="hljs-built_in">cin</span>&gt;&gt;n)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i =<span class="hljs-number">1</span>;i&lt;=n;++i)<span class="hljs-comment">//并查集初始化</span></span><br><span class="line">            pre[i] = i;</span><br><span class="line">        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i =<span class="hljs-number">1</span>;i&lt;=n;++i)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="hljs-built_in">cin</span>&gt;&gt;mp[i].x&gt;&gt;mp[i].y&gt;&gt;mp[i].w;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="hljs-keyword">int</span> N =(n<span class="hljs-number">-1</span>)*n/<span class="hljs-number">2</span>;<span class="hljs-comment">//n个顶点可能共有这些边</span></span><br><span class="line">        sort(mp+<span class="hljs-number">1</span>,mp+<span class="hljs-number">1</span>+n,cmp);<span class="hljs-comment">//kruskal算法从最小边开始</span></span><br><span class="line">        <span class="hljs-keyword">int</span> k = <span class="hljs-number">0</span>,sum=<span class="hljs-number">0</span>;</span><br><span class="line">        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i =<span class="hljs-number">1</span>;i&lt;=N;++i)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="hljs-keyword">if</span>(k==n<span class="hljs-number">-1</span>)<span class="hljs-comment">//n个顶点的连通图最少有n-1条边</span></span><br><span class="line">                <span class="hljs-keyword">break</span>;</span><br><span class="line">            <span class="hljs-keyword">if</span>(find(mp[i].x)!=find(mp[i].y))<span class="hljs-comment">//判断顶点是否被访问，未访问，则归为一家 join</span></span><br><span class="line">            &#123;</span><br><span class="line">                k++;</span><br><span class="line">                join(mp[i].x,mp[i].x);</span><br><span class="line">                sum+=mp[i].w;<span class="hljs-comment">//记录最小距离</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="hljs-built_in">cout</span>&lt;&lt;sum&lt;&lt;<span class="hljs-built_in">endl</span>;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h1 id="Prim"><a href="#Prim" class="headerlink" title="Prim"></a>Prim</h1><figure class="highlight c++ hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;</span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> INF 0x3f3f3f3f </span></span><br><span class="line"><span class="hljs-keyword">int</span> n;</span><br><span class="line"><span class="hljs-keyword">int</span> mp[<span class="hljs-number">10000</span>][<span class="hljs-number">10000</span>];</span><br><span class="line"><span class="hljs-keyword">int</span> vis[<span class="hljs-number">10000</span>];</span><br><span class="line"><span class="hljs-keyword">int</span> dis[<span class="hljs-number">10000</span>];</span><br><span class="line"><span class="hljs-keyword">int</span> ans;</span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">prim</span><span class="hljs-params">(<span class="hljs-keyword">int</span> n)</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">1</span>;i&lt;=n;++i)</span><br><span class="line">        dis[i] = mp[<span class="hljs-number">1</span>][i];</span><br><span class="line">    dis[<span class="hljs-number">1</span>] = <span class="hljs-number">0</span>;</span><br><span class="line">    vis[<span class="hljs-number">1</span>] = <span class="hljs-number">1</span>;</span><br><span class="line">    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i =<span class="hljs-number">2</span>;i&lt;=n;++i)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="hljs-keyword">int</span> t =INF,k;</span><br><span class="line">        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> j=<span class="hljs-number">1</span>;j&lt;=n;++j)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="hljs-keyword">if</span>(!vis[j]&amp;&amp;dis[j]&lt;t)</span><br><span class="line">            &#123;</span><br><span class="line">                t = dis[j];</span><br><span class="line">                k = j;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="hljs-keyword">if</span>(t==INF)</span><br><span class="line">            <span class="hljs-keyword">break</span>;</span><br><span class="line">        vis[k] = <span class="hljs-number">1</span>;</span><br><span class="line">        ans+=t;</span><br><span class="line">        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> j=<span class="hljs-number">1</span>;j&lt;=n;++j)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="hljs-keyword">if</span>(!vis[j]&amp;&amp;dis[j]&gt;mp[k][j])</span><br><span class="line">                dis[j] = mp[k][j];</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-built_in">cout</span>&lt;&lt;ans&lt;&lt;<span class="hljs-built_in">endl</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">    <span class="hljs-keyword">while</span>(<span class="hljs-built_in">cin</span>&gt;&gt;n)</span><br><span class="line">    &#123;</span><br><span class="line">        ans = <span class="hljs-number">0</span>;</span><br><span class="line">        <span class="hljs-keyword">int</span> m = (n<span class="hljs-number">-1</span>)*n/<span class="hljs-number">2</span>;</span><br><span class="line">        <span class="hljs-built_in">memset</span>(vis,<span class="hljs-number">0</span>,<span class="hljs-keyword">sizeof</span>(vis));</span><br><span class="line">        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i =<span class="hljs-number">1</span>;i&lt;=m;++i)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="hljs-keyword">int</span> x,y,w;</span><br><span class="line">            <span class="hljs-built_in">cin</span>&gt;&gt;x&gt;&gt;y&gt;&gt;w;</span><br><span class="line">            mp[x][y] = mp[y][x] = w;</span><br><span class="line">        &#125;</span><br><span class="line">        prim(n);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="Prim"><a href="#Prim" class="headerlink" title="Prim"></a>Prim</h1><figure class="highlight c++ hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;</span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> INF 0x3f3f3f3f </span></span><br><span class="line"><span class="hljs-keyword">int</span> n;</span><br><span class="line"><span class="hljs-keyword">int</span> mp[<span class="hljs-number">10000</span>][<span class="hljs-number">10000</span>];</span><br><span class="line"><span class="hljs-keyword">int</span> vis[<span class="hljs-number">10000</span>];</span><br><span class="line"><span class="hljs-keyword">int</span> dis[<span class="hljs-number">10000</span>];</span><br><span class="line"><span class="hljs-keyword">int</span> ans;</span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">prim</span><span class="hljs-params">(<span class="hljs-keyword">int</span> n)</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">1</span>;i&lt;=n;++i)</span><br><span class="line">        dis[i] = mp[<span class="hljs-number">1</span>][i];</span><br><span class="line">    dis[<span class="hljs-number">1</span>] = <span class="hljs-number">0</span>;</span><br><span class="line">    vis[<span class="hljs-number">1</span>] = <span class="hljs-number">1</span>;</span><br><span class="line">    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i =<span class="hljs-number">2</span>;i&lt;=n;++i)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="hljs-keyword">int</span> t =INF,k;</span><br><span class="line">        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> j=<span class="hljs-number">1</span>;j&lt;=n;++j)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="hljs-keyword">if</span>(!vis[j]&amp;&amp;dis[j]&lt;t)</span><br><span class="line">            &#123;</span><br><span class="line">                t = dis[j];</span><br><span class="line">                k = j;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="hljs-keyword">if</span>(t==INF)</span><br><span class="line">            <span class="hljs-keyword">break</span>;</span><br><span class="line">        vis[k] = <span class="hljs-number">1</span>;</span><br><span class="line">        ans+=t;</span><br><span class="line">        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> j=<span class="hljs-number">1</span>;j&lt;=n;++j)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="hljs-keyword">if</span>(!vis[j]&amp;&amp;dis[j]&gt;mp[k][j])</span><br><span class="line">                dis[j] = mp[k][j];</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-built_in">cout</span>&lt;&lt;ans&lt;&lt;<span class="hljs-built_in">endl</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">    <span class="hljs-keyword">while</span>(<span class="hljs-built_in">cin</span>&gt;&gt;n&amp;&amp;n)</span><br><span class="line">    &#123;</span><br><span class="line">        ans = <span class="hljs-number">0</span>;</span><br><span class="line">        <span class="hljs-keyword">int</span> m = (n<span class="hljs-number">-1</span>)*n/<span class="hljs-number">2</span>;</span><br><span class="line">        <span class="hljs-built_in">memset</span>(vis,<span class="hljs-number">0</span>,<span class="hljs-keyword">sizeof</span>(vis));</span><br><span class="line">        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i =<span class="hljs-number">1</span>;i&lt;=m;++i)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="hljs-keyword">int</span> x,y,w;</span><br><span class="line">            <span class="hljs-built_in">cin</span>&gt;&gt;x&gt;&gt;y&gt;&gt;w;</span><br><span class="line">            mp[x][y] = mp[y][x] = w;</span><br><span class="line">        &#125;</span><br><span class="line">        prim(n);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
         </div>
@@ -267,6 +267,13 @@
 
 <div class="card card-transparent">
     <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/AngelNI.github.io/life/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">JUST YOU</span>
+            </a>
+        </div>
         
         
         <div class="level-end">
@@ -346,7 +353,7 @@
                         Posts
                     </p>
                     <p class="title has-text-weight-normal">
-                        91
+                        92
                     </p>
                 </div>
             </div>
@@ -720,7 +727,7 @@
                 <span class="level-item">Life essay</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">8</span>
+                <span class="level-item tag">9</span>
             </span>
         </a></li><li>
         <a class="level is-marginless" href="/AngelNI.github.io/categories/Linux/">
@@ -814,7 +821,7 @@
         <h3 class="menu-label">
             Tag Cloud
         </h3>
-        <a href="/AngelNI.github.io/tags/Algorithm/" style="font-size: 23px; color: #f00">Algorithm</a> <a href="/AngelNI.github.io/tags/Life-essay/" style="font-size: 21px; color: #eb0033">Life essay</a> <a href="/AngelNI.github.io/tags/literature/" style="font-size: 17px; color: #c20099">literature</a> <a href="/AngelNI.github.io/tags/C/" style="font-size: 19px; color: #d60066">C++</a> <a href="/AngelNI.github.io/tags/AI/" style="font-size: 15px; color: #ad00cc">AI</a> <a href="/AngelNI.github.io/tags/DSU/" style="font-size: 13px; color: #90f">DSU</a> <a href="/AngelNI.github.io/tags/Find/" style="font-size: 15px; color: #ad00cc">Find</a> <a href="/AngelNI.github.io/tags/Gradient-Descent/" style="font-size: 13px; color: #90f">Gradient Descent</a> <a href="/AngelNI.github.io/tags/HIN/" style="font-size: 13px; color: #90f">HIN</a> <a href="/AngelNI.github.io/tags/Learing/" style="font-size: 13px; color: #90f">Learing</a> <a href="/AngelNI.github.io/tags/KNN/" style="font-size: 15px; color: #ad00cc">KNN</a> <a href="/AngelNI.github.io/tags/K-means/" style="font-size: 13px; color: #90f">K-means</a> <a href="/AngelNI.github.io/tags/Keras-note/" style="font-size: 17px; color: #c20099">Keras-note</a> <a href="/AngelNI.github.io/tags/Game/" style="font-size: 19px; color: #d60066">Game</a> <a href="/AngelNI.github.io/tags/MF/" style="font-size: 13px; color: #90f">MF</a> <a href="/AngelNI.github.io/tags/sharing/" style="font-size: 13px; color: #90f">sharing</a> <a href="/AngelNI.github.io/tags/Markov-Chain/" style="font-size: 13px; color: #90f">Markov Chain</a> <a href="/AngelNI.github.io/tags/Makedown/" style="font-size: 13px; color: #90f">Makedown</a> <a href="/AngelNI.github.io/tags/MC/" style="font-size: 13px; color: #90f">MC</a> <a href="/AngelNI.github.io/tags/recommend/" style="font-size: 13px; color: #90f">recommend</a> <a href="/AngelNI.github.io/tags/python-command/" style="font-size: 13px; color: #90f">python command</a> <a href="/AngelNI.github.io/tags/python/" style="font-size: 15px; color: #ad00cc">python</a> <a href="/AngelNI.github.io/tags/RKGE/" style="font-size: 13px; color: #90f">RKGE</a> <a href="/AngelNI.github.io/tags/Machine-learn/" style="font-size: 13px; color: #90f">Machine-learn</a> <a href="/AngelNI.github.io/tags/Ubuntu/" style="font-size: 13px; color: #90f">Ubuntu</a> <a href="/AngelNI.github.io/tags/critical-path/" style="font-size: 13px; color: #90f">critical-path</a> <a href="/AngelNI.github.io/tags/stack/" style="font-size: 13px; color: #90f">stack</a> <a href="/AngelNI.github.io/tags/Linked-list/" style="font-size: 13px; color: #90f">Linked list</a> <a href="/AngelNI.github.io/tags/huffman/" style="font-size: 13px; color: #90f">huffman</a> <a href="/AngelNI.github.io/tags/hexo-github/" style="font-size: 13px; color: #90f">hexo+github</a> <a href="/AngelNI.github.io/tags/java/" style="font-size: 13px; color: #90f">java</a> <a href="/AngelNI.github.io/tags/CDN/" style="font-size: 13px; color: #90f">CDN</a> <a href="/AngelNI.github.io/tags/Kodcloud/" style="font-size: 13px; color: #90f">Kodcloud</a> <a href="/AngelNI.github.io/tags/Linux/" style="font-size: 13px; color: #90f">Linux</a> <a href="/AngelNI.github.io/tags/matplotlib/" style="font-size: 13px; color: #90f">matplotlib</a> <a href="/AngelNI.github.io/tags/MST/" style="font-size: 13px; color: #90f">MST</a> <a href="/AngelNI.github.io/tags/min-path/" style="font-size: 13px; color: #90f">min_path</a> <a href="/AngelNI.github.io/tags/Prefix-sum/" style="font-size: 13px; color: #90f">Prefix_sum</a> <a href="/AngelNI.github.io/tags/priority-queue/" style="font-size: 13px; color: #90f">priority_queue</a> <a href="/AngelNI.github.io/tags/Skill/" style="font-size: 13px; color: #90f">Skill</a> <a href="/AngelNI.github.io/tags/serve/" style="font-size: 13px; color: #90f">serve</a> <a href="/AngelNI.github.io/tags/snake-game/" style="font-size: 13px; color: #90f">snake_game</a> <a href="/AngelNI.github.io/tags/sort/" style="font-size: 13px; color: #90f">sort</a> <a href="/AngelNI.github.io/tags/travel-tree/" style="font-size: 15px; color: #ad00cc">travel-tree</a> <a href="/AngelNI.github.io/tags/termux/" style="font-size: 13px; color: #90f">termux</a> <a href="/AngelNI.github.io/tags/ubuntu/" style="font-size: 13px; color: #90f">ubuntu</a> <a href="/AngelNI.github.io/tags/Binary-tree-calculate/" style="font-size: 13px; color: #90f">Binary_tree_calculate</a> <a href="/AngelNI.github.io/tags/Git/" style="font-size: 13px; color: #90f">Git</a> <a href="/AngelNI.github.io/tags/NN/" style="font-size: 17px; color: #c20099">NN</a>
+        <a href="/AngelNI.github.io/tags/Algorithm/" style="font-size: 23px; color: #f00">Algorithm</a> <a href="/AngelNI.github.io/tags/literature/" style="font-size: 17px; color: #c20099">literature</a> <a href="/AngelNI.github.io/tags/Life-essay/" style="font-size: 21px; color: #eb0033">Life essay</a> <a href="/AngelNI.github.io/tags/C/" style="font-size: 19px; color: #d60066">C++</a> <a href="/AngelNI.github.io/tags/DSU/" style="font-size: 13px; color: #90f">DSU</a> <a href="/AngelNI.github.io/tags/AI/" style="font-size: 15px; color: #ad00cc">AI</a> <a href="/AngelNI.github.io/tags/Find/" style="font-size: 15px; color: #ad00cc">Find</a> <a href="/AngelNI.github.io/tags/Game/" style="font-size: 19px; color: #d60066">Game</a> <a href="/AngelNI.github.io/tags/Gradient-Descent/" style="font-size: 13px; color: #90f">Gradient Descent</a> <a href="/AngelNI.github.io/tags/Learing/" style="font-size: 13px; color: #90f">Learing</a> <a href="/AngelNI.github.io/tags/HIN/" style="font-size: 13px; color: #90f">HIN</a> <a href="/AngelNI.github.io/tags/KNN/" style="font-size: 15px; color: #ad00cc">KNN</a> <a href="/AngelNI.github.io/tags/K-means/" style="font-size: 13px; color: #90f">K-means</a> <a href="/AngelNI.github.io/tags/Keras-note/" style="font-size: 17px; color: #c20099">Keras-note</a> <a href="/AngelNI.github.io/tags/sharing/" style="font-size: 13px; color: #90f">sharing</a> <a href="/AngelNI.github.io/tags/MF/" style="font-size: 13px; color: #90f">MF</a> <a href="/AngelNI.github.io/tags/Markov-Chain/" style="font-size: 13px; color: #90f">Markov Chain</a> <a href="/AngelNI.github.io/tags/Makedown/" style="font-size: 13px; color: #90f">Makedown</a> <a href="/AngelNI.github.io/tags/MC/" style="font-size: 13px; color: #90f">MC</a> <a href="/AngelNI.github.io/tags/recommend/" style="font-size: 13px; color: #90f">recommend</a> <a href="/AngelNI.github.io/tags/python-command/" style="font-size: 13px; color: #90f">python command</a> <a href="/AngelNI.github.io/tags/python/" style="font-size: 15px; color: #ad00cc">python</a> <a href="/AngelNI.github.io/tags/critical-path/" style="font-size: 13px; color: #90f">critical-path</a> <a href="/AngelNI.github.io/tags/RKGE/" style="font-size: 13px; color: #90f">RKGE</a> <a href="/AngelNI.github.io/tags/Ubuntu/" style="font-size: 13px; color: #90f">Ubuntu</a> <a href="/AngelNI.github.io/tags/Linked-list/" style="font-size: 13px; color: #90f">Linked list</a> <a href="/AngelNI.github.io/tags/Machine-learn/" style="font-size: 13px; color: #90f">Machine-learn</a> <a href="/AngelNI.github.io/tags/stack/" style="font-size: 13px; color: #90f">stack</a> <a href="/AngelNI.github.io/tags/huffman/" style="font-size: 13px; color: #90f">huffman</a> <a href="/AngelNI.github.io/tags/hexo-github/" style="font-size: 13px; color: #90f">hexo+github</a> <a href="/AngelNI.github.io/tags/java/" style="font-size: 13px; color: #90f">java</a> <a href="/AngelNI.github.io/tags/CDN/" style="font-size: 13px; color: #90f">CDN</a> <a href="/AngelNI.github.io/tags/Kodcloud/" style="font-size: 13px; color: #90f">Kodcloud</a> <a href="/AngelNI.github.io/tags/Linux/" style="font-size: 13px; color: #90f">Linux</a> <a href="/AngelNI.github.io/tags/matplotlib/" style="font-size: 13px; color: #90f">matplotlib</a> <a href="/AngelNI.github.io/tags/MST/" style="font-size: 13px; color: #90f">MST</a> <a href="/AngelNI.github.io/tags/priority-queue/" style="font-size: 13px; color: #90f">priority_queue</a> <a href="/AngelNI.github.io/tags/min-path/" style="font-size: 13px; color: #90f">min_path</a> <a href="/AngelNI.github.io/tags/Prefix-sum/" style="font-size: 13px; color: #90f">Prefix_sum</a> <a href="/AngelNI.github.io/tags/serve/" style="font-size: 13px; color: #90f">serve</a> <a href="/AngelNI.github.io/tags/Skill/" style="font-size: 13px; color: #90f">Skill</a> <a href="/AngelNI.github.io/tags/snake-game/" style="font-size: 13px; color: #90f">snake_game</a> <a href="/AngelNI.github.io/tags/sort/" style="font-size: 13px; color: #90f">sort</a> <a href="/AngelNI.github.io/tags/termux/" style="font-size: 13px; color: #90f">termux</a> <a href="/AngelNI.github.io/tags/travel-tree/" style="font-size: 15px; color: #ad00cc">travel-tree</a> <a href="/AngelNI.github.io/tags/ubuntu/" style="font-size: 13px; color: #90f">ubuntu</a> <a href="/AngelNI.github.io/tags/Binary-tree-calculate/" style="font-size: 13px; color: #90f">Binary_tree_calculate</a> <a href="/AngelNI.github.io/tags/Git/" style="font-size: 13px; color: #90f">Git</a> <a href="/AngelNI.github.io/tags/NN/" style="font-size: 17px; color: #c20099">NN</a>
     </div>
 </div>
 
@@ -828,6 +835,25 @@
         <h3 class="menu-label">
             Recent
         </h3>
+        
+        <article class="media">
+            
+            <a href="/AngelNI.github.io/life/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="https://s2.ax1x.com/2019/12/13/Q2SCWT.png" alt="JUST YOU">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-13T11:17:41.000Z">2019-12-13</time></div>
+                    <a href="/AngelNI.github.io/life/" class="has-link-black-ter is-size-6">JUST YOU</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/AngelNI.github.io/categories/Life-essay/">Life essay</a>
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -905,25 +931,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/AngelNI.github.io/prefix-sum/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="https://s2.ax1x.com/2019/11/30/QVjLlR.jpg" alt="简单前缀和">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-11-30T10:03:12.000Z">2019-11-30</time></div>
-                    <a href="/AngelNI.github.io/prefix-sum/" class="has-link-black-ter is-size-6">简单前缀和</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/AngelNI.github.io/categories/Algorithm/">Algorithm</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
 
@@ -942,7 +949,7 @@
                     <span class="level-item">December 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">4</span>
+                    <span class="level-item tag">5</span>
                 </span>
             </a>
         </li>
@@ -1141,7 +1148,7 @@
                 <div class="control">
                     <a class="tags has-addons" href="/AngelNI.github.io/tags/Life-essay/">
                         <span class="tag">Life essay</span>
-                        <span class="tag is-grey">8</span>
+                        <span class="tag is-grey">9</span>
                     </a>
                 </div>
                 
@@ -1394,6 +1401,25 @@
         
         <article class="media">
             
+            <a href="/AngelNI.github.io/life/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="https://s2.ax1x.com/2019/12/13/Q2SCWT.png" alt="JUST YOU">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-13T11:17:41.000Z">2019-12-13</time></div>
+                    <a href="/AngelNI.github.io/life/" class="has-link-black-ter is-size-6">JUST YOU</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/AngelNI.github.io/categories/Life-essay/">Life essay</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
             <a href="/AngelNI.github.io/minitree/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="https://s2.ax1x.com/2019/12/07/QN6Ol4.jpg" alt="最小生成树">
@@ -1468,25 +1494,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/AngelNI.github.io/prefix-sum/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="https://s2.ax1x.com/2019/11/30/QVjLlR.jpg" alt="简单前缀和">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-11-30T10:03:12.000Z">2019-11-30</time></div>
-                    <a href="/AngelNI.github.io/prefix-sum/" class="has-link-black-ter is-size-6">简单前缀和</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/AngelNI.github.io/categories/Algorithm/">Algorithm</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
 
@@ -1505,7 +1512,7 @@
                     <span class="level-item">December 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">4</span>
+                    <span class="level-item tag">5</span>
                 </span>
             </a>
         </li>
@@ -1704,7 +1711,7 @@
                 <div class="control">
                     <a class="tags has-addons" href="/AngelNI.github.io/tags/Life-essay/">
                         <span class="tag">Life essay</span>
-                        <span class="tag is-grey">8</span>
+                        <span class="tag is-grey">9</span>
                     </a>
                 </div>
                 

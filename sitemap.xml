@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://angelni.github.io/life/</loc>
+    
+    <lastmod>2019-12-13T12:00:29.183Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://angelni.github.io/minitree/</loc>
     
-    <lastmod>2019-12-07T14:56:03.819Z</lastmod>
+    <lastmod>2019-12-07T14:59:19.537Z</lastmod>
     
   </url>
   
@@ -163,14 +170,14 @@
   </url>
   
   <url>
-    <loc>https://angelni.github.io/travel-tree-1/</loc>
+    <loc>https://angelni.github.io/travel-tree/</loc>
     
     <lastmod>2019-10-19T03:45:56.753Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://angelni.github.io/travel-tree/</loc>
+    <loc>https://angelni.github.io/travel-tree-1/</loc>
     
     <lastmod>2019-10-19T03:45:56.753Z</lastmod>
     
