@@ -6,7 +6,7 @@
   <link href="/AngelNI.github.io/atom.xml" rel="self"/>
   
   <link href="https://angelni.github.io/"/>
-  <updated>2019-12-15T09:50:08.849Z</updated>
+  <updated>2019-12-19T13:08:06.556Z</updated>
   <id>https://angelni.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>《悲惨的世界》读后感</title>
+    <link href="https://angelni.github.io/The-Miserable-Ones/"/>
+    <id>https://angelni.github.io/The-Miserable-Ones/</id>
+    <published>2019-12-19T11:54:58.000Z</published>
+    <updated>2019-12-19T13:08:06.556Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;我们每一个人都是社会的映射，只是这是个大多数人社会。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="literature" scheme="https://angelni.github.io/categories/literature/"/>
+    
+    
+      <category term="The Miserable Ones" scheme="https://angelni.github.io/tags/The-Miserable-Ones/"/>
+    
+  </entry>
   
   <entry>
     <title>长沙理工新生赛</title>
@@ -394,26 +414,6 @@
     
     
       <category term="priority_queue" scheme="https://angelni.github.io/tags/priority-queue/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>利用二叉树计算表达式值</title>
-    <link href="https://angelni.github.io/tree-calculate/"/>
-    <id>https://angelni.github.io/tree-calculate/</id>
-    <published>2019-10-20T07:02:36.000Z</published>
-    <updated>2019-10-20T07:36:09.716Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;有时候，灵感+努力+伙伴的箴言就是成功。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Data-Structure" scheme="https://angelni.github.io/categories/Data-Structure/"/>
-    
-    
-      <category term="Binary_tree_calculate" scheme="https://angelni.github.io/tags/Binary-tree-calculate/"/>
     
   </entry>
   
