@@ -6,7 +6,7 @@
   <link href="/AngelNI.github.io/atom.xml" rel="self"/>
   
   <link href="https://angelni.github.io/"/>
-  <updated>2019-12-19T13:08:06.556Z</updated>
+  <updated>2019-12-21T08:45:18.724Z</updated>
   <id>https://angelni.github.io/</id>
   
   <author>
@@ -17,11 +17,31 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>哈理工新生赛</title>
+    <link href="https://angelni.github.io/nowcoder-2/"/>
+    <id>https://angelni.github.io/nowcoder-2/</id>
+    <published>2019-12-21T08:32:38.000Z</published>
+    <updated>2019-12-21T08:45:18.724Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;每天水水题，处处有惊喜，python过题也很爽（重要的是抽奖）&lt;a href=&quot;https://ac.nowcoder.com/acm/contest/3474&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;链接&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="https://angelni.github.io/categories/Algorithm/"/>
+    
+    
+      <category term="Algorithm" scheme="https://angelni.github.io/tags/Algorithm/"/>
+    
+  </entry>
+  
+  <entry>
     <title>《悲惨的世界》读后感</title>
     <link href="https://angelni.github.io/The-Miserable-Ones/"/>
     <id>https://angelni.github.io/The-Miserable-Ones/</id>
     <published>2019-12-19T11:54:58.000Z</published>
-    <updated>2019-12-19T13:08:06.556Z</updated>
+    <updated>2019-12-19T13:08:44.084Z</updated>
     
     <summary type="html">
     
@@ -394,26 +414,6 @@
     
     
       <category term="min_path" scheme="https://angelni.github.io/tags/min-path/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>暑假（补）-6</title>
-    <link href="https://angelni.github.io/priority-queue/"/>
-    <id>https://angelni.github.io/priority-queue/</id>
-    <published>2019-10-23T09:31:45.000Z</published>
-    <updated>2019-10-24T11:03:48.174Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;非常希望在不远的明天，我的晚安可以亲口说，可以先亲一口再说。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Algorithm" scheme="https://angelni.github.io/categories/Algorithm/"/>
-    
-    
-      <category term="priority_queue" scheme="https://angelni.github.io/tags/priority-queue/"/>
     
   </entry>
   
