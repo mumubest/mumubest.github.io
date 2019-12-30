@@ -6,7 +6,7 @@
   <link href="/AngelNI.github.io/atom.xml" rel="self"/>
   
   <link href="https://angelni.github.io/"/>
-  <updated>2019-12-21T08:45:39.568Z</updated>
+  <updated>2019-12-30T05:49:40.188Z</updated>
   <id>https://angelni.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>西南民族大学程序竞赛</title>
+    <link href="https://angelni.github.io/nowcoder-3/"/>
+    <id>https://angelni.github.io/nowcoder-3/</id>
+    <published>2019-12-30T05:34:06.000Z</published>
+    <updated>2019-12-30T05:49:40.188Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;No matter what activities you join,whether you want or not, you could gain unexpected something .&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="https://angelni.github.io/categories/Algorithm/"/>
+    
+    
+      <category term="Algorithm" scheme="https://angelni.github.io/tags/Algorithm/"/>
+    
+  </entry>
   
   <entry>
     <title>哈理工新生赛</title>
@@ -394,26 +414,6 @@
     
     
       <category term="snake_game" scheme="https://angelni.github.io/tags/snake-game/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>最短路问题</title>
-    <link href="https://angelni.github.io/minpath/"/>
-    <id>https://angelni.github.io/minpath/</id>
-    <published>2019-10-26T10:11:59.000Z</published>
-    <updated>2019-10-27T07:51:10.951Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;过去我也有美梦来着，有幻想来着，可不知神魔时候，都烟消云散了，还是遇见你之前的事。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Data-Structure" scheme="https://angelni.github.io/categories/Data-Structure/"/>
-    
-    
-      <category term="min_path" scheme="https://angelni.github.io/tags/min-path/"/>
     
   </entry>
   
