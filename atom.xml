@@ -6,7 +6,7 @@
   <link href="/AngelNI.github.io/atom.xml" rel="self"/>
   
   <link href="https://angelni.github.io/"/>
-  <updated>2019-12-30T05:50:21.922Z</updated>
+  <updated>2020-01-03T04:12:34.218Z</updated>
   <id>https://angelni.github.io/</id>
   
   <author>
@@ -15,6 +15,24 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>自定义Vscode背景</title>
+    <link href="https://angelni.github.io/vscodebackground/"/>
+    <id>https://angelni.github.io/vscodebackground/</id>
+    <published>2020-01-03T04:03:51.000Z</published>
+    <updated>2020-01-03T04:12:34.218Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;我从不会倒下，我是打不死的小强。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="vscode" scheme="https://angelni.github.io/tags/vscode/"/>
+    
+  </entry>
   
   <entry>
     <title>西南民族大学程序竞赛</title>
@@ -394,26 +412,6 @@
     
     
       <category term="DSU" scheme="https://angelni.github.io/tags/DSU/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>python实现贪吃蛇小游戏</title>
-    <link href="https://angelni.github.io/snake-game/"/>
-    <id>https://angelni.github.io/snake-game/</id>
-    <published>2019-10-28T09:02:56.000Z</published>
-    <updated>2019-10-28T09:25:12.990Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;一起来玩游戏？&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="python" scheme="https://angelni.github.io/categories/python/"/>
-    
-    
-      <category term="snake_game" scheme="https://angelni.github.io/tags/snake-game/"/>
     
   </entry>
   

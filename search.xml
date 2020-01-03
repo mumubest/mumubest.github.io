@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>自定义Vscode背景</title>
+      <link href="/AngelNI.github.io/vscodebackground/"/>
+      <url>/AngelNI.github.io/vscodebackground/</url>
+      
+        <content type="html"><![CDATA[<p>我从不会倒下，我是打不死的小强。<a id="more"></a></p><h1 id="Vscode设置背景"><a href="#Vscode设置背景" class="headerlink" title="Vscode设置背景"></a>Vscode设置背景</h1><p>打开安装目录，拿我的举个栗子E:\VScode\Microsoft VS Code\resources\app\out\vs\workbench，找到该目录下的workbench.desktop.main.css文件右键编辑，添加如下代码，注意是添加。</p><figure class="highlight css hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-selector-tag">body</span> &#123;</span><br><span class="line">    <span class="hljs-attribute">background-image</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">'file:///E:/VScode/Microsoft VS Code/61.png'</span>);<span class="hljs-comment">/*在这里添加图片路径*/</span></span><br><span class="line">    <span class="hljs-attribute">background-size</span>: <span class="hljs-number">100%</span>;</span><br><span class="line">    <span class="hljs-attribute">opacity</span>: <span class="hljs-number">0.75</span>;</span><br><span class="line">    <span class="hljs-attribute">background-repeat</span>: no-repeat;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>然后重启,他会提示vscode损坏，忽略就行了。</p><p>效果图如下：</p><p><img src="https://s2.ax1x.com/2020/01/03/lUt4Fx.png" alt></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> vscode </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>西南民族大学程序竞赛</title>
       <link href="/AngelNI.github.io/nowcoder-3/"/>
       <url>/AngelNI.github.io/nowcoder-3/</url>
