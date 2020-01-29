@@ -6,7 +6,7 @@
   <link href="/AngelNI.github.io/atom.xml" rel="self"/>
   
   <link href="https://angelni.github.io/"/>
-  <updated>2020-01-03T04:12:52.166Z</updated>
+  <updated>2020-01-29T06:53:31.873Z</updated>
   <id>https://angelni.github.io/</id>
   
   <author>
@@ -15,6 +15,126 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>冬日</title>
+    <link href="https://angelni.github.io/winter-scenery/"/>
+    <id>https://angelni.github.io/winter-scenery/</id>
+    <published>2020-01-29T06:38:00.000Z</published>
+    <updated>2020-01-29T06:53:31.873Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;冬日。感谢美丽的摄影师（大哥在上，绕小弟一命）&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Life" scheme="https://angelni.github.io/categories/Life/"/>
+    
+    
+      <category term="Scenery" scheme="https://angelni.github.io/tags/Scenery/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>二叉树的简单操作</title>
+    <link href="https://angelni.github.io/BiTree-Op/"/>
+    <id>https://angelni.github.io/BiTree-Op/</id>
+    <published>2020-01-29T05:34:52.000Z</published>
+    <updated>2020-01-29T06:36:41.703Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;爱就像蓝天白云，晴空万里，突然暴风雨……&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Data-Structure" scheme="https://angelni.github.io/categories/Data-Structure/"/>
+    
+    
+      <category term="BiTree" scheme="https://angelni.github.io/tags/BiTree/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>TF-RNN</title>
+    <link href="https://angelni.github.io/TF-RNN/"/>
+    <id>https://angelni.github.io/TF-RNN/</id>
+    <published>2020-01-27T14:12:49.000Z</published>
+    <updated>2020-01-27T14:19:10.745Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;愿天堂也有亲爱的篮球。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="AI" scheme="https://angelni.github.io/categories/AI/"/>
+    
+    
+      <category term="RNN" scheme="https://angelni.github.io/tags/RNN/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>TF-CNN</title>
+    <link href="https://angelni.github.io/TF-CNN/"/>
+    <id>https://angelni.github.io/TF-CNN/</id>
+    <published>2020-01-27T09:47:03.000Z</published>
+    <updated>2020-01-27T10:36:22.425Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;低头不是认输，是要看清自己的路；仰头不是骄傲，是要看见自己的天空。——科比·布莱恩特&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="AI" scheme="https://angelni.github.io/categories/AI/"/>
+    
+    
+      <category term="tensorflow" scheme="https://angelni.github.io/tags/tensorflow/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>TF-NN</title>
+    <link href="https://angelni.github.io/TF-NN/"/>
+    <id>https://angelni.github.io/TF-NN/</id>
+    <published>2020-01-27T06:44:36.000Z</published>
+    <updated>2020-01-27T09:50:34.296Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;他只是趁着凌晨四点去另一个世界训练了.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="AI" scheme="https://angelni.github.io/categories/AI/"/>
+    
+    
+      <category term="Neural_Network" scheme="https://angelni.github.io/tags/Neural-Network/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>TF-GD</title>
+    <link href="https://angelni.github.io/TF-GD/"/>
+    <id>https://angelni.github.io/TF-GD/</id>
+    <published>2020-01-27T04:42:39.000Z</published>
+    <updated>2020-01-27T09:50:44.020Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;有生才有死，有暗才有光。——科比·布莱恩特&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="AI" scheme="https://angelni.github.io/categories/AI/"/>
+    
+    
+      <category term="GradientDescent" scheme="https://angelni.github.io/tags/GradientDescent/"/>
+    
+  </entry>
   
   <entry>
     <title>自定义Vscode背景</title>
@@ -291,127 +411,6 @@
     
     
       <category term="Algorithm" scheme="https://angelni.github.io/tags/Algorithm/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>查找（下）</title>
-    <link href="https://angelni.github.io/Find-2/"/>
-    <id>https://angelni.github.io/Find-2/</id>
-    <published>2019-11-13T14:17:15.000Z</published>
-    <updated>2019-11-16T14:05:40.527Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;可倒一定连续，连续不一定可倒&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Algorithm" scheme="https://angelni.github.io/categories/Algorithm/"/>
-    
-    
-      <category term="Find" scheme="https://angelni.github.io/tags/Find/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>查找（上）</title>
-    <link href="https://angelni.github.io/find-1/"/>
-    <id>https://angelni.github.io/find-1/</id>
-    <published>2019-11-13T13:39:25.000Z</published>
-    <updated>2019-11-13T14:13:10.147Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;我该如何是好~&lt;/p&gt;
-&lt;p&gt;插入查找？斐波那契查找？&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Algorithm" scheme="https://angelni.github.io/categories/Algorithm/"/>
-    
-    
-      <category term="Find" scheme="https://angelni.github.io/tags/Find/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>周练19.11.03/10</title>
-    <link href="https://angelni.github.io/1/"/>
-    <id>https://angelni.github.io/1/</id>
-    <published>2019-11-11T08:28:07.000Z</published>
-    <updated>2019-11-11T09:08:01.459Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;花于无声处绽放最美，人于宁静中沉淀愈浓。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Algorithm" scheme="https://angelni.github.io/categories/Algorithm/"/>
-    
-    
-      <category term="Algorithm" scheme="https://angelni.github.io/tags/Algorithm/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>RKGE_论文阅读笔记</title>
-    <link href="https://angelni.github.io/RKGE/"/>
-    <id>https://angelni.github.io/RKGE/</id>
-    <published>2019-11-06T04:33:04.000Z</published>
-    <updated>2019-11-06T10:06:39.138Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;while(1) {   cout&amp;lt;&amp;lt;”Never Give Up”&amp;lt;&amp;lt;endl;   }&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="AI" scheme="https://angelni.github.io/categories/AI/"/>
-    
-    
-      <category term="RKGE" scheme="https://angelni.github.io/tags/RKGE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>关键路径</title>
-    <link href="https://angelni.github.io/critical-path/"/>
-    <id>https://angelni.github.io/critical-path/</id>
-    <published>2019-11-01T23:47:32.000Z</published>
-    <updated>2019-11-02T01:01:58.181Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;褪去一切繁华，虚无的外表，不知你还有多少真。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Algorithm" scheme="https://angelni.github.io/categories/Algorithm/"/>
-    
-    
-      <category term="critical-path" scheme="https://angelni.github.io/tags/critical-path/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>暑假（补） -7</title>
-    <link href="https://angelni.github.io/DSU/"/>
-    <id>https://angelni.github.io/DSU/</id>
-    <published>2019-10-30T09:45:19.000Z</published>
-    <updated>2019-10-30T10:28:28.494Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;期待已久的并查集如期到来。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Algorithm" scheme="https://angelni.github.io/categories/Algorithm/"/>
-    
-    
-      <category term="DSU" scheme="https://angelni.github.io/tags/DSU/"/>
     
   </entry>
   

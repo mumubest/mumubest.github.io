@@ -5,26 +5,27 @@
 <html lang="en">
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-<title>AngelNI&#39;s Blog</title>
+<title>二叉树的简单操作 - AngelNI&#39;s Blog</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="google-site-verification" content="JwzmnANXlpmQlhwaSORuqpEB6P3Sr-tRhw4R_XDRcEc">
 <meta name="baidu-site-verification" content="ztPAF2oDcw">
 
 
 
-    <meta name="description" content="This is a simple record of learning bits and pieces, so that each step of learning into an unforgettable memory.">
-<meta name="keywords" content="learning note">
-<meta property="og:type" content="website">
-<meta property="og:title" content="AngelNI&#39;s Blog">
-<meta property="og:url" content="https://angelni.github.io/page/17/index.html">
+    <meta name="description" content="爱就像蓝天白云，晴空万里，突然暴风雨……">
+<meta name="keywords" content="BiTree">
+<meta property="og:type" content="article">
+<meta property="og:title" content="二叉树的简单操作">
+<meta property="og:url" content="https://angelni.github.io/BiTree-Op/index.html">
 <meta property="og:site_name" content="AngelNI&#39;s Blog">
-<meta property="og:description" content="This is a simple record of learning bits and pieces, so that each step of learning into an unforgettable memory.">
+<meta property="og:description" content="爱就像蓝天白云，晴空万里，突然暴风雨……">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="https://angelni.github.io/AngelNI.github.io/images/og_image.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/01/29/1MjKQP.jpg">
+<meta property="og:updated_time" content="2020-01-29T06:36:41.703Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="AngelNI&#39;s Blog">
-<meta name="twitter:description" content="This is a simple record of learning bits and pieces, so that each step of learning into an unforgettable memory.">
-<meta name="twitter:image" content="https://angelni.github.io/AngelNI.github.io/images/og_image.png">
+<meta name="twitter:title" content="二叉树的简单操作">
+<meta name="twitter:description" content="爱就像蓝天白云，晴空万里，突然暴风雨……">
+<meta name="twitter:image" content="https://s2.ax1x.com/2020/01/29/1MjKQP.jpg">
 
 
 
@@ -114,7 +115,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/AngelNI.github.io/">
             
-                <img src="/AngelNI.github.io/images/22.png" alt="AngelNI&#39;s Blog" height="28">
+                <img src="/AngelNI.github.io/images/22.png" alt="二叉树的简单操作" height="28">
             
             </a>
         </div>
@@ -139,6 +140,8 @@
                 <a class="navbar-item" href="http://music.angelni.cn/">Music</a>
                 
                 <a class="navbar-item" href="http://cloud.angelni.cn/">Cloud disk</a>
+                
+                <a class="navbar-item" href="/AngelNI.github.io/suisuinian">碎碎念</a>
                 
             </div>
             
@@ -167,47 +170,79 @@
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
-    <div class="card">
+                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://s2.ax1x.com/2020/01/29/1MjKQP.jpg" alt="二叉树的简单操作">
+        </span>
+    </div>
     
     <div class="card-content article ">
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-06-20T05:34:34.000Z">2019-06-20</time>
+                <time class="level-item has-text-grey" datetime="2020-01-29T05:34:52.000Z">2020-01-29</time>
                 
                 <div class="level-item">
-                <a class="has-link-grey -link" href="/AngelNI.github.io/categories/Life-essay/">Life essay</a>
+                <a class="has-link-grey -link" href="/AngelNI.github.io/categories/Data-Structure/">Data-Structure</a>
                 </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    6 minutes read (About 870 words)
+                    8 minutes read (About 1179 words)
                 </span>
                 
+                
+                <span class="level-item has-text-grey" id="busuanzi_container_page_pv">
+                    <i class="far fa-eye"></i>
+                    <span id="busuanzi_value_page_pv">0</span> visits
+                </span>
                 
             </div>
         </div>
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                <a class="has-link-black-ter" href="/AngelNI.github.io/Hello-world-0/">Hello world</a>
+                二叉树的简单操作
             
         </h1>
         <div class="content">
-            <h5 id="记一次过程经历"><a href="#记一次过程经历" class="headerlink" title="记一次过程经历"></a>记一次过程经历</h5><p> 最近，自己在搭一个博客，用 hexo+github，一开始按照网上的教程下载相应的软件，cmd安装，git bash 安装hexo，最开始可是在自己的本地可以预览，效果不错，直接就上传到github上的我的repo，结果cmd出错，由于对hexo 文件的位置不清，和出现的错误，我直接就删除了hexo，但是不是直接的卸载，有些文件还在（找不到啊 呜呜~），我用重新npm安装，发现还是不行，当时头大到想要格式化电脑了（还好没有，要不然就要重新慢慢下载了），然后我去找baidu，简书，发现自己的许多错误操作。好吧，我又从新开始。还是有error，我就按个所错误，发现自己有许多的本地配置没有设置，我就一条一条的修改（可气人了，一步踩一个坑，一步填一个坑），花了两天才把本地配置好（上课没时间啊）。</p>
+            <p>爱就像蓝天白云，晴空万里，突然暴风雨……<a id="more"></a></p>
+<h1 id="BiTree-Operation"><a href="#BiTree-Operation" class="headerlink" title="BiTree Operation"></a>BiTree Operation</h1><h2 id="1-先序创建二叉树"><a href="#1-先序创建二叉树" class="headerlink" title="1.先序创建二叉树"></a>1.先序创建二叉树</h2><figure class="highlight c++ hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-function">BiTree <span class="hljs-title">Creat_Bitree</span><span class="hljs-params">()</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">    <span class="hljs-keyword">char</span> ch;</span><br><span class="line">    <span class="hljs-built_in">cin</span>&gt;&gt;ch;</span><br><span class="line">    BiTree T = <span class="hljs-keyword">new</span> BiNode;</span><br><span class="line">    <span class="hljs-keyword">if</span>(ch ==<span class="hljs-string">'#'</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        T = <span class="hljs-literal">NULL</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        T-&gt;data = ch;</span><br><span class="line">        T-&gt;lchild = Creat_Bitree();</span><br><span class="line">        T-&gt;rchild = Creat_Bitree();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-keyword">return</span> T;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-二叉树的深度"><a href="#2-二叉树的深度" class="headerlink" title="2.二叉树的深度"></a>2.二叉树的深度</h2><figure class="highlight c++ hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">/*计算二叉树的深度*/</span></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">Depth</span><span class="hljs-params">(BiTree T)</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">    <span class="hljs-comment">//递归算法</span></span><br><span class="line">    <span class="hljs-keyword">if</span>(T==<span class="hljs-literal">NULL</span>)</span><br><span class="line">        <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;</span><br><span class="line">    <span class="hljs-keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line"></span><br><span class="line">        <span class="hljs-keyword">int</span> m = Depth(T-&gt;lchild);<span class="hljs-comment">//左子树深度</span></span><br><span class="line">        <span class="hljs-keyword">int</span> n = Depth(T-&gt;rchild);<span class="hljs-comment">//右子树深度</span></span><br><span class="line">        <span class="hljs-keyword">if</span>(m&gt;n)</span><br><span class="line">            <span class="hljs-keyword">return</span> (m+<span class="hljs-number">1</span>);</span><br><span class="line">        <span class="hljs-keyword">else</span></span><br><span class="line">            <span class="hljs-keyword">return</span> (n+<span class="hljs-number">1</span>);</span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-二叉树的节点数"><a href="#3-二叉树的节点数" class="headerlink" title="3.二叉树的节点数"></a>3.二叉树的节点数</h2><figure class="highlight c++ hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">NodeCount</span><span class="hljs-params">(BiTree T)</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">    <span class="hljs-keyword">if</span>(T==<span class="hljs-literal">NULL</span>)<span class="hljs-comment">//结点为空</span></span><br><span class="line">        <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;</span><br><span class="line">    <span class="hljs-keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="hljs-comment">//左子树结点+右子树结点+当前结点</span></span><br><span class="line">        <span class="hljs-keyword">return</span> NodeCount(T-&gt;lchild)+NodeCount(T-&gt;rchild)+<span class="hljs-number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-二叉树的叶子节点数"><a href="#4-二叉树的叶子节点数" class="headerlink" title="4.二叉树的叶子节点数"></a>4.二叉树的叶子节点数</h2><figure class="highlight c++ hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">leaf_num</span><span class="hljs-params">(BiTree T)</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">    <span class="hljs-keyword">if</span>(T == <span class="hljs-literal">NULL</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(T-&gt;lchild==<span class="hljs-literal">NULL</span>&amp;&amp;T-&gt;rchild==<span class="hljs-literal">NULL</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="hljs-keyword">return</span> leaf_num(T-&gt;lchild)+leaf_num(T-&gt;rchild);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="5-复制二叉树"><a href="#5-复制二叉树" class="headerlink" title="5.复制二叉树"></a>5.复制二叉树</h2><figure class="highlight c++ hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-function">BiTree <span class="hljs-title">Copy_Tree</span><span class="hljs-params">(BiTree T)</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">    BiTree newT;</span><br><span class="line">    <span class="hljs-keyword">if</span>(T==<span class="hljs-literal">NULL</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="hljs-keyword">return</span> <span class="hljs-literal">NULL</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        newT = <span class="hljs-keyword">new</span> BiNode;</span><br><span class="line">        newT-&gt;data = T-&gt;data;</span><br><span class="line">        newT-&gt;lchild = Copy_Tree(T-&gt;lchild);</span><br><span class="line">        newT-&gt;rchild = Copy_Tree(T-&gt;rchild);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-keyword">return</span> newT;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="6-镜像二叉树"><a href="#6-镜像二叉树" class="headerlink" title="6.镜像二叉树"></a>6.镜像二叉树</h2><figure class="highlight c++ hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">swap_BiNode</span><span class="hljs-params">(BiTree T)</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">    <span class="hljs-comment">//根据先序的思想对二叉树进行左右子树交换</span></span><br><span class="line">    BiTree t = <span class="hljs-literal">NULL</span>;</span><br><span class="line">    <span class="hljs-keyword">if</span>(T)</span><br><span class="line">    &#123;</span><br><span class="line">        t = T-&gt;lchild;</span><br><span class="line">        T-&gt;lchild = T-&gt;rchild;</span><br><span class="line">        T-&gt;rchild = t;</span><br><span class="line">        swap_BiNode(T-&gt;lchild);</span><br><span class="line">        swap_BiNode(T-&gt;rchild); </span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-keyword">else</span></span><br><span class="line">        <span class="hljs-keyword">return</span> ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="7-判断两棵二叉树是否相等"><a href="#7-判断两棵二叉树是否相等" class="headerlink" title="7.判断两棵二叉树是否相等"></a>7.判断两棵二叉树是否相等</h2><figure class="highlight c++ hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">/*判断两棵二叉树是否相等*/</span></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">Judge_Tree</span><span class="hljs-params">(BiTree T1,BiTree T2)</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">    <span class="hljs-comment">//左右子树相等</span></span><br><span class="line">    <span class="hljs-keyword">if</span>(!T1&amp;&amp;!T2)<span class="hljs-comment">//都为空</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-keyword">if</span>(!T1||!T2)<span class="hljs-comment">//其中一个为空</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-keyword">if</span>(T1-&gt;data == T2-&gt;data)<span class="hljs-comment">//数据相等</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="hljs-keyword">return</span> Judge_Tree(T1-&gt;lchild,T2-&gt;lchild) &amp;&amp; Judge_Tree(T1-&gt;rchild,T2-&gt;rchild);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-keyword">else</span></span><br><span class="line">        <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="8-判断是否为完全二叉树"><a href="#8-判断是否为完全二叉树" class="headerlink" title="8.判断是否为完全二叉树"></a>8.判断是否为完全二叉树</h2><figure class="highlight c++ hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">/*判断二叉树是否为完全二叉树*/</span></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">is_CBiTree</span><span class="hljs-params">(BiTree T)</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">    <span class="hljs-keyword">if</span>(T == <span class="hljs-literal">NULL</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-built_in">queue</span>&lt;BiTree&gt; q;</span><br><span class="line">    <span class="hljs-keyword">int</span> flag = <span class="hljs-number">0</span>;</span><br><span class="line">    q.push(T);</span><br><span class="line">    <span class="hljs-keyword">while</span>(!q.empty())</span><br><span class="line">    &#123;</span><br><span class="line">        BiTree p = q.front();</span><br><span class="line">        q.pop();</span><br><span class="line">        <span class="hljs-keyword">if</span>((flag&amp;&amp;(p-&gt;lchild!=<span class="hljs-literal">NULL</span>||p-&gt;rchild!=<span class="hljs-literal">NULL</span>))||(p-&gt;lchild==<span class="hljs-literal">NULL</span>&amp;&amp;p-&gt;rchild!=<span class="hljs-literal">NULL</span>))</span><br><span class="line">            <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;</span><br><span class="line">        <span class="hljs-keyword">if</span>(p-&gt;lchild!=<span class="hljs-literal">NULL</span>)</span><br><span class="line">            q.push(p-&gt;lchild);</span><br><span class="line">        <span class="hljs-keyword">if</span>(p-&gt;rchild!=<span class="hljs-literal">NULL</span>)</span><br><span class="line">            q.push(p-&gt;rchild);</span><br><span class="line">        <span class="hljs-keyword">if</span>((p-&gt;lchild!=<span class="hljs-literal">NULL</span>&amp;&amp;p-&gt;rchild==<span class="hljs-literal">NULL</span>)||(p-&gt;lchild==<span class="hljs-literal">NULL</span>&amp;&amp;p-&gt;rchild==<span class="hljs-literal">NULL</span>))</span><br><span class="line">            flag = <span class="hljs-number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="9-总体代码"><a href="#9-总体代码" class="headerlink" title="9.总体代码"></a>9.总体代码</h2><figure class="highlight c++ hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br><span class="line">236</span><br><span class="line">237</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;cstdlib&gt;</span></span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;queue&gt;</span></span></span><br><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;stack&gt;</span></span></span><br><span class="line"><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;</span><br><span class="line"><span class="hljs-keyword">typedef</span> <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">node</span></span></span><br><span class="line"><span class="hljs-class">&#123;</span></span><br><span class="line">    <span class="hljs-keyword">char</span> data;</span><br><span class="line">    <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">node</span> *<span class="hljs-title">lchild</span>,*<span class="hljs-title">rchild</span>;</span></span><br><span class="line">&#125;BiNode,*BiTree;</span><br><span class="line"><span class="hljs-comment">/*先序创建二叉树*/</span></span><br><span class="line"><span class="hljs-function">BiTree <span class="hljs-title">Creat_Bitree</span><span class="hljs-params">()</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">    <span class="hljs-keyword">char</span> ch;</span><br><span class="line">    <span class="hljs-built_in">cin</span>&gt;&gt;ch;</span><br><span class="line">    BiTree T = <span class="hljs-keyword">new</span> BiNode;</span><br><span class="line">    <span class="hljs-keyword">if</span>(ch ==<span class="hljs-string">'#'</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        T = <span class="hljs-literal">NULL</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        T-&gt;data = ch;</span><br><span class="line">        T-&gt;lchild = Creat_Bitree();</span><br><span class="line">        T-&gt;rchild = Creat_Bitree();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-keyword">return</span> T;</span><br><span class="line">&#125;</span><br><span class="line"><span class="hljs-comment">/*复制二叉树*/</span></span><br><span class="line"><span class="hljs-function">BiTree <span class="hljs-title">Copy_Tree</span><span class="hljs-params">(BiTree T)</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">    BiTree newT;</span><br><span class="line">    <span class="hljs-keyword">if</span>(T==<span class="hljs-literal">NULL</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="hljs-keyword">return</span> <span class="hljs-literal">NULL</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        newT = <span class="hljs-keyword">new</span> BiNode;</span><br><span class="line">        newT-&gt;data = T-&gt;data;</span><br><span class="line">        newT-&gt;lchild = Copy_Tree(T-&gt;lchild);</span><br><span class="line">        newT-&gt;rchild = Copy_Tree(T-&gt;rchild);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-keyword">return</span> newT;</span><br><span class="line">&#125;</span><br><span class="line"><span class="hljs-comment">/*计算二叉树的深度*/</span></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">Depth</span><span class="hljs-params">(BiTree T)</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">    <span class="hljs-keyword">if</span>(T==<span class="hljs-literal">NULL</span>)</span><br><span class="line">        <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;</span><br><span class="line">    <span class="hljs-keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="hljs-keyword">int</span> m = Depth(T-&gt;lchild);</span><br><span class="line">        <span class="hljs-keyword">int</span> n = Depth(T-&gt;rchild);</span><br><span class="line">        <span class="hljs-keyword">if</span>(m&gt;n)</span><br><span class="line">            <span class="hljs-keyword">return</span> (m+<span class="hljs-number">1</span>);</span><br><span class="line">        <span class="hljs-keyword">else</span></span><br><span class="line">            <span class="hljs-keyword">return</span> (n+<span class="hljs-number">1</span>);</span><br><span class="line">        </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;</span><br><span class="line"><span class="hljs-comment">/*统计节点数*/</span></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">NodeCount</span><span class="hljs-params">(BiTree T)</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">    <span class="hljs-keyword">if</span>(T==<span class="hljs-literal">NULL</span>)</span><br><span class="line">        <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;</span><br><span class="line">    <span class="hljs-keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="hljs-keyword">return</span> NodeCount(T-&gt;lchild)+NodeCount(T-&gt;rchild)+<span class="hljs-number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="hljs-comment">/*交换二叉树结点的左右孩子*/</span></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">swap_BiNode</span><span class="hljs-params">(BiTree T)</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">    <span class="hljs-comment">//根据先序的思想对二叉树进行左右子树交换</span></span><br><span class="line">    BiTree t = <span class="hljs-literal">NULL</span>;</span><br><span class="line">    <span class="hljs-keyword">if</span>(T)</span><br><span class="line">    &#123;</span><br><span class="line">        t = T-&gt;lchild;</span><br><span class="line">        T-&gt;lchild = T-&gt;rchild;</span><br><span class="line">        T-&gt;rchild = t;</span><br><span class="line">        swap_BiNode(T-&gt;lchild);</span><br><span class="line">        swap_BiNode(T-&gt;rchild); </span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-keyword">else</span></span><br><span class="line">        <span class="hljs-keyword">return</span> ;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"><span class="hljs-comment">/*判断两棵二叉树是否相等*/</span></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">Judge_Tree</span><span class="hljs-params">(BiTree T1,BiTree T2)</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">    <span class="hljs-comment">//左右子树相等或者左右子树互换相等</span></span><br><span class="line">    <span class="hljs-keyword">if</span>(!T1&amp;&amp;!T2)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-keyword">if</span>(!T1||!T2)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-keyword">if</span>(T1-&gt;data == T2-&gt;data)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="hljs-keyword">return</span> Judge_Tree(T1-&gt;lchild,T2-&gt;lchild) &amp;&amp; Judge_Tree(T1-&gt;rchild,T2-&gt;rchild);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-keyword">else</span></span><br><span class="line">        <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="hljs-comment">/*叶子结点数*/</span></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">leaf_num</span><span class="hljs-params">(BiTree T)</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">    <span class="hljs-keyword">if</span>(T == <span class="hljs-literal">NULL</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(T-&gt;lchild==<span class="hljs-literal">NULL</span>&amp;&amp;T-&gt;rchild==<span class="hljs-literal">NULL</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="hljs-keyword">return</span> leaf_num(T-&gt;lchild)+leaf_num(T-&gt;rchild);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"><span class="hljs-comment">/*判断二叉树是否为完全二叉树*/</span></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">is_CBiTree</span><span class="hljs-params">(BiTree T)</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">    <span class="hljs-keyword">if</span>(T == <span class="hljs-literal">NULL</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-built_in">queue</span>&lt;BiTree&gt; q;</span><br><span class="line">    <span class="hljs-keyword">int</span> flag = <span class="hljs-number">0</span>;</span><br><span class="line">    q.push(T);</span><br><span class="line">    <span class="hljs-keyword">while</span>(!q.empty())</span><br><span class="line">    &#123;</span><br><span class="line">        BiTree p = q.front();</span><br><span class="line">        q.pop();</span><br><span class="line">        <span class="hljs-keyword">if</span>((flag&amp;&amp;(p-&gt;lchild!=<span class="hljs-literal">NULL</span>||p-&gt;rchild!=<span class="hljs-literal">NULL</span>))||(p-&gt;lchild==<span class="hljs-literal">NULL</span>&amp;&amp;p-&gt;rchild!=<span class="hljs-literal">NULL</span>))</span><br><span class="line">            <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;</span><br><span class="line">        <span class="hljs-keyword">if</span>(p-&gt;lchild!=<span class="hljs-literal">NULL</span>)</span><br><span class="line">            q.push(p-&gt;lchild);</span><br><span class="line">        <span class="hljs-keyword">if</span>(p-&gt;rchild!=<span class="hljs-literal">NULL</span>)</span><br><span class="line">            q.push(p-&gt;rchild);</span><br><span class="line">        <span class="hljs-keyword">if</span>((p-&gt;lchild!=<span class="hljs-literal">NULL</span>&amp;&amp;p-&gt;rchild==<span class="hljs-literal">NULL</span>)||(p-&gt;lchild==<span class="hljs-literal">NULL</span>&amp;&amp;p-&gt;rchild==<span class="hljs-literal">NULL</span>))</span><br><span class="line">            flag = <span class="hljs-number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="hljs-comment">/*先序遍历*/</span></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">pre_travel</span><span class="hljs-params">(BiTree T)</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">    <span class="hljs-keyword">if</span>(T==<span class="hljs-literal">NULL</span>)</span><br><span class="line">        <span class="hljs-keyword">return</span> ;</span><br><span class="line">    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"%c  "</span>,T-&gt;data);</span><br><span class="line">    pre_travel(T-&gt;lchild);</span><br><span class="line">    pre_travel(T-&gt;rchild);</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"><span class="hljs-comment">//中序遍历</span></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">in_travel</span><span class="hljs-params">(BiTree T)</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">    <span class="hljs-keyword">if</span>(T)</span><br><span class="line">    &#123;</span><br><span class="line">        in_travel(T-&gt;lchild);</span><br><span class="line">        <span class="hljs-built_in">cout</span>&lt;&lt;T-&gt;data&lt;&lt;<span class="hljs-string">" "</span>;</span><br><span class="line">        in_travel(T-&gt;rchild);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="hljs-comment">//后序遍历</span></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">post_travel</span><span class="hljs-params">(BiTree T)</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">    <span class="hljs-keyword">if</span>(T)</span><br><span class="line">    &#123;</span><br><span class="line">        post_travel(T-&gt;lchild);</span><br><span class="line">        post_travel(T-&gt;rchild);</span><br><span class="line">        <span class="hljs-built_in">cout</span>&lt;&lt;T-&gt;data&lt;&lt;<span class="hljs-string">" "</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">    BiTree T1,T2,T3;</span><br><span class="line">    <span class="hljs-comment">//先序创建二叉树</span></span><br><span class="line">    T1 = Creat_Bitree();</span><br><span class="line">    <span class="hljs-comment">//深度</span></span><br><span class="line">    <span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-built_in">endl</span>;</span><br><span class="line">    <span class="hljs-keyword">int</span> dep = Depth(T1);</span><br><span class="line">    <span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-string">"The depth of the BiTree is "</span>&lt;&lt;dep&lt;&lt;<span class="hljs-built_in">endl</span>;</span><br><span class="line">    <span class="hljs-comment">//节点数</span></span><br><span class="line">    <span class="hljs-keyword">int</span> node_num = NodeCount(T1);</span><br><span class="line">    <span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-string">"The number of the Node of the BiTree  is "</span>&lt;&lt;node_num&lt;&lt;<span class="hljs-built_in">endl</span>;</span><br><span class="line">    <span class="hljs-comment">//叶子节点数</span></span><br><span class="line">    <span class="hljs-keyword">int</span> leaf_n = leaf_num(T1);</span><br><span class="line">    <span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-string">"The number of leaf Node is "</span>&lt;&lt;leaf_n&lt;&lt;<span class="hljs-built_in">endl</span>&lt;&lt;<span class="hljs-built_in">endl</span>;</span><br><span class="line">    <span class="hljs-comment">//复制二叉树</span></span><br><span class="line">    T2 = Copy_Tree(T1);</span><br><span class="line">    T3 = Copy_Tree(T1);</span><br><span class="line">    <span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-string">"The following traversal results are pre-order traversal"</span>&lt;&lt;<span class="hljs-built_in">endl</span>;</span><br><span class="line">    <span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-string">"The copying result:"</span>&lt;&lt;<span class="hljs-built_in">endl</span>;</span><br><span class="line">    <span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-string">"T1 : "</span>;pre_travel(T1);<span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-built_in">endl</span>;</span><br><span class="line">    <span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-string">"T2 : "</span>;pre_travel(T2);<span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-built_in">endl</span>;</span><br><span class="line">    <span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-string">"T3 : "</span>;pre_travel(T3);<span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-built_in">endl</span>&lt;&lt;<span class="hljs-built_in">endl</span>;</span><br><span class="line">    <span class="hljs-comment">//镜像二叉树</span></span><br><span class="line">    swap_BiNode(T2);</span><br><span class="line">    <span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-string">"The swaping result: "</span>&lt;&lt;<span class="hljs-built_in">endl</span>;</span><br><span class="line">    <span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-string">"T2 : "</span>;pre_travel(T2);<span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-built_in">endl</span>&lt;&lt;<span class="hljs-built_in">endl</span>;</span><br><span class="line">    <span class="hljs-comment">//判断是否相等</span></span><br><span class="line">    <span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-built_in">endl</span>;</span><br><span class="line">    <span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-string">"T1 and T2 are "</span>;</span><br><span class="line">    <span class="hljs-keyword">if</span>(Judge_Tree(T1,T2))</span><br><span class="line">        <span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-string">"Equal"</span>&lt;&lt;<span class="hljs-built_in">endl</span>;</span><br><span class="line">    <span class="hljs-keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-string">"Different"</span>&lt;&lt;<span class="hljs-built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-string">"T1 and T3 are "</span>;</span><br><span class="line">    <span class="hljs-keyword">if</span>(Judge_Tree(T1,T3))</span><br><span class="line">        <span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-string">"Equal"</span>&lt;&lt;<span class="hljs-built_in">endl</span>;</span><br><span class="line">    <span class="hljs-keyword">else</span></span><br><span class="line">        <span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-string">"Different"</span>&lt;&lt;<span class="hljs-built_in">endl</span>;</span><br><span class="line">    <span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-built_in">endl</span>;</span><br><span class="line">    <span class="hljs-comment">//是否为完全二叉树</span></span><br><span class="line">    <span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-string">"T1 is "</span>;</span><br><span class="line">    <span class="hljs-keyword">if</span>(is_CBiTree(T1))</span><br><span class="line">        <span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-string">"CBT"</span>&lt;&lt;<span class="hljs-built_in">endl</span>;</span><br><span class="line">    <span class="hljs-keyword">else</span></span><br><span class="line">        <span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-string">"not CBT"</span>&lt;&lt;<span class="hljs-built_in">endl</span>;</span><br><span class="line">    <span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-string">"T2 is "</span>;</span><br><span class="line">    <span class="hljs-keyword">if</span>(is_CBiTree(T2))</span><br><span class="line">        <span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-string">"CBT"</span>&lt;&lt;<span class="hljs-built_in">endl</span>;</span><br><span class="line">    <span class="hljs-keyword">else</span></span><br><span class="line">        <span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-string">"not CBT"</span>&lt;&lt;<span class="hljs-built_in">endl</span>;</span><br><span class="line">    <span class="hljs-comment">//测试样例A B D H # # # E # # C F # # G # #</span></span><br><span class="line">    system(<span class="hljs-string">"pause"</span>);</span><br><span class="line">    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>结果如下</strong></p>
+<p><img src="https://s2.ax1x.com/2020/01/29/1Mv2NQ.png" alt></p>
+
         </div>
         
-        
-        <div class="level is-mobile">
+        <div class="level is-size-7 is-uppercase">
             <div class="level-start">
                 <div class="level-item">
-                <a class="button is-size-7 is-light" href="/AngelNI.github.io/Hello-world-0/#more">Read More</a>
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/AngelNI.github.io/tags/BiTree/">BiTree</a>
                 </div>
             </div>
         </div>
+        
         
         
     </div>
@@ -215,33 +250,79 @@
 
 
 
+<div class="card">
+    <div class="card-content">
+        <h3 class="menu-label has-text-centered">Like this article? Support the author with</h3>
+        <div class="buttons is-centered">
+            
+                
+<a class="button is-info donate">
+    <span class="icon is-small">
+        <i class="fab fa-alipay"></i>
+    </span>
+    <span>Alipay</span>
+    <div class="qrcode"><img src="/AngelNI.github.io/images/1.jpg" alt="Alipay"></div>
+</a>
+
+                
+                
+<a class="button is-success donate">
+    <span class="icon is-small">
+        <i class="fab fa-weixin"></i>
+    </span>
+    <span>Wechat</span>
+    <div class="qrcode"><img src="/AngelNI.github.io/images/2.png" alt="Wechat"></div>
+</a>
+
+                
+        </div>
+    </div>
+</div>
 
 
 
-
-
-
-    
 <div class="card card-transparent">
-    <nav class="pagination is-centered" role="navigation" aria-label="pagination">
-        <div class="pagination-previous">
-            <a class="is-flex-grow has-text-black-ter" href="/AngelNI.github.io/page/16/">Previous</a>
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/AngelNI.github.io/winter-scenery/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">冬日</span>
+            </a>
         </div>
-        <div class="pagination-next is-invisible is-hidden-mobile">
-            <a class="is-flex-grow has-text-black-ter" href="/AngelNI.github.io/page/18/">Next</a>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/AngelNI.github.io/TF-RNN/">
+                <span class="level-item">TF-RNN</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
         </div>
-        <ul class="pagination-list is-hidden-mobile">
-            
-            <li><a class="pagination-link has-text-black-ter" href="/AngelNI.github.io/">1</a></li>
-            
-            <li><span class="pagination-ellipsis has-text-black-ter">&hellip;</span></li>
-            
-            <li><a class="pagination-link has-text-black-ter" href="/AngelNI.github.io/page/16/">16</a></li>
-            
-            <li><a class="pagination-link is-current" href="/AngelNI.github.io/page/17/">17</a></li>
-            
-        </ul>
-    </nav>
+        
+    </div>
+</div>
+
+
+
+<div class="card">
+    <div class="card-content">
+        <h3 class="title is-5 has-text-weight-normal">Comments</h3>
+        
+<div id="valine-thread" class="content"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#valine-thread' ,
+        notify: false,
+        verify: false,
+        app_id: '0dNioPuDCFsscn6y58dczYiy-gzGzoHsz',
+        app_key: 'jbyn5TRGmiiAsYjo7PFFzrYJ',
+        placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!'
+    });
+</script>
+
+    </div>
 </div>
 </div>
                 
@@ -288,7 +369,7 @@
                         Posts
                     </p>
                     <p class="title has-text-weight-normal">
-                        97
+                        103
                     </p>
                 </div>
             </div>
@@ -298,7 +379,7 @@
                         Categories
                     </p>
                     <p class="title has-text-weight-normal">
-                        19
+                        20
                     </p>
                 </div>
             </div>
@@ -308,7 +389,7 @@
                         Tags
                     </p>
                     <p class="title has-text-weight-normal">
-                        51
+                        57
                     </p>
                 </div>
             </div>
@@ -598,7 +679,7 @@
                 <span class="level-item">AI</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">15</span>
+                <span class="level-item tag">19</span>
             </span>
         </a></li><li>
         <a class="level is-marginless" href="/AngelNI.github.io/categories/Algorithm/">
@@ -622,7 +703,7 @@
                 <span class="level-item">Data-Structure</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">6</span>
+                <span class="level-item tag">7</span>
             </span>
         </a></li><li>
         <a class="level is-marginless" href="/AngelNI.github.io/categories/Game/">
@@ -652,6 +733,14 @@
         <a class="level is-marginless" href="/AngelNI.github.io/categories/Learning/">
             <span class="level-start">
                 <span class="level-item">Learning</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">1</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/AngelNI.github.io/categories/Life/">
+            <span class="level-start">
+                <span class="level-item">Life</span>
             </span>
             <span class="level-end">
                 <span class="level-item tag">1</span>
@@ -756,7 +845,7 @@
         <h3 class="menu-label">
             Tag Cloud
         </h3>
-        <a href="/AngelNI.github.io/tags/Algorithm/" style="font-size: 23px; color: #f00">Algorithm</a> <a href="/AngelNI.github.io/tags/Life-essay/" style="font-size: 21px; color: #eb0033">Life essay</a> <a href="/AngelNI.github.io/tags/AI/" style="font-size: 15px; color: #ad00cc">AI</a> <a href="/AngelNI.github.io/tags/literature/" style="font-size: 17px; color: #c20099">literature</a> <a href="/AngelNI.github.io/tags/C/" style="font-size: 19px; color: #d60066">C++</a> <a href="/AngelNI.github.io/tags/DSU/" style="font-size: 13px; color: #90f">DSU</a> <a href="/AngelNI.github.io/tags/Gradient-Descent/" style="font-size: 13px; color: #90f">Gradient Descent</a> <a href="/AngelNI.github.io/tags/Game/" style="font-size: 19px; color: #d60066">Game</a> <a href="/AngelNI.github.io/tags/K-means/" style="font-size: 13px; color: #90f">K-means</a> <a href="/AngelNI.github.io/tags/KNN/" style="font-size: 15px; color: #ad00cc">KNN</a> <a href="/AngelNI.github.io/tags/HIN/" style="font-size: 13px; color: #90f">HIN</a> <a href="/AngelNI.github.io/tags/Find/" style="font-size: 15px; color: #ad00cc">Find</a> <a href="/AngelNI.github.io/tags/Learing/" style="font-size: 13px; color: #90f">Learing</a> <a href="/AngelNI.github.io/tags/Keras-note/" style="font-size: 17px; color: #c20099">Keras-note</a> <a href="/AngelNI.github.io/tags/sharing/" style="font-size: 13px; color: #90f">sharing</a> <a href="/AngelNI.github.io/tags/MF/" style="font-size: 13px; color: #90f">MF</a> <a href="/AngelNI.github.io/tags/python/" style="font-size: 15px; color: #ad00cc">python</a> <a href="/AngelNI.github.io/tags/RKGE/" style="font-size: 13px; color: #90f">RKGE</a> <a href="/AngelNI.github.io/tags/MC/" style="font-size: 13px; color: #90f">MC</a> <a href="/AngelNI.github.io/tags/The-Miserable-Ones/" style="font-size: 13px; color: #90f">The Miserable Ones</a> <a href="/AngelNI.github.io/tags/critical-path/" style="font-size: 13px; color: #90f">critical-path</a> <a href="/AngelNI.github.io/tags/recommend/" style="font-size: 13px; color: #90f">recommend</a> <a href="/AngelNI.github.io/tags/Machine-learn/" style="font-size: 13px; color: #90f">Machine-learn</a> <a href="/AngelNI.github.io/tags/Ubuntu/" style="font-size: 13px; color: #90f">Ubuntu</a> <a href="/AngelNI.github.io/tags/Markov-Chain/" style="font-size: 13px; color: #90f">Markov Chain</a> <a href="/AngelNI.github.io/tags/python-command/" style="font-size: 13px; color: #90f">python command</a> <a href="/AngelNI.github.io/tags/java/" style="font-size: 13px; color: #90f">java</a> <a href="/AngelNI.github.io/tags/Linked-list/" style="font-size: 13px; color: #90f">Linked list</a> <a href="/AngelNI.github.io/tags/stack/" style="font-size: 13px; color: #90f">stack</a> <a href="/AngelNI.github.io/tags/huffman/" style="font-size: 13px; color: #90f">huffman</a> <a href="/AngelNI.github.io/tags/Makedown/" style="font-size: 13px; color: #90f">Makedown</a> <a href="/AngelNI.github.io/tags/hexo-github/" style="font-size: 13px; color: #90f">hexo+github</a> <a href="/AngelNI.github.io/tags/Linux/" style="font-size: 13px; color: #90f">Linux</a> <a href="/AngelNI.github.io/tags/Kodcloud/" style="font-size: 13px; color: #90f">Kodcloud</a> <a href="/AngelNI.github.io/tags/CDN/" style="font-size: 13px; color: #90f">CDN</a> <a href="/AngelNI.github.io/tags/min-path/" style="font-size: 13px; color: #90f">min_path</a> <a href="/AngelNI.github.io/tags/matplotlib/" style="font-size: 13px; color: #90f">matplotlib</a> <a href="/AngelNI.github.io/tags/MST/" style="font-size: 13px; color: #90f">MST</a> <a href="/AngelNI.github.io/tags/sort/" style="font-size: 13px; color: #90f">sort</a> <a href="/AngelNI.github.io/tags/Prefix-sum/" style="font-size: 13px; color: #90f">Prefix_sum</a> <a href="/AngelNI.github.io/tags/priority-queue/" style="font-size: 13px; color: #90f">priority_queue</a> <a href="/AngelNI.github.io/tags/serve/" style="font-size: 13px; color: #90f">serve</a> <a href="/AngelNI.github.io/tags/travel-tree/" style="font-size: 15px; color: #ad00cc">travel-tree</a> <a href="/AngelNI.github.io/tags/termux/" style="font-size: 13px; color: #90f">termux</a> <a href="/AngelNI.github.io/tags/ubuntu/" style="font-size: 13px; color: #90f">ubuntu</a> <a href="/AngelNI.github.io/tags/Git/" style="font-size: 13px; color: #90f">Git</a> <a href="/AngelNI.github.io/tags/Binary-tree-calculate/" style="font-size: 13px; color: #90f">Binary_tree_calculate</a> <a href="/AngelNI.github.io/tags/vscode/" style="font-size: 13px; color: #90f">vscode</a> <a href="/AngelNI.github.io/tags/NN/" style="font-size: 17px; color: #c20099">NN</a> <a href="/AngelNI.github.io/tags/Skill/" style="font-size: 13px; color: #90f">Skill</a> <a href="/AngelNI.github.io/tags/snake-game/" style="font-size: 13px; color: #90f">snake_game</a>
+        <a href="/AngelNI.github.io/tags/Life-essay/" style="font-size: 21px; color: #eb0033">Life essay</a> <a href="/AngelNI.github.io/tags/Algorithm/" style="font-size: 23px; color: #f00">Algorithm</a> <a href="/AngelNI.github.io/tags/literature/" style="font-size: 17px; color: #c20099">literature</a> <a href="/AngelNI.github.io/tags/BiTree/" style="font-size: 13px; color: #90f">BiTree</a> <a href="/AngelNI.github.io/tags/AI/" style="font-size: 15px; color: #ad00cc">AI</a> <a href="/AngelNI.github.io/tags/Find/" style="font-size: 15px; color: #ad00cc">Find</a> <a href="/AngelNI.github.io/tags/Gradient-Descent/" style="font-size: 13px; color: #90f">Gradient Descent</a> <a href="/AngelNI.github.io/tags/C/" style="font-size: 19px; color: #d60066">C++</a> <a href="/AngelNI.github.io/tags/Learing/" style="font-size: 13px; color: #90f">Learing</a> <a href="/AngelNI.github.io/tags/DSU/" style="font-size: 13px; color: #90f">DSU</a> <a href="/AngelNI.github.io/tags/Game/" style="font-size: 19px; color: #d60066">Game</a> <a href="/AngelNI.github.io/tags/KNN/" style="font-size: 15px; color: #ad00cc">KNN</a> <a href="/AngelNI.github.io/tags/K-means/" style="font-size: 13px; color: #90f">K-means</a> <a href="/AngelNI.github.io/tags/Keras-note/" style="font-size: 17px; color: #c20099">Keras-note</a> <a href="/AngelNI.github.io/tags/HIN/" style="font-size: 13px; color: #90f">HIN</a> <a href="/AngelNI.github.io/tags/sharing/" style="font-size: 13px; color: #90f">sharing</a> <a href="/AngelNI.github.io/tags/Makedown/" style="font-size: 13px; color: #90f">Makedown</a> <a href="/AngelNI.github.io/tags/MF/" style="font-size: 13px; color: #90f">MF</a> <a href="/AngelNI.github.io/tags/Markov-Chain/" style="font-size: 13px; color: #90f">Markov Chain</a> <a href="/AngelNI.github.io/tags/MC/" style="font-size: 13px; color: #90f">MC</a> <a href="/AngelNI.github.io/tags/python/" style="font-size: 15px; color: #ad00cc">python</a> <a href="/AngelNI.github.io/tags/recommend/" style="font-size: 13px; color: #90f">recommend</a> <a href="/AngelNI.github.io/tags/RKGE/" style="font-size: 13px; color: #90f">RKGE</a> <a href="/AngelNI.github.io/tags/Machine-learn/" style="font-size: 13px; color: #90f">Machine-learn</a> <a href="/AngelNI.github.io/tags/tensorflow/" style="font-size: 13px; color: #90f">tensorflow</a> <a href="/AngelNI.github.io/tags/RNN/" style="font-size: 13px; color: #90f">RNN</a> <a href="/AngelNI.github.io/tags/GradientDescent/" style="font-size: 13px; color: #90f">GradientDescent</a> <a href="/AngelNI.github.io/tags/The-Miserable-Ones/" style="font-size: 13px; color: #90f">The Miserable Ones</a> <a href="/AngelNI.github.io/tags/Neural-Network/" style="font-size: 13px; color: #90f">Neural_Network</a> <a href="/AngelNI.github.io/tags/Ubuntu/" style="font-size: 13px; color: #90f">Ubuntu</a> <a href="/AngelNI.github.io/tags/python-command/" style="font-size: 13px; color: #90f">python command</a> <a href="/AngelNI.github.io/tags/huffman/" style="font-size: 13px; color: #90f">huffman</a> <a href="/AngelNI.github.io/tags/hexo-github/" style="font-size: 13px; color: #90f">hexo+github</a> <a href="/AngelNI.github.io/tags/Linked-list/" style="font-size: 13px; color: #90f">Linked list</a> <a href="/AngelNI.github.io/tags/java/" style="font-size: 13px; color: #90f">java</a> <a href="/AngelNI.github.io/tags/stack/" style="font-size: 13px; color: #90f">stack</a> <a href="/AngelNI.github.io/tags/critical-path/" style="font-size: 13px; color: #90f">critical-path</a> <a href="/AngelNI.github.io/tags/CDN/" style="font-size: 13px; color: #90f">CDN</a> <a href="/AngelNI.github.io/tags/Kodcloud/" style="font-size: 13px; color: #90f">Kodcloud</a> <a href="/AngelNI.github.io/tags/Linux/" style="font-size: 13px; color: #90f">Linux</a> <a href="/AngelNI.github.io/tags/MST/" style="font-size: 13px; color: #90f">MST</a> <a href="/AngelNI.github.io/tags/priority-queue/" style="font-size: 13px; color: #90f">priority_queue</a> <a href="/AngelNI.github.io/tags/Prefix-sum/" style="font-size: 13px; color: #90f">Prefix_sum</a> <a href="/AngelNI.github.io/tags/matplotlib/" style="font-size: 13px; color: #90f">matplotlib</a> <a href="/AngelNI.github.io/tags/min-path/" style="font-size: 13px; color: #90f">min_path</a> <a href="/AngelNI.github.io/tags/snake-game/" style="font-size: 13px; color: #90f">snake_game</a> <a href="/AngelNI.github.io/tags/Skill/" style="font-size: 13px; color: #90f">Skill</a> <a href="/AngelNI.github.io/tags/serve/" style="font-size: 13px; color: #90f">serve</a> <a href="/AngelNI.github.io/tags/sort/" style="font-size: 13px; color: #90f">sort</a> <a href="/AngelNI.github.io/tags/travel-tree/" style="font-size: 15px; color: #ad00cc">travel-tree</a> <a href="/AngelNI.github.io/tags/termux/" style="font-size: 13px; color: #90f">termux</a> <a href="/AngelNI.github.io/tags/Binary-tree-calculate/" style="font-size: 13px; color: #90f">Binary_tree_calculate</a> <a href="/AngelNI.github.io/tags/ubuntu/" style="font-size: 13px; color: #90f">ubuntu</a> <a href="/AngelNI.github.io/tags/Scenery/" style="font-size: 13px; color: #90f">Scenery</a> <a href="/AngelNI.github.io/tags/Git/" style="font-size: 13px; color: #90f">Git</a> <a href="/AngelNI.github.io/tags/NN/" style="font-size: 17px; color: #c20099">NN</a> <a href="/AngelNI.github.io/tags/vscode/" style="font-size: 13px; color: #90f">vscode</a>
     </div>
 </div>
 
@@ -773,18 +862,18 @@
         
         <article class="media">
             
-            <a href="/AngelNI.github.io/vscodebackground/" class="media-left">
+            <a href="/AngelNI.github.io/winter-scenery/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="https://s2.ax1x.com/2020/01/03/lUYvzF.jpg" alt="自定义Vscode背景">
+                    <img class="thumbnail" src="https://s2.ax1x.com/2020/01/29/1QPiUf.jpg" alt="冬日">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-01-03T04:03:51.000Z">2020-01-03</time></div>
-                    <a href="/AngelNI.github.io/vscodebackground/" class="has-link-black-ter is-size-6">自定义Vscode背景</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-01-29T06:38:00.000Z">2020-01-29</time></div>
+                    <a href="/AngelNI.github.io/winter-scenery/" class="has-link-black-ter is-size-6">冬日</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/AngelNI.github.io/categories/Life/">Life</a>
                     </p>
                 </div>
             </div>
@@ -792,18 +881,18 @@
         
         <article class="media">
             
-            <a href="/AngelNI.github.io/nowcoder-3/" class="media-left">
+            <a href="/AngelNI.github.io/BiTree-Op/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="https://s2.ax1x.com/2019/12/30/lMcJGF.jpg" alt="西南民族大学程序竞赛">
+                    <img class="thumbnail" src="https://s2.ax1x.com/2020/01/29/1MjKQP.jpg" alt="二叉树的简单操作">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-30T05:34:06.000Z">2019-12-30</time></div>
-                    <a href="/AngelNI.github.io/nowcoder-3/" class="has-link-black-ter is-size-6">西南民族大学程序竞赛</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-01-29T05:34:52.000Z">2020-01-29</time></div>
+                    <a href="/AngelNI.github.io/BiTree-Op/" class="has-link-black-ter is-size-6">二叉树的简单操作</a>
                     <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/AngelNI.github.io/categories/Algorithm/">Algorithm</a>
+                        <a class="has-link-grey -link" href="/AngelNI.github.io/categories/Data-Structure/">Data-Structure</a>
                     </p>
                 </div>
             </div>
@@ -811,18 +900,18 @@
         
         <article class="media">
             
-            <a href="/AngelNI.github.io/nowcoder-2/" class="media-left">
+            <a href="/AngelNI.github.io/TF-RNN/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="https://s2.ax1x.com/2019/12/21/QveBL9.png" alt="哈理工新生赛">
+                    <img class="thumbnail" src="https://s2.ax1x.com/2020/01/27/1ufAQ1.jpg" alt="TF-RNN">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-21T08:32:38.000Z">2019-12-21</time></div>
-                    <a href="/AngelNI.github.io/nowcoder-2/" class="has-link-black-ter is-size-6">哈理工新生赛</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-01-27T14:12:49.000Z">2020-01-27</time></div>
+                    <a href="/AngelNI.github.io/TF-RNN/" class="has-link-black-ter is-size-6">TF-RNN</a>
                     <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/AngelNI.github.io/categories/Algorithm/">Algorithm</a>
+                        <a class="has-link-grey -link" href="/AngelNI.github.io/categories/AI/">AI</a>
                     </p>
                 </div>
             </div>
@@ -830,18 +919,18 @@
         
         <article class="media">
             
-            <a href="/AngelNI.github.io/The-Miserable-Ones/" class="media-left">
+            <a href="/AngelNI.github.io/TF-CNN/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="https://s2.ax1x.com/2019/12/19/Qqz3TI.jpg" alt="《悲惨的世界》读后感">
+                    <img class="thumbnail" src="https://s2.ax1x.com/2020/01/27/1uK0BQ.jpg" alt="TF-CNN">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-19T11:54:58.000Z">2019-12-19</time></div>
-                    <a href="/AngelNI.github.io/The-Miserable-Ones/" class="has-link-black-ter is-size-6">《悲惨的世界》读后感</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-01-27T09:47:03.000Z">2020-01-27</time></div>
+                    <a href="/AngelNI.github.io/TF-CNN/" class="has-link-black-ter is-size-6">TF-CNN</a>
                     <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/AngelNI.github.io/categories/literature/">literature</a>
+                        <a class="has-link-grey -link" href="/AngelNI.github.io/categories/AI/">AI</a>
                     </p>
                 </div>
             </div>
@@ -849,18 +938,18 @@
         
         <article class="media">
             
-            <a href="/AngelNI.github.io/nowcoder-1/" class="media-left">
+            <a href="/AngelNI.github.io/TF-NN/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="https://s2.ax1x.com/2019/12/15/QfNpJH.png" alt="长沙理工新生赛">
+                    <img class="thumbnail" src="https://s2.ax1x.com/2020/01/27/1uKKXD.jpg" alt="TF-NN">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-15T09:10:42.000Z">2019-12-15</time></div>
-                    <a href="/AngelNI.github.io/nowcoder-1/" class="has-link-black-ter is-size-6">长沙理工新生赛</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-01-27T06:44:36.000Z">2020-01-27</time></div>
+                    <a href="/AngelNI.github.io/TF-NN/" class="has-link-black-ter is-size-6">TF-NN</a>
                     <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/AngelNI.github.io/categories/Algorithm/">Algorithm</a>
+                        <a class="has-link-grey -link" href="/AngelNI.github.io/categories/AI/">AI</a>
                     </p>
                 </div>
             </div>
@@ -884,7 +973,7 @@
                     <span class="level-item">January 2020</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">1</span>
+                    <span class="level-item tag">7</span>
                 </span>
             </a>
         </li>
@@ -994,6 +1083,13 @@
                 </div>
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/AngelNI.github.io/tags/BiTree/">
+                        <span class="tag">BiTree</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/AngelNI.github.io/tags/Binary-tree-calculate/">
                         <span class="tag">Binary_tree_calculate</span>
                         <span class="tag is-grey">1</span>
@@ -1045,6 +1141,13 @@
                 <div class="control">
                     <a class="tags has-addons" href="/AngelNI.github.io/tags/Gradient-Descent/">
                         <span class="tag">Gradient Descent</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/AngelNI.github.io/tags/GradientDescent/">
+                        <span class="tag">GradientDescent</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>
@@ -1162,6 +1265,13 @@
                 </div>
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/AngelNI.github.io/tags/Neural-Network/">
+                        <span class="tag">Neural_Network</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/AngelNI.github.io/tags/Prefix-sum/">
                         <span class="tag">Prefix_sum</span>
                         <span class="tag is-grey">1</span>
@@ -1171,6 +1281,20 @@
                 <div class="control">
                     <a class="tags has-addons" href="/AngelNI.github.io/tags/RKGE/">
                         <span class="tag">RKGE</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/AngelNI.github.io/tags/RNN/">
+                        <span class="tag">RNN</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/AngelNI.github.io/tags/Scenery/">
+                        <span class="tag">Scenery</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>
@@ -1304,6 +1428,13 @@
                 <div class="control">
                     <a class="tags has-addons" href="/AngelNI.github.io/tags/stack/">
                         <span class="tag">stack</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/AngelNI.github.io/tags/tensorflow/">
+                        <span class="tag">tensorflow</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>
@@ -1361,18 +1492,18 @@
         
         <article class="media">
             
-            <a href="/AngelNI.github.io/vscodebackground/" class="media-left">
+            <a href="/AngelNI.github.io/winter-scenery/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="https://s2.ax1x.com/2020/01/03/lUYvzF.jpg" alt="自定义Vscode背景">
+                    <img class="thumbnail" src="https://s2.ax1x.com/2020/01/29/1QPiUf.jpg" alt="冬日">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-01-03T04:03:51.000Z">2020-01-03</time></div>
-                    <a href="/AngelNI.github.io/vscodebackground/" class="has-link-black-ter is-size-6">自定义Vscode背景</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-01-29T06:38:00.000Z">2020-01-29</time></div>
+                    <a href="/AngelNI.github.io/winter-scenery/" class="has-link-black-ter is-size-6">冬日</a>
                     <p class="is-size-7 is-uppercase">
-                        
+                        <a class="has-link-grey -link" href="/AngelNI.github.io/categories/Life/">Life</a>
                     </p>
                 </div>
             </div>
@@ -1380,18 +1511,18 @@
         
         <article class="media">
             
-            <a href="/AngelNI.github.io/nowcoder-3/" class="media-left">
+            <a href="/AngelNI.github.io/BiTree-Op/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="https://s2.ax1x.com/2019/12/30/lMcJGF.jpg" alt="西南民族大学程序竞赛">
+                    <img class="thumbnail" src="https://s2.ax1x.com/2020/01/29/1MjKQP.jpg" alt="二叉树的简单操作">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-30T05:34:06.000Z">2019-12-30</time></div>
-                    <a href="/AngelNI.github.io/nowcoder-3/" class="has-link-black-ter is-size-6">西南民族大学程序竞赛</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-01-29T05:34:52.000Z">2020-01-29</time></div>
+                    <a href="/AngelNI.github.io/BiTree-Op/" class="has-link-black-ter is-size-6">二叉树的简单操作</a>
                     <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/AngelNI.github.io/categories/Algorithm/">Algorithm</a>
+                        <a class="has-link-grey -link" href="/AngelNI.github.io/categories/Data-Structure/">Data-Structure</a>
                     </p>
                 </div>
             </div>
@@ -1399,18 +1530,18 @@
         
         <article class="media">
             
-            <a href="/AngelNI.github.io/nowcoder-2/" class="media-left">
+            <a href="/AngelNI.github.io/TF-RNN/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="https://s2.ax1x.com/2019/12/21/QveBL9.png" alt="哈理工新生赛">
+                    <img class="thumbnail" src="https://s2.ax1x.com/2020/01/27/1ufAQ1.jpg" alt="TF-RNN">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-21T08:32:38.000Z">2019-12-21</time></div>
-                    <a href="/AngelNI.github.io/nowcoder-2/" class="has-link-black-ter is-size-6">哈理工新生赛</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-01-27T14:12:49.000Z">2020-01-27</time></div>
+                    <a href="/AngelNI.github.io/TF-RNN/" class="has-link-black-ter is-size-6">TF-RNN</a>
                     <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/AngelNI.github.io/categories/Algorithm/">Algorithm</a>
+                        <a class="has-link-grey -link" href="/AngelNI.github.io/categories/AI/">AI</a>
                     </p>
                 </div>
             </div>
@@ -1418,18 +1549,18 @@
         
         <article class="media">
             
-            <a href="/AngelNI.github.io/The-Miserable-Ones/" class="media-left">
+            <a href="/AngelNI.github.io/TF-CNN/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="https://s2.ax1x.com/2019/12/19/Qqz3TI.jpg" alt="《悲惨的世界》读后感">
+                    <img class="thumbnail" src="https://s2.ax1x.com/2020/01/27/1uK0BQ.jpg" alt="TF-CNN">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-19T11:54:58.000Z">2019-12-19</time></div>
-                    <a href="/AngelNI.github.io/The-Miserable-Ones/" class="has-link-black-ter is-size-6">《悲惨的世界》读后感</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-01-27T09:47:03.000Z">2020-01-27</time></div>
+                    <a href="/AngelNI.github.io/TF-CNN/" class="has-link-black-ter is-size-6">TF-CNN</a>
                     <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/AngelNI.github.io/categories/literature/">literature</a>
+                        <a class="has-link-grey -link" href="/AngelNI.github.io/categories/AI/">AI</a>
                     </p>
                 </div>
             </div>
@@ -1437,18 +1568,18 @@
         
         <article class="media">
             
-            <a href="/AngelNI.github.io/nowcoder-1/" class="media-left">
+            <a href="/AngelNI.github.io/TF-NN/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="https://s2.ax1x.com/2019/12/15/QfNpJH.png" alt="长沙理工新生赛">
+                    <img class="thumbnail" src="https://s2.ax1x.com/2020/01/27/1uKKXD.jpg" alt="TF-NN">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-12-15T09:10:42.000Z">2019-12-15</time></div>
-                    <a href="/AngelNI.github.io/nowcoder-1/" class="has-link-black-ter is-size-6">长沙理工新生赛</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-01-27T06:44:36.000Z">2020-01-27</time></div>
+                    <a href="/AngelNI.github.io/TF-NN/" class="has-link-black-ter is-size-6">TF-NN</a>
                     <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/AngelNI.github.io/categories/Algorithm/">Algorithm</a>
+                        <a class="has-link-grey -link" href="/AngelNI.github.io/categories/AI/">AI</a>
                     </p>
                 </div>
             </div>
@@ -1472,7 +1603,7 @@
                     <span class="level-item">January 2020</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">1</span>
+                    <span class="level-item tag">7</span>
                 </span>
             </a>
         </li>
@@ -1582,6 +1713,13 @@
                 </div>
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/AngelNI.github.io/tags/BiTree/">
+                        <span class="tag">BiTree</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/AngelNI.github.io/tags/Binary-tree-calculate/">
                         <span class="tag">Binary_tree_calculate</span>
                         <span class="tag is-grey">1</span>
@@ -1633,6 +1771,13 @@
                 <div class="control">
                     <a class="tags has-addons" href="/AngelNI.github.io/tags/Gradient-Descent/">
                         <span class="tag">Gradient Descent</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/AngelNI.github.io/tags/GradientDescent/">
+                        <span class="tag">GradientDescent</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>
@@ -1750,6 +1895,13 @@
                 </div>
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/AngelNI.github.io/tags/Neural-Network/">
+                        <span class="tag">Neural_Network</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/AngelNI.github.io/tags/Prefix-sum/">
                         <span class="tag">Prefix_sum</span>
                         <span class="tag is-grey">1</span>
@@ -1759,6 +1911,20 @@
                 <div class="control">
                     <a class="tags has-addons" href="/AngelNI.github.io/tags/RKGE/">
                         <span class="tag">RKGE</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/AngelNI.github.io/tags/RNN/">
+                        <span class="tag">RNN</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/AngelNI.github.io/tags/Scenery/">
+                        <span class="tag">Scenery</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>
@@ -1897,6 +2063,13 @@
                 </div>
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/AngelNI.github.io/tags/tensorflow/">
+                        <span class="tag">tensorflow</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/AngelNI.github.io/tags/termux/">
                         <span class="tag">termux</span>
                         <span class="tag is-grey">1</span>
@@ -1941,7 +2114,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/AngelNI.github.io/">
                 
-                    <img src="/AngelNI.github.io/images/22.png" alt="AngelNI&#39;s Blog" height="28">
+                    <img src="/AngelNI.github.io/images/22.png" alt="二叉树的简单操作" height="28">
                 
                 </a>
                 <p class="is-size-7">
