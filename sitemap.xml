@@ -2,9 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://angelni.github.io/str-image/</loc>
+    
+    <lastmod>2020-01-31T03:48:53.408Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://angelni.github.io/re/</loc>
+    
+    <lastmod>2020-01-31T03:48:53.403Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://angelni.github.io/py-pkg/</loc>
+    
+    <lastmod>2020-01-31T03:48:53.401Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://angelni.github.io/first-crawl/</loc>
     
-    <lastmod>2020-01-31T03:47:53.342Z</lastmod>
+    <lastmod>2020-01-31T03:48:53.399Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://angelni.github.io/TF-MF/</loc>
+    
+    <lastmod>2020-01-31T03:48:53.397Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://angelni.github.io/Crawler/</loc>
+    
+    <lastmod>2020-01-31T03:48:53.393Z</lastmod>
     
   </url>
   
@@ -12,41 +47,6 @@
     <loc>https://angelni.github.io/winter-scenery/</loc>
     
     <lastmod>2020-01-30T12:24:55.145Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://angelni.github.io/py-pkg/</loc>
-    
-    <lastmod>2020-01-30T11:33:38.420Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://angelni.github.io/TF-MF/</loc>
-    
-    <lastmod>2020-01-30T11:08:57.687Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://angelni.github.io/Crawler/</loc>
-    
-    <lastmod>2020-01-30T08:56:46.249Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://angelni.github.io/re/</loc>
-    
-    <lastmod>2020-01-30T04:43:23.522Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://angelni.github.io/str-image/</loc>
-    
-    <lastmod>2020-01-29T10:41:44.621Z</lastmod>
     
   </url>
   
