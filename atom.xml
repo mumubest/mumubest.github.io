@@ -6,7 +6,7 @@
   <link href="/AngelNI.github.io/atom.xml" rel="self"/>
   
   <link href="https://angelni.github.io/"/>
-  <updated>2020-01-29T06:53:31.873Z</updated>
+  <updated>2020-01-30T12:24:55.145Z</updated>
   <id>https://angelni.github.io/</id>
   
   <author>
@@ -20,19 +20,139 @@
     <title>冬日</title>
     <link href="https://angelni.github.io/winter-scenery/"/>
     <id>https://angelni.github.io/winter-scenery/</id>
-    <published>2020-01-29T06:38:00.000Z</published>
-    <updated>2020-01-29T06:53:31.873Z</updated>
+    <published>2020-01-31T06:38:00.000Z</published>
+    <updated>2020-01-30T12:24:55.145Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;冬日。感谢美丽的摄影师（大哥在上，绕小弟一命）&lt;/p&gt;
+      &lt;p&gt;冬日。感谢美丽的摄影师（ORZ）&lt;/p&gt;
     
     </summary>
     
-      <category term="Life" scheme="https://angelni.github.io/categories/Life/"/>
+      <category term="Life essay" scheme="https://angelni.github.io/categories/Life-essay/"/>
     
     
       <category term="Scenery" scheme="https://angelni.github.io/tags/Scenery/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PY文件打包成EXE</title>
+    <link href="https://angelni.github.io/py-pkg/"/>
+    <id>https://angelni.github.io/py-pkg/</id>
+    <published>2020-01-30T11:07:18.000Z</published>
+    <updated>2020-01-30T11:33:38.420Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;奔向远方&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="python" scheme="https://angelni.github.io/categories/python/"/>
+    
+    
+      <category term="pyinstaller" scheme="https://angelni.github.io/tags/pyinstaller/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>矩阵分解ML-latest-small</title>
+    <link href="https://angelni.github.io/TF-MF/"/>
+    <id>https://angelni.github.io/TF-MF/</id>
+    <published>2020-01-30T09:29:56.000Z</published>
+    <updated>2020-01-30T11:08:57.687Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;你的努力将成就更好的自己。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="AI" scheme="https://angelni.github.io/categories/AI/"/>
+    
+    
+      <category term="MF" scheme="https://angelni.github.io/tags/MF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>简单爬取网站图片</title>
+    <link href="https://angelni.github.io/Crawler/"/>
+    <id>https://angelni.github.io/Crawler/</id>
+    <published>2020-01-30T05:49:49.000Z</published>
+    <updated>2020-01-30T08:56:46.249Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;涉世浅，点染亦浅；历事深，机械亦深。故君子与其练达，不若朴鲁；与其曲谨，不若疏狂。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="python" scheme="https://angelni.github.io/categories/python/"/>
+    
+    
+      <category term="Crawler" scheme="https://angelni.github.io/tags/Crawler/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>第一个爬虫小程序</title>
+    <link href="https://angelni.github.io/first-crawl/"/>
+    <id>https://angelni.github.io/first-crawl/</id>
+    <published>2020-01-30T03:25:40.000Z</published>
+    <updated>2020-01-31T03:47:53.342Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;小岛加油！武汉加油！（小岛仍保持着0记录）&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="python" scheme="https://angelni.github.io/categories/python/"/>
+    
+    
+      <category term="crawler" scheme="https://angelni.github.io/tags/crawler/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>python 图片转字符串</title>
+    <link href="https://angelni.github.io/str-image/"/>
+    <id>https://angelni.github.io/str-image/</id>
+    <published>2020-01-29T10:30:03.000Z</published>
+    <updated>2020-01-29T10:41:44.621Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;鲸可落&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="python" scheme="https://angelni.github.io/categories/python/"/>
+    
+    
+      <category term="str_image" scheme="https://angelni.github.io/tags/str-image/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>正则表达式</title>
+    <link href="https://angelni.github.io/re/"/>
+    <id>https://angelni.github.io/re/</id>
+    <published>2020-01-29T10:00:12.000Z</published>
+    <updated>2020-01-30T04:43:23.522Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;达人物外之物，思身后之身，宁受一时之寂寞，毋取万古之凄凉。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="python" scheme="https://angelni.github.io/categories/python/"/>
+    
+    
+      <category term="RE" scheme="https://angelni.github.io/tags/RE/"/>
     
   </entry>
   
@@ -41,7 +161,7 @@
     <link href="https://angelni.github.io/BiTree-Op/"/>
     <id>https://angelni.github.io/BiTree-Op/</id>
     <published>2020-01-29T05:34:52.000Z</published>
-    <updated>2020-01-29T06:36:41.703Z</updated>
+    <updated>2020-01-29T07:04:29.933Z</updated>
     
     <summary type="html">
     
@@ -61,7 +181,7 @@
     <link href="https://angelni.github.io/TF-RNN/"/>
     <id>https://angelni.github.io/TF-RNN/</id>
     <published>2020-01-27T14:12:49.000Z</published>
-    <updated>2020-01-27T14:19:10.745Z</updated>
+    <updated>2020-01-29T07:04:29.955Z</updated>
     
     <summary type="html">
     
@@ -81,7 +201,7 @@
     <link href="https://angelni.github.io/TF-CNN/"/>
     <id>https://angelni.github.io/TF-CNN/</id>
     <published>2020-01-27T09:47:03.000Z</published>
-    <updated>2020-01-27T10:36:22.425Z</updated>
+    <updated>2020-01-29T07:04:29.941Z</updated>
     
     <summary type="html">
     
@@ -101,7 +221,7 @@
     <link href="https://angelni.github.io/TF-NN/"/>
     <id>https://angelni.github.io/TF-NN/</id>
     <published>2020-01-27T06:44:36.000Z</published>
-    <updated>2020-01-27T09:50:34.296Z</updated>
+    <updated>2020-01-29T07:04:29.961Z</updated>
     
     <summary type="html">
     
@@ -121,7 +241,7 @@
     <link href="https://angelni.github.io/TF-GD/"/>
     <id>https://angelni.github.io/TF-GD/</id>
     <published>2020-01-27T04:42:39.000Z</published>
-    <updated>2020-01-27T09:50:44.020Z</updated>
+    <updated>2020-01-29T07:04:29.959Z</updated>
     
     <summary type="html">
     
@@ -284,126 +404,6 @@
     <summary type="html">
     
       &lt;p&gt;快读，快读，快速读入&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Algorithm" scheme="https://angelni.github.io/categories/Algorithm/"/>
-    
-    
-      <category term="Algorithm" scheme="https://angelni.github.io/tags/Algorithm/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>排序算法-2</title>
-    <link href="https://angelni.github.io/sort-2/"/>
-    <id>https://angelni.github.io/sort-2/</id>
-    <published>2019-12-07T10:02:56.000Z</published>
-    <updated>2019-12-07T10:24:58.035Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;桶排序，又简单，又快速，适合处理大量数据&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Algorithm" scheme="https://angelni.github.io/categories/Algorithm/"/>
-    
-    
-      <category term="Algorithm" scheme="https://angelni.github.io/tags/Algorithm/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>陌上花开</title>
-    <link href="https://angelni.github.io/record/"/>
-    <id>https://angelni.github.io/record/</id>
-    <published>2019-12-01T11:46:45.000Z</published>
-    <updated>2019-12-01T13:37:57.107Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;12月的第一天，也是一年中的最后一个月，不知不觉你又长大一岁。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Life essay" scheme="https://angelni.github.io/categories/Life-essay/"/>
-    
-    
-      <category term="Life essay" scheme="https://angelni.github.io/tags/Life-essay/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>简单前缀和</title>
-    <link href="https://angelni.github.io/prefix-sum/"/>
-    <id>https://angelni.github.io/prefix-sum/</id>
-    <published>2019-11-30T10:03:12.000Z</published>
-    <updated>2019-11-30T14:09:58.818Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;一切都在潜移默化中ing&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Algorithm" scheme="https://angelni.github.io/categories/Algorithm/"/>
-    
-    
-      <category term="Prefix_sum" scheme="https://angelni.github.io/tags/Prefix-sum/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>排序算法-1</title>
-    <link href="https://angelni.github.io/sort-1/"/>
-    <id>https://angelni.github.io/sort-1/</id>
-    <published>2019-11-27T07:52:19.000Z</published>
-    <updated>2019-12-07T10:02:46.466Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;记住一切都会好起来。给他一点时间。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Algorithm" scheme="https://angelni.github.io/categories/Algorithm/"/>
-    
-    
-      <category term="sort" scheme="https://angelni.github.io/tags/sort/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>周练19.11.24</title>
-    <link href="https://angelni.github.io/3/"/>
-    <id>https://angelni.github.io/3/</id>
-    <published>2019-11-25T03:25:11.000Z</published>
-    <updated>2019-11-30T10:36:00.315Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;积薄而为厚，积少而为多。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Algorithm" scheme="https://angelni.github.io/categories/Algorithm/"/>
-    
-    
-      <category term="Algorithm" scheme="https://angelni.github.io/tags/Algorithm/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>周练19.11.17</title>
-    <link href="https://angelni.github.io/2/"/>
-    <id>https://angelni.github.io/2/</id>
-    <published>2019-11-18T13:28:07.000Z</published>
-    <updated>2019-11-18T14:36:55.160Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;愿能把握当下，珍惜每一段追逐的时光，铭记每一次美好的相遇，不给人生留下遗憾。&lt;/p&gt;
     
     </summary>
     
