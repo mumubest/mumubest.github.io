@@ -6,7 +6,7 @@
   <link href="/AngelNI.github.io/atom.xml" rel="self"/>
   
   <link href="https://angelni.github.io/"/>
-  <updated>2020-01-30T12:24:55.145Z</updated>
+  <updated>2020-02-01T15:16:59.203Z</updated>
   <id>https://angelni.github.io/</id>
   
   <author>
@@ -17,11 +17,31 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>python制作中国疫情地图</title>
+    <link href="https://angelni.github.io/2019-nCov/"/>
+    <id>https://angelni.github.io/2019-nCov/</id>
+    <published>2020-02-01T15:05:49.000Z</published>
+    <updated>2020-02-01T15:16:59.203Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;快开学了啊&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="python" scheme="https://angelni.github.io/categories/python/"/>
+    
+    
+      <category term="2019_nCov" scheme="https://angelni.github.io/tags/2019-nCov/"/>
+    
+  </entry>
+  
+  <entry>
     <title>冬日</title>
     <link href="https://angelni.github.io/winter-scenery/"/>
     <id>https://angelni.github.io/winter-scenery/</id>
     <published>2020-01-31T06:38:00.000Z</published>
-    <updated>2020-01-30T12:24:55.145Z</updated>
+    <updated>2020-02-01T04:58:53.532Z</updated>
     
     <summary type="html">
     
@@ -391,26 +411,6 @@
     
     
       <category term="MST" scheme="https://angelni.github.io/tags/MST/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>C++的快读+快写</title>
-    <link href="https://angelni.github.io/qread/"/>
-    <id>https://angelni.github.io/qread/</id>
-    <published>2019-12-07T10:13:08.000Z</published>
-    <updated>2019-12-07T13:13:24.602Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;快读，快读，快速读入&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Algorithm" scheme="https://angelni.github.io/categories/Algorithm/"/>
-    
-    
-      <category term="Algorithm" scheme="https://angelni.github.io/tags/Algorithm/"/>
     
   </entry>
   

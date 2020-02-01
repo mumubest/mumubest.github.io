@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://angelni.github.io/AngelNI.github.io/2019-nCov/</loc>
+    <lastmod>2020-02-01</lastmod>
+  </url>  <url>
+    <loc>https://angelni.github.io/AngelNI.github.io/winter-scenery/</loc>
+    <lastmod>2020-02-01</lastmod>
+  </url>  <url>
     <loc>https://angelni.github.io/AngelNI.github.io/str-image/</loc>
     <lastmod>2020-01-31</lastmod>
   </url>  <url>
@@ -18,9 +24,6 @@
   </url>  <url>
     <loc>https://angelni.github.io/AngelNI.github.io/Crawler/</loc>
     <lastmod>2020-01-31</lastmod>
-  </url>  <url>
-    <loc>https://angelni.github.io/AngelNI.github.io/winter-scenery/</loc>
-    <lastmod>2020-01-30</lastmod>
   </url>  <url>
     <loc>https://angelni.github.io/AngelNI.github.io/TF-NN/</loc>
     <lastmod>2020-01-29</lastmod>
