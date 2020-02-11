@@ -6,7 +6,7 @@
   <link href="/AngelNI.github.io/atom.xml" rel="self"/>
   
   <link href="https://angelni.github.io/"/>
-  <updated>2020-02-01T15:18:56.886Z</updated>
+  <updated>2020-02-11T10:14:41.225Z</updated>
   <id>https://angelni.github.io/</id>
   
   <author>
@@ -15,6 +15,52 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>winter camp 2</title>
+    <link href="https://angelni.github.io/winter-camp-2/"/>
+    <id>https://angelni.github.io/winter-camp-2/</id>
+    <published>2020-02-11T09:37:58.000Z</published>
+    <updated>2020-02-11T10:14:41.225Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+
+&lt;h1 id=&quot;A做游戏&quot;&gt;&lt;a href=&quot;#A做游戏&quot; class=&quot;headerlink&quot; title=&quot;A做游戏&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://ac.nowcoder.com/acm/contest/3003/A&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="https://angelni.github.io/categories/Algorithm/"/>
+    
+    
+      <category term="Algorithm" scheme="https://angelni.github.io/tags/Algorithm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Winter Camp 1</title>
+    <link href="https://angelni.github.io/winter-camp-1/"/>
+    <id>https://angelni.github.io/winter-camp-1/</id>
+    <published>2020-02-11T09:37:54.000Z</published>
+    <updated>2020-02-11T10:04:16.356Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;《Z的悲剧》&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Algorithm" scheme="https://angelni.github.io/tags/Algorithm/"/>
+    
+  </entry>
   
   <entry>
     <title>python制作中国疫情地图</title>
@@ -371,46 +417,6 @@
     
     
       <category term="Algorithm" scheme="https://angelni.github.io/tags/Algorithm/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JUST YOU</title>
-    <link href="https://angelni.github.io/life/"/>
-    <id>https://angelni.github.io/life/</id>
-    <published>2019-12-13T11:17:41.000Z</published>
-    <updated>2019-12-13T12:00:49.443Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;A person ‘s  strength is often their biggest weakness and that also means that weakness can be their strength&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Life essay" scheme="https://angelni.github.io/categories/Life-essay/"/>
-    
-    
-      <category term="Life essay" scheme="https://angelni.github.io/tags/Life-essay/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>最小生成树</title>
-    <link href="https://angelni.github.io/minitree/"/>
-    <id>https://angelni.github.io/minitree/</id>
-    <published>2019-12-07T13:19:35.000Z</published>
-    <updated>2019-12-07T14:59:19.537Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;加油！活成自己喜欢的样子，干嘛要在意别人的眼光。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Algorithm" scheme="https://angelni.github.io/categories/Algorithm/"/>
-    
-    
-      <category term="MST" scheme="https://angelni.github.io/tags/MST/"/>
     
   </entry>
   
