@@ -6,7 +6,7 @@
   <link href="/AngelNI.github.io/atom.xml" rel="self"/>
   
   <link href="https://angelni.github.io/"/>
-  <updated>2020-02-13T08:03:40.611Z</updated>
+  <updated>2020-02-14T04:56:56.745Z</updated>
   <id>https://angelni.github.io/</id>
   
   <author>
@@ -17,11 +17,31 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>python简单爬取视频</title>
+    <link href="https://angelni.github.io/crawler-viode/"/>
+    <id>https://angelni.github.io/crawler-viode/</id>
+    <published>2020-02-14T04:00:40.000Z</published>
+    <updated>2020-02-14T04:56:56.745Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;傻瓜式操作？？&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="python" scheme="https://angelni.github.io/categories/python/"/>
+    
+    
+      <category term="Crawler" scheme="https://angelni.github.io/tags/Crawler/"/>
+    
+  </entry>
+  
+  <entry>
     <title>01Backpack Practice</title>
     <link href="https://angelni.github.io/01Backpack-Practice/"/>
     <id>https://angelni.github.io/01Backpack-Practice/</id>
     <published>2020-02-13T07:49:28.000Z</published>
-    <updated>2020-02-13T08:03:40.611Z</updated>
+    <updated>2020-02-14T03:50:26.139Z</updated>
     
     <summary type="html">
     
@@ -39,7 +59,7 @@
     <link href="https://angelni.github.io/Backpack-problem/"/>
     <id>https://angelni.github.io/Backpack-problem/</id>
     <published>2020-02-12T13:17:33.000Z</published>
-    <updated>2020-02-14T03:49:33.282Z</updated>
+    <updated>2020-02-14T03:50:26.142Z</updated>
     
     <summary type="html">
     
@@ -380,26 +400,6 @@
     <summary type="html">
     
       &lt;p&gt;No matter what activities you join,whether you want or not, you could gain unexpected something .&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Algorithm" scheme="https://angelni.github.io/categories/Algorithm/"/>
-    
-    
-      <category term="Algorithm" scheme="https://angelni.github.io/tags/Algorithm/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>哈理工新生赛</title>
-    <link href="https://angelni.github.io/nowcoder-2/"/>
-    <id>https://angelni.github.io/nowcoder-2/</id>
-    <published>2019-12-21T08:32:38.000Z</published>
-    <updated>2019-12-21T08:45:39.568Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;每天水水题，处处有惊喜，python过题也很爽（重要的是抽奖）&lt;a href=&quot;https://ac.nowcoder.com/acm/contest/3474&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;链接&lt;/a&gt;&lt;/p&gt;
     
     </summary>
     

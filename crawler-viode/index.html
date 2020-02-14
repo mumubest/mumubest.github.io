@@ -5,26 +5,27 @@
 <html lang="en">
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-<title>Category: literature - AngelNI&#39;s Blog</title>
+<title>python简单爬取视频 - AngelNI&#39;s Blog</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="google-site-verification" content="JwzmnANXlpmQlhwaSORuqpEB6P3Sr-tRhw4R_XDRcEc">
 <meta name="baidu-site-verification" content="ztPAF2oDcw">
 
 
 
-    <meta name="description" content="This is a simple record of learning bits and pieces, so that each step of learning into an unforgettable memory.">
-<meta name="keywords" content="learning note">
-<meta property="og:type" content="website">
-<meta property="og:title" content="AngelNI&#39;s Blog">
-<meta property="og:url" content="https://angelni.github.io/categories/literature/index.html">
+    <meta name="description" content="傻瓜式操作？？">
+<meta name="keywords" content="Crawler">
+<meta property="og:type" content="article">
+<meta property="og:title" content="python简单爬取视频">
+<meta property="og:url" content="https://angelni.github.io/crawler-viode/index.html">
 <meta property="og:site_name" content="AngelNI&#39;s Blog">
-<meta property="og:description" content="This is a simple record of learning bits and pieces, so that each step of learning into an unforgettable memory.">
+<meta property="og:description" content="傻瓜式操作？？">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="https://angelni.github.io/AngelNI.github.io/images/og_image.png">
+<meta property="og:image" content="https://s2.ax1x.com/2020/02/14/1XNY1e.jpg">
+<meta property="og:updated_time" content="2020-02-14T04:56:56.745Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="AngelNI&#39;s Blog">
-<meta name="twitter:description" content="This is a simple record of learning bits and pieces, so that each step of learning into an unforgettable memory.">
-<meta name="twitter:image" content="https://angelni.github.io/AngelNI.github.io/images/og_image.png">
+<meta name="twitter:title" content="python简单爬取视频">
+<meta name="twitter:description" content="傻瓜式操作？？">
+<meta name="twitter:image" content="https://s2.ax1x.com/2020/02/14/1XNY1e.jpg">
 
 
 
@@ -114,7 +115,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/AngelNI.github.io/">
             
-                <img src="/AngelNI.github.io/images/22.png" alt="AngelNI&#39;s Blog" height="28">
+                <img src="/AngelNI.github.io/images/22.png" alt="python简单爬取视频" height="28">
             
             </a>
         </div>
@@ -170,238 +171,154 @@
         <div class="container">
             <div class="columns">
                 <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://s2.ax1x.com/2020/02/14/1XNY1e.jpg" alt="python简单爬取视频">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-02-14T04:00:40.000Z">2020-02-14</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/AngelNI.github.io/categories/python/">python</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    3 minutes read (About 474 words)
+                </span>
+                
+                
+                <span class="level-item has-text-grey" id="busuanzi_container_page_pv">
+                    <i class="far fa-eye"></i>
+                    <span id="busuanzi_value_page_pv">0</span> visits
+                </span>
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                python简单爬取视频
+            
+        </h1>
+        <div class="content">
+            <p>傻瓜式操作？？<a id="more"></a></p>
+<p>网站上的电影视频是由若干个子视频组成，无缝隙播放每个子视频，也就是我们看的电影。</p>
+<p>我们可以看一下</p>
+<p><img src="https://s2.ax1x.com/2020/02/14/1Xa2oq.png" alt></p>
+<p>视频是由若干个这样的.ts 文件组成，右边是对应的每个ts文件的链接地址。</p>
+<p>可以先下一个ts文件，试一下。</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">import</span> requests</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">download</span><span class="hljs-params">()</span>:</span></span><br><span class="line">    url = <span class="hljs-string">"https://youku.cdn7-okzy.com/20200210/17096_f384ee94/1000k/hls/bd1e64cee30000000.ts"</span></span><br><span class="line">    </span><br><span class="line">    path = <span class="hljs-string">r'F:\C-and-Python-Algorithn\python\interest\video\ '</span></span><br><span class="line">    title = url[<span class="hljs-number">-20</span>:]</span><br><span class="line">    header = &#123;<span class="hljs-string">'User-Agent'</span>:<span class="hljs-string">'Mozilla/5.0'</span>&#125;</span><br><span class="line">    response = requests.get(url,headers= header)</span><br><span class="line">    <span class="hljs-keyword">with</span> open(path+title,<span class="hljs-string">'wb'</span>) <span class="hljs-keyword">as</span> f:</span><br><span class="line">        f.write(response.content)</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">"__main__"</span>:</span><br><span class="line">    download();</span><br><span class="line">    print(<span class="hljs-string">"Sussessfully"</span>)</span><br></pre></td></tr></table></figure>
+
+<p>但是有一个问题，如何下载整个视频呢？</p>
+<p>这个也很容易。</p>
+<figure class="highlight html hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">https://youku.cdn7-okzy.com/20200210/17096_f384ee94/1000k/hls/bd1e64cee30000001.ts</span><br><span class="line">https://youku.cdn7-okzy.com/20200210/17096_f384ee94/1000k/hls/bd1e64cee30000002.ts</span><br><span class="line">https://youku.cdn7-okzy.com/20200210/17096_f384ee94/1000k/hls/bd1e64cee30000003.ts</span><br><span class="line">https://youku.cdn7-okzy.com/20200210/17096_f384ee94/1000k/hls/bd1e64cee30000004.ts</span><br><span class="line"> 。。。。</span><br><span class="line"> 。。。</span><br><span class="line"> 。</span><br><span class="line">https://youku.cdn7-okzy.com/20200210/17096_f384ee94/1000k/hls/bd1e64cee30001330.ts</span><br></pre></td></tr></table></figure>
+
+<p>我们可以发现每个ts文件的链接前部分都是一样的，只有末尾不同，并且都是数字。很明显，加个循环就可以了。</p>
+<p>从 0  ~ 1330的循环。</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">import</span> requests</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">download</span><span class="hljs-params">(i)</span>:</span></span><br><span class="line">	<span class="hljs-comment">##在这里</span></span><br><span class="line">    url = <span class="hljs-string">"https://youku.cdn7-okzy.com/20200210/17096_f384ee94/1000k/hls/bd1e64cee3000%04d.ts"</span>%i</span><br><span class="line">    <span class="hljs-comment">##</span></span><br><span class="line">    path = <span class="hljs-string">r'F:\C-and-Python-Algorithn\python\interest\video\ '</span></span><br><span class="line">    title = url[<span class="hljs-number">-20</span>:]</span><br><span class="line">    </span><br><span class="line">    header = &#123;<span class="hljs-string">'User-Agent'</span>:<span class="hljs-string">'Mozilla/5.0'</span>&#125;</span><br><span class="line">    </span><br><span class="line">    response = requests.get(url,headers= header)</span><br><span class="line">    <span class="hljs-comment">#读写文件</span></span><br><span class="line">    <span class="hljs-keyword">with</span> open(path+title,<span class="hljs-string">'wb'</span>) <span class="hljs-keyword">as</span> f:</span><br><span class="line">        f.write(response.content)</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">"__main__"</span>:</span><br><span class="line">    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">1331</span>):</span><br><span class="line">        download(i)</span><br><span class="line">    print(<span class="hljs-string">"Sussessfully"</span>)</span><br></pre></td></tr></table></figure>
+
+<p>下载了一系类的子视频。</p>
+<p><img src="https://s2.ax1x.com/2020/02/14/1XrNwQ.png" alt></p>
+<p>最后再将子视频合并就可以了。</p>
+<p>在下载视屏的文件加下打开终端，输入下面的命令，就会生成合并后的文件。</p>
+<figure class="highlight cmd hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-built_in">copy</span> /b *.ts &#123;name&#125;.mp4</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://s2.ax1x.com/2020/02/14/1XyCgx.png" alt></p>
+
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/AngelNI.github.io/tags/Crawler/">Crawler</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+<div class="card">
     <div class="card-content">
-        <nav class="breadcrumb" aria-label="breadcrumbs">
-        <ul>
-            <li><a href="/AngelNI.github.io/categories">Categories</a></li>
+        <h3 class="menu-label has-text-centered">Like this article? Support the author with</h3>
+        <div class="buttons is-centered">
             
-            <li class="is-active"><a href="#" aria-current="page">literature</a></li>
-        </ul>
-        </nav>
+                
+<a class="button is-info donate">
+    <span class="icon is-small">
+        <i class="fab fa-alipay"></i>
+    </span>
+    <span>Alipay</span>
+    <div class="qrcode"><img src="/AngelNI.github.io/images/1.jpg" alt="Alipay"></div>
+</a>
+
+                
+                
+<a class="button is-success donate">
+    <span class="icon is-small">
+        <i class="fab fa-weixin"></i>
+    </span>
+    <span>Wechat</span>
+    <div class="qrcode"><img src="/AngelNI.github.io/images/2.png" alt="Wechat"></div>
+</a>
+
+                
+        </div>
     </div>
 </div>
 
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/AngelNI.github.io/The-Miserable-Ones/" class="image is-7by1">
-            <img class="thumbnail" src="https://s2.ax1x.com/2019/12/19/Qqz3TI.jpg" alt="《悲惨的世界》读后感">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
         
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-12-19T11:54:58.000Z">2019-12-19</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/AngelNI.github.io/categories/literature/">literature</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    10 minutes read (About 1561 words)
-                </span>
-                
-                
-            </div>
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/AngelNI.github.io/01Backpack-Practice/">
+                <span class="level-item">01Backpack Practice</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
         </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/AngelNI.github.io/The-Miserable-Ones/">《悲惨的世界》读后感</a>
-            
-        </h1>
-        <div class="content">
-            <p>我们每一个人都是社会的映射，只是这是个大多数人社会。</p>
-        </div>
-        
-        
-        <div class="level is-mobile">
-            <div class="level-start">
-                <div class="level-item">
-                <a class="button is-size-7 is-light" href="/AngelNI.github.io/The-Miserable-Ones/#more">Read More</a>
-                </div>
-            </div>
-        </div>
-        
         
     </div>
 </div>
 
 
 
+<div class="card">
+    <div class="card-content">
+        <h3 class="title is-5 has-text-weight-normal">Comments</h3>
+        
+<div id="valine-thread" class="content"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#valine-thread' ,
+        notify: false,
+        verify: false,
+        app_id: '0dNioPuDCFsscn6y58dczYiy-gzGzoHsz',
+        app_key: 'jbyn5TRGmiiAsYjo7PFFzrYJ',
+        placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!'
+    });
+</script>
 
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/AngelNI.github.io/Appreciation-of-Novels-2/" class="image is-7by1">
-            <img class="thumbnail" src="https://s2.ax1x.com/2019/08/29/mbNyPf.png" alt="Appreciation of Novels(2)">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-08-04T02:18:50.000Z">2019-08-04</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/AngelNI.github.io/categories/literature/">literature</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    13 minutes read (About 1885 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/AngelNI.github.io/Appreciation-of-Novels-2/">Appreciation of Novels(2)</a>
-            
-        </h1>
-        <div class="content">
-            <p> “不要忘记你曾经是怎样的小孩”，“不要忘记你曾希望变成怎样的大人”。</p>
-        </div>
-        
-        
-        <div class="level is-mobile">
-            <div class="level-start">
-                <div class="level-item">
-                <a class="button is-size-7 is-light" href="/AngelNI.github.io/Appreciation-of-Novels-2/#more">Read More</a>
-                </div>
-            </div>
-        </div>
-        
-        
     </div>
 </div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-06-20T11:30:10.000Z">2019-06-20</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/AngelNI.github.io/categories/literature/">literature</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    5 minutes read (About 796 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/AngelNI.github.io/Poetry-Appreciation/">Poetry Appreciation</a>
-            
-        </h1>
-        <div class="content">
-            <p>I think poetry is a kind of life experience,a kind of inner sublimation.Cultivate sentiment and enrich oneself.</p>
-<p><img src="https://s2.ax1x.com/2019/08/28/mHsu1P.png" alt></p>
-        </div>
-        
-        
-        <div class="level is-mobile">
-            <div class="level-start">
-                <div class="level-item">
-                <a class="button is-size-7 is-light" href="/AngelNI.github.io/Poetry-Appreciation/#more">Read More</a>
-                </div>
-            </div>
-        </div>
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-06-20T05:48:53.000Z">2019-06-20</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/AngelNI.github.io/categories/literature/">literature</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    9 minutes read (About 1319 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/AngelNI.github.io/Appreciation of Novels/">Appreciation of Novels(1)</a>
-            
-        </h1>
-        <div class="content">
-            <h4 id="1"><a href="#1" class="headerlink" title="1."></a>1.</h4><p>我因车祸而失明，所以我从不知女友长什么样。那年，她得了胃癌，临终前她将眼角膜移植给了我。我恢复光明后的第一件事就是找她的照片，然而我只找到她留给我的一封信，信里有一张空白照片，照片上写有一句话：“别再想我长什么样，下一个你爱上的人，就是我的模样。”</p>
-        </div>
-        
-        
-        <div class="level is-mobile">
-            <div class="level-start">
-                <div class="level-item">
-                <a class="button is-size-7 is-light" href="/AngelNI.github.io/Appreciation of Novels/#more">Read More</a>
-                </div>
-            </div>
-        </div>
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
 </div>
                 
 
@@ -2318,7 +2235,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/AngelNI.github.io/">
                 
-                    <img src="/AngelNI.github.io/images/22.png" alt="AngelNI&#39;s Blog" height="28">
+                    <img src="/AngelNI.github.io/images/22.png" alt="python简单爬取视频" height="28">
                 
                 </a>
                 <p class="is-size-7">
