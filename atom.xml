@@ -6,7 +6,7 @@
   <link href="/AngelNI.github.io/atom.xml" rel="self"/>
   
   <link href="https://angelni.github.io/"/>
-  <updated>2020-02-11T10:24:27.197Z</updated>
+  <updated>2020-02-13T08:03:40.611Z</updated>
   <id>https://angelni.github.io/</id>
   
   <author>
@@ -15,6 +15,44 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>01Backpack Practice</title>
+    <link href="https://angelni.github.io/01Backpack-Practice/"/>
+    <id>https://angelni.github.io/01Backpack-Practice/</id>
+    <published>2020-02-13T07:49:28.000Z</published>
+    <updated>2020-02-13T08:03:40.611Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;01010101010101，难受啊。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="01Backpack" scheme="https://angelni.github.io/tags/01Backpack/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Backpack problem</title>
+    <link href="https://angelni.github.io/Backpack-problem/"/>
+    <id>https://angelni.github.io/Backpack-problem/</id>
+    <published>2020-02-12T13:17:33.000Z</published>
+    <updated>2020-02-14T03:49:33.282Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;背包四讲。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="https://angelni.github.io/categories/Algorithm/"/>
+    
+    
+      <category term="Backpack" scheme="https://angelni.github.io/tags/Backpack/"/>
+    
+  </entry>
   
   <entry>
     <title>winter camp 2</title>
@@ -362,46 +400,6 @@
     <summary type="html">
     
       &lt;p&gt;每天水水题，处处有惊喜，python过题也很爽（重要的是抽奖）&lt;a href=&quot;https://ac.nowcoder.com/acm/contest/3474&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;链接&lt;/a&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Algorithm" scheme="https://angelni.github.io/categories/Algorithm/"/>
-    
-    
-      <category term="Algorithm" scheme="https://angelni.github.io/tags/Algorithm/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>《悲惨的世界》读后感</title>
-    <link href="https://angelni.github.io/The-Miserable-Ones/"/>
-    <id>https://angelni.github.io/The-Miserable-Ones/</id>
-    <published>2019-12-19T11:54:58.000Z</published>
-    <updated>2019-12-19T13:08:44.084Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;我们每一个人都是社会的映射，只是这是个大多数人社会。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="literature" scheme="https://angelni.github.io/categories/literature/"/>
-    
-    
-      <category term="The Miserable Ones" scheme="https://angelni.github.io/tags/The-Miserable-Ones/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>长沙理工新生赛</title>
-    <link href="https://angelni.github.io/nowcoder-1/"/>
-    <id>https://angelni.github.io/nowcoder-1/</id>
-    <published>2019-12-15T09:10:42.000Z</published>
-    <updated>2019-12-15T09:50:08.849Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;感觉题挺好的，去签个到，记录一下。&lt;a href=&quot;https://ac.nowcoder.com/acm/contest/3530#question&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;点我呦&lt;/a&gt;&lt;/p&gt;
     
     </summary>
     
