@@ -6,7 +6,7 @@
   <link href="/AngelNI.github.io/atom.xml" rel="self"/>
   
   <link href="https://angelni.github.io/"/>
-  <updated>2020-02-14T04:56:56.745Z</updated>
+  <updated>2020-02-15T04:20:37.236Z</updated>
   <id>https://angelni.github.io/</id>
   
   <author>
@@ -15,6 +15,46 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>LCS + Problem</title>
+    <link href="https://angelni.github.io/LCS-Problem/"/>
+    <id>https://angelni.github.io/LCS-Problem/</id>
+    <published>2020-02-14T12:39:05.000Z</published>
+    <updated>2020-02-15T04:20:37.236Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;longest comment subsequence&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="https://angelni.github.io/categories/Algorithm/"/>
+    
+    
+      <category term="LCS" scheme="https://angelni.github.io/tags/LCS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LIS + Problem</title>
+    <link href="https://angelni.github.io/LIS-Problem/"/>
+    <id>https://angelni.github.io/LIS-Problem/</id>
+    <published>2020-02-14T07:33:19.000Z</published>
+    <updated>2020-02-14T12:22:22.317Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;淡泊明志，宁静致远&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="https://angelni.github.io/categories/Algorithm/"/>
+    
+    
+      <category term="LIS" scheme="https://angelni.github.io/tags/LIS/"/>
+    
+  </entry>
   
   <entry>
     <title>python简单爬取视频</title>
@@ -369,44 +409,6 @@
     
     
       <category term="GradientDescent" scheme="https://angelni.github.io/tags/GradientDescent/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>自定义Vscode背景</title>
-    <link href="https://angelni.github.io/vscodebackground/"/>
-    <id>https://angelni.github.io/vscodebackground/</id>
-    <published>2020-01-03T04:03:51.000Z</published>
-    <updated>2020-01-03T04:12:52.166Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;我从不会倒下，我是打不死的小强。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="vscode" scheme="https://angelni.github.io/tags/vscode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>西南民族大学程序竞赛</title>
-    <link href="https://angelni.github.io/nowcoder-3/"/>
-    <id>https://angelni.github.io/nowcoder-3/</id>
-    <published>2019-12-30T05:34:06.000Z</published>
-    <updated>2019-12-30T05:50:21.922Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;No matter what activities you join,whether you want or not, you could gain unexpected something .&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Algorithm" scheme="https://angelni.github.io/categories/Algorithm/"/>
-    
-    
-      <category term="Algorithm" scheme="https://angelni.github.io/tags/Algorithm/"/>
     
   </entry>
   
