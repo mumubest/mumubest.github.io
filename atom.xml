@@ -6,7 +6,7 @@
   <link href="/AngelNI.github.io/atom.xml" rel="self"/>
   
   <link href="https://angelni.github.io/"/>
-  <updated>2020-02-15T04:20:37.236Z</updated>
+  <updated>2020-02-17T14:07:43.716Z</updated>
   <id>https://angelni.github.io/</id>
   
   <author>
@@ -17,11 +17,71 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>尺取法</title>
+    <link href="https://angelni.github.io/ruler-method/"/>
+    <id>https://angelni.github.io/ruler-method/</id>
+    <published>2020-02-17T10:45:17.000Z</published>
+    <updated>2020-02-17T14:07:43.716Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;换换思路。休息一下。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="https://angelni.github.io/categories/Algorithm/"/>
+    
+    
+      <category term="ruler_method" scheme="https://angelni.github.io/tags/ruler-method/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数位DP</title>
+    <link href="https://angelni.github.io/Digit-DP/"/>
+    <id>https://angelni.github.io/Digit-DP/</id>
+    <published>2020-02-16T08:21:48.000Z</published>
+    <updated>2020-02-17T10:43:25.803Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;感觉我快不行了,DP有点消化不良&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="https://angelni.github.io/categories/Algorithm/"/>
+    
+    
+      <category term="Digit DP" scheme="https://angelni.github.io/tags/Digit-DP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Section DP</title>
+    <link href="https://angelni.github.io/SectionDP/"/>
+    <id>https://angelni.github.io/SectionDP/</id>
+    <published>2020-02-15T07:24:22.000Z</published>
+    <updated>2020-02-16T05:11:38.418Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;世界上的人都变成废柴，这个世界就没有废柴了&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="https://angelni.github.io/categories/Algorithm/"/>
+    
+    
+      <category term="Section DP" scheme="https://angelni.github.io/tags/Section-DP/"/>
+    
+  </entry>
+  
+  <entry>
     <title>LCS + Problem</title>
     <link href="https://angelni.github.io/LCS-Problem/"/>
     <id>https://angelni.github.io/LCS-Problem/</id>
     <published>2020-02-14T12:39:05.000Z</published>
-    <updated>2020-02-15T04:20:37.236Z</updated>
+    <updated>2020-02-15T04:24:16.943Z</updated>
     
     <summary type="html">
     
@@ -41,7 +101,7 @@
     <link href="https://angelni.github.io/LIS-Problem/"/>
     <id>https://angelni.github.io/LIS-Problem/</id>
     <published>2020-02-14T07:33:19.000Z</published>
-    <updated>2020-02-14T12:22:22.317Z</updated>
+    <updated>2020-02-15T04:24:16.945Z</updated>
     
     <summary type="html">
     
@@ -349,66 +409,6 @@
     
     
       <category term="RNN" scheme="https://angelni.github.io/tags/RNN/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>TF-CNN</title>
-    <link href="https://angelni.github.io/TF-CNN/"/>
-    <id>https://angelni.github.io/TF-CNN/</id>
-    <published>2020-01-27T09:47:03.000Z</published>
-    <updated>2020-01-29T07:04:29.941Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;低头不是认输，是要看清自己的路；仰头不是骄傲，是要看见自己的天空。——科比·布莱恩特&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="AI" scheme="https://angelni.github.io/categories/AI/"/>
-    
-    
-      <category term="tensorflow" scheme="https://angelni.github.io/tags/tensorflow/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>TF-NN</title>
-    <link href="https://angelni.github.io/TF-NN/"/>
-    <id>https://angelni.github.io/TF-NN/</id>
-    <published>2020-01-27T06:44:36.000Z</published>
-    <updated>2020-01-29T07:04:29.961Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;他只是趁着凌晨四点去另一个世界训练了.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="AI" scheme="https://angelni.github.io/categories/AI/"/>
-    
-    
-      <category term="Neural_Network" scheme="https://angelni.github.io/tags/Neural-Network/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>TF-GD</title>
-    <link href="https://angelni.github.io/TF-GD/"/>
-    <id>https://angelni.github.io/TF-GD/</id>
-    <published>2020-01-27T04:42:39.000Z</published>
-    <updated>2020-01-29T07:04:29.959Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;有生才有死，有暗才有光。——科比·布莱恩特&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="AI" scheme="https://angelni.github.io/categories/AI/"/>
-    
-    
-      <category term="GradientDescent" scheme="https://angelni.github.io/tags/GradientDescent/"/>
     
   </entry>
   

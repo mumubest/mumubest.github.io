@@ -2,16 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://angelni.github.io/LCS-Problem/</loc>
+    <loc>https://angelni.github.io/ruler-method/</loc>
     
-    <lastmod>2020-02-15T04:20:37.236Z</lastmod>
+    <lastmod>2020-02-17T14:07:43.716Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://angelni.github.io/Digit-DP/</loc>
+    
+    <lastmod>2020-02-17T10:43:25.803Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://angelni.github.io/SectionDP/</loc>
+    
+    <lastmod>2020-02-16T05:11:38.418Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://angelni.github.io/LIS-Problem/</loc>
     
-    <lastmod>2020-02-14T12:22:22.317Z</lastmod>
+    <lastmod>2020-02-15T04:24:16.945Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://angelni.github.io/LCS-Problem/</loc>
+    
+    <lastmod>2020-02-15T04:24:16.943Z</lastmod>
     
   </url>
   

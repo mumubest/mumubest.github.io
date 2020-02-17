@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://angelni.github.io/AngelNI.github.io/LCS-Problem/</loc>
-    <lastmod>2020-02-15</lastmod>
+    <loc>https://angelni.github.io/AngelNI.github.io/ruler-method/</loc>
+    <lastmod>2020-02-17</lastmod>
+  </url>  <url>
+    <loc>https://angelni.github.io/AngelNI.github.io/Digit-DP/</loc>
+    <lastmod>2020-02-17</lastmod>
+  </url>  <url>
+    <loc>https://angelni.github.io/AngelNI.github.io/SectionDP/</loc>
+    <lastmod>2020-02-16</lastmod>
   </url>  <url>
     <loc>https://angelni.github.io/AngelNI.github.io/LIS-Problem/</loc>
-    <lastmod>2020-02-14</lastmod>
+    <lastmod>2020-02-15</lastmod>
+  </url>  <url>
+    <loc>https://angelni.github.io/AngelNI.github.io/LCS-Problem/</loc>
+    <lastmod>2020-02-15</lastmod>
   </url>  <url>
     <loc>https://angelni.github.io/AngelNI.github.io/crawler-viode/</loc>
     <lastmod>2020-02-14</lastmod>
