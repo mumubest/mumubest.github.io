@@ -6,7 +6,7 @@
   <link href="/AngelNI.github.io/atom.xml" rel="self"/>
   
   <link href="https://angelni.github.io/"/>
-  <updated>2020-02-17T14:07:43.716Z</updated>
+  <updated>2020-02-24T09:41:02.782Z</updated>
   <id>https://angelni.github.io/</id>
   
   <author>
@@ -17,11 +17,49 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>高精度运算</title>
+    <link href="https://angelni.github.io/High-precision/"/>
+    <id>https://angelni.github.io/High-precision/</id>
+    <published>2020-02-24T09:35:30.000Z</published>
+    <updated>2020-02-24T09:41:02.782Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Just go ahead，never  look back.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="https://angelni.github.io/categories/Algorithm/"/>
+    
+    
+      <category term="High_precision" scheme="https://angelni.github.io/tags/High-precision/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>DSU_Exercise</title>
+    <link href="https://angelni.github.io/DSU-Problem/"/>
+    <id>https://angelni.github.io/DSU-Problem/</id>
+    <published>2020-02-20T08:30:30.000Z</published>
+    <updated>2020-02-22T14:25:16.634Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;没有什么厉害的人物，只有接触的或早或晚，努力与不努力而已。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="DSU" scheme="https://angelni.github.io/tags/DSU/"/>
+    
+  </entry>
+  
+  <entry>
     <title>尺取法</title>
     <link href="https://angelni.github.io/ruler-method/"/>
     <id>https://angelni.github.io/ruler-method/</id>
     <published>2020-02-17T10:45:17.000Z</published>
-    <updated>2020-02-17T14:07:43.716Z</updated>
+    <updated>2020-02-17T14:08:33.857Z</updated>
     
     <summary type="html">
     
@@ -41,7 +79,7 @@
     <link href="https://angelni.github.io/Digit-DP/"/>
     <id>https://angelni.github.io/Digit-DP/</id>
     <published>2020-02-16T08:21:48.000Z</published>
-    <updated>2020-02-17T10:43:25.803Z</updated>
+    <updated>2020-02-17T14:08:33.829Z</updated>
     
     <summary type="html">
     
@@ -61,7 +99,7 @@
     <link href="https://angelni.github.io/SectionDP/"/>
     <id>https://angelni.github.io/SectionDP/</id>
     <published>2020-02-15T07:24:22.000Z</published>
-    <updated>2020-02-16T05:11:38.418Z</updated>
+    <updated>2020-02-17T14:08:33.826Z</updated>
     
     <summary type="html">
     
@@ -369,46 +407,6 @@
     
     
       <category term="RE" scheme="https://angelni.github.io/tags/RE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>二叉树的简单操作</title>
-    <link href="https://angelni.github.io/BiTree-Op/"/>
-    <id>https://angelni.github.io/BiTree-Op/</id>
-    <published>2020-01-29T05:34:52.000Z</published>
-    <updated>2020-01-29T07:04:29.933Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;爱就像蓝天白云，晴空万里，突然暴风雨……&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Data-Structure" scheme="https://angelni.github.io/categories/Data-Structure/"/>
-    
-    
-      <category term="BiTree" scheme="https://angelni.github.io/tags/BiTree/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>TF-RNN</title>
-    <link href="https://angelni.github.io/TF-RNN/"/>
-    <id>https://angelni.github.io/TF-RNN/</id>
-    <published>2020-01-27T14:12:49.000Z</published>
-    <updated>2020-01-29T07:04:29.955Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;愿天堂也有亲爱的篮球。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="AI" scheme="https://angelni.github.io/categories/AI/"/>
-    
-    
-      <category term="RNN" scheme="https://angelni.github.io/tags/RNN/"/>
     
   </entry>
   
