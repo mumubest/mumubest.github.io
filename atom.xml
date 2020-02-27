@@ -6,7 +6,7 @@
   <link href="/AngelNI.github.io/atom.xml" rel="self"/>
   
   <link href="https://angelni.github.io/"/>
-  <updated>2020-02-25T09:46:14.631Z</updated>
+  <updated>2020-02-27T11:54:34.028Z</updated>
   <id>https://angelni.github.io/</id>
   
   <author>
@@ -15,6 +15,46 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>矩阵快速幂</title>
+    <link href="https://angelni.github.io/matrix-ksm/"/>
+    <id>https://angelni.github.io/matrix-ksm/</id>
+    <published>2020-02-27T09:41:46.000Z</published>
+    <updated>2020-02-27T11:54:34.028Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;你们太优秀了ORZ。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="https://angelni.github.io/categories/Algorithm/"/>
+    
+    
+      <category term="matirx_ksm" scheme="https://angelni.github.io/tags/matirx-ksm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Fibonacci</title>
+    <link href="https://angelni.github.io/Fibonacci/"/>
+    <id>https://angelni.github.io/Fibonacci/</id>
+    <published>2020-02-27T08:32:24.000Z</published>
+    <updated>2020-02-27T09:41:03.466Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;关于斐波那契的一些事&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="https://angelni.github.io/categories/Algorithm/"/>
+    
+    
+      <category term="Fibonacci" scheme="https://angelni.github.io/tags/Fibonacci/"/>
+    
+  </entry>
   
   <entry>
     <title>高精度运算</title>
@@ -367,46 +407,6 @@
     
     
       <category term="crawler" scheme="https://angelni.github.io/tags/crawler/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>python 图片转字符串</title>
-    <link href="https://angelni.github.io/str-image/"/>
-    <id>https://angelni.github.io/str-image/</id>
-    <published>2020-01-29T10:30:03.000Z</published>
-    <updated>2020-01-31T03:48:53.408Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;鲸可落&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="python" scheme="https://angelni.github.io/categories/python/"/>
-    
-    
-      <category term="str_image" scheme="https://angelni.github.io/tags/str-image/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>正则表达式</title>
-    <link href="https://angelni.github.io/re/"/>
-    <id>https://angelni.github.io/re/</id>
-    <published>2020-01-29T10:00:12.000Z</published>
-    <updated>2020-01-31T03:48:53.403Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;达人物外之物，思身后之身，宁受一时之寂寞，毋取万古之凄凉。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="python" scheme="https://angelni.github.io/categories/python/"/>
-    
-    
-      <category term="RE" scheme="https://angelni.github.io/tags/RE/"/>
     
   </entry>
   
