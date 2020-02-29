@@ -6,7 +6,7 @@
   <link href="/AngelNI.github.io/atom.xml" rel="self"/>
   
   <link href="https://angelni.github.io/"/>
-  <updated>2020-02-28T01:02:11.411Z</updated>
+  <updated>2020-02-29T12:05:17.018Z</updated>
   <id>https://angelni.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>二分图最大匹配</title>
+    <link href="https://angelni.github.io/binary-picture/"/>
+    <id>https://angelni.github.io/binary-picture/</id>
+    <published>2020-02-28T01:06:17.000Z</published>
+    <updated>2020-02-29T12:05:17.018Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;匈牙利算法。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="https://angelni.github.io/categories/Algorithm/"/>
+    
+    
+      <category term="binary_picture" scheme="https://angelni.github.io/tags/binary-picture/"/>
+    
+  </entry>
   
   <entry>
     <title>矩阵快速幂</title>
@@ -387,26 +407,6 @@
     
     
       <category term="Crawler" scheme="https://angelni.github.io/tags/Crawler/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>第一个爬虫小程序</title>
-    <link href="https://angelni.github.io/first-crawl/"/>
-    <id>https://angelni.github.io/first-crawl/</id>
-    <published>2020-01-30T03:25:40.000Z</published>
-    <updated>2020-01-31T03:48:53.399Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;小岛加油！武汉加油！（小岛仍保持着0记录）&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="python" scheme="https://angelni.github.io/categories/python/"/>
-    
-    
-      <category term="crawler" scheme="https://angelni.github.io/tags/crawler/"/>
     
   </entry>
   
