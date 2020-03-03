@@ -1,12 +1,10 @@
 .chip-container {
     margin-top: -60px;
-}
-
-element.style {
-    -webkit-tap-highlight-color: transparent;
+	-webkit-tap-highlight-color: transparent;
     user-select: none;
     position: absolute;
 }
+
 
 .chip-container .tag-title {
     margin-bottom: 10px;
