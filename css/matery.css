@@ -2,6 +2,12 @@
     margin-top: -60px;
 }
 
+element.style {
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    position: absolute;
+}
+
 .chip-container .tag-title {
     margin-bottom: 10px;
     color: #3C4858;
@@ -11,7 +17,7 @@
 
 .chip-container .tag-chips {
     margin: 1rem auto 0.5rem;
-    max-width: 850px;
+    max-width: 800px;
     text-align: center;
 }
 
