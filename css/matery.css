@@ -34,8 +34,8 @@
 }
 
 .chip-container .chip {
-    margin: 10px 10px;
-    padding: 19px 14px;
+    margin: 1px 1px;
+    padding: 1px 1px;
     display: inline-flex;
     line-height: 0;
     font-size: 1rem;
