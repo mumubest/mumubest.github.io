@@ -6,7 +6,7 @@
   <link href="/AngelNI.github.io/atom.xml" rel="self"/>
   
   <link href="https://angelni.github.io/"/>
-  <updated>2020-03-03T02:11:59.488Z</updated>
+  <updated>2020-03-05T03:59:48.925Z</updated>
   <id>https://angelni.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>knn_image</title>
+    <link href="https://angelni.github.io/knn-image/"/>
+    <id>https://angelni.github.io/knn-image/</id>
+    <published>2020-03-05T03:47:23.000Z</published>
+    <updated>2020-03-05T03:59:48.925Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;真味是淡至如常。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="AI" scheme="https://angelni.github.io/categories/AI/"/>
+    
+    
+      <category term="KNN" scheme="https://angelni.github.io/tags/KNN/"/>
+    
+  </entry>
   
   <entry>
     <title>归并排序求逆序数</title>
@@ -387,26 +407,6 @@
     
     
       <category term="Scenery" scheme="https://angelni.github.io/tags/Scenery/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PY文件打包成EXE</title>
-    <link href="https://angelni.github.io/py-pkg/"/>
-    <id>https://angelni.github.io/py-pkg/</id>
-    <published>2020-01-30T11:07:18.000Z</published>
-    <updated>2020-01-31T03:48:53.401Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;奔向远方&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="python" scheme="https://angelni.github.io/categories/python/"/>
-    
-    
-      <category term="pyinstaller" scheme="https://angelni.github.io/tags/pyinstaller/"/>
     
   </entry>
   
