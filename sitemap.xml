@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://angelni.github.io/Segment-Tree/</loc>
+    <loc>https://angelni.github.io/KM/</loc>
     
-    <lastmod>2020-03-08T09:00:43.192Z</lastmod>
+    <lastmod>2020-03-16T03:08:14.644Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://angelni.github.io/monotonic-queue/</loc>
     
-    <lastmod>2020-03-08T09:00:28.595Z</lastmod>
+    <lastmod>2020-03-08T09:01:12.543Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://angelni.github.io/Segment-Tree/</loc>
+    
+    <lastmod>2020-03-08T09:01:12.536Z</lastmod>
     
   </url>
   
