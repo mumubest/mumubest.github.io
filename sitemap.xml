@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://angelni.github.io/c-class/</loc>
+    
+    <lastmod>2020-03-21T06:16:16.864Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://angelni.github.io/BiTree-Op/</loc>
+    
+    <lastmod>2020-03-17T01:41:19.034Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://angelni.github.io/KM/</loc>
     
     <lastmod>2020-03-16T04:14:12.960Z</lastmod>
@@ -243,13 +257,6 @@
     <loc>https://angelni.github.io/TF-CNN/</loc>
     
     <lastmod>2020-01-29T07:04:29.941Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://angelni.github.io/BiTree-Op/</loc>
-    
-    <lastmod>2020-01-29T07:04:29.933Z</lastmod>
     
   </url>
   

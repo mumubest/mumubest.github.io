@@ -6,7 +6,7 @@
   <link href="/AngelNI.github.io/atom.xml" rel="self"/>
   
   <link href="https://angelni.github.io/"/>
-  <updated>2020-03-16T04:14:12.960Z</updated>
+  <updated>2020-03-21T06:16:16.864Z</updated>
   <id>https://angelni.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>C++类写链表</title>
+    <link href="https://angelni.github.io/c-class/"/>
+    <id>https://angelni.github.io/c-class/</id>
+    <published>2020-03-16T05:47:33.000Z</published>
+    <updated>2020-03-21T06:16:16.864Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;贝祖定理，当且仅当 z 是 x, y 的最大公约数的倍数时，ax+by=z 有解&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="https://angelni.github.io/categories/Algorithm/"/>
+    
+    
+      <category term="class" scheme="https://angelni.github.io/tags/class/"/>
+    
+  </entry>
   
   <entry>
     <title>带权二分图最优匹配(KM)</title>
@@ -389,26 +409,6 @@
     
     
       <category term="Backpack" scheme="https://angelni.github.io/tags/Backpack/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>winter camp 2</title>
-    <link href="https://angelni.github.io/winter-camp-2/"/>
-    <id>https://angelni.github.io/winter-camp-2/</id>
-    <published>2020-02-11T09:37:58.000Z</published>
-    <updated>2020-02-11T10:24:27.197Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;穿越了千万个时间线里人海里相依&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Algorithm" scheme="https://angelni.github.io/categories/Algorithm/"/>
-    
-    
-      <category term="Algorithm" scheme="https://angelni.github.io/tags/Algorithm/"/>
     
   </entry>
   

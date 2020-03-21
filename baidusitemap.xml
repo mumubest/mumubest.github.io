@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://angelni.github.io/AngelNI.github.io/c-class/</loc>
+    <lastmod>2020-03-21</lastmod>
+  </url>  <url>
+    <loc>https://angelni.github.io/AngelNI.github.io/BiTree-Op/</loc>
+    <lastmod>2020-03-17</lastmod>
+  </url>  <url>
     <loc>https://angelni.github.io/AngelNI.github.io/KM/</loc>
     <lastmod>2020-03-16</lastmod>
   </url>  <url>
@@ -98,9 +104,6 @@
     <lastmod>2020-01-29</lastmod>
   </url>  <url>
     <loc>https://angelni.github.io/AngelNI.github.io/TF-CNN/</loc>
-    <lastmod>2020-01-29</lastmod>
-  </url>  <url>
-    <loc>https://angelni.github.io/AngelNI.github.io/BiTree-Op/</loc>
     <lastmod>2020-01-29</lastmod>
   </url>  <url>
     <loc>https://angelni.github.io/AngelNI.github.io/vscodebackground/</loc>
