@@ -1,416 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>AngelNI&#39;s Blog</title>
+  <title>BaiYue&#39;s Blog</title>
   
   
-  <link href="/Ning-Hui.github.io/atom.xml" rel="self"/>
+  <link href="/mumubest.github.io/atom.xml" rel="self"/>
   
-  <link href="https://ning-hui.github.io/"/>
-  <updated>2020-04-04T07:23:31.959Z</updated>
-  <id>https://ning-hui.github.io/</id>
+  <link href="https://mumubest.github.io/"/>
+  <updated>2019-08-29T03:27:50.000Z</updated>
+  <id>https://mumubest.github.io/</id>
   
   <author>
-    <name>Hui Ning</name>
+    <name>Bai Yue</name>
     
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>手写一个HTML密码登录页面</title>
-    <link href="https://ning-hui.github.io/html-login/"/>
-    <id>https://ning-hui.github.io/html-login/</id>
-    <published>2020-04-04T07:14:29.000Z</published>
-    <updated>2020-04-04T07:23:31.959Z</updated>
+    <title>Appreciation of Novels(2)</title>
+    <link href="https://mumubest.github.io/Appreciation-of-Novels-2/"/>
+    <id>https://mumubest.github.io/Appreciation-of-Novels-2/</id>
+    <published>2019-08-04T02:18:50.000Z</published>
+    <updated>2019-08-29T03:27:50.000Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;实践中学习。&lt;/p&gt;
+      &lt;p&gt; “不要忘记你曾经是怎样的小孩”，“不要忘记你曾希望变成怎样的大人”。&lt;/p&gt;
     
     </summary>
     
-      <category term="sharing" scheme="https://ning-hui.github.io/categories/sharing/"/>
+      <category term="literature" scheme="https://mumubest.github.io/categories/literature/"/>
     
     
-      <category term="HTML" scheme="https://ning-hui.github.io/tags/HTML/"/>
+      <category term="literature" scheme="https://mumubest.github.io/tags/literature/"/>
     
   </entry>
   
   <entry>
-    <title>一场没有硝烟的战争</title>
-    <link href="https://ning-hui.github.io/commemorate-COVID-2019/"/>
-    <id>https://ning-hui.github.io/commemorate-COVID-2019/</id>
-    <published>2020-04-01T08:38:39.000Z</published>
-    <updated>2020-04-01T08:57:10.269Z</updated>
+    <title>A New Start</title>
+    <link href="https://mumubest.github.io/A-New-Start/"/>
+    <id>https://mumubest.github.io/A-New-Start/</id>
+    <published>2019-06-20T11:30:37.000Z</published>
+    <updated>2019-08-29T03:26:00.000Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;自写一篇文章，以纪念2020年一场没有硝烟的战争。感谢白衣天使，感谢所有奋战一线的人们&lt;/p&gt;
+      &lt;p&gt;This is a nice day!!!&lt;/p&gt;
     
     </summary>
     
-      <category term="Life essay" scheme="https://ning-hui.github.io/categories/Life-essay/"/>
+      <category term="Life essay" scheme="https://mumubest.github.io/categories/Life-essay/"/>
     
     
-      <category term="commemorate" scheme="https://ning-hui.github.io/tags/commemorate/"/>
+      <category term="Life essay" scheme="https://mumubest.github.io/tags/Life-essay/"/>
     
   </entry>
   
   <entry>
-    <title>C++类写链表</title>
-    <link href="https://ning-hui.github.io/c-class/"/>
-    <id>https://ning-hui.github.io/c-class/</id>
-    <published>2020-03-16T05:47:33.000Z</published>
-    <updated>2020-03-21T06:56:19.398Z</updated>
+    <title>Appreciation of Novels(1)</title>
+    <link href="https://mumubest.github.io/Appreciation%20of%20Novels/"/>
+    <id>https://mumubest.github.io/Appreciation of Novels/</id>
+    <published>2019-06-20T05:48:53.000Z</published>
+    <updated>2019-08-28T15:24:40.000Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;贝祖定理，当且仅当 z 是 x, y 的最大公约数的倍数时，ax+by=z 有解&lt;/p&gt;
+      &lt;h4 id=&quot;1&quot;&gt;&lt;a href=&quot;#1&quot; class=&quot;headerlink&quot; title=&quot;1.&quot;&gt;&lt;/a&gt;1.&lt;/h4&gt;&lt;p&gt;我因车祸而失明，所以我从不知女友长什么样。那年，她得了胃癌，临终前她将眼角膜移植给了我。我恢复光明后的第一件事就是找她的照片，然而我只找到她留给我的一封信，信里有一张空白照片，照片上写有一句话：“别再想我长什么样，下一个你爱上的人，就是我的模样。”&lt;/p&gt;
     
     </summary>
     
-      <category term="Algorithm" scheme="https://ning-hui.github.io/categories/Algorithm/"/>
+      <category term="literature" scheme="https://mumubest.github.io/categories/literature/"/>
     
     
-      <category term="class" scheme="https://ning-hui.github.io/tags/class/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>带权二分图最优匹配(KM)</title>
-    <link href="https://ning-hui.github.io/KM/"/>
-    <id>https://ning-hui.github.io/KM/</id>
-    <published>2020-03-12T04:45:25.000Z</published>
-    <updated>2020-03-16T04:14:12.960Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;云止水中，动寂适宜。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Algorithm" scheme="https://ning-hui.github.io/categories/Algorithm/"/>
-    
-    
-      <category term="KM" scheme="https://ning-hui.github.io/tags/KM/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>单调队列</title>
-    <link href="https://ning-hui.github.io/monotonic-queue/"/>
-    <id>https://ning-hui.github.io/monotonic-queue/</id>
-    <published>2020-03-07T11:44:59.000Z</published>
-    <updated>2020-03-08T09:01:12.543Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;静坐观心，真妄毕现&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Algorithm" scheme="https://ning-hui.github.io/categories/Algorithm/"/>
-    
-    
-      <category term="monotonic_queue" scheme="https://ning-hui.github.io/tags/monotonic-queue/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>线段树Segment Tree</title>
-    <link href="https://ning-hui.github.io/Segment-Tree/"/>
-    <id>https://ning-hui.github.io/Segment-Tree/</id>
-    <published>2020-03-07T08:13:38.000Z</published>
-    <updated>2020-03-08T09:01:12.536Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;迷茫&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Algorithm" scheme="https://ning-hui.github.io/categories/Algorithm/"/>
-    
-    
-      <category term="Segment Tree" scheme="https://ning-hui.github.io/tags/Segment-Tree/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>KNN图像分类</title>
-    <link href="https://ning-hui.github.io/knn-image/"/>
-    <id>https://ning-hui.github.io/knn-image/</id>
-    <published>2020-03-05T03:47:23.000Z</published>
-    <updated>2020-03-05T05:50:24.745Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;真味是淡至如常。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="AI" scheme="https://ning-hui.github.io/categories/AI/"/>
-    
-    
-      <category term="KNN" scheme="https://ning-hui.github.io/tags/KNN/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>归并排序求逆序数</title>
-    <link href="https://ning-hui.github.io/Inverse-number/"/>
-    <id>https://ning-hui.github.io/Inverse-number/</id>
-    <published>2020-03-03T02:03:02.000Z</published>
-    <updated>2020-03-03T02:11:59.488Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;君子终日乾乾，夕惕若厉，无咎。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Algorithm" scheme="https://ning-hui.github.io/categories/Algorithm/"/>
-    
-    
-      <category term="Inverse_number" scheme="https://ning-hui.github.io/tags/Inverse-number/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>正则——常用匹配公式</title>
-    <link href="https://ning-hui.github.io/re-expression/"/>
-    <id>https://ning-hui.github.io/re-expression/</id>
-    <published>2020-03-01T06:08:54.000Z</published>
-    <updated>2020-03-01T06:44:19.113Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;正则！正则！正则！正则！正则！正则！正则！正则！&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="python" scheme="https://ning-hui.github.io/categories/python/"/>
-    
-    
-      <category term="re" scheme="https://ning-hui.github.io/tags/re/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>二分图最大匹配</title>
-    <link href="https://ning-hui.github.io/binary-picture/"/>
-    <id>https://ning-hui.github.io/binary-picture/</id>
-    <published>2020-02-28T01:06:17.000Z</published>
-    <updated>2020-02-29T12:24:27.719Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;匈牙利算法。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Algorithm" scheme="https://ning-hui.github.io/categories/Algorithm/"/>
-    
-    
-      <category term="binary_picture" scheme="https://ning-hui.github.io/tags/binary-picture/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>矩阵快速幂</title>
-    <link href="https://ning-hui.github.io/matrix-ksm/"/>
-    <id>https://ning-hui.github.io/matrix-ksm/</id>
-    <published>2020-02-27T09:41:46.000Z</published>
-    <updated>2020-02-28T01:02:11.411Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;tql，ORZ，catch me off ground。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Algorithm" scheme="https://ning-hui.github.io/categories/Algorithm/"/>
-    
-    
-      <category term="matirx_ksm" scheme="https://ning-hui.github.io/tags/matirx-ksm/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Fibonacci</title>
-    <link href="https://ning-hui.github.io/Fibonacci/"/>
-    <id>https://ning-hui.github.io/Fibonacci/</id>
-    <published>2020-02-27T08:32:24.000Z</published>
-    <updated>2020-02-27T11:55:03.498Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;关于斐波那契的一些事&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Algorithm" scheme="https://ning-hui.github.io/categories/Algorithm/"/>
-    
-    
-      <category term="Fibonacci" scheme="https://ning-hui.github.io/tags/Fibonacci/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>高精度运算</title>
-    <link href="https://ning-hui.github.io/High-precision/"/>
-    <id>https://ning-hui.github.io/High-precision/</id>
-    <published>2020-02-24T09:35:30.000Z</published>
-    <updated>2020-02-25T09:46:14.631Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Just go ahead，never  look back.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Algorithm" scheme="https://ning-hui.github.io/categories/Algorithm/"/>
-    
-    
-      <category term="High_precision" scheme="https://ning-hui.github.io/tags/High-precision/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>DSU_Exercise</title>
-    <link href="https://ning-hui.github.io/DSU-Problem/"/>
-    <id>https://ning-hui.github.io/DSU-Problem/</id>
-    <published>2020-02-20T08:30:30.000Z</published>
-    <updated>2020-03-01T06:55:42.195Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;dbq。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="DSU" scheme="https://ning-hui.github.io/tags/DSU/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>尺取法</title>
-    <link href="https://ning-hui.github.io/ruler-method/"/>
-    <id>https://ning-hui.github.io/ruler-method/</id>
-    <published>2020-02-17T10:45:17.000Z</published>
-    <updated>2020-02-17T14:08:33.857Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;换换思路。休息一下。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Algorithm" scheme="https://ning-hui.github.io/categories/Algorithm/"/>
-    
-    
-      <category term="ruler_method" scheme="https://ning-hui.github.io/tags/ruler-method/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>数位DP</title>
-    <link href="https://ning-hui.github.io/Digit-DP/"/>
-    <id>https://ning-hui.github.io/Digit-DP/</id>
-    <published>2020-02-16T08:21:48.000Z</published>
-    <updated>2020-02-17T14:08:33.829Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;感觉我快不行了,DP有点消化不良&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Algorithm" scheme="https://ning-hui.github.io/categories/Algorithm/"/>
-    
-    
-      <category term="Digit DP" scheme="https://ning-hui.github.io/tags/Digit-DP/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Section DP</title>
-    <link href="https://ning-hui.github.io/SectionDP/"/>
-    <id>https://ning-hui.github.io/SectionDP/</id>
-    <published>2020-02-15T07:24:22.000Z</published>
-    <updated>2020-02-17T14:08:33.826Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;世界上的人都变成废柴，这个世界就没有废柴了&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Algorithm" scheme="https://ning-hui.github.io/categories/Algorithm/"/>
-    
-    
-      <category term="Section DP" scheme="https://ning-hui.github.io/tags/Section-DP/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LCS + Problem</title>
-    <link href="https://ning-hui.github.io/LCS-Problem/"/>
-    <id>https://ning-hui.github.io/LCS-Problem/</id>
-    <published>2020-02-14T12:39:05.000Z</published>
-    <updated>2020-02-15T04:24:16.943Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;longest comment subsequence&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Algorithm" scheme="https://ning-hui.github.io/categories/Algorithm/"/>
-    
-    
-      <category term="LCS" scheme="https://ning-hui.github.io/tags/LCS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LIS + Problem</title>
-    <link href="https://ning-hui.github.io/LIS-Problem/"/>
-    <id>https://ning-hui.github.io/LIS-Problem/</id>
-    <published>2020-02-14T07:33:19.000Z</published>
-    <updated>2020-02-15T04:24:16.945Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;淡泊明志，宁静致远&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Algorithm" scheme="https://ning-hui.github.io/categories/Algorithm/"/>
-    
-    
-      <category term="LIS" scheme="https://ning-hui.github.io/tags/LIS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>python简单爬取视频</title>
-    <link href="https://ning-hui.github.io/crawler-viode/"/>
-    <id>https://ning-hui.github.io/crawler-viode/</id>
-    <published>2020-02-14T04:00:40.000Z</published>
-    <updated>2020-02-14T04:56:56.745Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;傻瓜式操作？？&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="python" scheme="https://ning-hui.github.io/categories/python/"/>
-    
-    
-      <category term="Crawler" scheme="https://ning-hui.github.io/tags/Crawler/"/>
+      <category term="literature" scheme="https://mumubest.github.io/tags/literature/"/>
     
   </entry>
   
